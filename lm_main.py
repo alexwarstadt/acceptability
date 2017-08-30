@@ -34,7 +34,7 @@ def generate(n, out_path):
             lines = ""
     out.close()
 
-generate(1000, "acceptability_corpus/lm_generated")
+generate(1000000, "acceptability_corpus/lm_generated")
 
 
 # model_trainer.run_train()
