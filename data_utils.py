@@ -36,20 +36,14 @@ class CorpusEpoch:
 
 
 class DataManager:
-    def __init__(self, raw_corpus, embedding_path, embedding_size, crop_pad_length=30, unked=False):
-        self.raw_corpus = raw_corpus
+    def __init__(self, corpus_path, embedding_path, vocab_path, embedding_size, crop_pad_length=30, unked=False):
+        # self.corpus_path = corpus_path
         self.embedding_size = embedding_size
+        self.vocab = [x.strip() for x in open(vocab_path)]
         self.crop_pad_length = crop_pad_length
-
-        tokenized = dp.tokenize(raw_corpus)
-        cropped = dp.crop(tokenized, crop_pad_length)
-        self.vocab = dp.get_vocab(cropped, 20000)
         self.n_vocab = len(self.vocab)
-        if (unked):
-            unked = dp.unkify(cropped, self.vocab)
-        # dp.filter_short_lines(unked, crop_pad_length+1)
-        self.training, self.valid, self.test = dp.split(cropped, .85, .05, .10)
-        self.embeddings = dp.init_embeddings(embedding_path, self.vocab, self.raw_corpus, embedding_size)
+        self.training, self.valid, self.test = corpus_path + "/train.txt", corpus_path + "/valid.txt", corpus_path + "/test.txt"
+        self.embeddings = dp.read_embeddings(embedding_path)
 
     def word_to_tensor(self, word):
         """makes 50 dim vector out of word"""

@@ -1,6 +1,5 @@
 import classifier_data_utils as cdu
 import time
-from constants import *
 from classifier_utils import *
 from torch.autograd import Variable
 

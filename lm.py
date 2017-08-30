@@ -6,7 +6,7 @@ import math
 import random
 from functools import reduce
 from constants import *
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import numpy as np
 import data_utils as du
 import model as model

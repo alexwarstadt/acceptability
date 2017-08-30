@@ -1,11 +1,4 @@
-import glob
-import lxml.etree as et
 import nltk
-import random
-import operator
-import math
-import os
-import matplotlib.pyplot as plt
 from constants import *
 from functools import reduce
 

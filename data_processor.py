@@ -6,7 +6,8 @@ import operator
 import math
 import os
 import torch
-import matplotlib.pyplot as plt
+import errno
+# import matplotlib.pyplot as plt
 from constants import *
 from functools import reduce
 
@@ -21,7 +22,7 @@ def tokenize(start_corpus_path):
             token_line = reduce(lambda s, t: s + " " + t, tokens, "").strip().lower()
             tokenized_corpus.write(token_line + "\n")
         tokenized_corpus.close()
-    except FileExistsError:
+    except errno.EEXIST:
         print(out_path + " already exists")
     return out_path
 
@@ -34,84 +35,89 @@ def filter_short_lines(start_corpus_path, n_words):
 
 
 
-def split(start_corpus_path, train, valid, test):
-    train_out = start_corpus_path[:-4] + "-train.txt"
-    valid_out = start_corpus_path[:-4] + "-valid.txt"
-    test_out = start_corpus_path[:-4] + "-test.txt"
-    if train + valid + test != 1.0:
-        raise Exception("train, valid, and test must sum to 1")
-    else:
-        try:
-            train_file = open(train_out, "x")
-            valid_file = open(valid_out, "x")
-            test_file = open(test_out, "x")
-            print("splitting", start_corpus_path)
-            for line in open(start_corpus_path):
-                n = random.uniform(0, 1)
-                if n <= train:
-                    train_file.write(line)
-                elif n <= train + valid:
-                    valid_file.write(line)
-                else:
-                    test_file.write(line)
-            train_file.close()
-            valid_file.close()
-            test_file.close()
-        except FileExistsError:
-            print("train/valid/test already exist from ", start_corpus_path)
-    return train_out, valid_out, test_out
+# def split(start_corpus_path, train, valid, test):
+#     train_out = start_corpus_path[:-4] + "-train.txt"
+#     valid_out = start_corpus_path[:-4] + "-valid.txt"
+#     test_out = start_corpus_path[:-4] + "-test.txt"
+#     if train + valid + test != 1.0:
+#         raise Exception("train, valid, and test must sum to 1")
+#     else:
+#         try:
+#             train_file = open(train_out, "x")
+#             valid_file = open(valid_out, "x")
+#             test_file = open(test_out, "x")
+#             print("splitting", start_corpus_path)
+#             for line in open(start_corpus_path):
+#                 n = random.uniform(0, 1)
+#                 if n <= train:
+#                     train_file.write(line)
+#                 elif n <= train + valid:
+#                     valid_file.write(line)
+#                 else:
+#                     test_file.write(line)
+#             train_file.close()
+#             valid_file.close()
+#             test_file.close()
+#         except FileExistsError:
+#             print("train/valid/test already exist from ", start_corpus_path)
+#     return train_out, valid_out, test_out
+#
+#
+# def crop(start_corpus_path, crop_pad_length):
+#     full_text_file = open(start_corpus_path)
+#     out_path = start_corpus_path[:-4] + "-crop%d.txt" % crop_pad_length
+#     try:
+#         crop_text_file = open(out_path, "x")
+#         print("cropping %s to %d words" % (start_corpus_path, crop_pad_length))
+#         stop_pad = " "
+#         for _ in range(crop_pad_length):
+#             stop_pad = stop_pad + STOP + " "
+#         for line in full_text_file:
+#             if line is not "\n":
+#                 line = START + " " + line.strip() + stop_pad
+#                 words = line.split(" ")
+#                 words = words[:crop_pad_length]
+#                 line = reduce(lambda s, t: s + " " + t, words) + " " + STOP
+#                 crop_text_file.write(line + "\n")
+#             else:
+#                 continue
+#     except FileExistsError:
+#         print("data file %s already exists" % out_path)
+#     return out_path
 
 
-def crop(start_corpus_path, crop_pad_length):
-    full_text_file = open(start_corpus_path)
-    out_path = start_corpus_path[:-4] + "-crop%d.txt" % crop_pad_length
-    try:
-        crop_text_file = open(out_path, "x")
-        print("cropping %s to %d words" % (start_corpus_path, crop_pad_length))
-        stop_pad = " "
-        for _ in range(crop_pad_length):
-            stop_pad = stop_pad + STOP + " "
-        for line in full_text_file:
-            if line is not "\n":
-                line = START + " " + line.strip() + stop_pad
-                words = line.split(" ")
-                words = words[:crop_pad_length]
-                line = reduce(lambda s, t: s + " " + t, words) + " " + STOP
-                crop_text_file.write(line + "\n")
-            else:
-                continue
-    except FileExistsError:
-        print("data file %s already exists" % out_path)
-    return out_path
+# def get_vocab(start_corpus_path, n_vocab=float("inf")):
+#     counts = {}
+#     out_path = start_corpus_path[:-4] + "-vocab-" + str(n_vocab) + ".txt"
+#     if n_vocab is math.inf:
+#         out_path = start_corpus_path[:-4] + "-vocab-all.txt"
+#     try:
+#         out_file = open(out_path, "x")
+#         print("getting vocab of size %d for %s" % (n_vocab, start_corpus_path))
+#         for line in open(start_corpus_path):
+#             for word in line.split():
+#                 if word in counts:
+#                     counts[word] = counts[word] + 1
+#                 else:
+#                     counts[word] = 1
+#                     if len(counts) % 10000 is 0:
+#                         print("n_words =", len(counts))
+#         counts_sorted = sorted(counts.items(), key=operator.itemgetter(1), reverse=True)    # sort vocab by counts
+#         if n_vocab < len(counts_sorted):
+#             counts_sorted = counts_sorted[:n_vocab]
+#         vocab = [x[0] for x in counts_sorted]
+#         for word in vocab:
+#             out_file.write(word + "\n")
+#     except FileExistsError:
+#         print(out_path + " already exists")
+#         vocab = [x.strip() for x in open(out_path)]
+#     # vocab.append(UNK)
+#     return vocab
 
 
-def get_vocab(start_corpus_path, n_vocab=math.inf):
-    counts = {}
-    out_path = start_corpus_path[:-4] + "-vocab-" + str(n_vocab) + ".txt"
-    if n_vocab is math.inf:
-        out_path = start_corpus_path[:-4] + "-vocab-all.txt"
-    try:
-        out_file = open(out_path, "x")
-        print("getting vocab of size %d for %s" % (n_vocab, start_corpus_path))
-        for line in open(start_corpus_path):
-            for word in line.split():
-                if word in counts:
-                    counts[word] = counts[word] + 1
-                else:
-                    counts[word] = 1
-                    if len(counts) % 10000 is 0:
-                        print("n_words =", len(counts))
-        counts_sorted = sorted(counts.items(), key=operator.itemgetter(1), reverse=True)    # sort vocab by counts
-        if n_vocab < len(counts_sorted):
-            counts_sorted = counts_sorted[:n_vocab]
-        vocab = [x[0] for x in counts_sorted]
-        for word in vocab:
-            out_file.write(word + "\n")
-    except FileExistsError:
-        print(out_path + " already exists")
-        vocab = [x.strip() for x in open(out_path)]
-    # vocab.append(UNK)
-    return vocab
+# def read_vocab(vocab_path):
+#     vocab = [x.strip() for x in open(vocab_path)]
+#     return vocab
 
 
 def unkify(start_corpus_path, vocab):
@@ -163,6 +169,16 @@ def init_embeddings(embeddings_path, vocab, corpus_name, embedding_size):
             for word in words[1:]:
                 vec_list.append(float(word))
             embeddings_dict[words[0]] = torch.FloatTensor(vec_list)
+    return embeddings_dict
+
+def read_embeddings(embeddings_path):
+    embeddings_dict = {}
+    for line in open(embeddings_path):
+        words = line.split(" ")
+        vec_list = []
+        for word in words[1:]:
+            vec_list.append(float(word))
+        embeddings_dict[words[0]] = torch.FloatTensor(vec_list)
     return embeddings_dict
 
 

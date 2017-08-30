@@ -19,20 +19,22 @@ import torch.nn as nn
 
 
 
-def generate(n, out):
+def generate(n, out_path):
     lm = model.MyLSTM(input_size=300, hidden_size=350, output_size=20001, n_layers=1, nonlinearity=nn.Tanh())
     lm.load_state_dict(torch.load('models/model_7-14_15:33:4_110500'))
-    dm = du.DataManager('../data/data/bnc/bnc.txt', '../data/embeddings/glove.6B.300d.txt', 300, crop_pad_length=30)
+    dm = du.DataManager('../data/data/bnc/bnc.txt', '../data/embeddings/glove.6B.300d-bnc-20001words.txt',
+                        '../data/vocab_20000.txt', 300, crop_pad_length=30)
     mu = my_lm.ModelUtils(dm)
-    out = open(out, "a")
+    out = open(out_path, "a")
     lines = ""
     for i in range(n):
         lines += ("lm	0	*	<s> " + mu.generate_sans_probability(29, lm) + "</s>\n")
-        if i % 1000 == 0:
+        if i % 1000 == 0 or i == n-1:
             out.write(lines)
             lines = ""
     out.close()
 
+generate(100, "acceptability_corpus/lm_generated")
 
 
 # model_trainer.run_train()
