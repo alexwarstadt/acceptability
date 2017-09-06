@@ -180,10 +180,65 @@ def apply_xslt(text_paths, xslt_path, data_dir):
     output.close()
 
 
+def permute_sentences(input_path):
+    out_path = input_path[:-4] + "-permuted.txt"
+    if os.path.isfile(out_path):
+        print("permuted file %s already exists" % out_path)
+    else:
+        output = open(out_path, "w")
+        for line in open(input_path):
+            words = line.split()
+            original_length = len(words)
+            words = remove_pad(words)
+            words, punc_map = remove_punc(words)
+            words = shuffle(words, random.uniform(.1, .6))
+            words = replace_punc(words, punc_map)
+            words = add_pad(words, original_length)
+            new_line = reduce(lambda x, y: x + " " + y, words)
+            output.write(new_line + "\n")
+    output.close()
+
+
+def remove_punc(words):
+    punc = [".", ",", ";", ":", "?", "!", "\"", "\'", "`", "``", "\'\'", "(", ")", "[", "]"]
+    punc_map = {}
+    true_words = []
+    for i in range(len(words)):
+        if words[i] in punc:
+            punc_map[i] = words[i]
+        else:
+            true_words.append(words[i])
+    return true_words, punc_map
+
+def replace_punc(words, punc_map):
+    for i in range(len(words) + len(punc_map)):
+        if i in punc_map:
+            words.insert(i, punc_map[i])
+    return words
+
+
+def shuffle(a_list, percent):
+    """shuffle n elements of a list"""
+    n = int(math.floor(percent * len(a_list)))
+    if n < 2 and len(a_list) >= 2:
+        n = 2
+    idx = range(len(a_list))
+    random.shuffle(idx)
+    idx = idx[:n]
+    mapping = dict((idx[i], idx[i - 1]) for i in range(n))
+    return [a_list[mapping.get(x, x)] for x in range(len(a_list))]
 
 
 
+def remove_pad(words):
+    return [x for x in words if x != START and x != STOP]
 
+
+def add_pad(words, n):
+    words.insert(0, START)
+    while len(words) < n:
+        words.append(STOP)
+    return words
 
 
 
