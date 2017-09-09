@@ -1,6 +1,7 @@
 import nltk
 from constants import *
 from functools import reduce
+import random
 
 raw_corpus = "data/bnc/bnc.txt"
 crop_pad_length = 30
@@ -122,7 +123,7 @@ def corpus_bias():
 def remove_short_lines():
     file = open('lm_generated/all_lm_and_bnc')
     out = open("lm_generated/all_lm_and_bnc-long_lines", "w")
-    non_words = [STOP, START, ",", ".", "\"", "‘", "’", "?", "!", "(", ")", "[", "]", "``", "''"]
+    non_words = [STOP, START, ",", ".", "\"", "?", "!", "(", ")", "[", "]", "``", "''"]
     for line in file:
         vals = line.split("\t")
         s = vals[3].strip()
@@ -131,47 +132,20 @@ def remove_short_lines():
         if len(words) > 3:
             out.write(line)
 
-# remove_short_lines()
-
-
-# prefix()
-
-
-crop_corpus()
-# prefix()
-
-# print(corpus_bias())
-
-# e_v = embeddings_vocab('embeddings/glove.6B.300d.txt')
-# print()
-
-# frequency_counts = get_word_count_counts(raw_corpus)
-# line_lengths = get_line_length_counts(raw_corpus)
-#
-# print(line_lengths)
-# plt.plot(list(frequency_counts.keys()),
-#          list(frequency_counts.values()))
-# plt.show()
-# plt.plot([1,2,3], [7, 8, 9])
-# plt.show()
-
-# tokenized = tokenize(raw_corpus)
-# cropped = crop(tokenized, crop_pad_length)
-# vocab = get_vocab(cropped, 20000)
-# n_vocab = len(vocab)
-# unked = unkify(cropped, vocab)
-# filter_short_lines(unked, crop_pad_length+1)
-# self.training, self.valid, self.test = dp.split(unked, .85, .05, .10)
-# self.embeddings = self.init_embeddings(open(embedding_path))
-# bnc =
-
-
-
-
-
-
-
-
-
-
+def split(in_path, out_dir, train, test, valid):
+    if train + test + valid != 1:
+        print("proportions should sum to 1")
+    else:
+        train_out = open(out_dir + "train.txt", "w+")
+        test_out = open(out_dir + "test.txt", "w+")
+        valid_out = open(out_dir + "valid.txt", "w+")
+        for line in open(in_path):
+            n = random.uniform(0, 1)
+            if n <= train:
+                train_out.write(line)
+            elif n <= train + valid:
+                valid_out.write(line)
+            else:
+                test_out.write(line)
+        train_out.close(), valid_out.close(), test_out.close()
 

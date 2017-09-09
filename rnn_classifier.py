@@ -49,9 +49,18 @@ class Classifier(nn.Module):
                 Variable(torch.zeros(1, batch_size, self.hidden_size)))
 
 class RNNTrainer(model_trainer.ModelTrainer):
-    def __init__(self, corpus_path, embedding_path, embedding_size, model, stages_per_epoch, prints_per_stage,
-                 convergence_threshold, max_epochs, learning_rate=.01):
-        super(RNNTrainer, self).__init__(corpus_path, embedding_path, embedding_size, model, stages_per_epoch,
+    def __init__(self,
+                 corpus_path,
+                 embedding_path,
+                 vocab_path,
+                 embedding_size,
+                 model,
+                 stages_per_epoch,
+                 prints_per_stage,
+                 convergence_threshold,
+                 max_epochs,
+                 learning_rate=.01):
+        super(RNNTrainer, self).__init__(corpus_path, embedding_path, vocab_path, embedding_size, model, stages_per_epoch,
                                          prints_per_stage, convergence_threshold, max_epochs, learning_rate)
 
 
@@ -61,7 +70,14 @@ lr = (1, 4)
 
 for _ in range(10):
     cl = Classifier(random.randint(size_range[0], size_range[1]), 300)
-    clt = RNNTrainer('../data/lm_generated/all_lm_and_bnc-long_lines-cropped', '../data/embeddings/glove.6B.300d.txt', 300, cl,
-                     stages_per_epoch=10, prints_per_stage=100, convergence_threshold=20, max_epochs=100,
+    clt = RNNTrainer('../data/bnc-30-table',
+                     '../data/bnc-30-table/embeddings_20000.txt',
+                     '../data/bnc-30-table/vocab_20000.txt',
+                     300,
+                     cl,
+                     stages_per_epoch=10,
+                     prints_per_stage=100,
+                     convergence_threshold=20,
+                     max_epochs=100,
                      learning_rate=math.pow(.2, random.uniform(lr[0], lr[1])))
     clt.run()

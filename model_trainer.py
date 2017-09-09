@@ -10,8 +10,8 @@ OUTPUT_PATH = "models/rnn_classifier"
 
 
 
-class ModelTrainer():
-    def __init__(self, corpus_path, embedding_path, embedding_size, model, stages_per_epoch, prints_per_stage,
+class ModelTrainer(object):
+    def __init__(self, corpus_path, embedding_path, vocab_path, embedding_size, model, stages_per_epoch, prints_per_stage,
                  convergence_threshold, max_epochs, learning_rate=.01):
         self.model = model
         self.corpus_path = corpus_path
@@ -22,7 +22,8 @@ class ModelTrainer():
         self.max_epochs = max_epochs
         self.learning_rate = learning_rate
         self.optimizer = torch.optim.Adam(self.model.parameters(), lr=learning_rate)  # or use RMSProp
-        self.dm = cdu.DataManager(corpus_path, embedding_path, embedding_size)
+        self.dm = cdu.DataManagerInMemory(corpus_path, embedding_path,
+                            vocab_path, 300, crop_pad_length=30)
         self.loss = torch.nn.BCELoss()
         now = time.localtime()
         time_stamp = str(now.tm_mon) + "-" + str(now.tm_mday) + "_" \
@@ -52,7 +53,7 @@ class ModelTrainer():
 
     def get_batch_loss(self, outputs, output_targets):
         # self.loss.weight = torch.Tensor([self.dm.corpus_bias for i in range(len(output_targets))])
-        loss = self.loss(outputs, Variable(torch.FloatTensor(output_targets)))
+        loss = self.loss(outputs, Variable(torch.FloatTensor(output_targets)).view(-1, 1))
         return loss
 
     def batch_confusion(self, outputs, output_targets):
@@ -138,8 +139,8 @@ class ModelTrainer():
 
 
     def run_epoch(self, max_matthews, n_stages_not_converging, n_stages):
-        train = cdu.CorpusEpoch(self.dm.training, self.dm)
-        valid = cdu.CorpusEpoch(self.dm.valid, self.dm)
+        train = cdu.CorpusEpoch(self.dm.training_pairs, self.dm)
+        valid = cdu.CorpusEpoch(self.dm.valid_pairs, self.dm)
         for _ in range(self.stages_per_epoch):
             if n_stages_not_converging > self.convergence_threshold:
                 raise RuntimeError
@@ -174,20 +175,20 @@ class ModelTrainer():
         n_stages = 0
         max_matthews = 0
         n_stages_not_converging = 0
-        try:
-            while epoch < self.max_epochs:
-                epoch += 1
-                print("===========================EPOCH %d=============================" % epoch)
-                max_matthews, n_stages_not_converging, n_stages = self.run_epoch(max_matthews, n_stages_not_converging, n_stages)
-        finally:
-            self.model.load_state_dict(torch.load(self.output_path))
-            print("=====================TEST==================")
-            test_loss, test_confusion = self.run_stage(cdu.CorpusEpoch(self.dm.test, self.dm), False, 1, 1)
-            LOGS.write("accuracy\t" + self.my_round(test_confusion.accuracy()) + "\n")
-            LOGS.write("matthews\t" + self.my_round(test_confusion.matthews()) + "\n")
-            LOGS.write('f1\t\t\t' + self.my_round(test_confusion.f1()) + "\n")
-            LOGS.write("tp={0[0]:.4g}, fp={0[1]:.4g}, tn={0[2]:.4g}, fn={0[3]:.4g}".format(test_confusion.percentages()) + "\n")
-            LOGS.close()
+        # try:
+        while epoch < self.max_epochs:
+            epoch += 1
+            print("===========================EPOCH %d=============================" % epoch)
+            max_matthews, n_stages_not_converging, n_stages = self.run_epoch(max_matthews, n_stages_not_converging, n_stages)
+        # finally:
+        #     self.model.load_state_dict(torch.load(self.output_path))
+        #     print("=====================TEST==================")
+        #     test_loss, test_confusion = self.run_stage(cdu.CorpusEpoch(self.dm.test_pairs, self.dm), False, 1, 1)
+        #     LOGS.write("accuracy\t" + self.my_round(test_confusion.accuracy()) + "\n")
+        #     LOGS.write("matthews\t" + self.my_round(test_confusion.matthews()) + "\n")
+        #     LOGS.write('f1\t\t\t' + self.my_round(test_confusion.f1()) + "\n")
+        #     LOGS.write("tp={0[0]:.4g}, fp={0[1]:.4g}, tn={0[2]:.4g}, fn={0[3]:.4g}".format(test_confusion.percentages()) + "\n")
+        #     LOGS.close()
 
 
 

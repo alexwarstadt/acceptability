@@ -4,6 +4,7 @@ import torch.utils.data
 import subprocess
 import math
 import data_processor as dp
+import data_utils
 from constants import *
 from functools import reduce
 
@@ -50,72 +51,87 @@ class CorpusEpoch:
     #     return Batch(batch_lines, self.data_manager), batch_targets, self.still_going
 
 
-class DataManager:
-    def __init__(self, corpus, embedding_path, embedding_size):
-        self.corpus = corpus
-        self.vocab = [x.strip() for x in open(VOCAB_PATH)]
-        self.embedding_size = embedding_size
-        self.embeddings = dp.init_embeddings(embedding_path, self.vocab, self.corpus, embedding_size)
-        self.data_pairs = []
-        for line in open(self.corpus):
-            vals = line.split("\t")
-            self.data_pairs.append((vals[3], vals[1]))
-        self.training, self.valid, self.test = self.split()
-        self.corpus_bias = sum([float(x[1]) for x in self.data_pairs]) / len(self.data_pairs)
+class DataManagerInMemory(data_utils.DataManager):
+    def __init__(self, corpus_path, embedding_path, vocab_path, embedding_size, crop_pad_length=30, unked=False):
+        super(DataManagerInMemory, self).__init__(corpus_path, embedding_path, vocab_path, embedding_size,
+                                                  crop_pad_length=30, unked=unked)
+        def read_pairs(path):
+            pairs = []
+            for line in open(path):
+                vals = line.split("\t")
+                pairs.append((vals[3], vals[1]))
+            return pairs
 
-    def split(self):
-        train = .85
-        valid = .1
-        train_pairs = []
-        valid_pairs = []
-        test_pairs = []
-        for line in self.data_pairs:
-            n = random.uniform(0, 1)
-            if n <= train:
-                train_pairs.append(line)
-            elif n <= train + valid:
-                valid_pairs.append(line)
-            else:
-                test_pairs.append(line)
-        return train_pairs, valid_pairs, test_pairs
+        self.training_pairs = read_pairs(self.training)
+        self.valid_pairs = read_pairs(self.valid)
+        self.test_pairs = read_pairs(self.test)
 
-    def init_embeddings(self, embeddings_file):
-        embeddings_dict = dict.fromkeys(list(self.vocab))
-        for line in embeddings_file:
-            words = line.split(" ")
-            if words[0] in embeddings_dict:
-                vec_list = []
-                for word in words[1:]:
-                    vec_list.append(float(word))
-                embeddings_dict[words[0]] = torch.FloatTensor(vec_list)
-        for w in special_words:
-            vector = torch.FloatTensor(self.embedding_size)
-            for i in range(self.embedding_size):
-                vector[i] = random.uniform(-1, 1)
-            embeddings_dict[w] = vector
-        for w in self.vocab:
-            if embeddings_dict[w] is None:
-                vector = torch.FloatTensor(self.embedding_size)
-                for i in range(self.embedding_size):
-                    vector[i] = random.uniform(-1, 1)
-                embeddings_dict[w] = vector
-        return embeddings_dict
-
-    # def corpus_bias(self):
-    #     sum([x[1] for x in self.data_pairs]) / len(self.data_pairs)
-    #     total_acceptability = 0
-    #     for pair in self.data_pairs:
-    #         total_acceptability += pair[1]
-    #     return total_acceptability / len(self.data_pairs)
-
-    def word_to_tensor(self, word):
-        """makes 50 dim vector out of word"""
-        tensor = torch.Tensor(self.embedding_size)
-        if word in self.embeddings.keys():
-            tensor = self.embeddings[word]
-        else:
-            tensor = self.embeddings[UNK]
-        return tensor
+# class DataManager:
+#     def __init__(self, corpus, embedding_path, embedding_size):
+#         self.corpus = corpus
+#         self.vocab = [x.strip() for x in open(VOCAB_PATH)]
+#         self.embedding_size = embedding_size
+#         self.embeddings = dp.init_embeddings(embedding_path, self.vocab, self.corpus, embedding_size)
+#         self.data_pairs = []
+#         for line in open(self.corpus):
+#             vals = line.split("\t")
+#             self.data_pairs.append((vals[3], vals[1]))
+#         self.training, self.valid, self.test = self.split()
+#         self.corpus_bias = sum([float(x[1]) for x in self.data_pairs]) / len(self.data_pairs)
+#
+#     def split(self):
+#         train = .85
+#         valid = .1
+#         train_pairs = []
+#         valid_pairs = []
+#         test_pairs = []
+#         for line in self.data_pairs:
+#             n = random.uniform(0, 1)
+#             if n <= train:
+#                 train_pairs.append(line)
+#             elif n <= train + valid:
+#                 valid_pairs.append(line)
+#             else:
+#                 test_pairs.append(line)
+#         return train_pairs, valid_pairs, test_pairs
+#
+#     def init_embeddings(self, embeddings_file):
+#         embeddings_dict = dict.fromkeys(list(self.vocab))
+#         for line in embeddings_file:
+#             words = line.split(" ")
+#             if words[0] in embeddings_dict:
+#                 vec_list = []
+#                 for word in words[1:]:
+#                     vec_list.append(float(word))
+#                 embeddings_dict[words[0]] = torch.FloatTensor(vec_list)
+#         for w in special_words:
+#             vector = torch.FloatTensor(self.embedding_size)
+#             for i in range(self.embedding_size):
+#                 vector[i] = random.uniform(-1, 1)
+#             embeddings_dict[w] = vector
+#         for w in self.vocab:
+#             if embeddings_dict[w] is None:
+#                 vector = torch.FloatTensor(self.embedding_size)
+#                 for i in range(self.embedding_size):
+#                     vector[i] = random.uniform(-1, 1)
+#                 embeddings_dict[w] = vector
+#         return embeddings_dict
+#
+#     # def corpus_bias(self):
+#     #     sum([x[1] for x in self.data_pairs]) / len(self.data_pairs)
+#     #     total_acceptability = 0
+#     #     for pair in self.data_pairs:
+#     #         total_acceptability += pair[1]
+#     #     return total_acceptability / len(self.data_pairs)
+#
+#     def word_to_tensor(self, word):
+#         """makes 50 dim vector out of word"""
+#         tensor = torch.Tensor(self.embedding_size)
+#         if word in self.embeddings.keys():
+#             tensor = self.embeddings[word]
+#         else:
+#             tensor = self.embeddings[UNK]
+#         return tensor
 
 
 class Batch:

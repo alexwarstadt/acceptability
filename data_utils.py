@@ -35,7 +35,7 @@ class CorpusEpoch:
         return Batch(batch_lines, self.data_manager), still_going
 
 
-class DataManager:
+class DataManager(object):
     def __init__(self, corpus_path, embedding_path, vocab_path, embedding_size, crop_pad_length=30, unked=False):
         # self.corpus_path = corpus_path
         self.embedding_size = embedding_size

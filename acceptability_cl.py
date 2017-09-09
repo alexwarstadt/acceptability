@@ -355,9 +355,9 @@ class ClTrainer():
 
 
 #============= LOAD LM FROM MODEL =============
-lm = model.MyLSTM(input_size=300, hidden_size=350, output_size=20001, n_layers=1, nonlinearity=nn.Tanh())
-lm.load_state_dict(torch.load('models/model_7-14_15:33:4_110500'))
-
+# lm = model.MyLSTM(input_size=300, hidden_size=350, output_size=20001, n_layers=1, nonlinearity=nn.Tanh())
+# lm.load_state_dict(torch.load('models/model_7-14_15:33:4_110500'))
+#
 # encoder_path = 'models/rnn_classifier_7-28_17:50:13_85975'
 # encoder = rnn_classifier.Classifier(hidden_size=350, embedding_size=300)
 # encoder.load_state_dict(torch.load(encoder_path))
@@ -372,18 +372,19 @@ lm.load_state_dict(torch.load('models/model_7-14_15:33:4_110500'))
 
 
 #============= GENERATE =============
-dm = du.DataManager('data/bnc/bnc.txt', 'embeddings/glove.6B.300d.txt', 300, crop_pad_length=30)
-mu = my_lm.ModelUtils(dm)
-out = open("acceptability_corpus/lm_generated3", "a")
-
-# print(mu.generate_batch(29, 50, lm))
+# dm = du.DataManager('../data/bnc-30', '../data/bnc-30/embeddings_20000.txt',
+#                     '../data/bnc-30/vocab_20000.txt', 300, crop_pad_length=30)
+# mu = my_lm.ModelUtils(dm)
+# out = open("acceptability_corpus/lm_generated3", "a")
 #
-for _ in range(400):
-    lines = ""
-    for __ in range(1000):
-        lines += ("lm	0	*	<s> " + mu.generate_sans_probability(29, lm) + "</s>\n")
-    out.write(lines)
-out.close()
+# # print(mu.generate_batch(29, 50, lm))
+# #
+# for _ in range(400):
+#     lines = ""
+#     for __ in range(1000):
+#         lines += ("lm	0	*	<s> " + mu.generate_sans_probability(29, lm) + "</s>\n")
+#     out.write(lines)
+# out.close()
 
 
 
