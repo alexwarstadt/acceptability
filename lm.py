@@ -208,7 +208,7 @@ class ModelTrainer:
                                    n_layers=n_layers, nonlinearity=self.nonlinearity, model_type=model_type)
         self.gpu = gpu
         if self.gpu:
-            self.model.cuda()
+            self.model = self.model.cuda()
         self.learning_rate = learning_rate
         self.criterion = nn.NLLLoss()
         self.optimizer = torch.optim.Adam(self.model.parameters(), lr=self.learning_rate)  # or use RMSProp
