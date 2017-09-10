@@ -96,6 +96,7 @@ class ModelUtils:
         if self.gpu:
             input = input.cuda()
             hiddens = [(h[0].cuda(), h[1].cuda()) for h in hiddens]
+            model = model.cuda()
         sentence_gen = ""
         for _ in range(n):
             output, hiddens = model.forward(Variable(input), hiddens)
@@ -130,8 +131,6 @@ class ModelUtils:
         hiddens = model.init_hidden(batch_size)
         sentence_gen = ["" for _ in range(batch_size)]
         for _ in range(n):
-            if self.gpu:
-                model = model.gpu()
             output, hiddens = model.forward(Variable(input), hiddens)
             for i, o in enumerate(output):
                 probs, prob_sum = self.remove_start(self.log_prob_to_prob(o).tolist())
