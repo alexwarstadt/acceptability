@@ -31,6 +31,7 @@ def generate(n, out_path, gpu):
         lines += ("lm	0	*	<s> " + mu.generate_sans_probability(29, lm) + "</s>\n")
         if i % 1000 == 0 or i == n-1:
             out.write(lines)
+            print(i, "lines printed")
             lines = ""
     out.close()
 
