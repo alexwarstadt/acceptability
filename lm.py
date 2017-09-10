@@ -129,15 +129,22 @@ class ModelUtils:
         for i in range(batch_size):
             input[i] = self.dm.word_to_tensor(START)
         hiddens = model.init_hidden(batch_size)
+        if self.gpu:
+            input = input.cuda()
+            hiddens = [(h[0].cuda(), h[1].cuda()) for h in hiddens]
+            model = model.cuda()
         sentence_gen = ["" for _ in range(batch_size)]
         for _ in range(n):
             output, hiddens = model.forward(Variable(input), hiddens)
+            output = output.cpu()
             for i, o in enumerate(output):
                 probs, prob_sum = self.remove_start(self.log_prob_to_prob(o).tolist())
                 i_choice, w_choice = self.sample(probs, prob_sum)
                 word_gen = self.dm.vocab[i_choice]
                 sentence_gen[i] += word_gen + " "
                 input[i] = self.dm.word_to_tensor(word_gen)
+                if self.gpu:
+                    input = input.cuda()
         return sentence_gen
 
 

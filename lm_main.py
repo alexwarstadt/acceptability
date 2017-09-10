@@ -35,7 +35,25 @@ def generate(n, out_path, gpu):
             lines = ""
     out.close()
 
-generate(1000000, "acceptability_corpus/lm_generated3", True)
+def generate_batch(n, batch, out_path, gpu):
+    lm = model.MyLSTM(input_size=300, hidden_size=350, output_size=20001, n_layers=1, nonlinearity=nn.Tanh())
+    lm.load_state_dict(torch.load('models/model_7-14_15:33:4_110500'))
+    dm = du.DataManager('../data/bnc-30', '../data/bnc-30/embeddings_20000.txt',
+                        '../data/bnc-30/vocab_20000.txt', 300, crop_pad_length=30)
+    mu = my_lm.ModelUtils(dm, gpu)
+    out = open(out_path, "w+")
+    lines = []
+    for i in range(n):
+        lines.extend(mu.generate_batch(29, batch, lm))
+        if i % 100 == 0 or i == n - 1:
+            out = ["lm	0	*	<s> " + o + "</s>\n" for o in lines]
+            for line in out:
+                out.write(line)
+            print(i, "lines printed")
+            lines = []
+    out.close()
+
+generate_batch(1000000, 64, "acceptability_corpus/lm_generated5", True)
 
 
 # model_trainer.run_train()
