@@ -95,7 +95,7 @@ class ModelUtils:
         hiddens = model.init_hidden_single()
         if self.gpu:
             input = input.cuda()
-            hiddens = hiddens.cuda()
+            hiddens = [h.cuda() for h in hiddens]
         sentence_gen = ""
         for _ in range(n):
             output, hiddens = model.forward(Variable(input), hiddens)
