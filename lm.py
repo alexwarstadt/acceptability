@@ -35,8 +35,9 @@ STOP_TRAINING_THRESHOLD = 20    # number of evaluations on which validation does
 
 
 class ModelUtils:
-    def __init__(self, dm):
+    def __init__(self, dm, gpu):
         self.dm = dm
+        self.gpu = gpu
 
     @staticmethod
     def log_prob_to_prob(output):
@@ -92,14 +93,19 @@ class ModelUtils:
         input = torch.Tensor(1, self.dm.embedding_size)
         input[0] = self.dm.word_to_tensor(START)
         hiddens = model.init_hidden_single()
+        if self.gpu:
+            input = input.cuda()
+            hiddens = hiddens.cuda()
         sentence_gen = ""
         for _ in range(n):
             output, hiddens = model.forward(Variable(input), hiddens)
-            probs, prob_sum = self.remove_start(self.log_prob_to_prob(output)[0].tolist())
+            probs, prob_sum = self.remove_start(self.log_prob_to_prob(output.cpu())[0].tolist())
             i_choice, w_choice = self.sample(probs, prob_sum)
             word_gen = self.dm.vocab[i_choice]
             sentence_gen += word_gen + " "
             input[0] = self.dm.word_to_tensor(word_gen)
+            if self.gpu:
+                input = input.cuda()
         return sentence_gen
 
     # def generate_sans_probability(self, n, model):
@@ -183,7 +189,7 @@ START_TIME = time.time()
 class ModelTrainer:
     def __init__(self, raw_corpus, embedding_path, embeddings_size, crop_pad_length, unked,
                  dim_hidden,
-                 learning_rate, model_type="RNN", n_layers=1,
+                 learning_rate, model_type="RNN", n_layers=1, gpu=False,
                  **criterion_nonlinearity_optimizer):
         now = time.localtime()
         self.dm = du.DataManager(raw_corpus, embedding_path, embeddings_size, crop_pad_length, unked)
@@ -200,13 +206,16 @@ class ModelTrainer:
         else:
             self.model = model.RNN(input_size=embeddings_size, hidden_size=dim_hidden, output_size=self.dm.n_vocab,
                                    n_layers=n_layers, nonlinearity=self.nonlinearity, model_type=model_type)
+        self.gpu = gpu
+        if self.gpu:
+            self.model.cuda()
         self.learning_rate = learning_rate
         self.criterion = nn.NLLLoss()
         self.optimizer = torch.optim.Adam(self.model.parameters(), lr=self.learning_rate)  # or use RMSProp
         self.training_losses = []
         self.training_prplxs = []
         self.valid_prplxs = []
-        self.prplx_min = math.inf
+        self.prplx_min = float("inf")
         # self.optimizer = torch.optim.Adam(self.model.parameters())
 
     def train(self, batch):
@@ -216,16 +225,21 @@ class ModelTrainer:
         self.optimizer.zero_grad()
         loss.backward()
         self.optimizer.step()
-        return outputs, loss.data[0]
+
+        return outputs, loss.cpu().data[0]
 
     def log_probability(self, batch):
         outputs = self.get_outputs(batch)
         output_targets = self.get_output_targets(batch)
         log_prob = 0
         n_probs = 0
+        if self.gpu:
+            outputs.cpu()
+            for i in outputs:
+                for j in i:
+                    j.cpu()
         for i in range(len(outputs)):
             for j in range(outputs[0].size()[0]):
-                #TODO only add prob if not part of stop pad
                 target = output_targets[i][j].data[0]
                 log_prob += outputs[i][j][target]
                 n_probs += 1
@@ -236,6 +250,9 @@ class ModelTrainer:
     def get_outputs(self, batch):
         input = batch.tensor_view
         hidden = self.model.init_hidden(batch.batch_size)
+        if self.gpu:
+            input = input.cuda()
+            hidden = hidden.cuda()
         outputs = []
         for word_batch in input[:-1]:
             output, hidden = self.model(Variable(word_batch), hidden)
@@ -245,6 +262,9 @@ class ModelTrainer:
     def get_hiddens(self, batch):
         input = batch.tensor_view
         hidden = self.model.init_hidden(batch.batch_size)
+        if self.gpu:
+            input = input.cuda()
+            hidden = hidden.cuda()
         hiddens = []
         for word_batch in input[:-1]:
             output, hidden = self.model(Variable(word_batch), hidden)
@@ -266,6 +286,8 @@ class ModelTrainer:
                 # except IndexError:
                 #     continue
                 word_i_targets.append(Variable(torch.LongTensor([word_code])))
+                if self.gpu:
+                    word_i_targets = [x.cuda() for x in word_i_targets]
             output_targets.append(word_i_targets)
         return output_targets
 
