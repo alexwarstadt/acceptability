@@ -53,7 +53,9 @@ def generate_batch(n, batch, out_path, gpu):
             lines = []
     out.close()
 
-generate_batch(1000000, 64, "acceptability_corpus/lm_generated5", True)
+# generate_batch(1000000, 10, "acceptability_corpus/lm_generated5", False)
+
+generate(1000000, "acceptability_corpus/lm_generated6", True)
 
 
 # model_trainer.run_train()
