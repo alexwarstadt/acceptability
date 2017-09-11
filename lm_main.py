@@ -46,9 +46,9 @@ def generate_batch(n, batch, out_path, gpu):
     for i in range(n):
         lines.extend(mu.generate_batch(29, batch, lm))
         if i % 100 == 0 or i == n - 1:
-            out = ["lm	0	*	<s> " + o + "</s>\n" for o in lines]
-            for line in out:
-                out.write(line)
+            lines = ["lm	0	*	<s> " + l + "</s>\n" for l in lines]
+            for l in lines:
+                out.write(l)
             print(i, "lines printed")
             lines = []
     out.close()
