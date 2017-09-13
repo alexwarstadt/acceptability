@@ -103,10 +103,10 @@ def crop_sentences(sentences):
     return cropped_sentences
 
 def prefix():
-    file = open("data/bnc/bnc-tokenized-crop30-train-shuff.txt")
-    out = open("data/bnc/bnc-tokenized-crop30-train-shuff_table.txt", "w")
+    file = open("../data/bnc/bnc30-half-1-permuted.txt")
+    out = open("../data/bnc/bnc30-half-1-permuted-table.txt", "w")
     for line in file:
-        out.write("bnc	1		" + line)
+        out.write("per	0	*	" + line)
 
 
 

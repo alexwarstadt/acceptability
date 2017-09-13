@@ -33,8 +33,8 @@ class Classifier(nn.Module):
     def __init__(self, hidden_size, embedding_size):
         super(Classifier, self).__init__()
         self.hidden_size = hidden_size
-        self.ih2h = nn.LSTM(embedding_size, hidden_size)
-        self.h2o = nn.Linear(hidden_size, 1)
+        self.ih2h = nn.LSTM(embedding_size, hidden_size, bidirectional=True)
+        self.h2o = nn.Linear(2 * hidden_size, 1)
         self.sigmoid = nn.Sigmoid()
         self.tanh = nn.Tanh()
         self.softmax = nn.Softmax()
@@ -45,8 +45,8 @@ class Classifier(nn.Module):
         return output, o
 
     def init_hidden(self, batch_size):
-        return (Variable(torch.zeros(1, batch_size, self.hidden_size)),
-                Variable(torch.zeros(1, batch_size, self.hidden_size)))
+        return (Variable(torch.zeros(2, batch_size, self.hidden_size)),
+                Variable(torch.zeros(2, batch_size, self.hidden_size)))
 
 class RNNTrainer(model_trainer.ModelTrainer):
     def __init__(self,
@@ -59,9 +59,10 @@ class RNNTrainer(model_trainer.ModelTrainer):
                  prints_per_stage,
                  convergence_threshold,
                  max_epochs,
+                 gpu,
                  learning_rate=.01):
         super(RNNTrainer, self).__init__(corpus_path, embedding_path, vocab_path, embedding_size, model, stages_per_epoch,
-                                         prints_per_stage, convergence_threshold, max_epochs, learning_rate)
+                                         prints_per_stage, convergence_threshold, max_epochs, gpu, learning_rate)
 
 
 #============= EXPERIMENT ================
@@ -70,7 +71,7 @@ lr = (1, 4)
 
 for _ in range(10):
     cl = Classifier(random.randint(size_range[0], size_range[1]), 300)
-    clt = RNNTrainer('../data/bnc-30-table',
+    clt = RNNTrainer('../data/discriminator/',
                      '../data/bnc-30-table/embeddings_20000.txt',
                      '../data/bnc-30-table/vocab_20000.txt',
                      300,
@@ -79,5 +80,6 @@ for _ in range(10):
                      prints_per_stage=100,
                      convergence_threshold=20,
                      max_epochs=100,
+                     gpu=False,
                      learning_rate=math.pow(.2, random.uniform(lr[0], lr[1])))
     clt.run()

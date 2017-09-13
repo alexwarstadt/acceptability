@@ -12,7 +12,7 @@ OUTPUT_PATH = "models/rnn_classifier"
 
 class ModelTrainer(object):
     def __init__(self, corpus_path, embedding_path, vocab_path, embedding_size, model, stages_per_epoch, prints_per_stage,
-                 convergence_threshold, max_epochs, learning_rate=.01):
+                 convergence_threshold, max_epochs, gpu, learning_rate=.01):
         self.model = model
         self.corpus_path = corpus_path
         self.embedding_size = embedding_size
@@ -20,6 +20,9 @@ class ModelTrainer(object):
         self.prints_per_stage = prints_per_stage
         self.convergence_threshold = convergence_threshold
         self.max_epochs = max_epochs
+        self.gpu = gpu
+        if self.gpu:
+            self.model = self.model.cuda()
         self.learning_rate = learning_rate
         self.optimizer = torch.optim.Adam(self.model.parameters(), lr=learning_rate)  # or use RMSProp
         self.dm = cdu.DataManagerInMemory(corpus_path, embedding_path,
@@ -41,6 +44,9 @@ class ModelTrainer(object):
     def get_batch_output(self, batch):
         hidden = self.model.init_hidden(batch.batch_size)
         input = torch.Tensor(len(batch.tensor_view), batch.batch_size, self.embedding_size)
+        if self.gpu:
+            hidden = hidden.cuda()
+            input = input.cuda()
         for i, t in enumerate(batch.tensor_view):
             input[i] = t
         outputs, hidden = self.model.forward(Variable(input), hidden)
@@ -57,6 +63,9 @@ class ModelTrainer(object):
         return loss
 
     def batch_confusion(self, outputs, output_targets):
+        if self.gpu:
+            outputs = outputs.cpu()
+            output_targets = output_targets.cpu()
         tp, fp, tn, fn = 0, 0, 0, 0
         for out, target in zip(outputs, output_targets):
             if out.data[0] > .5 and target > .5:
@@ -79,6 +88,8 @@ class ModelTrainer(object):
 
     def get_metrics(self, outputs, batch):
         targets = batch.targets_view
+        if self.gpu:
+            targets = targets.cuda()
         loss = self.get_batch_loss(outputs, targets)
         confusion = self.batch_confusion(outputs, targets)
         return loss, confusion
@@ -88,13 +99,15 @@ class ModelTrainer(object):
         loss, confusion = self.get_metrics(outputs, batch)
         if backprop:
             self.backprop(loss)
+        if self.gpu:
+            loss = loss.cpu()
         return outputs, loss.data[0], confusion
 
     def print_stats(self, loss, confusion):
-        print("avg loss\t", self.my_round(loss))
-        print("accuracy\t", self.my_round(confusion.accuracy()))
-        print("matthews\t", self.my_round(confusion.matthews()))
-        print('f1\t\t\t', self.my_round(confusion.f1()))
+        print("avg loss\t" + self.my_round(loss))
+        print("accuracy\t" + self.my_round(confusion.accuracy()))
+        print("matthews\t" + self.my_round(confusion.matthews()))
+        print('f1\t\t\t' + self.my_round(confusion.f1()))
         print("tp={0[0]:.4g}, fp={0[1]:.4g}, tn={0[2]:.4g}, fn={0[3]:.4g}".format(confusion.percentages()))
 
     def logs(self, n_batches, train_avg_loss, valid_avg_loss, t_confusion, v_confusion, model_saved):
@@ -124,7 +137,7 @@ class ModelTrainer(object):
         while has_next and n_batches < stage_batches:
             n_batches += 1
             batch, has_next = epoch.get_new_batch()
-            outputs, loss, confusion = self.run_batch(batch, backprop)
+            _, loss, confusion = self.run_batch(batch, backprop)
             print_loss += loss
             print_confusion.add(confusion)
             stage_loss += loss

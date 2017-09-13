@@ -59,7 +59,10 @@ class DataManagerInMemory(data_utils.DataManager):
             pairs = []
             for line in open(path):
                 vals = line.split("\t")
-                pairs.append((vals[3], vals[1]))
+                try:
+                    pairs.append((vals[3], vals[1]))
+                except IndexError:
+                    pass
             return pairs
 
         self.training_pairs = read_pairs(self.training)

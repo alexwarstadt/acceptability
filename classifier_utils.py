@@ -18,7 +18,7 @@ class Confusion:
 
     def f1(self):
         try:
-            f = 2 * self.tp / ((2 * self.tp) + self.fp + self.fn)
+            f = float(2 * self.tp) / float((2 * self.tp) + self.fp + self.fn)
         except ZeroDivisionError:
             f = 0
         return f
@@ -26,18 +26,18 @@ class Confusion:
     def matthews(self):
         """tp*tn - fp*fn / sqrt( tp+fp tp+fn tn+fp tn+fn )"""
         try:
-            m = ((self.tp * self.tn) - (self.fp * self.fn)) / \
-                math.sqrt((self.tp + self.fp) * (self.tp + self.fn) * (self.tn + self.fp) * (self.tn + self.fn))
+            m = float((self.tp * self.tn) - (self.fp * self.fn)) / \
+                math.sqrt(float((self.tp + self.fp) * (self.tp + self.fn) * (self.tn + self.fp) * (self.tn + self.fn)))
         except ZeroDivisionError:
             m = 0
         return m
 
     def percentages(self):
-        total = self.tp + self.fp + self.tn + self.fn
-        return self.tp/total, self.fp/total, self.tn/total, self.fn/total
+        total = float(self.tp + self.fp + self.tn + self.fn)
+        return float(self.tp)/total, float(self.fp)/total, float(self.tn)/total, float(self.fn)/total
 
     def accuracy(self):
-        return (self.tp + self.tn) / (self.tp + self.fp + self.tn + self.fn)
+        return float(self.tp + self.tn) / float(self.tp + self.fp + self.tn + self.fn)
 
 
 def print_min_and_max(outputs, batch):
