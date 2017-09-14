@@ -72,8 +72,8 @@ lr = (1, 4)
 for _ in range(10):
     cl = Classifier(random.randint(size_range[0], size_range[1]), 300)
     clt = RNNTrainer('../data/discriminator/',
-                     '../data/bnc-30-table/embeddings_20000.txt',
-                     '../data/bnc-30-table/vocab_20000.txt',
+                     '../data/bnc-30/embeddings_20000.txt',
+                     '../data/bnc-30/vocab_20000.txt',
                      300,
                      cl,
                      stages_per_epoch=10,
