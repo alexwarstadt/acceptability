@@ -4,7 +4,7 @@ from classifier_utils import *
 from torch.autograd import Variable
 
 
-LOGS = open("logs/rnn-logs", "a")
+LOGS_PREFIX = "logs/rnn-logs"
 OUTPUT_PATH = "models/rnn_classifier"
 
 
@@ -32,6 +32,7 @@ class ModelTrainer(object):
         time_stamp = str(now.tm_mon) + "-" + str(now.tm_mday) + "_" \
                      + str(now.tm_hour) + ":" + str(now.tm_min) + ":" + str(now.tm_sec)
         self.output_path = OUTPUT_PATH + "_" + time_stamp
+        self.LOGS = open(LOGS_PREFIX + "_" + time_stamp, "a")
 
     def to_string(self):
         return "data\t\t\t" + self.corpus_path + "\n" + \
@@ -111,15 +112,16 @@ class ModelTrainer(object):
         print("tp={0[0]:.4g}, fp={0[1]:.4g}, tn={0[2]:.4g}, fn={0[3]:.4g}".format(confusion.percentages()))
 
     def logs(self, n_batches, train_avg_loss, valid_avg_loss, t_confusion, v_confusion, model_saved):
-        LOGS.write("\t" + str(n_batches) + "\t")
-        LOGS.write("\t" + self.my_round(train_avg_loss) + "\t")
-        LOGS.write("\t" + self.my_round(valid_avg_loss) + "\t")
-        LOGS.write("\t" + self.my_round(t_confusion.matthews()) + "\t")
-        LOGS.write("\t" + self.my_round(v_confusion.matthews()) + "\t")
-        LOGS.write("\t" + self.my_round(t_confusion.f1()) + "\t")
-        LOGS.write("\t" + self.my_round(v_confusion.f1()) + "\t")
-        LOGS.write("\t" + str(model_saved) + "\n")
-        LOGS.flush()
+        self.LOGS.write("\t" + str(n_batches) + "\t")
+        self.LOGS.write("\t" + self.my_round(train_avg_loss) + "\t")
+        self.LOGS.write("\t" + self.my_round(valid_avg_loss) + "\t")
+        self.LOGS.write("\t" + self.my_round(t_confusion.matthews()) + "\t")
+        self.LOGS.write("\t" + self.my_round(v_confusion.matthews()) + "\t")
+        self.LOGS.write("\t" + self.my_round(t_confusion.f1()) + "\t")
+        self.LOGS.write("\t" + self.my_round(v_confusion.f1()) + "\t")
+        self.LOGS.write("\t" + "tp={0[0]:.4g}, fp={0[1]:.4g}, tn={0[2]:.4g}, fn={0[3]:.4g}".format(v_confusion.percentages()) + "\t")
+        self.LOGS.write("\t" + str(model_saved) + "\n")
+        self.LOGS.flush()
 
     @staticmethod
     def my_round(n):
@@ -180,10 +182,10 @@ class ModelTrainer(object):
         print("                              TRAINING")
         print("======================================================================")
         print(self.to_string())
-        LOGS.write("\n\n" + self.to_string() + "\n")
-        LOGS.write(
-            "# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 | model saved\n" +
-            "----------|----------------|----------------|------------|------------|------|------|------------\n")
+        self.LOGS.write("\n\n" + self.to_string() + "\n")
+        self.LOGS.write(
+            "# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved\n" +
+            "----------|----------------|----------------|------------|------------|------|------|---------------------|-----------\n")
         epoch = 0
         n_stages = 0
         max_matthews = 0
