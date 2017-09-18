@@ -30,23 +30,28 @@ def time_since(since):
 START_TIME = time.time()
 
 class Classifier(nn.Module):
-    def __init__(self, hidden_size, embedding_size):
+    def __init__(self, hidden_size, embedding_size, num_layers, reduction_size):
         super(Classifier, self).__init__()
         self.hidden_size = hidden_size
-        self.ih2h = nn.LSTM(embedding_size, hidden_size, bidirectional=True)
-        self.h2o = nn.Linear(2 * hidden_size, 1)
+        self.num_layers = num_layers
+        self.reduction_size = reduction_size
+        self.ih2h = nn.LSTM(embedding_size, hidden_size, num_layers=num_layers, bidirectional=True)
+        self.h2r = nn.Linear(2 * hidden_size, reduction_size)
+        self.r2o = nn.Linear(reduction_size, 1)
         self.sigmoid = nn.Sigmoid()
         self.tanh = nn.Tanh()
         self.softmax = nn.Softmax()
 
     def forward(self, input, hidden_states):
         o, hc = self.ih2h(input, hidden_states)
-        output = self.sigmoid(self.h2o(o[-1]))
-        return output, o
+        reduction = self.sigmoid(self.h2r(o[-1]))
+        output = self.sigmoid(self.r2o(reduction))
+        return output, reduction
 
     def init_hidden(self, batch_size):
-        return (Variable(torch.zeros(2, batch_size, self.hidden_size)),
-                Variable(torch.zeros(2, batch_size, self.hidden_size)))
+        return (Variable(torch.zeros(2 * self.num_layers, batch_size, self.hidden_size)),
+                Variable(torch.zeros(2 * self.num_layers, batch_size, self.hidden_size)))
+
 
 class RNNTrainer(model_trainer.ModelTrainer):
     def __init__(self,
@@ -64,13 +69,24 @@ class RNNTrainer(model_trainer.ModelTrainer):
         super(RNNTrainer, self).__init__(corpus_path, embedding_path, vocab_path, embedding_size, model, stages_per_epoch,
                                          prints_per_stage, convergence_threshold, max_epochs, gpu, learning_rate)
 
+    def to_string(self):
+        return "data\t\t\t" + self.corpus_path + "\n" + \
+            "input size\t\t" + str(self.embedding_size) + "\n" + \
+            "hidden size\t\t" + str(self.model.hidden_size) + "\n" + \
+            "reduction size\t" + str(self.model.reduction_size) + "\n" + \
+            "num layers\t\t" + str(self.model.num_layers) + "\n" + \
+            "learning rate\t" + str(self.learning_rate) + "\n" + \
+            "output\t\t\t" + str(self.output_path)
+
 
 #============= EXPERIMENT ================
-size_range = (100, 500)
-lr = (1, 4)
 
-for _ in range(10):
-    cl = Classifier(random.randint(size_range[0], size_range[1]), 300)
+def experiment():
+    h_size = int(math.floor(math.pow(random.uniform(10, 32), 2)))           # [100, 1024], quadratic distribution
+    num_layers = random.randint(1, 5)
+    reduction_size = int(math.floor(math.pow(random.uniform(7, 18), 2)))     # [49, 324], quadratic distribution
+    lr = math.pow(.1, random.uniform(2, 4))                             # [.01, .0001], logarithmic distribution
+    cl = Classifier(hidden_size=h_size, embedding_size=300, num_layers=num_layers, reduction_size=reduction_size)
     clt = RNNTrainer('../data/discriminator/',
                      '../data/bnc-30/embeddings_20000.txt',
                      '../data/bnc-30/vocab_20000.txt',
@@ -81,5 +97,7 @@ for _ in range(10):
                      convergence_threshold=20,
                      max_epochs=100,
                      gpu=False,
-                     learning_rate=math.pow(.2, random.uniform(lr[0], lr[1])))
+                     learning_rate=lr)
     clt.run()
+
+experiment()

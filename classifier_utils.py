@@ -34,7 +34,7 @@ class Confusion:
 
     def percentages(self):
         total = float(self.tp + self.fp + self.tn + self.fn)
-        return float(self.tp)/total, float(self.fp)/total, float(self.tn)/total, float(self.fn)/total
+        return float(self.tp)/total, float(self.tn)/total, float(self.fp)/total, float(self.fn)/total
 
     def accuracy(self):
         return float(self.tp + self.tn) / float(self.tp + self.fp + self.tn + self.fn)
@@ -48,18 +48,6 @@ def print_min_and_max(outputs, batch):
     print("max:", max_prob[0][0], max_sentence)
     print("min:", min_prob[0][0] * -1, min_sentence)
 
-
-def logs(LOGS, n_batches, train_avg_loss, valid_avg_loss, t_matthews, v_matthews, t_f1, v_f1, model_saved):
-    def round(n):
-        return "{0:.4g}".format(n)
-    LOGS.write("\t" + str(n_batches) + "\t")
-    LOGS.write("\t" + round(train_avg_loss) + "\t")
-    LOGS.write("\t" + round(valid_avg_loss) + "\t")
-    LOGS.write("\t" + round(t_matthews) + "\t")
-    LOGS.write("\t" + round(v_matthews) + "\t")
-    LOGS.write("\t" + round(t_f1) + "\t")
-    LOGS.write("\t" + round(v_f1) + "\t")
-    LOGS.write("\t" + str(model_saved) + "\n")
     
 def f1(tp, fp, tn, fn):
     return 2 * tp / ((2 * tp) + fp + fn)

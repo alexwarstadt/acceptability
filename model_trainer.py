@@ -109,7 +109,7 @@ class ModelTrainer(object):
         print("accuracy\t" + self.my_round(confusion.accuracy()))
         print("matthews\t" + self.my_round(confusion.matthews()))
         print('f1\t\t\t' + self.my_round(confusion.f1()))
-        print("tp={0[0]:.4g}, fp={0[1]:.4g}, tn={0[2]:.4g}, fn={0[3]:.4g}".format(confusion.percentages()))
+        print("tp={0[0]:.4g}, tn={0[1]:.4g}, fp={0[2]:.4g}, fn={0[3]:.4g}".format(confusion.percentages()))
 
     def logs(self, n_batches, train_avg_loss, valid_avg_loss, t_confusion, v_confusion, model_saved):
         self.LOGS.write("\t" + str(n_batches) + "\t")
@@ -119,7 +119,19 @@ class ModelTrainer(object):
         self.LOGS.write("\t" + self.my_round(v_confusion.matthews()) + "\t")
         self.LOGS.write("\t" + self.my_round(t_confusion.f1()) + "\t")
         self.LOGS.write("\t" + self.my_round(v_confusion.f1()) + "\t")
-        self.LOGS.write("\t" + "tp={0[0]:.4g}, fp={0[1]:.4g}, tn={0[2]:.4g}, fn={0[3]:.4g}".format(v_confusion.percentages()) + "\t")
+        self.LOGS.write("\t" + "tp={0[0]:.4g}, tn={0[1]:.4g}, fp={0[2]:.4g}, fn={0[3]:.4g}".format(v_confusion.percentages()) + "\t")
+        self.LOGS.write("\t" + str(model_saved) + "\n")
+        self.LOGS.flush()
+
+    def cluster_logs(self, n_batches, train_avg_loss, valid_avg_loss, t_confusion, v_confusion, model_saved):
+        self.LOGS.write("\t" + str(n_batches))
+        self.LOGS.write("\t" + self.my_round(train_avg_loss) + "\t")
+        self.LOGS.write("\t" + self.my_round(valid_avg_loss) + "\t")
+        self.LOGS.write("\t" + self.my_round(t_confusion.matthews()) + "\t")
+        self.LOGS.write("\t" + self.my_round(v_confusion.matthews()) + "\t")
+        self.LOGS.write("\t" + self.my_round(t_confusion.f1()))
+        self.LOGS.write("\t" + self.my_round(v_confusion.f1()) + "\t")
+        self.LOGS.write("\t" + "tp={0[0]:.2g}, tn={0[1]:.2g}, fp={0[2]:.2g}, fn={0[3]:.2g}".format(v_confusion.percentages()) + "\t")
         self.LOGS.write("\t" + str(model_saved) + "\n")
         self.LOGS.flush()
 
@@ -172,12 +184,10 @@ class ModelTrainer(object):
                 self.logs(n_stages, train_loss, valid_loss, train_confusion, valid_confusion, True)
             else:
                 n_stages_not_converging += 1
-                self.logs(n_stages, train_loss, valid_loss, train_confusion, valid_confusion, True)
+                self.logs(n_stages, train_loss, valid_loss, train_confusion, valid_confusion, False)
         return max_matthews, n_stages_not_converging, n_stages
 
-
-
-    def run(self):
+    def start_up_print_and_logs(self):
         print("======================================================================")
         print("                              TRAINING")
         print("======================================================================")
@@ -186,6 +196,11 @@ class ModelTrainer(object):
         self.LOGS.write(
             "# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved\n" +
             "----------|----------------|----------------|------------|------------|------|------|---------------------|-----------\n")
+
+
+    def run(self):
+        """The outer loop of the model trainer"""
+        self.start_up_print_and_logs()
         epoch = 0
         n_stages = 0
         max_matthews = 0

@@ -11,29 +11,12 @@ class MyLSTM(nn.Module):
         self.output_size = output_size
         self.n_layers = n_layers
 
-        # self.ih2h = nn.LSTM(input_size, hidden_size)
-        # self.h2h = nn.LSTM(input_size, hidden_size, n_layers)
-
         self.ih2h = nn.LSTMCell(input_size, hidden_size)
-        # self.h2h = []
-        # for _ in range(n_layers):
-        #     self.h2h.append(nn.LSTMCell(input_size=hidden_size, hidden_size=hidden_size))
         self.h2h = nn.LSTMCell(input_size=hidden_size, hidden_size=hidden_size)
         self.h2o = nn.Linear(hidden_size, output_size)
 
         self.log_softmax = nn.functional.log_softmax
         self.softmax = nn.functional.softmax
-        # self.nonlinearity = nonlinearity
-
-    # def forward(self, input, hidden_states):
-    #     """version for LSTM cell"""
-    #     h, c = self.ih2h(input, hidden_states[0])
-    #     next_hiddens = [(h, c)]
-    #     for state, layer in zip(hidden_states, self.h2h):
-    #         h, c = layer(h, state)
-    #         next_hiddens.append((h, c))
-    #     output = self.log_softmax(self.h2o(h))
-    #     return output, next_hiddens
 
     def forward(self, input, hidden_states):
         """version for LSTM cell"""
@@ -43,22 +26,6 @@ class MyLSTM(nn.Module):
         next_hiddens.append((h, c))
         output = self.log_softmax(self.h2o(h))
         return output, next_hiddens
-
-    # def forward(self, input, hidden_states):
-    #     """version for regular LSTM"""
-    #     o, h = self.ih2h(input, hidden_states[0])
-    #     next_hiddens = [h]
-    #     o, h = self.h2h(h, hidden_states[1:])
-    #     next_hiddens.extend(h)
-    #     output = self.log_softmax(self.h2o(o))
-    #     return output, hidden_states
-
-    # def init_hidden(self, batch_size):
-    #     hidden_states = []
-    #     for i in range(self.n_layers + 1):
-    #         hidden_states.append((Variable(torch.zeros(1, batch_size, self.hidden_size)),
-    #                               Variable(torch.zeros((1, batch_size, self.hidden_size)))))
-    #     return hidden_states
 
     def init_hidden(self, batch_size):
         hidden_states = []
