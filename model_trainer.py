@@ -181,10 +181,10 @@ class ModelTrainer(object):
                 n_stages_not_converging = 0
                 torch.save(self.model.state_dict(), self.output_path)
                 print("MODEL SAVED")
-                self.logs(n_stages, train_loss, valid_loss, train_confusion, valid_confusion, True)
+                self.cluster_logs(n_stages, train_loss, valid_loss, train_confusion, valid_confusion, True)
             else:
                 n_stages_not_converging += 1
-                self.logs(n_stages, train_loss, valid_loss, train_confusion, valid_confusion, False)
+                self.cluster_logs(n_stages, train_loss, valid_loss, train_confusion, valid_confusion, False)
         return max_matthews, n_stages_not_converging, n_stages
 
     def start_up_print_and_logs(self):

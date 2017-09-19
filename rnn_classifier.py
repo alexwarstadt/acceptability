@@ -73,9 +73,9 @@ class RNNTrainer(model_trainer.ModelTrainer):
         return "data\t\t\t" + self.corpus_path + "\n" + \
             "input size\t\t" + str(self.embedding_size) + "\n" + \
             "hidden size\t\t" + str(self.model.hidden_size) + "\n" + \
-            "reduction size\t" + str(self.model.reduction_size) + "\n" + \
+            "reduction size\t\t" + str(self.model.reduction_size) + "\n" + \
             "num layers\t\t" + str(self.model.num_layers) + "\n" + \
-            "learning rate\t" + str(self.learning_rate) + "\n" + \
+            "learning rate\t\t" + str(self.learning_rate) + "\n" + \
             "output\t\t\t" + str(self.output_path)
 
 
