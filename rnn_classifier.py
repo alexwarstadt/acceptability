@@ -88,8 +88,8 @@ def random_experiment():
     lr = math.pow(.1, random.uniform(3, 4.5))                               # [.001, 3E-5], logarithmic distribution
     cl = Classifier(hidden_size=h_size, embedding_size=300, num_layers=num_layers, reduction_size=reduction_size)
     clt = RNNTrainer('/scratch/asw462/data/discriminator/',
-                     '../data/bnc-30/embeddings_20000.txt',
-                     '../data/bnc-30/vocab_20000.txt',
+                     '/scratch/asw462/data/bnc-30/embeddings_20000.txt',
+                     '/scratch/asw462/data/bnc-30/vocab_20000.txt',
                      300,
                      cl,
                      stages_per_epoch=100,
