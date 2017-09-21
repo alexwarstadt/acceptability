@@ -85,9 +85,9 @@ def random_experiment():
     h_size = int(math.floor(math.pow(random.uniform(10, 32), 2)))           # [100, 1024], quadratic distribution
     num_layers = random.randint(1, 5)
     reduction_size = int(math.floor(math.pow(random.uniform(7, 18), 2)))    # [49, 324], quadratic distribution
-    lr = math.pow(.1, random.uniform(3, 4.5))                               # [.003, .00001], logarithmic distribution
+    lr = math.pow(.1, random.uniform(3, 4.5))                               # [.001, 3E-5], logarithmic distribution
     cl = Classifier(hidden_size=h_size, embedding_size=300, num_layers=num_layers, reduction_size=reduction_size)
-    clt = RNNTrainer('../data/discriminator/',
+    clt = RNNTrainer('/scratch/asw462/data/discriminator/',
                      '../data/bnc-30/embeddings_20000.txt',
                      '../data/bnc-30/vocab_20000.txt',
                      300,
