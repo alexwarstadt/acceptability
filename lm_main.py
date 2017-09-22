@@ -22,8 +22,8 @@ import torch.nn as nn
 def generate(n, out_path, gpu):
     lm = model.MyLSTM(input_size=300, hidden_size=350, output_size=20001, n_layers=1, nonlinearity=nn.Tanh())
     lm.load_state_dict(torch.load('models/model_7-14_15:33:4_110500'))
-    dm = du.DataManager('../data/bnc-30', '../data/bnc-30/embeddings_20000.txt',
-                        '../data/bnc-30/vocab_20000.txt', 300, crop_pad_length=30)
+    dm = du.DataManager('/scratch/asw462/data/bnc-30', '/scratch/asw462/data/bnc-30/embeddings_20000.txt',
+                        '/scratch/asw462/data/bnc-30/vocab_20000.txt', 300, crop_pad_length=30)
     mu = my_lm.ModelUtils(dm, gpu)
     out = open(out_path, "w+")
     lines = ""
