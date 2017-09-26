@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69f0732d-a5ae-4515-92df-328b30820cd3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lm_main.py" afterPath="$PROJECT_DIR$/lm_main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rnn_classifier.py" afterPath="$PROJECT_DIR$/rnn_classifier.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="rnn_classifier.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rnn_classifier.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rnn_classifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="89" column="37" lean-forward="true" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="37" />
+            <state relative-caret-position="509">
+              <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -42,8 +42,8 @@
       <file leaf-file-name="rnn-logs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logs/rnn-logs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2770">
-              <caret line="437" column="19" lean-forward="false" selection-start-line="437" selection-start-column="19" selection-end-line="437" selection-end-column="19" />
+            <state relative-caret-position="-10">
+              <caret line="667" column="5" lean-forward="true" selection-start-line="667" selection-start-column="5" selection-end-line="667" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -93,10 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lm_main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="lm_main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lm_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
+            <state relative-caret-position="119">
               <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
               <folding />
             </state>
@@ -228,8 +228,8 @@
         <option value="$PROJECT_DIR$/classifier_utils.py" />
         <option value="$PROJECT_DIR$/model.py" />
         <option value="$PROJECT_DIR$/model_trainer.py" />
-        <option value="$PROJECT_DIR$/rnn_classifier.py" />
         <option value="$PROJECT_DIR$/lm_main.py" />
+        <option value="$PROJECT_DIR$/rnn_classifier.py" />
       </list>
     </option>
   </component>
@@ -942,16 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classifier_data_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-994">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1678">
@@ -984,19 +974,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/rnn-logs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2770">
-          <caret line="437" column="19" lean-forward="false" selection-start-line="437" selection-start-column="19" selection-end-line="437" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lm_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classifier_data_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-994">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1010,21 +1010,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rnn_classifier.py">
+    <entry file="file://$PROJECT_DIR$/logs/rnn-logs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="89" column="37" lean-forward="true" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-10">
+          <caret line="667" column="5" lean-forward="true" selection-start-line="667" selection-start-column="5" selection-end-line="667" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lm_main.py">
+    <entry file="file://$PROJECT_DIR$/rnn_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="509">
+          <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
