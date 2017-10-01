@@ -99,9 +99,9 @@ def random_experiment():
                     300,
                     cl,
                     encoder,
-                    stages_per_epoch=10,
+                    stages_per_epoch=1,
                     prints_per_stage=1,
-                    convergence_threshold=20,
+                    convergence_threshold=30,
                     max_epochs=100,
                     gpu=False,
                     learning_rate=lr)
