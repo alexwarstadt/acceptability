@@ -1,11 +1,10 @@
 import classifier_data_utils as cdu
 import time
+from datetime import datetime
 from classifier_utils import *
 from torch.autograd import Variable
 
 
-LOGS_PREFIX = "logs/rnn-logs"
-OUTPUT_PATH = "models/rnn_classifier"
 
 
 
@@ -21,26 +20,26 @@ class ModelTrainer(object):
         self.convergence_threshold = convergence_threshold
         self.max_epochs = max_epochs
         self.gpu = gpu
-        if self.gpu:
-            self.model = self.model.cuda()
         self.learning_rate = learning_rate
         self.optimizer = torch.optim.Adam(self.model.parameters(), lr=learning_rate)  # or use RMSProp
         self.dm = cdu.DataManagerInMemory(corpus_path, embedding_path,
                             vocab_path, 300, crop_pad_length=30)
         self.loss = torch.nn.BCELoss()
-        now = time.localtime()
-        time_stamp = str(now.tm_mon) + "-" + str(now.tm_mday) + "_" \
-                     + str(now.tm_hour) + ":" + str(now.tm_min) + ":" + str(now.tm_sec)
-        self.output_path = OUTPUT_PATH + "_" + time_stamp
-        self.LOGS = open(LOGS_PREFIX + "_" + time_stamp, "a")
-        self.OUT_LOGS = open(LOGS_PREFIX + "_" + "OUTPUTS" + time_stamp, "a")
+        if self.gpu:
+            self.model = self.model.cuda()
+        now = datetime.now()
+        self.time_stamp = "%d-%d_%d-%d-%d_%d" % (now.month, now.day, now.hour, now.minute, now.second, now.microsecond)
+        self.LOGS_PATH = "logs/rnn-logs_" + self.time_stamp
+        self.OUTPUT_PATH = "models/rnn_classifier_" + self.time_stamp
+        self.LOGS = open(self.LOGS_PATH, "a")
+        self.OUT_LOGS = open(self.LOGS_PATH + "_OUTPUTS_" + self.time_stamp, "a")
 
     def to_string(self):
         return "data\t\t\t" + self.corpus_path + "\n" + \
             "input size\t\t" + str(self.embedding_size) + "\n" + \
             "hidden size\t\t" + str(self.model.hidden_size) + "\n" + \
             "learning rate\t" + str(self.learning_rate) + "\n" + \
-            "output\t\t\t" + str(self.output_path)
+            "output\t\t\t" + str(self.OUTPUT_PATH)
 
 
     def get_batch_output(self, batch):
@@ -149,6 +148,7 @@ class ModelTrainer(object):
         print_confusion = Confusion()
         stage_loss = 0
         stage_confusion = Confusion()
+        outputs, batch = None, None
         while has_next and n_batches < stage_batches:
             n_batches += 1
             batch, has_next = epoch.get_new_batch()
@@ -181,7 +181,7 @@ class ModelTrainer(object):
             if valid_confusion.matthews() > max_matthews:
                 max_matthews = valid_confusion.matthews()
                 n_stages_not_converging = 0
-                torch.save(self.model.state_dict(), self.output_path)
+                torch.save(self.model.state_dict(), self.OUTPUT_PATH)
                 print("MODEL SAVED")
                 self.cluster_logs(n_stages, train_loss, valid_loss, train_confusion, valid_confusion, True)
             else:
@@ -206,6 +206,7 @@ class ModelTrainer(object):
             outputs = outputs.cpu()
         to_write = ""
         for o, s in zip(outputs, batch):
+            self.OUT_LOGS.write("sentence!\n")
             to_write += str(o) + "\t" + s + "\n"
         self.OUT_LOGS.write(to_write)
         self.OUT_LOGS.flush()
@@ -224,7 +225,7 @@ class ModelTrainer(object):
             print("===========================EPOCH %d=============================" % epoch)
             max_matthews, n_stages_not_converging, n_stages = self.run_epoch(max_matthews, n_stages_not_converging, n_stages)
     # except RuntimeError:
-        self.model.load_state_dict(torch.load(self.output_path))
+        self.model.load_state_dict(torch.load(self.OUTPUT_PATH))
         print("=====================TEST==================")
         test_loss, test_confusion = self.run_stage(cdu.CorpusEpoch(self.dm.test_pairs, self.dm), False, 1, 1)
         self.LOGS.write("accuracy\t" + self.my_round(test_confusion.accuracy()) + "\n")

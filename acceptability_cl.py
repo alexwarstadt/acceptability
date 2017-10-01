@@ -44,6 +44,10 @@ class AJTrainer(model_trainer.ModelTrainer):
         super(AJTrainer, self).__init__(corpus_path, embedding_path, vocab_path, embedding_size, model, stages_per_epoch,
                                          prints_per_stage, convergence_threshold, max_epochs, gpu, learning_rate)
         self.encoder = encoder
+        self.LOGS_PATH = "logs/aj_logs_" + self.time_stamp
+        self.OUTPUT_PATH = "models/aj_classifier_" + self.time_stamp
+        self.LOGS = open(self.LOGS_PATH, "a")
+        self.OUT_LOGS = open(self.LOGS_PATH + "_" + "OUTPUTS" + "_" + self.time_stamp, "a")
 
     def to_string(self):
         return "data\t\t\t" + self.corpus_path + "\n" + \
