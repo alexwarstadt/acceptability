@@ -97,7 +97,9 @@ class ModelTrainer(object):
         return loss, confusion
 
     def run_batch(self, batch, backprop):
+        #TODO DELETE ME!!!!!!!!!!!!!!!!!!!!
         self.LOGS.write("BATCH!!!")
+        self.LOGS.flush()
         outputs, hidden = self.get_batch_output(batch)
         loss, confusion = self.get_metrics(outputs, batch)
         if backprop:
@@ -199,6 +201,7 @@ class ModelTrainer(object):
         self.LOGS.write(
             "# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved\n" +
             "----------|----------------|----------------|------------|------------|------|------|---------------------|-----------\n")
+        self.LOGS.flush()
 
 
     def log_outputs(self, outputs, batch):
