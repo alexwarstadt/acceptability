@@ -191,7 +191,7 @@ class Batch:
 class NewBatch:
     def __init__(self, data_pairs, data_manager):
         self.sentences_view = [pair[0] for pair in data_pairs]
-        self.targets_view = [int(pair[1]) for pair in data_pairs]  # this is an unanticipated but important change
+        self.targets_view = [float(pair[1]) for pair in data_pairs]  # this is an unanticipated but important change
         self.data_manager = data_manager
         self.words_view = list(map(lambda x: x.split(" "), self.sentences_view))
         if len(self.words_view) == 0:
