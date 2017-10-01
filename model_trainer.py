@@ -209,8 +209,8 @@ class ModelTrainer(object):
         for o, s in zip(outputs, batch):
             to_write += str(o) + "\t" + s + "\n"
         self.OUT_LOGS.write("sentence!\n")
-        self.OUT_LOGS.write(outputs)
-        self.OUT_LOGS.write(batch)
+        self.OUT_LOGS.write(str(outputs))
+        self.OUT_LOGS.write(str(batch))
         self.OUT_LOGS.write(to_write)
         self.OUT_LOGS.flush()
 
