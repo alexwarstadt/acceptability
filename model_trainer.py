@@ -33,7 +33,7 @@ class ModelTrainer(object):
         self.LOGS_PATH = "logs/rnn-logs_" + self.time_stamp
         self.OUTPUT_PATH = "models/rnn_classifier_" + self.time_stamp
         self.LOGS = open(self.LOGS_PATH, "a")
-        self.OUT_LOGS = open(self.LOGS_PATH + "_OUTPUTS_" + self.time_stamp, "a")
+        self.OUT_LOGS = open(self.LOGS_PATH + "_OUTPUTS_", "a")
 
     def to_string(self):
         return "data\t\t\t" + self.corpus_path + "\n" + \
@@ -207,8 +207,10 @@ class ModelTrainer(object):
             outputs = outputs.cpu()
         to_write = ""
         for o, s in zip(outputs, batch):
-            self.OUT_LOGS.write("sentence!\n")
             to_write += str(o) + "\t" + s + "\n"
+        self.OUT_LOGS.write("sentence!\n")
+        self.OUT_LOGS.write(outputs)
+        self.OUT_LOGS.write(batch)
         self.OUT_LOGS.write(to_write)
         self.OUT_LOGS.flush()
 
