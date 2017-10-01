@@ -64,7 +64,7 @@ class AJTrainer(model_trainer.ModelTrainer):
         for i, t in enumerate(batch.tensor_view):
             input[i] = t
         if self.gpu:
-            hidden = hidden.cuda()
+            hidden = (hidden[0].cuda(), hidden[1].cuda())
             input = input.cuda()
         _, reduction = self.encoder.forward(Variable(input), hidden)
         output = self.model.forward(reduction)
