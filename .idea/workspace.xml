@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="69f0732d-a5ae-4515-92df-328b30820cd3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acceptability_cl.py" afterPath="$PROJECT_DIR$/acceptability_cl.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model_trainer.py" afterPath="$PROJECT_DIR$/model_trainer.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="model_trainer.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="model_trainer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model_trainer.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="244">
@@ -76,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="acceptability_cl.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="acceptability_cl.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/acceptability_cl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="101" column="38" lean-forward="false" selection-start-line="101" selection-start-column="38" selection-end-line="101" selection-end-column="38" />
+            <state relative-caret-position="80">
+              <caret line="95" column="42" lean-forward="false" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -233,8 +232,8 @@
         <option value="$PROJECT_DIR$/model.py" />
         <option value="$PROJECT_DIR$/lm_main.py" />
         <option value="$PROJECT_DIR$/rnn_classifier.py" />
-        <option value="$PROJECT_DIR$/acceptability_cl.py" />
         <option value="$PROJECT_DIR$/model_trainer.py" />
+        <option value="$PROJECT_DIR$/acceptability_cl.py" />
       </list>
     </option>
   </component>
@@ -1030,6 +1029,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/model_trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="98" column="41" lean-forward="false" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/rnn_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -1042,20 +1051,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/acceptability_cl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="101" column="38" lean-forward="false" selection-start-line="101" selection-start-column="38" selection-end-line="101" selection-end-column="38" />
+        <state relative-caret-position="80">
+          <caret line="95" column="42" lean-forward="false" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model_trainer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="98" column="41" lean-forward="false" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>

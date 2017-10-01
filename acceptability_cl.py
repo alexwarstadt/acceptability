@@ -93,7 +93,7 @@ def random_experiment():
     h_size = int(math.floor(math.pow(random.uniform(4, 12), 2)))  # [16, 144], quadratic distribution
     lr = math.pow(.1, random.uniform(2, 5))  # [.01, .00001] log distribution
     cl = Classifier(hidden_size=h_size, encoding_size=encoder.reduction_size)
-    clt = AJTrainer('/acceptability_corpus/',
+    clt = AJTrainer('/acceptability_corpus',
                     '/scratch/asw462/data/bnc-30/embeddings_20000.txt',
                     '/scratch/asw462/data/bnc-30/vocab_20000.txt',
                     300,
@@ -110,7 +110,7 @@ def random_experiment():
 def resume_experiment(model_path, h_size, num_layers, reduction_size, lr):
     cl = Classifier(hidden_size=h_size, encoding_size=encoder.reduction_size)
     cl.load_state_dict(torch.load(model_path))
-    clt = AJTrainer('/acceptability_corpus/',
+    clt = AJTrainer('/acceptability_corpus',
                     '/scratch/asw462/data/bnc-30/embeddings_20000.txt',
                     '/scratch/asw462/data/bnc-30/vocab_20000.txt',
                     300,
