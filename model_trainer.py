@@ -33,6 +33,7 @@ class ModelTrainer(object):
                      + str(now.tm_hour) + ":" + str(now.tm_min) + ":" + str(now.tm_sec)
         self.output_path = OUTPUT_PATH + "_" + time_stamp
         self.LOGS = open(LOGS_PREFIX + "_" + time_stamp, "a")
+        self.OUT_LOGS = open(LOGS_PREFIX + "_" + "OUTPUTS" + time_stamp, "a")
 
     def to_string(self):
         return "data\t\t\t" + self.corpus_path + "\n" + \
@@ -151,7 +152,7 @@ class ModelTrainer(object):
         while has_next and n_batches < stage_batches:
             n_batches += 1
             batch, has_next = epoch.get_new_batch()
-            _, loss, confusion = self.run_batch(batch, backprop)
+            outputs, loss, confusion = self.run_batch(batch, backprop)
             print_loss += loss
             print_confusion.add(confusion)
             stage_loss += loss
@@ -162,6 +163,7 @@ class ModelTrainer(object):
                 print_confusion = Confusion()
         if prints_per_stage > 1:
             self.print_stats(stage_loss/n_batches, stage_confusion)
+            self.log_outputs(outputs, batch)
         return stage_loss/n_batches, stage_confusion
 
 
@@ -196,6 +198,16 @@ class ModelTrainer(object):
         self.LOGS.write(
             "# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved\n" +
             "----------|----------------|----------------|------------|------------|------|------|---------------------|-----------\n")
+
+
+    def log_outputs(self, outputs, batch):
+        if self.gpu:
+            outputs = outputs.cpu()
+        to_write = ""
+        for o, s in zip(outputs, batch):
+            to_write += str(o) + "\t" + s + "\n"
+        self.OUT_LOGS.write(to_write)
+        self.OUT_LOGS.flush()
 
 
     def run(self):

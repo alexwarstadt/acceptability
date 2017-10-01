@@ -1,14 +1,10 @@
-import torch
 import torch.nn as nn
-import model
-import lm as my_lm
-import math
-import data_utils as du
-import random
 import classifier_data_utils as cdu
 from process_corpus import crop_sentences
 from classifier_utils import *
+import model_trainer
 import rnn_classifier
+import random
 import time
 from constants import *
 from torch.autograd import Variable
@@ -19,209 +15,253 @@ OUTPUT_PATH = "models/acceptability_classifier"
 
 
 class Classifier(nn.Module):
-    def __init__(self, hidden_size, encoder_hidden_size):
+    def __init__(self, hidden_size, encoding_size):
         super(Classifier, self).__init__()
         self.hidden_size = hidden_size
-        # self.lm2h = nn.Linear(lm.hidden_size, self.hidden_size)
-        self.lm2h = nn.Linear(encoder_hidden_size, self.hidden_size)
+        self.lm2h = nn.Linear(encoding_size, self.hidden_size)
         self.h20 = nn.Linear(self.hidden_size, 1)
         self.sigmoid = nn.Sigmoid()
         self.tanh = nn.Tanh()
         self.softmax = nn.Softmax()
 
-
-    def forward(self, sentence_vecs, lm):
+    def forward(self, sentence_vecs):
         hidden = self.tanh(self.lm2h(Variable(sentence_vecs)))
         out = self.sigmoid(self.h20(hidden))
         return out
 
 
-
-
-
-class ClTrainer():
-    def __init__(self, corpus_path, embedding_path, embedding_size, model, encoder, encoder_path, learning_rate=.005):
-        self.corpus_path = corpus_path
-        self.model = model
+class AJTrainer(model_trainer.ModelTrainer):
+    def __init__(self,
+                 corpus_path,
+                 embedding_path,
+                 vocab_path,
+                 embedding_size,
+                 model,
+                 encoder,
+                 stages_per_epoch,
+                 prints_per_stage,
+                 convergence_threshold,
+                 max_epochs,
+                 gpu,
+                 learning_rate=.01):
+        super(AJTrainer, self).__init__(corpus_path, embedding_path, vocab_path, embedding_size, model, stages_per_epoch,
+                                         prints_per_stage, convergence_threshold, max_epochs, gpu, learning_rate)
         self.encoder = encoder
-        self.embedding_size = embedding_size
-        self.encoder_path = encoder_path
-        self.learning_rate = learning_rate
-        self.optimizer = torch.optim.Adam(self.model.parameters(), lr=learning_rate)  # or use RMSProp
-        self.dm = cdu.DataManager(corpus_path, embedding_path, embedding_size)
-        now = time.localtime()
-        time_stamp = str(now.tm_mon) + "-" + str(now.tm_mday) + "_" \
-                     + str(now.tm_hour) + ":" + str(now.tm_min) + ":" + str(now.tm_sec)
-        self.output_path = OUTPUT_PATH + "_" + time_stamp
 
     def to_string(self):
         return "data\t\t\t" + self.corpus_path + "\n" + \
             "input size\t\t" + str(self.embedding_size) + "\n" + \
             "hidden size\t\t" + str(self.model.hidden_size) + "\n" + \
-            "learning rate\t" + str(self.learning_rate) + "\n" + \
+            "encoder hidden\t\t" + str(self.encoder.hidden_size) + "\n" + \
+            "encoder reduction\t" + str(self.encoder.reduction_size) + "\n" + \
+            "dencoder num layers\t" + str(self.encoder.num_layers) + "\n" + \
+            "learning rate\t\t" + str(self.learning_rate) + "\n" + \
             "output\t\t\t" + str(self.output_path)
 
-    def get_sentence_vecs(self, batch):
-        input = batch.tensor_view
-        hidden = self.encoder.init_hidden(batch.batch_size)
-        hiddens = []
-        for word_batch in input[:-1]:
-            output, hidden = self.encoder.forward(Variable(word_batch), hidden)
-            hiddens.append(hidden)
-        h_sum = torch.zeros(batch.batch_size, self.encoder.hidden_size)
-        for h in hiddens:
-            h_sum += h[-1][0].data
-        return h_sum / len(input)
-
-    def get_sentence_vecs_without_stop_lstm(self, batch):
+    def get_batch_output(self, batch):
         hidden = self.encoder.init_hidden(batch.batch_size)
         input = torch.Tensor(len(batch.tensor_view), batch.batch_size, self.embedding_size)
         for i, t in enumerate(batch.tensor_view):
             input[i] = t
-        _, hiddens = self.encoder.forward(Variable(input), hidden)
-        h_sum = torch.zeros(batch.batch_size, self.encoder.hidden_size)
-        sum_n = [0] * batch.batch_size
-        for b_i in range(batch.batch_size):
-            for w_i in range(batch.sentence_length - 1):
-                try:
-                    if batch.words_view[b_i][w_i + 1] != STOP:
-                        h_sum[b_i] += hiddens[w_i][b_i].data
-                        sum_n[b_i] = sum_n[b_i] + 1
-                except IndexError:
-                    pass
-        for b_i in range(batch.batch_size):
-            h_sum[b_i] = h_sum[b_i] / sum_n[b_i]
-        return h_sum
+        if self.gpu:
+            hidden = hidden.cuda()
+            input = input.cuda()
+        _, reduction = self.encoder.forward(Variable(input), hidden)
+        output = self.model.forward(reduction)
+        return output
 
-    def get_final_sentence_vec_lstm(self, batch):
-        hidden = self.encoder.init_hidden(batch.batch_size)
-        input = torch.Tensor(len(batch.tensor_view), batch.batch_size, self.embedding_size)
-        for i, t in enumerate(batch.tensor_view):
-            input[i] = t
-        _, hiddens = self.encoder.forward(Variable(input), hidden)
-        h_sum = torch.zeros(batch.batch_size, self.encoder.hidden_size)
-        sum_n = [0] * batch.batch_size
-        for b_i in range(batch.batch_size):
-            for w_i in range(batch.sentence_length - 1):
-                try:
-                    if batch.words_view[b_i][w_i + 1] != STOP:
-                        h_sum[b_i] += hiddens[w_i][b_i].data
-                        sum_n[b_i] = sum_n[b_i] + 1
-                except IndexError:
-                    pass
-        for b_i in range(batch.batch_size):
-            h_sum[b_i] = h_sum[b_i] / sum_n[b_i]
-        return h_sum
-
-
-    def get_sentence_vecs_without_stop(self, batch):
-        input = batch.tensor_view
-        hidden = self.encoder.init_hidden(batch.batch_size)
-        hiddens = [] #30x36x350
-        # batch.words_view :: 36 x 31
-        for word_batch in input[:-1]:
-            output, hidden = self.encoder.forward(Variable(word_batch), hidden)
-            hiddens.append(hidden)
-        h_sum = torch.zeros(batch.batch_size, self.encoder.hidden_size)
-        sum_n = [0] * batch.batch_size
-        for b_i in range(batch.batch_size):
-            for w_i in range(batch.sentence_length-1):
-                try:
-                    if batch.words_view[b_i][w_i+1] != STOP:
-                        h_sum[b_i] += hiddens[w_i][-1][0][b_i].data
-                        sum_n[b_i] = sum_n[b_i] + 1
-                except IndexError:
-                    pass
-        for b_i in range(batch.batch_size):
-            h_sum[b_i] = h_sum[b_i] / sum_n[b_i]
-        return h_sum
-
-    def get_sentence_vecs_lazy(self, batch):
-        h_sum = torch.zeros(batch.batch_size, self.embedding_size)
-        for i, i_th_word_vecs in enumerate(batch.tensor_view):
-            h_sum += i_th_word_vecs
-        return h_sum / batch.sentence_length
-
-    def get_sentence_vecs_lazy_without_stop(self, batch):
-        h_sum = torch.zeros(batch.batch_size, self.embedding_size)
-        for b_i, sentence in enumerate(batch.words_view):
-            n_words = 0
-            for w in sentence:
-                if w != STOP:
-                    n_words += 1
-                    h_sum[b_i] += self.dm.word_to_tensor(w)
-            h_sum[b_i] = h_sum[b_i] / n_words
-        return h_sum
-
-
-    def train(self, batch, targets):
+    def interact(self, sentences):
+        cropped_sentences = crop_sentences(sentences)
+        batch = cdu.Batch(cropped_sentences, self.dm)
         sentence_vecs = self.get_sentence_vecs_without_stop_lstm(batch)
         outputs = self.model.forward(sentence_vecs, self.encoder)
-        loss = self.get_batch_loss(outputs, targets)
-        self.optimizer.zero_grad()
-        loss.backward()
-        self.optimizer.step()
-        return outputs, loss.data[0]
-
-    # def get_outputs(self, batch):
-    #     sentence_vecs = self.get_sentence_vecs(batch)
+        for s, o in zip(sentences, outputs):
+            print(o[0].data, s)
 
 
-    def get_batch_loss(self, outputs, output_targets):
-        ce_loss = torch.nn.BCELoss()
-        ce_loss.weight = torch.Tensor([self.dm.corpus_bias for i in range(len(output_targets))])
-        loss = Variable(torch.Tensor([0]))
-        # for out, target in zip(outputs, output_targets):
-            # loss += self.my_CELoss(out, target)
-        loss = ce_loss(outputs, Variable(torch.FloatTensor(output_targets)))
-        return loss
-
-    def batch_accuracy(self, outputs, output_targets):
-        true_poz = 0
-        false_poz = 0
-        true_neg = 0
-        false_neg = 0
-        for out, target in zip(outputs, output_targets):
-            if out.data[0] < .5:
-                if target < .5:
-                    true_neg += 1
-                else:
-                    false_neg += 1
-            elif out.data[0] >= .5:
-                if target >= .5:
-                    true_poz += 1
-                else:
-                    false_poz += 1
-        return true_poz, false_poz, true_neg, false_neg
-
-
-    def validate(self):
-        valid_epoch = cdu.CorpusEpoch(self.dm.valid, self.dm)
-        random.shuffle(self.dm.valid)
-        still_going = True
-        total_loss = 0
-        n_batches = 0
-        true_poz, false_poz, true_neg, false_neg = 0, 0, 0, 0
-        while still_going:
-            n_batches += 1
-            batch, targets, still_going = valid_epoch.get_next_batch()
-            sentence_vecs = self.get_sentence_vecs_without_stop_lstm(batch)
-            outputs = self.model.forward(sentence_vecs, self.encoder)
-            loss = self.get_batch_loss(outputs, targets)
-            total_loss += loss
-            tp, fp, tn, fn = self.batch_accuracy(outputs, targets)
-            true_poz += tp
-            false_poz += fp
-            true_neg += tn
-            false_neg += fn
-        v_f1 = f1(true_poz, false_poz, true_neg, false_neg)
-        v_matthews = matthews(true_poz, false_poz, true_neg, false_neg)
-        print("valid stats\t", "tp =", true_poz/len(valid_epoch.data_pairs), "fp =", false_poz/len(valid_epoch.data_pairs),
-              "tn =", true_neg/len(valid_epoch.data_pairs), "fn =", false_neg/len(valid_epoch.data_pairs))
-        print("f1\t\t\t\t", v_f1)
-        print("matthews\t\t", v_matthews)
-        print_min_and_max(outputs, batch)
-        return total_loss.data[0] / len(valid_epoch.data_pairs), v_f1, v_matthews
+# class ClTrainer():
+#     def __init__(self, corpus_path, embedding_path, embedding_size, model, encoder, encoder_path, learning_rate=.005):
+#         self.corpus_path = corpus_path
+#         self.model = model
+#         self.encoder = encoder
+#         self.embedding_size = embedding_size
+#         self.encoder_path = encoder_path
+#         self.learning_rate = learning_rate
+#         self.optimizer = torch.optim.Adam(self.model.parameters(), lr=learning_rate)  # or use RMSProp
+#         self.dm = cdu.DataManager(corpus_path, embedding_path, embedding_size)
+#         now = time.localtime()
+#         time_stamp = str(now.tm_mon) + "-" + str(now.tm_mday) + "_" \
+#                      + str(now.tm_hour) + ":" + str(now.tm_min) + ":" + str(now.tm_sec)
+#         self.output_path = OUTPUT_PATH + "_" + time_stamp
+#
+#     def to_string(self):
+#         return "data\t\t\t" + self.corpus_path + "\n" + \
+#             "input size\t\t" + str(self.embedding_size) + "\n" + \
+#             "hidden size\t\t" + str(self.model.hidden_size) + "\n" + \
+#             "learning rate\t" + str(self.learning_rate) + "\n" + \
+#             "output\t\t\t" + str(self.output_path)
+#
+#     def get_sentence_vecs(self, batch):
+#         input = batch.tensor_view
+#         hidden = self.encoder.init_hidden(batch.batch_size)
+#         hiddens = []
+#         for word_batch in input[:-1]:
+#             output, hidden = self.encoder.forward(Variable(word_batch), hidden)
+#             hiddens.append(hidden)
+#         h_sum = torch.zeros(batch.batch_size, self.encoder.hidden_size)
+#         for h in hiddens:
+#             h_sum += h[-1][0].data
+#         return h_sum / len(input)
+#
+#     def get_sentence_vecs_without_stop_lstm(self, batch):
+#         hidden = self.encoder.init_hidden(batch.batch_size)
+#         input = torch.Tensor(len(batch.tensor_view), batch.batch_size, self.embedding_size)
+#         for i, t in enumerate(batch.tensor_view):
+#             input[i] = t
+#         _, hiddens = self.encoder.forward(Variable(input), hidden)
+#         h_sum = torch.zeros(batch.batch_size, self.encoder.hidden_size)
+#         sum_n = [0] * batch.batch_size
+#         for b_i in range(batch.batch_size):
+#             for w_i in range(batch.sentence_length - 1):
+#                 try:
+#                     if batch.words_view[b_i][w_i + 1] != STOP:
+#                         h_sum[b_i] += hiddens[w_i][b_i].data
+#                         sum_n[b_i] = sum_n[b_i] + 1
+#                 except IndexError:
+#                     pass
+#         for b_i in range(batch.batch_size):
+#             h_sum[b_i] = h_sum[b_i] / sum_n[b_i]
+#         return h_sum
+#
+#     def get_final_sentence_vec_lstm(self, batch):
+#         hidden = self.encoder.init_hidden(batch.batch_size)
+#         input = torch.Tensor(len(batch.tensor_view), batch.batch_size, self.embedding_size)
+#         for i, t in enumerate(batch.tensor_view):
+#             input[i] = t
+#         _, hiddens = self.encoder.forward(Variable(input), hidden)
+#         h_sum = torch.zeros(batch.batch_size, self.encoder.hidden_size)
+#         sum_n = [0] * batch.batch_size
+#         for b_i in range(batch.batch_size):
+#             for w_i in range(batch.sentence_length - 1):
+#                 try:
+#                     if batch.words_view[b_i][w_i + 1] != STOP:
+#                         h_sum[b_i] += hiddens[w_i][b_i].data
+#                         sum_n[b_i] = sum_n[b_i] + 1
+#                 except IndexError:
+#                     pass
+#         for b_i in range(batch.batch_size):
+#             h_sum[b_i] = h_sum[b_i] / sum_n[b_i]
+#         return h_sum
+#
+#
+#     def get_sentence_vecs_without_stop(self, batch):
+#         input = batch.tensor_view
+#         hidden = self.encoder.init_hidden(batch.batch_size)
+#         hiddens = [] #30x36x350
+#         # batch.words_view :: 36 x 31
+#         for word_batch in input[:-1]:
+#             output, hidden = self.encoder.forward(Variable(word_batch), hidden)
+#             hiddens.append(hidden)
+#         h_sum = torch.zeros(batch.batch_size, self.encoder.hidden_size)
+#         sum_n = [0] * batch.batch_size
+#         for b_i in range(batch.batch_size):
+#             for w_i in range(batch.sentence_length-1):
+#                 try:
+#                     if batch.words_view[b_i][w_i+1] != STOP:
+#                         h_sum[b_i] += hiddens[w_i][-1][0][b_i].data
+#                         sum_n[b_i] = sum_n[b_i] + 1
+#                 except IndexError:
+#                     pass
+#         for b_i in range(batch.batch_size):
+#             h_sum[b_i] = h_sum[b_i] / sum_n[b_i]
+#         return h_sum
+#
+#     def get_sentence_vecs_lazy(self, batch):
+#         h_sum = torch.zeros(batch.batch_size, self.embedding_size)
+#         for i, i_th_word_vecs in enumerate(batch.tensor_view):
+#             h_sum += i_th_word_vecs
+#         return h_sum / batch.sentence_length
+#
+#     def get_sentence_vecs_lazy_without_stop(self, batch):
+#         h_sum = torch.zeros(batch.batch_size, self.embedding_size)
+#         for b_i, sentence in enumerate(batch.words_view):
+#             n_words = 0
+#             for w in sentence:
+#                 if w != STOP:
+#                     n_words += 1
+#                     h_sum[b_i] += self.dm.word_to_tensor(w)
+#             h_sum[b_i] = h_sum[b_i] / n_words
+#         return h_sum
+#
+#
+#     def train(self, batch, targets):
+#         sentence_vecs = self.get_sentence_vecs_without_stop_lstm(batch)
+#         outputs = self.model.forward(sentence_vecs, self.encoder)
+#         loss = self.get_batch_loss(outputs, targets)
+#         self.optimizer.zero_grad()
+#         loss.backward()
+#         self.optimizer.step()
+#         return outputs, loss.data[0]
+#
+#     # def get_outputs(self, batch):
+#     #     sentence_vecs = self.get_sentence_vecs(batch)
+#
+#
+#     def get_batch_loss(self, outputs, output_targets):
+#         ce_loss = torch.nn.BCELoss()
+#         ce_loss.weight = torch.Tensor([self.dm.corpus_bias for i in range(len(output_targets))])
+#         loss = Variable(torch.Tensor([0]))
+#         # for out, target in zip(outputs, output_targets):
+#             # loss += self.my_CELoss(out, target)
+#         loss = ce_loss(outputs, Variable(torch.FloatTensor(output_targets)))
+#         return loss
+#
+#     def batch_accuracy(self, outputs, output_targets):
+#         true_poz = 0
+#         false_poz = 0
+#         true_neg = 0
+#         false_neg = 0
+#         for out, target in zip(outputs, output_targets):
+#             if out.data[0] < .5:
+#                 if target < .5:
+#                     true_neg += 1
+#                 else:
+#                     false_neg += 1
+#             elif out.data[0] >= .5:
+#                 if target >= .5:
+#                     true_poz += 1
+#                 else:
+#                     false_poz += 1
+#         return true_poz, false_poz, true_neg, false_neg
+#
+#
+#     def validate(self):
+#         valid_epoch = cdu.CorpusEpoch(self.dm.valid, self.dm)
+#         random.shuffle(self.dm.valid)
+#         still_going = True
+#         total_loss = 0
+#         n_batches = 0
+#         true_poz, false_poz, true_neg, false_neg = 0, 0, 0, 0
+#         while still_going:
+#             n_batches += 1
+#             batch, targets, still_going = valid_epoch.get_next_batch()
+#             sentence_vecs = self.get_sentence_vecs_without_stop_lstm(batch)
+#             outputs = self.model.forward(sentence_vecs, self.encoder)
+#             loss = self.get_batch_loss(outputs, targets)
+#             total_loss += loss
+#             tp, fp, tn, fn = self.batch_accuracy(outputs, targets)
+#             true_poz += tp
+#             false_poz += fp
+#             true_neg += tn
+#             false_neg += fn
+#         v_f1 = f1(true_poz, false_poz, true_neg, false_neg)
+#         v_matthews = matthews(true_poz, false_poz, true_neg, false_neg)
+#         print("valid stats\t", "tp =", true_poz/len(valid_epoch.data_pairs), "fp =", false_poz/len(valid_epoch.data_pairs),
+#               "tn =", true_neg/len(valid_epoch.data_pairs), "fn =", false_neg/len(valid_epoch.data_pairs))
+#         print("f1\t\t\t\t", v_f1)
+#         print("matthews\t\t", v_matthews)
+#         print_min_and_max(outputs, batch)
+#         return total_loss.data[0] / len(valid_epoch.data_pairs), v_f1, v_matthews
 
     # def print_min_and_max(self, outputs, batch):
     #     max_prob, max_i_sentence = torch.topk(outputs.data, 1, 0)
@@ -247,120 +287,159 @@ class ClTrainer():
     # def matthews(self, tp, fp, tn, fn):
     #     return ((tp*tn) - (fp*fn)) / math.sqrt((tp+fp) * (tp+fn) * (tn+fp) * (tn+tn))
 
-    def interact(self, sentences):
-        cropped_sentences = crop_sentences(sentences)
-        batch = cdu.Batch(cropped_sentences, self.dm)
-        sentence_vecs = self.get_sentence_vecs_without_stop_lstm(batch)
-        outputs = self.model.forward(sentence_vecs, self.encoder)
-        for s, o in zip(sentences, outputs):
-            print(o[0].data, s)
-
-    def test(self):
-        test_epoch = cdu.CorpusEpoch(self.dm.test, self.dm)
-        random.shuffle(self.dm.test)
-        still_going = True
-        total_loss = 0
-        n_batches = 0
-        true_poz, false_poz, true_neg, false_neg = 0, 0, 0, 0
-        while still_going:
-            n_batches += 1
-            batch, targets, still_going = test_epoch.get_next_batch()
-            outputs, loss = self.train(batch, targets)
-            loss = self.get_batch_loss(outputs, targets)
-            total_loss += loss
-            tp, fp, tn, fn = self.batch_accuracy(outputs, targets)
-            true_poz += tp
-            false_poz += fp
-            true_neg += tn
-            false_neg += fn
-        t_f1 = f1(true_poz, false_poz, true_neg, false_neg)
-        t_matthews = matthews(true_poz, false_poz, true_neg, false_neg)
-        print("test stats\t", "tp =", true_poz / len(test_epoch.data_pairs), "fp =",
-              false_poz / len(test_epoch.data_pairs),
-              "tn =", true_neg / len(test_epoch.data_pairs), "fn =", false_neg / len(test_epoch.data_pairs))
-        print("f1\t\t\t\t", t_f1)
-        print("matthews\t\t", t_matthews)
-        print_min_and_max(outputs, batch)
-        return total_loss.data[0] / len(test_epoch.data_pairs), t_f1, t_matthews
-
-
-    def run_train(self):
-        print("======================================================================")
-        print("                              TRAINING")
-        print("======================================================================")
-        print(self.to_string())
-        LOGS.write("\n\n" + self.to_string() + "\n")
-        LOGS.write("# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 | model saved\n" +
-                   "----------|----------------|----------------|------------|------------|------|------|------------\n")
-        n_batches = 0
-        n_epochs = 100
-        plot_loss = 0
-        n_epochs_not_converging = 0
-        max_matthews = 0
-        epoch = 0
-        while epoch < n_epochs and n_epochs_not_converging < 10:
-            epoch += 1
-            epoch_loss = 0
-            tp, fp, tn, fn = 0, 0, 0, 0
-            # plot_loss = 0
-            print("===========================EPOCH %d=============================" % epoch)
-            training_epoch = cdu.CorpusEpoch(self.dm.training, self.dm)
-            random.shuffle(self.dm.training)
-            epoch_still_going = True
-            while epoch_still_going:
-                n_batches += 1
-                batch, targets, epoch_still_going = training_epoch.get_next_batch()
-                outputs, loss = self.train(batch, targets)
-                plot_loss += loss
-                epoch_loss += loss
-                _tp, _fp, _tn, _fn = self.batch_accuracy(outputs, targets)
-                tp += _tp
-                fp += _fp
-                tn += _tn
-                fn += _fn
-
-                # if n_batches % EVALUATE_EVERY == 0:  # and i != 0:
-                #     print(plot_loss)
-                #     print([x.data[0] for x in outputs])
-                #     self.print_min_and_max(outputs, batch)
-                #     plot_loss = 0
-            t_f1 = f1(tp, fp, tn, fn)
-            t_matthews = matthews(tp, fp, tn, fn)
-            epoch_avg_loss = epoch_loss / len(self.dm.training)
-            print("epoch avg loss\t\t", epoch_avg_loss)
-            print("training stats\t", "tp =", tp/len(self.dm.training), "fp =", fp/len(self.dm.training),
-              "tn =", tn/len(self.dm.training), "fn =", fn/len(self.dm.training))
-            print("f1\t\t\t\t", t_f1)
-            print("matthews\t\t", t_matthews)
-            print("-------valid-------")
-            valid_avg_loss, v_f1, v_matthews = self.validate()
-            print("valid avg loss\t\t", valid_avg_loss)
-            if v_matthews > max_matthews:
-                n_epochs_not_converging = 0
-                torch.save(self.model.state_dict(), self.output_path + "_" + str(n_batches))
-                max_matthews = v_matthews
-                print("MAX MATTHEWS, MODEL SAVED")
-                logs(LOGS, n_batches, epoch_avg_loss, valid_avg_loss, t_matthews, v_matthews, t_f1, v_f1, True)
-            else:
-                n_epochs_not_converging += 1
-                logs(LOGS, n_batches, epoch_avg_loss, valid_avg_loss, t_matthews, v_matthews, t_f1, v_f1, False)
-            LOGS.flush()
-        _, test_f1, test_matthews = self.test()
-        LOGS.write("-------TEST-------")
-        LOGS.write("test f1 =" + " " + "{0:.4g}".format(test_f1) + "\n")
-        LOGS.write("test matthews =" + " " + "{0:.4g}".format(test_matthews) + "\n")
-
-
+    # def interact(self, sentences):
+    #     cropped_sentences = crop_sentences(sentences)
+    #     batch = cdu.Batch(cropped_sentences, self.dm)
+    #     sentence_vecs = self.get_sentence_vecs_without_stop_lstm(batch)
+    #     outputs = self.model.forward(sentence_vecs, self.encoder)
+    #     for s, o in zip(sentences, outputs):
+    #         print(o[0].data, s)
+    #
+    # def test(self):
+    #     test_epoch = cdu.CorpusEpoch(self.dm.test, self.dm)
+    #     random.shuffle(self.dm.test)
+    #     still_going = True
+    #     total_loss = 0
+    #     n_batches = 0
+    #     true_poz, false_poz, true_neg, false_neg = 0, 0, 0, 0
+    #     while still_going:
+    #         n_batches += 1
+    #         batch, targets, still_going = test_epoch.get_next_batch()
+    #         outputs, loss = self.train(batch, targets)
+    #         loss = self.get_batch_loss(outputs, targets)
+    #         total_loss += loss
+    #         tp, fp, tn, fn = self.batch_accuracy(outputs, targets)
+    #         true_poz += tp
+    #         false_poz += fp
+    #         true_neg += tn
+    #         false_neg += fn
+    #     t_f1 = f1(true_poz, false_poz, true_neg, false_neg)
+    #     t_matthews = matthews(true_poz, false_poz, true_neg, false_neg)
+    #     print("test stats\t", "tp =", true_poz / len(test_epoch.data_pairs), "fp =",
+    #           false_poz / len(test_epoch.data_pairs),
+    #           "tn =", true_neg / len(test_epoch.data_pairs), "fn =", false_neg / len(test_epoch.data_pairs))
+    #     print("f1\t\t\t\t", t_f1)
+    #     print("matthews\t\t", t_matthews)
+    #     print_min_and_max(outputs, batch)
+    #     return total_loss.data[0] / len(test_epoch.data_pairs), t_f1, t_matthews
+    #
+    #
+    # def run_train(self):
+    #     print("======================================================================")
+    #     print("                              TRAINING")
+    #     print("======================================================================")
+    #     print(self.to_string())
+    #     LOGS.write("\n\n" + self.to_string() + "\n")
+    #     LOGS.write("# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 | model saved\n" +
+    #                "----------|----------------|----------------|------------|------------|------|------|------------\n")
+    #     n_batches = 0
+    #     n_epochs = 100
+    #     plot_loss = 0
+    #     n_epochs_not_converging = 0
+    #     max_matthews = 0
+    #     epoch = 0
+    #     while epoch < n_epochs and n_epochs_not_converging < 10:
+    #         epoch += 1
+    #         epoch_loss = 0
+    #         tp, fp, tn, fn = 0, 0, 0, 0
+    #         # plot_loss = 0
+    #         print("===========================EPOCH %d=============================" % epoch)
+    #         training_epoch = cdu.CorpusEpoch(self.dm.training, self.dm)
+    #         random.shuffle(self.dm.training)
+    #         epoch_still_going = True
+    #         while epoch_still_going:
+    #             n_batches += 1
+    #             batch, targets, epoch_still_going = training_epoch.get_next_batch()
+    #             outputs, loss = self.train(batch, targets)
+    #             plot_loss += loss
+    #             epoch_loss += loss
+    #             _tp, _fp, _tn, _fn = self.batch_accuracy(outputs, targets)
+    #             tp += _tp
+    #             fp += _fp
+    #             tn += _tn
+    #             fn += _fn
+    #
+    #             # if n_batches % EVALUATE_EVERY == 0:  # and i != 0:
+    #             #     print(plot_loss)
+    #             #     print([x.data[0] for x in outputs])
+    #             #     self.print_min_and_max(outputs, batch)
+    #             #     plot_loss = 0
+    #         t_f1 = f1(tp, fp, tn, fn)
+    #         t_matthews = matthews(tp, fp, tn, fn)
+    #         epoch_avg_loss = epoch_loss / len(self.dm.training)
+    #         print("epoch avg loss\t\t", epoch_avg_loss)
+    #         print("training stats\t", "tp =", tp/len(self.dm.training), "fp =", fp/len(self.dm.training),
+    #           "tn =", tn/len(self.dm.training), "fn =", fn/len(self.dm.training))
+    #         print("f1\t\t\t\t", t_f1)
+    #         print("matthews\t\t", t_matthews)
+    #         print("-------valid-------")
+    #         valid_avg_loss, v_f1, v_matthews = self.validate()
+    #         print("valid avg loss\t\t", valid_avg_loss)
+    #         if v_matthews > max_matthews:
+    #             n_epochs_not_converging = 0
+    #             torch.save(self.model.state_dict(), self.output_path + "_" + str(n_batches))
+    #             max_matthews = v_matthews
+    #             print("MAX MATTHEWS, MODEL SAVED")
+    #             logs(LOGS, n_batches, epoch_avg_loss, valid_avg_loss, t_matthews, v_matthews, t_f1, v_f1, True)
+    #         else:
+    #             n_epochs_not_converging += 1
+    #             logs(LOGS, n_batches, epoch_avg_loss, valid_avg_loss, t_matthews, v_matthews, t_f1, v_f1, False)
+    #         LOGS.flush()
+    #     _, test_f1, test_matthews = self.test()
+    #     LOGS.write("-------TEST-------")
+    #     LOGS.write("test f1 =" + " " + "{0:.4g}".format(test_f1) + "\n")
+    #     LOGS.write("test matthews =" + " " + "{0:.4g}".format(test_matthews) + "\n")
 
 
 
-#============= LOAD LM FROM MODEL =============
-# lm = model.MyLSTM(input_size=300, hidden_size=350, output_size=20001, n_layers=1, nonlinearity=nn.Tanh())
-# lm.load_state_dict(torch.load('models/model_7-14_15:33:4_110500'))
-#
-# encoder_path = 'models/rnn_classifier_7-28_17:50:13_85975'
-# encoder = rnn_classifier.Classifier(hidden_size=350, embedding_size=300)
-# encoder.load_state_dict(torch.load(encoder_path))
+
+
+#============= LOAD ENCODER =============
+
+encoder_path = 'models/rnn_classifier_9-27_18:12:45'
+encoder = rnn_classifier.Classifier(hidden_size=306, embedding_size=300, num_layers=3, reduction_size=165)
+encoder.load_state_dict(torch.load(encoder_path))
+
+
+
+
+#============= EXPERIMENT ================
+
+def random_experiment():
+    h_size = int(math.floor(math.pow(random.uniform(4, 12), 2)))           # [16, 144], quadratic distribution
+    lr = math.pow(.1, random.uniform(2, 5))                                # [.01, .00001] log distribution
+    cl = Classifier(hidden_size=h_size, encoding_size=encoder.reduction_size)
+    clt = AJTrainer('/scratch/asw462/data/discriminator/',
+                     '/scratch/asw462/data/bnc-30/embeddings_20000.txt',
+                     '/scratch/asw462/data/bnc-30/vocab_20000.txt',
+                     300,
+                     cl,
+                     encoder,
+                     stages_per_epoch=100,
+                     prints_per_stage=1,
+                     convergence_threshold=20,
+                     max_epochs=100,
+                     gpu=True,
+                     learning_rate=lr)
+    clt.run()
+
+def resume_experiment(model_path, h_size, num_layers, reduction_size, lr):
+    cl = Classifier(hidden_size=h_size, embedding_size=300, num_layers=num_layers, reduction_size=reduction_size)
+    cl.load_state_dict(torch.load(model_path))
+    clt = AJTrainer('/scratch/asw462/data/discriminator/',
+                     '/scratch/asw462/data/bnc-30/embeddings_20000.txt',
+                     '/scratch/asw462/data/bnc-30/vocab_20000.txt',
+                     300,
+                     cl,
+                     encoder,
+                     stages_per_epoch=100,
+                     prints_per_stage=1,
+                     convergence_threshold=20,
+                     max_epochs=100,
+                     gpu=False,
+                     learning_rate=lr)
+    clt.run()
+
 
 
 #============= TRAIN CLASSIFIER =============
