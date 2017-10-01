@@ -68,7 +68,7 @@ class AJTrainer(model_trainer.ModelTrainer):
             input = input.cuda()
         _, reduction = self.encoder.forward(Variable(input), hidden)
         output = self.model.forward(reduction)
-        return output
+        return output, None
 
     def interact(self, sentences):
         cropped_sentences = crop_sentences(sentences)
