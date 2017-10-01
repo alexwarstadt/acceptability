@@ -9,9 +9,6 @@ import time
 from constants import *
 from torch.autograd import Variable
 
-EVALUATE_EVERY = 1000
-LOGS = open("logs/acceptability-logs", "a")
-OUTPUT_PATH = "models/acceptability_classifier"
 
 
 class Classifier(nn.Module):
@@ -96,13 +93,13 @@ def random_experiment():
     h_size = int(math.floor(math.pow(random.uniform(4, 12), 2)))  # [16, 144], quadratic distribution
     lr = math.pow(.1, random.uniform(2, 5))  # [.01, .00001] log distribution
     cl = Classifier(hidden_size=h_size, encoding_size=encoder.reduction_size)
-    clt = AJTrainer('/scratch/asw462/data/discriminator/',
+    clt = AJTrainer('/acceptability_corpus/',
                     '/scratch/asw462/data/bnc-30/embeddings_20000.txt',
                     '/scratch/asw462/data/bnc-30/vocab_20000.txt',
                     300,
                     cl,
                     encoder,
-                    stages_per_epoch=20,
+                    stages_per_epoch=10,
                     prints_per_stage=1,
                     convergence_threshold=20,
                     max_epochs=100,
