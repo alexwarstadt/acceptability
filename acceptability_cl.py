@@ -90,8 +90,8 @@ encoder.load_state_dict(torch.load(encoder_path))
 # ============= EXPERIMENT ================
 
 def random_experiment():
-    h_size = int(math.floor(math.pow(random.uniform(4, 12), 2)))  # [16, 144], quadratic distribution
-    lr = math.pow(.1, random.uniform(2, 5))  # [.01, .00001] log distribution
+    h_size = int(math.floor(math.pow(random.uniform(5, 20), 2)))  # [16, 144], quadratic distribution
+    lr = math.pow(.1, random.uniform(2, 4))  # [.01, .00001] log distribution
     cl = Classifier(hidden_size=h_size, encoding_size=encoder.reduction_size)
     clt = AJTrainer('acceptability_corpus',
                     '/scratch/asw462/data/bnc-30/embeddings_20000.txt',
@@ -101,7 +101,7 @@ def random_experiment():
                     encoder,
                     stages_per_epoch=1,
                     prints_per_stage=1,
-                    convergence_threshold=30,
+                    convergence_threshold=20,
                     max_epochs=100,
                     gpu=False,
                     learning_rate=lr)
