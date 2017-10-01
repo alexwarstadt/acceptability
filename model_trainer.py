@@ -168,8 +168,8 @@ class ModelTrainer(object):
 
 
     def run_epoch(self, max_matthews, n_stages_not_converging, n_stages):
-        train = cdu.CorpusEpoch(self.dm.training_pairs, self.dm)
-        valid = cdu.CorpusEpoch(self.dm.valid_pairs, self.dm)
+        train = cdu.CorpusEpoch(list(self.dm.training_pairs), self.dm)
+        valid = cdu.CorpusEpoch(list(self.dm.valid_pairs), self.dm)
         for _ in range(self.stages_per_epoch):
             if n_stages_not_converging > self.convergence_threshold:
                 raise RuntimeError
