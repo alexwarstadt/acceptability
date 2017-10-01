@@ -28,7 +28,8 @@ class ModelTrainer(object):
         if self.gpu:
             self.model = self.model.cuda()
         now = datetime.now()
-        self.time_stamp = "%d-%d_%d-%d-%d_%d" % (now.month, now.day, now.hour, now.minute, now.second, now.microsecond)
+        # self.time_stamp = "%d-%d_%d-%d-%d_%d" % (now.month, now.day, now.hour, now.minute, now.second, now.microsecond)
+        self.time_stamp = "%d%d%d%d%d_%d" % (now.month, now.day, now.hour, now.minute, now.second, now.microsecond)
         self.LOGS_PATH = "logs/rnn-logs_" + self.time_stamp
         self.OUTPUT_PATH = "models/rnn_classifier_" + self.time_stamp
         self.LOGS = open(self.LOGS_PATH, "a")
