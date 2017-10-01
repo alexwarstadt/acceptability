@@ -415,7 +415,7 @@ def random_experiment():
                      300,
                      cl,
                      encoder,
-                     stages_per_epoch=100,
+                     stages_per_epoch=1,
                      prints_per_stage=1,
                      convergence_threshold=20,
                      max_epochs=100,
@@ -424,15 +424,15 @@ def random_experiment():
     clt.run()
 
 def resume_experiment(model_path, h_size, num_layers, reduction_size, lr):
-    cl = Classifier(hidden_size=h_size, embedding_size=300, num_layers=num_layers, reduction_size=reduction_size)
+    cl = Classifier(hidden_size=h_size, encoding_size=encoder.reduction_size)
     cl.load_state_dict(torch.load(model_path))
-    clt = AJTrainer('/scratch/asw462/data/discriminator/',
+    clt = AJTrainer('/acceptability_corpus/',
                      '/scratch/asw462/data/bnc-30/embeddings_20000.txt',
                      '/scratch/asw462/data/bnc-30/vocab_20000.txt',
                      300,
                      cl,
                      encoder,
-                     stages_per_epoch=100,
+                     stages_per_epoch=1,
                      prints_per_stage=1,
                      convergence_threshold=20,
                      max_epochs=100,
