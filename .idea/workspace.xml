@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="69f0732d-a5ae-4515-92df-328b30820cd3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acceptability_cl.py" afterPath="$PROJECT_DIR$/acceptability_cl.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model_trainer.py" afterPath="$PROJECT_DIR$/model_trainer.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,18 +33,18 @@
       <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
+            <state relative-caret-position="-99">
               <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="model_trainer.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="model_trainer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model_trainer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1119">
-              <caret line="99" column="23" lean-forward="false" selection-start-line="99" selection-start-column="17" selection-end-line="99" selection-end-column="23" />
+            <state relative-caret-position="389">
+              <caret line="124" column="31" lean-forward="false" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -75,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="acceptability_cl.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="acceptability_cl.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/acceptability_cl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="428" column="45" lean-forward="true" selection-start-line="428" selection-start-column="45" selection-end-line="428" selection-end-column="45" />
+            <state relative-caret-position="1004">
+              <caret line="104" column="39" lean-forward="false" selection-start-line="104" selection-start-column="39" selection-end-line="104" selection-end-column="39" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -232,8 +233,8 @@
         <option value="$PROJECT_DIR$/model.py" />
         <option value="$PROJECT_DIR$/lm_main.py" />
         <option value="$PROJECT_DIR$/rnn_classifier.py" />
-        <option value="$PROJECT_DIR$/model_trainer.py" />
         <option value="$PROJECT_DIR$/acceptability_cl.py" />
+        <option value="$PROJECT_DIR$/model_trainer.py" />
       </list>
     </option>
   </component>
@@ -644,18 +645,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/acceptability_cl.py</url>
-          <line>186</line>
+          <line>217</line>
           <option name="timeStamp" value="252" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/acceptability_cl.py</url>
-          <line>290</line>
-          <option name="timeStamp" value="264" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/acceptability_cl.py</url>
-          <line>341</line>
-          <option name="timeStamp" value="268" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/rnn_acceptability.py</url>
@@ -688,7 +679,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/model_trainer.py</url>
-          <line>108</line>
+          <line>109</line>
           <option name="timeStamp" value="289" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1021,16 +1012,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model_trainer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1119">
-          <caret line="99" column="23" lean-forward="false" selection-start-line="99" selection-start-column="17" selection-end-line="99" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/process_corpus.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
@@ -1051,20 +1032,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_cl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1004">
+          <caret line="104" column="39" lean-forward="false" selection-start-line="104" selection-start-column="39" selection-end-line="104" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
+        <state relative-caret-position="-99">
           <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/acceptability_cl.py">
+    <entry file="file://$PROJECT_DIR$/model_trainer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="428" column="45" lean-forward="true" selection-start-line="428" selection-start-column="45" selection-end-line="428" selection-end-column="45" />
+        <state relative-caret-position="389">
+          <caret line="124" column="31" lean-forward="false" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>

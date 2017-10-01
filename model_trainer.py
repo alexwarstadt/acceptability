@@ -97,6 +97,7 @@ class ModelTrainer(object):
         return loss, confusion
 
     def run_batch(self, batch, backprop):
+        self.LOGS.write("BATCH!!!")
         outputs, hidden = self.get_batch_output(batch)
         loss, confusion = self.get_metrics(outputs, batch)
         if backprop:
