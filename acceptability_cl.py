@@ -57,7 +57,7 @@ class AJTrainer(model_trainer.ModelTrainer):
             "encoder reduction\t" + str(self.encoder.reduction_size) + "\n" + \
             "dencoder num layers\t" + str(self.encoder.num_layers) + "\n" + \
             "learning rate\t\t" + str(self.learning_rate) + "\n" + \
-            "output\t\t\t" + str(self.output_path)
+            "output\t\t\t" + str(self.OUTPUT_PATH)
 
     def get_batch_output(self, batch):
         hidden = self.encoder.init_hidden(batch.batch_size)
