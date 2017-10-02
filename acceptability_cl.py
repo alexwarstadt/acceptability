@@ -129,7 +129,7 @@ def random_experiment_local():
                     learning_rate=lr)
     clt.run()
 
-random_experiment_local()
+# random_experiment_local()
 
 def resume_experiment(model_path, h_size, num_layers, reduction_size, lr):
     cl = Classifier(hidden_size=h_size, encoding_size=encoder.reduction_size)
