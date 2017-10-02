@@ -76,7 +76,7 @@ class RNNTrainer(model_trainer.ModelTrainer):
             "reduction size\t\t" + str(self.model.reduction_size) + "\n" + \
             "num layers\t\t" + str(self.model.num_layers) + "\n" + \
             "learning rate\t\t" + str(self.learning_rate) + "\n" + \
-            "output\t\t\t" + str(self.output_path)
+            "output\t\t\t" + str(self.OUTPUT_PATH)
 
 
 #============= EXPERIMENT ================
