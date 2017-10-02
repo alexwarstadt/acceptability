@@ -164,7 +164,7 @@ class ModelTrainer(object):
                 print_confusion = Confusion()
         if prints_per_stage > 1:
             self.print_stats(stage_loss/n_batches, stage_confusion)
-            self.log_outputs(outputs, batch)
+        self.log_outputs(outputs, batch)
         return stage_loss/n_batches, stage_confusion
 
 
@@ -205,12 +205,12 @@ class ModelTrainer(object):
     def log_outputs(self, outputs, batch):
         if self.gpu:
             outputs = outputs.cpu()
-        to_write = ""
-        for o, s in zip(outputs, batch):
-            to_write += str(o) + "\t" + s + "\n"
-        self.OUT_LOGS.write("sentence!\n")
-        self.OUT_LOGS.write(str(outputs))
-        self.OUT_LOGS.write(str(batch))
+        to_write = "\n\nNEW STAGE\n"
+        for o, t, s in zip(outputs.data, batch.targets_view, batch.sentences_view):
+            to_write += "%f\t%f\t%s" % (o[0], t, s)
+        # self.OUT_LOGS.write("sentence!\n")
+        # self.OUT_LOGS.write(str(outputs))
+        # self.OUT_LOGS.write(str(batch))
         self.OUT_LOGS.write(to_write)
         self.OUT_LOGS.flush()
 

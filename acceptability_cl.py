@@ -111,6 +111,26 @@ def random_experiment():
                     learning_rate=lr)
     clt.run()
 
+def random_experiment_local():
+    h_size = int(math.floor(math.pow(random.uniform(4, 10), 2)))  # [16, 100], quadratic distribution
+    lr = math.pow(.1, random.uniform(1.5, 4))  # [.01, .00001] log distribution
+    cl = Classifier(hidden_size=h_size, encoding_size=encoder.reduction_size)
+    clt = AJTrainer('acceptability_corpus/levin',
+                    '../data/bnc-30/embeddings_20000.txt',
+                    '../data/bnc-30/vocab_20000.txt',
+                    300,
+                    cl,
+                    encoder,
+                    stages_per_epoch=1,
+                    prints_per_stage=1,
+                    convergence_threshold=20,
+                    max_epochs=100,
+                    gpu=False,
+                    learning_rate=lr)
+    clt.run()
+
+random_experiment_local()
+
 def resume_experiment(model_path, h_size, num_layers, reduction_size, lr):
     cl = Classifier(hidden_size=h_size, encoding_size=encoder.reduction_size)
     cl.load_state_dict(torch.load(model_path))
