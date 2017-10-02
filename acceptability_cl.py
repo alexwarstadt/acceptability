@@ -47,7 +47,7 @@ class AJTrainer(model_trainer.ModelTrainer):
         self.LOGS_PATH = "logs/aj_logs_" + self.time_stamp
         self.OUTPUT_PATH = "models/aj_classifier_" + self.time_stamp
         self.LOGS = open(self.LOGS_PATH, "a")
-        self.OUT_LOGS = open(self.LOGS_PATH + "_" + "OUTPUTS" + "_" + self.time_stamp, "a")
+        self.OUT_LOGS = open("logs/aj_outputs_" + self.time_stamp, "a")
 
     def to_string(self):
         return "data\t\t\t" + self.corpus_path + "\n" + \
@@ -94,8 +94,8 @@ encoder.load_state_dict(torch.load(encoder_path))
 # ============= EXPERIMENT ================
 
 def random_experiment():
-    h_size = int(math.floor(math.pow(random.uniform(5, 20), 2)))  # [16, 144], quadratic distribution
-    lr = math.pow(.1, random.uniform(2, 4))  # [.01, .00001] log distribution
+    h_size = int(math.floor(math.pow(random.uniform(4, 10), 2)))  # [16, 100], quadratic distribution
+    lr = math.pow(.1, random.uniform(1.5, 4))  # [.01, .00001] log distribution
     cl = Classifier(hidden_size=h_size, encoding_size=encoder.reduction_size)
     clt = AJTrainer('acceptability_corpus/levin',
                     '/scratch/asw462/data/bnc-30/embeddings_20000.txt',
