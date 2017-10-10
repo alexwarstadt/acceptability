@@ -44,6 +44,7 @@ class Classifier(nn.Module):
 
     def forward(self, input, hidden_states):
         o, hc = self.ih2h(input, hidden_states)
+        # try >=600 in each direction and then take the max for each dimension (max pooling)
         reduction = self.sigmoid(self.h2r(o[-1]))
         output = self.sigmoid(self.r2o(reduction))
         return output, reduction
