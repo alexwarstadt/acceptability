@@ -97,7 +97,7 @@ def random_experiment():
     h_size = int(math.floor(math.pow(random.uniform(4, 10), 2)))  # [16, 100], quadratic distribution
     lr = math.pow(.1, random.uniform(1.5, 4))  # [.01, .00001] log distribution
     cl = Classifier(hidden_size=h_size, encoding_size=encoder.reduction_size)
-    clt = AJTrainer('acceptability_corpus/corpus_table_tokenized_crop30_balanced',
+    clt = AJTrainer('acceptability_corpus/balanced',
                     '/scratch/asw462/data/bnc-30/embeddings_20000.txt',
                     '/scratch/asw462/data/bnc-30/vocab_20000.txt',
                     300,
