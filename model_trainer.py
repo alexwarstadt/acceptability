@@ -61,7 +61,7 @@ class ModelTrainer(object):
 
     def get_batch_loss(self, outputs, output_targets):
         # self.loss.weight = torch.Tensor([self.dm.corpus_bias for i in range(len(output_targets))])
-        loss = self.loss(outputs, Variable(torch.FloatTensor(output_targets)).view(-1, 1))
+        loss = self.loss(outputs, )
         return loss
 
     def batch_confusion(self, outputs, output_targets):
@@ -89,7 +89,7 @@ class ModelTrainer(object):
         print("min:", min_prob[0][0] * -1, min_sentence)
 
     def get_metrics(self, outputs, batch):
-        targets = batch.targets_view
+        targets = Variable(torch.FloatTensor(batch.targets_view)).view(-1, 1)
         if self.gpu:
             targets = targets.cuda()
         loss = self.get_batch_loss(outputs, targets)
