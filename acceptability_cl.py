@@ -48,6 +48,8 @@ class AJTrainer(model_trainer.ModelTrainer):
         self.OUTPUT_PATH = "models/aj_classifier_" + self.time_stamp
         self.LOGS = open(self.LOGS_PATH, "a")
         self.OUT_LOGS = open("logs/aj_outputs_" + self.time_stamp, "a")
+        if self.gpu:
+            self.encoder = self.encoder.cuda()
 
     def to_string(self):
         return "data\t\t\t" + self.corpus_path + "\n" + \
