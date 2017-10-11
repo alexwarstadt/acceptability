@@ -61,7 +61,7 @@ class ModelTrainer(object):
 
     def get_batch_loss(self, outputs, output_targets):
         # self.loss.weight = torch.Tensor([self.dm.corpus_bias for i in range(len(output_targets))])
-        loss = self.loss(outputs, )
+        loss = self.loss(outputs, output_targets)
         return loss
 
     def batch_confusion(self, outputs, output_targets):
