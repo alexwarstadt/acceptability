@@ -109,7 +109,7 @@ def random_experiment():
                     prints_per_stage=1,
                     convergence_threshold=20,
                     max_epochs=100,
-                    gpu=True,
+                    gpu=False,
                     learning_rate=lr)
     clt.run()
 

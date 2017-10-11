@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69f0732d-a5ae-4515-92df-328b30820cd3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rnn_classifier.py" afterPath="$PROJECT_DIR$/rnn_classifier.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acceptability_cl.py" afterPath="$PROJECT_DIR$/acceptability_cl.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="rnn_classifier.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="rnn_classifier.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rnn_classifier.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
@@ -72,8 +72,8 @@
       <file leaf-file-name="model_trainer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model_trainer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="45" column="4" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="54" selection-end-column="30" />
+            <state relative-caret-position="-1460">
+              <caret line="91" column="63" lean-forward="false" selection-start-line="91" selection-start-column="63" selection-end-line="91" selection-end-column="63" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -103,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="acceptability_cl.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="acceptability_cl.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/acceptability_cl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="63" column="17" lean-forward="false" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+            <state relative-caret-position="237">
+              <caret line="105" column="23" lean-forward="true" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -251,9 +251,9 @@
         <option value="$PROJECT_DIR$/acceptability_corpus/temp" />
         <option value="$PROJECT_DIR$/acceptability_corpus/sample_output" />
         <option value="$PROJECT_DIR$/acceptability_corpus/corpus_table_tokenized_crop30_balanced" />
-        <option value="$PROJECT_DIR$/acceptability_cl.py" />
         <option value="$PROJECT_DIR$/model_trainer.py" />
         <option value="$PROJECT_DIR$/rnn_classifier.py" />
+        <option value="$PROJECT_DIR$/acceptability_cl.py" />
       </list>
     </option>
   </component>
@@ -985,14 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/acceptability_corpus/corpus_table_balanced">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6600">
-          <caret line="550" column="48" lean-forward="false" selection-start-line="550" selection-start-column="48" selection-end-line="550" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/acceptability_corpus/corpus">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1017,6 +1009,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/classifier_data_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="193" column="13" lean-forward="false" selection-start-line="193" selection-start-column="13" selection-end-line="193" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model_trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1460">
+          <caret line="91" column="63" lean-forward="false" selection-start-line="91" selection-start-column="63" selection-end-line="91" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/acceptability_corpus/corpus_table_tokenized_crop30_balanced">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-50634">
@@ -1033,33 +1045,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classifier_data_utils.py">
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/corpus_table_balanced">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="193" column="13" lean-forward="false" selection-start-line="193" selection-start-column="13" selection-end-line="193" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model_trainer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="45" column="4" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="54" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/acceptability_cl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="63" column="17" lean-forward="false" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="6600">
+          <caret line="550" column="48" lean-forward="false" selection-start-line="550" selection-start-column="48" selection-end-line="550" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1069,6 +1059,16 @@
           <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_cl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="105" column="23" lean-forward="true" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
