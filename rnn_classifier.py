@@ -33,6 +33,7 @@ class Classifier(nn.Module):
     def __init__(self, hidden_size, embedding_size, num_layers, reduction_size):
         super(Classifier, self).__init__()
         self.hidden_size = hidden_size
+        self.embedding_size = embedding_size
         self.num_layers = num_layers
         self.reduction_size = reduction_size
         self.ih2h = nn.LSTM(embedding_size, hidden_size, num_layers=num_layers, bidirectional=True)
@@ -44,7 +45,6 @@ class Classifier(nn.Module):
 
     def forward(self, input, hidden_states):
         o, hc = self.ih2h(input, hidden_states)
-        # try >=600 in each direction and then take the max for each dimension (max pooling)
         reduction = self.sigmoid(self.h2r(o[-1]))
         output = self.sigmoid(self.r2o(reduction))
         return output, reduction
@@ -53,6 +53,41 @@ class Classifier(nn.Module):
         return (Variable(torch.zeros(2 * self.num_layers, batch_size, self.hidden_size)),
                 Variable(torch.zeros(2 * self.num_layers, batch_size, self.hidden_size)))
 
+    def to_string(self):
+        return "input size\t\t" + str(self.embedding_size) + "\n" + \
+            "hidden size\t\t" + str(self.hidden_size) + "\n" + \
+            "reduction size\t\t" + str(self.reduction_size) + "\n" + \
+            "num layers\t\t" + str(self.num_layers) + "\n"
+
+
+class ClassifierPooling(nn.Module):
+    def __init__(self, hidden_size, embedding_size, num_layers):
+        super(ClassifierPooling, self).__init__()
+        self.hidden_size = hidden_size
+        self.embedding_size = embedding_size
+        self.num_layers = num_layers
+        self.ih2h = nn.LSTM(embedding_size, hidden_size, num_layers=num_layers, bidirectional=True)
+        self.pool2o = nn.Linear(2*hidden_size, 1)
+        self.sigmoid = nn.Sigmoid()
+        self.tanh = nn.Tanh()
+        self.softmax = nn.Softmax()
+
+    def forward(self, input, hidden_states):
+        o, hc = self.ih2h(input, hidden_states)
+        pool = nn.functional.max_pool1d(torch.transpose(o, 0, 2), len(input))
+        pool = torch.transpose(pool, 0, 2).squeeze()
+        output = self.sigmoid(self.pool2o(pool))
+        return output, pool
+
+    def init_hidden(self, batch_size):
+        return (Variable(torch.zeros(2 * self.num_layers, batch_size, self.hidden_size)),
+                Variable(torch.zeros(2 * self.num_layers, batch_size, self.hidden_size)))
+
+
+    def to_string(self):
+        return "input size\t\t" + str(self.embedding_size) + "\n" + \
+            "hidden size\t\t" + str(self.hidden_size) + "\n" + \
+            "num layers\t\t" + str(self.num_layers) + "\n"
 
 class RNNTrainer(model_trainer.ModelTrainer):
     def __init__(self,
@@ -72,10 +107,7 @@ class RNNTrainer(model_trainer.ModelTrainer):
 
     def to_string(self):
         return "data\t\t\t" + self.corpus_path + "\n" + \
-            "input size\t\t" + str(self.embedding_size) + "\n" + \
-            "hidden size\t\t" + str(self.model.hidden_size) + "\n" + \
-            "reduction size\t\t" + str(self.model.reduction_size) + "\n" + \
-            "num layers\t\t" + str(self.model.num_layers) + "\n" + \
+            self.model.to_string() + \
             "learning rate\t\t" + str(self.learning_rate) + "\n" + \
             "output\t\t\t" + str(self.OUTPUT_PATH)
 
@@ -92,6 +124,8 @@ class RNNTrainer(model_trainer.ModelTrainer):
 
 
 #============= EXPERIMENT ================
+
+
 
 def random_experiment():
     h_size = int(math.floor(math.pow(random.uniform(10, 32), 2)))           # [100, 1024], quadratic distribution
@@ -112,6 +146,44 @@ def random_experiment():
                      learning_rate=lr)
     clt.run()
 
+def random_experiment_pooling():
+    h_size = int(math.floor(math.pow(random.uniform(10, 32), 2)))  # [100, 1024], quadratic distribution
+    num_layers = random.randint(1, 5)
+    reduction_size = int(math.floor(math.pow(random.uniform(7, 18), 2)))  # [49, 324], quadratic distribution
+    lr = math.pow(.1, random.uniform(3, 4.5))  # [.001, 3E-5], logarithmic distribution
+    cl = ClassifierPooling(hidden_size=h_size, embedding_size=300, num_layers=num_layers)
+    clt = RNNTrainer('/scratch/asw462/data/discriminator/',
+                     '/scratch/asw462/data/bnc-30/embeddings_20000.txt',
+                     '/scratch/asw462/data/bnc-30/vocab_20000.txt',
+                     300,
+                     cl,
+                     stages_per_epoch=100,
+                     prints_per_stage=1,
+                     convergence_threshold=20,
+                     max_epochs=100,
+                     gpu=True,
+                     learning_rate=lr)
+    clt.run()
+
+def random_local_experiment_pooling():
+    h_size = int(math.floor(math.pow(random.uniform(10, 32), 2)))  # [100, 1024], quadratic distribution
+    num_layers = random.randint(1, 5)
+    reduction_size = int(math.floor(math.pow(random.uniform(7, 18), 2)))  # [49, 324], quadratic distribution
+    lr = math.pow(.1, random.uniform(3, 4.5))  # [.001, 3E-5], logarithmic distribution
+    cl = ClassifierPooling(hidden_size=h_size, embedding_size=300, num_layers=num_layers)
+    clt = RNNTrainer('../data/discriminator/',
+                     '../data/bnc-30/embeddings_20000.txt',
+                    '../data/bnc-30/vocab_20000.txt',
+                     300,
+                     cl,
+                     stages_per_epoch=100,
+                     prints_per_stage=1,
+                     convergence_threshold=20,
+                     max_epochs=100,
+                     gpu=False,
+                     learning_rate=lr)
+    clt.run()
+
 def resume_experiment(model_path, h_size, num_layers, reduction_size, lr):
     cl = Classifier(hidden_size=h_size, embedding_size=300, num_layers=num_layers, reduction_size=reduction_size)
     cl.load_state_dict(torch.load(model_path))
@@ -129,4 +201,4 @@ def resume_experiment(model_path, h_size, num_layers, reduction_size, lr):
     clt.run()
 
 
-# random_experiment()
+# random_local_experiment_pooling()
