@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69f0732d-a5ae-4515-92df-328b30820cd3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rnn_classifier.py" afterPath="$PROJECT_DIR$/rnn_classifier.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model_trainer.py" afterPath="$PROJECT_DIR$/model_trainer.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="rnn_classifier.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="rnn_classifier.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rnn_classifier.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="756">
@@ -79,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="model_trainer.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="model_trainer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model_trainer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
-              <caret line="77" column="33" lean-forward="true" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
+            <state relative-caret-position="397">
+              <caret line="109" column="25" lean-forward="false" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="25" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -252,12 +252,13 @@
         <option value="$PROJECT_DIR$/acceptability_corpus/sample_output" />
         <option value="$PROJECT_DIR$/acceptability_corpus/corpus_table_tokenized_crop30_balanced" />
         <option value="$PROJECT_DIR$/acceptability_cl.py" />
-        <option value="$PROJECT_DIR$/model_trainer.py" />
         <option value="$PROJECT_DIR$/rnn_classifier.py" />
+        <option value="$PROJECT_DIR$/model_trainer.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-37" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="873" />
@@ -554,7 +555,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <frame x="-37" y="23" width="1440" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29756796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1032,16 +1033,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model_trainer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="77" column="33" lean-forward="true" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/acceptability_cl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61">
@@ -1076,6 +1067,16 @@
           <caret line="203" column="35" lean-forward="true" selection-start-line="203" selection-start-column="35" selection-end-line="203" selection-end-column="35" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model_trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="109" column="25" lean-forward="false" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>

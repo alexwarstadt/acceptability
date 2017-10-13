@@ -93,7 +93,7 @@ class ModelTrainer(object):
         targets = batch.targets_view
         # targets = Variable(torch.FloatTensor(batch.targets_view)).view(-1, 1)
         if self.gpu:
-            targets = targets.cuda()
+            targets = [t.cuda() for t in targets]
         loss = self.get_batch_loss(outputs, targets)
         confusion = self.batch_confusion(outputs, targets)
         return loss, confusion
