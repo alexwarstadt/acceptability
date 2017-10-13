@@ -45,7 +45,7 @@ class ModelTrainer(object):
 
     def get_batch_output(self, batch):
         hidden = self.model.init_hidden(batch.batch_size)
-        input = torch.Tensor(len(batch.tensor_view), batch.batch_size, self.embedding_size)
+        input = torch.FloatTensor(len(batch.tensor_view), batch.batch_size, self.embedding_size)
         if self.gpu:
             hidden = hidden.cuda()
             input = input.cuda()
@@ -61,7 +61,7 @@ class ModelTrainer(object):
 
     def get_batch_loss(self, outputs, output_targets):
         # self.loss.weight = torch.Tensor([self.dm.corpus_bias for i in range(len(output_targets))])
-        loss = self.loss(outputs, Variable(torch.FloatTensor(output_targets)).view(-1, 1))
+        loss = self.loss(outputs, Variable(output_targets).view(-1, 1))
         # loss = self.loss(outputs, output_targets)
         return loss
 
@@ -90,10 +90,10 @@ class ModelTrainer(object):
         print("min:", min_prob[0][0] * -1, min_sentence)
 
     def get_metrics(self, outputs, batch):
-        targets = batch.targets_view
+        targets = torch.Tensor(batch.targets_view)
         # targets = Variable(torch.FloatTensor(batch.targets_view)).view(-1, 1)
         if self.gpu:
-            targets = [t.cuda() for t in targets]
+            targets = targets.cuda()
         loss = self.get_batch_loss(outputs, targets)
         confusion = self.batch_confusion(outputs, targets)
         return loss, confusion
