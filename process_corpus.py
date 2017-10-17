@@ -149,3 +149,17 @@ def split(in_path, out_dir, train, test, valid):
                 test_out.write(line)
         train_out.close(), valid_out.close(), test_out.close()
 
+
+def verify_corpus_table(in_path, out_path):
+    out = open(out_path)
+    for line in open(in_path):
+        vals = line.split("\t")
+        if len(vals) == 4:
+            words = vals.split()
+            if len(words) == 30:
+                out.write(line)
+    out.close()
+
+
+
+

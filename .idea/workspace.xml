@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69f0732d-a5ae-4515-92df-328b30820cd3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rnn_classifier.py" afterPath="$PROJECT_DIR$/rnn_classifier.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/process_corpus.py" afterPath="$PROJECT_DIR$/process_corpus.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="rnn_classifier.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="rnn_classifier.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rnn_classifier.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -69,16 +69,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="corpus_table_tokenized_crop30_balanced" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/acceptability_corpus/corpus_table_tokenized_crop30_balanced">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-50634">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="model_trainer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model_trainer.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -103,11 +93,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="corpus" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/acceptability_corpus/corpus">
+      <file leaf-file-name="process_corpus.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/process_corpus.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="440">
+              <caret line="165" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data_processor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_processor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2624">
+              <caret line="36" column="45" lean-forward="true" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -239,7 +239,6 @@
         <option value="$PROJECT_DIR$/lm.py" />
         <option value="$PROJECT_DIR$/acceptability_corpus/lm_generated5" />
         <option value="$PROJECT_DIR$/acceptability_corpus/lm_generated6" />
-        <option value="$PROJECT_DIR$/process_corpus.py" />
         <option value="$PROJECT_DIR$/logs/rnn-logs" />
         <option value="$PROJECT_DIR$/classifier_utils.py" />
         <option value="$PROJECT_DIR$/model.py" />
@@ -254,6 +253,7 @@
         <option value="$PROJECT_DIR$/acceptability_cl.py" />
         <option value="$PROJECT_DIR$/model_trainer.py" />
         <option value="$PROJECT_DIR$/rnn_classifier.py" />
+        <option value="$PROJECT_DIR$/process_corpus.py" />
       </list>
     </option>
   </component>
@@ -307,20 +307,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="acceptability" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="acceptability" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="acceptability" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="acceptability_corpus" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -817,13 +803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_processor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="36" column="45" lean-forward="true" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/acceptability_corpus/lm_generated">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-13968">
@@ -912,16 +891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/process_corpus.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/torch/nn/modules/rnn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -993,14 +962,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/acceptability_corpus/corpus_table">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-760">
-          <caret line="583" column="46" lean-forward="false" selection-start-line="583" selection-start-column="46" selection-end-line="583" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/acceptability_corpus/lm_generated6">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-842">
@@ -1021,14 +982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="14" column="60" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="6893" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/acceptability_corpus/corpus_table_balanced">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6600">
-          <caret line="550" column="48" lean-forward="false" selection-start-line="550" selection-start-column="48" selection-end-line="550" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -1078,6 +1031,38 @@
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/corpus_table">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-760">
+          <caret line="583" column="46" lean-forward="false" selection-start-line="583" selection-start-column="46" selection-end-line="583" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/corpus_table_balanced">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6600">
+          <caret line="550" column="48" lean-forward="false" selection-start-line="550" selection-start-column="48" selection-end-line="550" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_processor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2624">
+          <caret line="36" column="45" lean-forward="true" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process_corpus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="165" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
