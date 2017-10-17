@@ -160,6 +160,7 @@ def verify_corpus_table(in_path, out_path):
                 out.write(line)
             else:
                 print(line)
+                print(len(words))
         else:
             print(line)
     out.close()
