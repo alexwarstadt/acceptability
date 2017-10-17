@@ -151,7 +151,7 @@ def split(in_path, out_dir, train, test, valid):
 
 
 def verify_corpus_table(in_path, out_path):
-    out = open(out_path)
+    out = open(out_path, "w")
     for line in open(in_path):
         vals = line.split("\t")
         if len(vals) == 4:
