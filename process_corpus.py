@@ -155,7 +155,7 @@ def verify_corpus_table(in_path, out_path):
     for line in open(in_path):
         vals = line.split("\t")
         if len(vals) == 4:
-            words = vals.split()
+            words = vals[3].split()
             if len(words) == 30:
                 out.write(line)
             else:
