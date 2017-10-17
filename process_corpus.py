@@ -158,6 +158,10 @@ def verify_corpus_table(in_path, out_path):
             words = vals.split()
             if len(words) == 30:
                 out.write(line)
+            else:
+                print(line)
+        else:
+            print(line)
     out.close()
 
 
