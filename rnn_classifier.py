@@ -104,6 +104,10 @@ class RNNTrainer(model_trainer.ModelTrainer):
                  learning_rate=.01):
         super(RNNTrainer, self).__init__(corpus_path, embedding_path, vocab_path, embedding_size, model, stages_per_epoch,
                                          prints_per_stage, convergence_threshold, max_epochs, gpu, learning_rate)
+        self.LOGS_PATH = "logs/rnn_logs_" + self.time_stamp
+        self.OUTPUT_PATH = "models/rnn_classifier_" + self.time_stamp
+        self.LOGS = open(self.LOGS_PATH, "a")
+        self.OUT_LOGS = open("logs/rnn_outputs_" + self.time_stamp, "a")
 
     def to_string(self):
         return "data\t\t\t" + self.corpus_path + "\n" + \
