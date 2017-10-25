@@ -206,7 +206,7 @@ def resume_experiment(model_path, h_size, num_layers, reduction_size, lr):
 def resume_experiment_pooling(model_path, h_size, num_layers, lr, data):
     cl = ClassifierPooling(hidden_size=h_size, embedding_size=300, num_layers=num_layers)
     cl.load_state_dict(torch.load(model_path))
-    clt = RNNTrainer('/scratch/asw462/data/bnc_lm/',
+    clt = RNNTrainer(data,
                      '/scratch/asw462/data/bnc-30/embeddings_20000.txt',
                      '/scratch/asw462/data/bnc-30/vocab_20000.txt',
                      300,
