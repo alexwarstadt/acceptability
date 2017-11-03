@@ -8,9 +8,9 @@ from models import model_trainer
 from utils.classifier_utils import *
 
 # EVALUATE_EVERY = 1000
-
-LOGS = open("logs/rnn-logs", "a")
-OUTPUT_PATH = "models/rnn_classifier"
+#
+# LOGS = open("logs/rnn-logs", "a")
+# OUTPUT_PATH = "models/rnn_classifier"
 
 
 
