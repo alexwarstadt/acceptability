@@ -1,1 +1,280 @@
-<class 'list'>: <Too big to print. Len: 355>
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		466
+num layers		2
+learning rate		0.000130925742333
+output			models/rnn_classifier_101914531_919004
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+	61	0.5193		0.5154		0.4466		0.4608		0.7188	0.7365		tp=0.38, tn=0.35, fp=0.15, fn=0.12		True
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		941
+num layers		3
+learning rate		0.000143142409868
+output			models/rnn_classifier_101914531_941098
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+    40	0.5767		0.573		0.3562		0.3587		0.6656	0.6784		tp=0.34, tn=0.34, fp=0.16, fn=0.16		False
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		584
+num layers		2
+learning rate		8.10165322119e-05
+output			models/rnn_classifier_101914532_134751
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+	59	0.5418		0.5388		0.4116		0.4204		0.6987	0.698		tp=0.33, tn=0.38, fp=0.13, fn=0.16		False
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		1173
+num layers		2
+learning rate		0.000153063126258
+output			models/rnn_classifier_101914532_481643
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+	43	0.5166		0.5187		0.451		0.4531		0.717	0.7245		tp=0.36, tn=0.37, fp=0.13, fn=0.14		False
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		939
+num layers		3
+learning rate		9.94067216748e-05
+output			models/rnn_classifier_101914532_576955
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+    40	0.5898		0.5885		0.3309		0.3345		0.6499	0.6089		tp=0.26, tn=0.4, fp=0.11, fn=0.22		False
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		784
+num layers		3
+learning rate		5.69943664322e-05
+output			models/rnn_classifier_101914533_273032
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+    48	0.5929		0.5906		0.3259		0.3272		0.6455	0.6227		tp=0.28, tn=0.38, fp=0.13, fn=0.21		False
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		1154
+num layers		2
+learning rate		0.000993318021384
+output			models/rnn_classifier_101914533_381547
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+	21	0.694		0.6935		0.002531		0		0.4563	0		tp=0, tn=0.51, fp=0, fn=0.49		False
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		249
+num layers		1
+learning rate		5.82515565357e-05
+output			models/rnn_classifier_10191571_13540
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+	71	0.5842		0.5878		0.3472		0.3595		0.659	0.6117		tp=0.26, tn=0.42, fp=0.092, fn=0.23		False
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		472
+num layers		3
+learning rate		4.97285634384e-05
+output			models/rnn_classifier_1019173335_715059
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+    66	0.5831		0.5795		0.3449		0.3536		0.6578	0.6533		tp=0.31, tn=0.37, fp=0.13, fn=0.19		False
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		234
+num layers		3
+learning rate		0.000484881058949
+output			models/rnn_classifier_1019181122_841757
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+	71	0.5364		0.5329		0.4254		0.4412		0.7037	0.6827		tp=0.3, tn=0.42, fp=0.098, fn=0.18		False
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		432
+num layers		1
+learning rate		0.000146315381271
+output			models/rnn_classifier_1019181814_576990
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+	69	0.5199		0.5188		0.451		0.459		0.7171	0.6917		tp=0.31, tn=0.42, fp=0.086, fn=0.19		False
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		603
+num layers		3
+learning rate		0.000104810792766
+output			models/rnn_classifier_1019181815_389786
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+	54	0.5606		0.5586		0.3798		0.3779		0.6812	0.6945		tp=0.35, tn=0.34, fp=0.16, fn=0.15		False
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		572
+num layers		3
+learning rate		0.0005284873458
+output			models/rnn_classifier_10191882_527042
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+	56	0.5443		0.5337		0.4041		0.4336		0.6935	0.6987		tp=0.33, tn=0.39, fp=0.13, fn=0.15		True
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		341
+num layers		2
+learning rate		0.000857944682946
+output			models/rnn_classifier_101918955_239615
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+	65	0.5395		0.5395		0.4167		0.417		0.6997	0.6877		tp=0.32, tn=0.39, fp=0.12, fn=0.17		False
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		275
+num layers		2
+learning rate		6.06338144778e-05
+output			models/rnn_classifier_10197058_759240
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+[asw462@log-1 acceptability]$ cat logs/rnn_logs_102* | grep '^[^0|(NEW STAGE)]'
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		1005
+num layers		1
+learning rate		0.000217862522627
+output			models/rnn_classifier_1020123748_27656
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+	58	0.4988		0.4968		0.475		0.4812		0.7327	0.7502		tp=0.39, tn=0.35, fp=0.16, fn=0.1		True
+
+data			/scratch/asw462/data/discriminator/
+input size		300
+hidden size		341
+num layers		2
+learning rate		0.000857944682946
+output			models/rnn_classifier_1024134543_31397
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+	32	0.4649		0.4687		0.5237		0.5152		0.7715	0.7664		tp=0.4, tn=0.36, fp=0.15, fn=0.098		False
+
+data			/scratch/asw462/data/discriminator/
+input size		300
+hidden size		572
+num layers		3
+learning rate		0.0005284873458
+output			models/rnn_classifier_1024134630_908887
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+	16	0.4601		0.4653		0.5292		0.5082		0.7752	0.7559		tp=0.38, tn=0.37, fp=0.13, fn=0.12		False
+
+data			/scratch/asw462/data/discriminator/
+input size		300
+hidden size		1005
+num layers		1
+learning rate		0.000217862522627
+output			models/rnn_classifier_102414140_737435
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+	24	0.4439		0.4483		0.5491		0.5438		0.7797	0.7689		tp=0.38, tn=0.39, fp=0.11, fn=0.12		False
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		299
+num layers		2
+learning rate		0.000118298801747
+output			models/rnn_classifier_102414414_939182
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+	72	0.5291		0.5253		0.4355		0.4335		0.7098	0.7168		tp=0.36, tn=0.36, fp=0.15, fn=0.14		False
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		1255
+num layers		3
+learning rate		0.000137052405925
+output			models/rnn_classifier_102414415_182220
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+	45	0.5756		0.5836		0.3559		0.3541		0.665	0.6801		tp=0.34, tn=0.33, fp=0.18, fn=0.14		True
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		947
+num layers		2
+learning rate		0.000675373746512
+output			models/rnn_classifier_102414431_39656
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+	41	0.5422		0.5425		0.4108		0.4046		0.6981	0.7049		tp=0.36, tn=0.35, fp=0.16, fn=0.14		False
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		853
+num layers		2
+learning rate		0.000159607518459
+output			models/rnn_classifier_102415055_88464
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+	63	0.4706		0.4779		0.5142		0.5022		0.7515	0.7546		tp=0.38, tn=0.37, fp=0.13, fn=0.12		False
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		390
+num layers		3
+learning rate		3.16316953753e-05
+output			models/rnn_classifier_102415159_106131
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+	69	0.6085		0.6182		0.2951		0.2721		0.6351	0.663		tp=0.36, tn=0.27, fp=0.24, fn=0.13		False
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		333
+num layers		1
+learning rate		0.000436937629842
+output			models/rnn_classifier_10241547_874636
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+	73	0.5113		0.5174		0.4627		0.4561		0.7252	0.7075		tp=0.33, tn=0.4, fp=0.11, fn=0.17		False
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		733
+num layers		3
+learning rate		0.000817203988414
+output			models/rnn_classifier_102423356_215754
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+	62	0.5874		0.5963		0.3437		0.3445		0.659	0.5908		tp=0.24, tn=0.42, fp=0.085, fn=0.25		False
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		597
+num layers		2
+learning rate		0.000170175546091
+output			models/rnn_classifier_102461817_994303
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+	47	0.5265		0.5242		0.4364		0.4409		0.7092	0.7298		tp=0.38, tn=0.34, fp=0.16, fn=0.12		False
+
+data			/scratch/asw462/data/bnc_lm/
+input size		300
+hidden size		491
+num layers		3
+learning rate		0.000943036520163
+output			models/rnn_classifier_102484939_308573
+# batches | train avg loss | valid avg loss | t matthews | v matthews | t f1 | v f1 |      confusion      |model saved
+----------|----------------|----------------|------------|------------|------|------|---------------------|-----------
+58	0.5588		0.56		0.3876		0.3914		0.6793	0.676		tp=0.32, tn=0.38, fp=0.13, fn=0.17		False
