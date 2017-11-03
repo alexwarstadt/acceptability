@@ -6,6 +6,7 @@ import models.rnn_classifier
 FLAGS = gflags.FLAGS
 
 if __name__ == '__main__':
+    print("HELLO WORLD")
     my_flags.get_flags()
 
     # Parse command line flags.
