@@ -56,6 +56,7 @@ FIXED_PARAMETERS = {
     "stages_per_epoch": "100",
     "prints_per_stage": "1",
     "convergence_threshold": "20",
+    "max_epochs": "100",
     "batch_size": "32",
 
 

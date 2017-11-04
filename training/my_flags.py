@@ -34,6 +34,9 @@ def get_flags():
     gflags.DEFINE_integer("convergence_threshold",
                           20,
                           "how many eval steps before early stop")
+    gflags.DEFINE_integer("max_epochs",
+                          10,
+                          "number of epochs before stop, essentially unreachable")
     gflags.DEFINE_integer("batch_size", 32, "")
 
     #tunable parameters
