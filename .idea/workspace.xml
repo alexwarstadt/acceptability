@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="69f0732d-a5ae-4515-92df-328b30820cd3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/model_trainer.py" afterPath="$PROJECT_DIR$/models/model_trainer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/rnn_classifier.py" afterPath="$PROJECT_DIR$/models/rnn_classifier.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/training/make_sweep.py" afterPath="$PROJECT_DIR$/training/make_sweep.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/training/my_flags.py" afterPath="$PROJECT_DIR$/training/my_flags.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/training/run_training.py" afterPath="$PROJECT_DIR$/training/run_training.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,7 +32,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="run_training.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="run_training.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/training/run_training.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="252">
@@ -47,11 +44,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="make_sweep.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="make_sweep.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/training/make_sweep.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="316">
-                  <caret line="143" column="35" lean-forward="false" selection-start-line="143" selection-start-column="35" selection-end-line="143" selection-end-column="35" />
+                <state relative-caret-position="335">
+                  <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
                   <folding />
                 </state>
               </provider>
@@ -138,8 +135,8 @@
           <file leaf-file-name="model_trainer.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/models/model_trainer.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-44">
-                  <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+                <state relative-caret-position="180">
+                  <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -275,10 +272,10 @@
         <option value="$PROJECT_DIR$/models/rnn_acceptability.py" />
         <option value="$PROJECT_DIR$/training/model_trainer.py" />
         <option value="$PROJECT_DIR$/training/test.py" />
-        <option value="$PROJECT_DIR$/training/make_sweep.py" />
         <option value="$PROJECT_DIR$/models/rnn_classifier.py" />
         <option value="$PROJECT_DIR$/training/run_training.py" />
         <option value="$PROJECT_DIR$/training/my_flags.py" />
+        <option value="$PROJECT_DIR$/training/make_sweep.py" />
         <option value="$PROJECT_DIR$/models/model_trainer.py" />
       </list>
     </option>
@@ -385,7 +382,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="SearchEverywhereHistoryKey" value="model&#9;FILE&#9;file:///Users/alexwarstadt/Workspace/acceptability/model_trainer.py&#10;rnn&#9;FILE&#9;file:///Users/alexwarstadt/Workspace/acceptability/rnn_classifier.py&#10;ermute&#9;null&#9;null&#10;addmm&#9;null&#9;null&#10;_functions/lin&#9;FILE&#9;file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/torch/nn/_functions/linear.py&#10;linear.p&#9;FILE&#9;file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/torch/nn/modules/linear.py" />
+    <property name="SearchEverywhereHistoryKey" value="embedding_data_path&#9;null&#9;null&#10;model&#9;FILE&#9;file:///Users/alexwarstadt/Workspace/acceptability/model_trainer.py&#10;rnn&#9;FILE&#9;file:///Users/alexwarstadt/Workspace/acceptability/rnn_classifier.py&#10;ermute&#9;null&#9;null&#10;addmm&#9;null&#9;null&#10;_functions/lin&#9;FILE&#9;file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/torch/nn/_functions/linear.py&#10;linear.p&#9;FILE&#9;file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/torch/nn/modules/linear.py" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1155,14 +1152,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/training/make_sweep.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="143" column="35" lean-forward="false" selection-start-line="143" selection-start-column="35" selection-end-line="143" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/training/run_training.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1181,10 +1170,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/training/make_sweep.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models/model_trainer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        <state relative-caret-position="180">
+          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

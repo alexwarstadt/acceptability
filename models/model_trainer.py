@@ -11,7 +11,7 @@ class ModelTrainer(object):
         self.FLAGS = FLAGS
         self.model = model
         self.optimizer = torch.optim.Adam(self.model.parameters(), lr=self.FLAGS.learning_rate)  # or use RMSProp
-        self.dm = cdu.DataManagerInMemory(self.FLAGS.corpus_path, self.FLAGS.embedding_path,
+        self.dm = cdu.DataManagerInMemory(self.FLAGS.data_dir, self.FLAGS.embedding_path,
                                           self.FLAGS.vocab_path, self.FLAGS.embedding_size, self.FLAGS.crop_pad_length)
         self.loss = torch.nn.BCELoss()
         if self.FLAGS.gpu:

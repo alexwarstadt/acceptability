@@ -22,7 +22,7 @@ FLAGS = gflags.FLAGS
 
 gflags.DEFINE_string("data_dir", "/scratch/asw462/data/bnc_lm/", "")
 gflags.DEFINE_string("vocab_path", "/scratch/asw462/data/bnc-30/vocab_20000.txt", "")
-gflags.DEFINE_string("embedding_data_path", "/scratch/asw462/data/bnc-30/embeddings_20000.txt", "")
+gflags.DEFINE_string("embedding_path", "/scratch/asw462/data/bnc-30/embeddings_20000.txt", "")
 gflags.DEFINE_string("log_path", "/scratch/asw462/logs/", "")
 
 FLAGS(sys.argv)
@@ -40,7 +40,7 @@ FIXED_PARAMETERS = {
     #paths
     "data_dir": "/scratch/asw462/data/bnc_lm/",
     "vocab_path": "/scratch/asw462/data/bnc-30/vocab_20000.txt",
-    "embedding_data_path": "/scratch/asw462/data/bnc-30/embeddings_20000.txt",
+    "embedding_path": "/scratch/asw462/data/bnc-30/embeddings_20000.txt",
     "log_path": "/scratch/asw462/logs/",
     "data_type":     "discriminator",
     "model_type":      "rnn_classifier_pooling",
@@ -48,7 +48,7 @@ FIXED_PARAMETERS = {
     "gpu": "True",
 
     #sizes
-    "word_embedding_dim":   "300",
+    "embedding_size":   "300",
     "crop_pad_length": "30",
 
 
