@@ -18,6 +18,7 @@ class ModelTrainer(object):
             self.model = self.model.cuda()
         now = datetime.now()
         # self.time_stamp = "%d-%d_%d-%d-%d_%d" % (now.month, now.day, now.hour, now.minute, now.second, now.microsecond)
+        self.OUTPUT_PATH = FLAGS.ckpt_path + FLAGS.experiment_name
         self.LOGS_PATH = FLAGS.log_path + "LOGS-" + FLAGS.experiment_name
         self.OUT_LOGS_PATH = FLAGS.log_path + "OUTPUTS-" + FLAGS.experiment_name
         self.LOGS = open(self.LOGS_PATH, "a")

@@ -38,7 +38,7 @@ FLAGS(sys.argv)
 
 FIXED_PARAMETERS = {
     #paths
-    "data_dir": "/scratch/asw462/data/bnc_lm/",
+    "data_dir": "/scratch/asw462/data/discriminator/",
     "vocab_path": "/scratch/asw462/data/bnc-30/vocab_20000.txt",
     "embedding_path": "/scratch/asw462/data/bnc-30/embeddings_20000.txt",
     "log_path": "/scratch/asw462/logs/",
