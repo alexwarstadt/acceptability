@@ -8,7 +8,7 @@ def get_flags():
     gflags.DEFINE_string("vocab_path",
                          "/scratch/asw462/data/bnc-30/vocab_20000.txt",
                          "vocab text file")
-    gflags.DEFINE_string("embedding_data_path",
+    gflags.DEFINE_string("embedding_path",
                          "/scratch/asw462/data/bnc-30/embeddings_20000.txt",
                          "embeddings file, must match vocab")
     gflags.DEFINE_string("log_path", "/scratch/asw462/logs/", "")
@@ -21,7 +21,7 @@ def get_flags():
     gflags.DEFINE_string("experiment_name", "", "")
 
     #sizes
-    gflags.DEFINE_integer("word_embedding_dim", 300, "")
+    gflags.DEFINE_integer("embedding_size", 300, "")
     gflags.DEFINE_integer("crop_pad_length", 30, "")
 
     #chunks

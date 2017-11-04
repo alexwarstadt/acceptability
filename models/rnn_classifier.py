@@ -1,9 +1,8 @@
 import random
 import time
-
 import torch.nn as nn
+import gflags
 from torch.autograd import Variable
-
 from models import model_trainer
 from utils.classifier_utils import *
 
@@ -88,34 +87,22 @@ class ClassifierPooling(nn.Module):
 
 class RNNTrainer(model_trainer.ModelTrainer):
     def __init__(self,
-                 corpus_path,
-                 embedding_path,
-                 vocab_path,
-                 embedding_size,
-                 model,
-                 stages_per_epoch,
-                 prints_per_stage,
-                 convergence_threshold,
-                 max_epochs,
-                 gpu,
-                 learning_rate=.01):
-        super(RNNTrainer, self).__init__(corpus_path, embedding_path, vocab_path, embedding_size, model, stages_per_epoch,
-                                         prints_per_stage, convergence_threshold, max_epochs, gpu, learning_rate)
-        self.LOGS_PATH = "logs/rnn_logs_" + self.time_stamp
-        self.OUTPUT_PATH = "models/rnn_classifier_" + self.time_stamp
-        self.LOGS = open(self.LOGS_PATH, "a")
-        self.OUT_LOGS = open("logs/rnn_outputs_" + self.time_stamp, "a")
+                 FLAGS,
+                 model):
+        self.FLAGS = FLAGS
+        super(RNNTrainer, self).__init__(FLAGS, model)
+
 
     def to_string(self):
-        return "data\t\t\t" + self.corpus_path + "\n" + \
+        return "data\t\t\t" + self.FLAGS.data_dir + "\n" + \
             self.model.to_string() + \
-            "learning rate\t\t" + str(self.learning_rate) + "\n" + \
-            "output\t\t\t" + str(self.OUTPUT_PATH)
+            "learning rate\t\t" + str(self.FLAGS.learning_rate) + "\n" + \
+            "experiment name\t\t\t" + self.FLAGS.experiment_name
 
     def get_batch_output(self, batch):
         hidden = self.model.init_hidden(batch.batch_size)
-        input = torch.Tensor(len(batch.tensor_view), batch.batch_size, self.embedding_size)
-        if self.gpu:
+        input = torch.Tensor(len(batch.tensor_view), batch.batch_size, self.FLAGS.embedding_size)
+        if self.FLAGS.gpu:
             hidden = (hidden[0].cuda(), hidden[1].cuda())
             input = input.cuda()
         for i, t in enumerate(batch.tensor_view):

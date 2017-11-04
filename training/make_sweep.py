@@ -149,5 +149,5 @@ for run_id in range(SWEEP_RUNS):
     if SINGLE_DAY:
         print "cd ~/acceptability; python -m rnn_classifier " + flags
     else:
-        print "MODEL=\"rnn_classifier\" FLAGS=\"" + flags + "\" bash ../scripts/sbatch_submit.sh"
+        print "MODEL=\"rnn_classifier\" FLAGS=\"" + flags + "\" bash ~/scripts/sbatch_submit.sh"
     print
