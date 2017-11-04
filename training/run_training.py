@@ -2,6 +2,7 @@ import sys
 import gflags
 import my_flags
 import models.rnn_classifier
+import torch
 
 FLAGS = gflags.FLAGS
 
@@ -21,6 +22,11 @@ if __name__ == '__main__':
             hidden_size=FLAGS.hidden_size,
             embedding_size=FLAGS.embedding_size,
             num_layers=FLAGS.num_layers)
+
+        try:
+            cl.load_state_dict(torch.load(FLAGS.ckpt_path + FLAGS.experiment_name))
+        except IOError:
+            pass
 
     clt = models.rnn_classifier.RNNTrainer(
         FLAGS,

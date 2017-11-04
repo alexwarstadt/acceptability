@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69f0732d-a5ae-4515-92df-328b30820cd3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/model_trainer.py" afterPath="$PROJECT_DIR$/models/model_trainer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/training/make_sweep.py" afterPath="$PROJECT_DIR$/training/make_sweep.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/training/run_training.py" afterPath="$PROJECT_DIR$/training/run_training.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,11 +20,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.55369925">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="rnn_classifier.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="rnn_classifier.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/models/rnn_classifier.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1321">
-                  <caret line="185" column="38" lean-forward="true" selection-start-line="185" selection-start-column="38" selection-end-line="185" selection-end-column="38" />
+                <state relative-caret-position="269">
+                  <caret line="190" column="46" lean-forward="true" selection-start-line="190" selection-start-column="4" selection-end-line="190" selection-end-column="46" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -32,11 +32,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="run_training.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="run_training.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/training/run_training.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
-                  <caret line="21" column="47" lean-forward="false" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+                <state relative-caret-position="408">
+                  <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#10#0" expanded="true" />
                   </folding>
@@ -135,8 +135,8 @@
           <file leaf-file-name="model_trainer.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/models/model_trainer.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="224">
-                  <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+                <state relative-caret-position="372">
+                  <caret line="31" column="50" lean-forward="true" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -273,10 +273,10 @@
         <option value="$PROJECT_DIR$/training/model_trainer.py" />
         <option value="$PROJECT_DIR$/training/test.py" />
         <option value="$PROJECT_DIR$/models/rnn_classifier.py" />
-        <option value="$PROJECT_DIR$/training/run_training.py" />
         <option value="$PROJECT_DIR$/training/my_flags.py" />
         <option value="$PROJECT_DIR$/training/make_sweep.py" />
         <option value="$PROJECT_DIR$/models/model_trainer.py" />
+        <option value="$PROJECT_DIR$/training/run_training.py" />
       </list>
     </option>
   </component>
@@ -631,7 +631,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10085837" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46385542" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4084507" sideWeight="0.49427754" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21638924" sideWeight="0.49427754" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2696477" sideWeight="0.49492386" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1158,32 +1158,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/training/run_training.py">
+    <entry file="file://$PROJECT_DIR$/models/model_trainer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="21" column="47" lean-forward="false" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        <state relative-caret-position="372">
+          <caret line="31" column="50" lean-forward="true" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/rnn_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1321">
-          <caret line="185" column="38" lean-forward="true" selection-start-line="185" selection-start-column="38" selection-end-line="185" selection-end-column="38" />
+        <state relative-caret-position="269">
+          <caret line="190" column="46" lean-forward="true" selection-start-line="190" selection-start-column="4" selection-end-line="190" selection-end-column="46" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/model_trainer.py">
+    <entry file="file://$PROJECT_DIR$/training/run_training.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+        <state relative-caret-position="408">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
