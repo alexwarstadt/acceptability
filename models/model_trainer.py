@@ -164,7 +164,7 @@ class ModelTrainer(object):
         valid = cdu.CorpusEpoch(list(self.dm.valid_pairs), self.dm)
         for _ in range(self.FLAGS.stages_per_epoch):
             if n_stages_not_converging > self.FLAGS.convergence_threshold:
-                raise RuntimeError
+                raise NotConvergingError
             n_stages += 1
             print("-------------training-------------")
             train_loss, train_confusion = self.run_stage(train, True, self.FLAGS.stages_per_epoch, self.FLAGS.prints_per_stage)
@@ -213,22 +213,26 @@ class ModelTrainer(object):
         n_stages = 0
         max_matthews = 0
         n_stages_not_converging = 0
-        # try:
-        while epoch < self.FLAGS.max_epochs:
-            epoch += 1
-            print("===========================EPOCH %d=============================" % epoch)
-            max_matthews, n_stages_not_converging, n_stages = self.run_epoch(max_matthews, n_stages_not_converging, n_stages)
-    # except RuntimeError:
-        self.model.load_state_dict(torch.load(self.OUTPUT_PATH))
-        print("=====================TEST==================")
-        test_loss, test_confusion = self.run_stage(cdu.CorpusEpoch(self.dm.test_pairs, self.dm), False, 1, 1)
-        self.LOGS.write("accuracy\t" + self.my_round(test_confusion.accuracy()) + "\n")
-        self.LOGS.write("matthews\t" + self.my_round(test_confusion.matthews()) + "\n")
-        self.LOGS.write('f1\t\t\t' + self.my_round(test_confusion.f1()) + "\n")
-        self.LOGS.write("\t" + "tp={0[0]:.2g}, tn={0[1]:.2g}, fp={0[2]:.2g}, fn={0[3]:.2g}".format(test_confusion.percentages()) + "\n")
-    # finally:
-        self.LOGS.close()
+        try:
+            while epoch < self.FLAGS.max_epochs:
+                epoch += 1
+                print("===========================EPOCH %d=============================" % epoch)
+                max_matthews, n_stages_not_converging, n_stages = self.run_epoch(max_matthews, n_stages_not_converging, n_stages)
+        except NotConvergingError:
+            self.model.load_state_dict(torch.load(self.OUTPUT_PATH))
+            print("=====================TEST==================")
+            test_loss, test_confusion = self.run_stage(cdu.CorpusEpoch(self.dm.test_pairs, self.dm), False, 1, 1)
+            self.LOGS.write("accuracy\t" + self.my_round(test_confusion.accuracy()) + "\n")
+            self.LOGS.write("matthews\t" + self.my_round(test_confusion.matthews()) + "\n")
+            self.LOGS.write('f1\t\t\t' + self.my_round(test_confusion.f1()) + "\n")
+            self.LOGS.write("\t" + "tp={0[0]:.2g}, tn={0[1]:.2g}, fp={0[2]:.2g}, fn={0[3]:.2g}".format(test_confusion.percentages()) + "\n")
+        finally:
+            self.LOGS.close()
 
 
+class NotConvergingError(Exception):
+    def __init__(self, value):
+        self.value = value
 
-
+    def __str__(self):
+        return repr(self.value)

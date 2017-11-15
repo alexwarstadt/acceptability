@@ -44,3 +44,9 @@ def get_flags():
     gflags.DEFINE_integer("num_layers", 1, "")
     gflags.DEFINE_float("learning_rate", .0005, "")
 
+    #aj flags
+    gflags.DEFINE_integer("encoding_size", 100, "output size of encoder, input size of aj")
+    gflags.DEFINE_integer("encoder_num_layers", 1, "number of layers in the encoder network")
+    gflags.DEFINE_string("encoder_path", "", "location of encoder checkpoint")
+    gflags.DEFINE_string("encoder_type", "rnn_classifier_pooling", "the class of the encoder model")
+

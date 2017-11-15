@@ -6,10 +6,10 @@ import gflags
 import sys
 from datetime import datetime
 
-SINGLE_DAY = False
+SINGLE_DAY = True
 now = datetime.now()
 NAME = "{0[0]:02d}{0[1]:02d}{0[2]:02d}{0[3]:02d}{0[4]:02d}".format([now.month, now.day, now.hour, now.minute, now.second])
-SWEEP_RUNS = 20
+SWEEP_RUNS = 50
 
 LIN = "LIN"
 EXP = "EXP"
@@ -20,6 +20,27 @@ MUL = "MUL" # multiple of 100
 QUAD = "QUAD"
 
 FLAGS = gflags.FLAGS
+
+#
+# def random_experiment_local():
+#     h_size = int(math.floor(math.pow(random.uniform(4, 10), 2)))  # [16, 100], quadratic distribution
+#     lr = math.pow(.1, random.uniform(1.5, 4))  # [.01, .00001] log distribution
+#     cl = Classifier(hidden_size=h_size, encoding_size=encoder.reduction_size)
+#     clt = AJTrainer('acceptability_corpus/levin',
+#                     '../data/bnc-30/embeddings_20000.txt',
+#                     '../data/bnc-30/vocab_20000.txt',
+#                     300,
+#                     cl,
+#                     encoder,
+#                     stages_per_epoch=1,
+#                     prints_per_stage=1,
+#                     convergence_threshold=20,
+#                     max_epochs=100,
+#                     gpu=False,
+#                     learning_rate=lr)
+#     clt.run()
+
+
 
 
 gflags.DEFINE_string("data_dir", "/scratch/asw462/data/bnc_lm/", "")
@@ -45,7 +66,8 @@ FIXED_PARAMETERS = {
     "embedding_path": "/scratch/asw462/data/bnc-30/embeddings_20000.txt",
     "log_path": "/scratch/asw462/logs/",
     "data_type":     "discriminator",
-    "model_type":      "rnn_classifier_pooling",
+    "encoder_type":    "rnn_classifier_pooling",
+    "model_type":      "aj_classifier",
     "ckpt_path":  "/scratch/asw462/models/",
     "gpu": "",
 
@@ -55,10 +77,10 @@ FIXED_PARAMETERS = {
 
 
     #chunks
-    "stages_per_epoch": "100",
+    "stages_per_epoch": "1",
     "prints_per_stage": "1",
     "convergence_threshold": "20",
-    "max_epochs": "100",
+    "max_epochs": "500",
     "batch_size": "32",
 
 
@@ -67,10 +89,23 @@ FIXED_PARAMETERS = {
 # Tunable parameters.
 SWEEP_PARAMETERS = {
 
-    "hidden_size": ("h_size", QUAD, 225, 1600),
-    "num_layers": ("num_layers", LIN, 1, 4),
-    "learning_rate": ("lr", EXP, 0.00005, 0.005),
-    "data_dir": ("data", CHOICE, ["/scratch/asw462/data/bnc_lm/", "/scratch/asw462/data/discriminator/"], None)
+    "hidden_size": ("h_size", QUAD, 10, 200),
+    "learning_rate": ("lr", EXP, 0.5, 0.00005),
+    "data_dir": ("data", CHOICE, ["/scratch/asw462/data/aj_all/",
+                                  "/scratch/asw462/data/discriminator/aj_balanced",
+                                  "/scratch/asw462/data/discriminator/levin",
+                                  "/scratch/asw462/data/discriminator/levin_balanced"
+                                  ], None),
+    "encoder_path": ("enc", CHOICE,
+                     ["/scratch/asw462/models/sweep_1106235815_rnn_classifier_pooling_10-lr0.00044-h_size279-databnc_lm-num_layers2",
+                        "/scratch/asw462/models/sweep_1106235815_rnn_classifier_pooling_14-lr0.00088-h_size748-datadiscriminator-num_layers3",
+                        "/scratch/asw462/models/sweep_1106235815_rnn_classifier_pooling_15-lr0.0002-h_size1019-databnc_lm-num_layers2",
+                        "/scratch/asw462/models/sweep_1106235815_rnn_classifier_pooling_16-lr8e-05-h_size1034-datadiscriminator-num_layers3",
+                        "/scratch/asw462/models/sweep_1106235815_rnn_classifier_pooling_17-lr0.00015-h_size689-datadiscriminator-num_layers4",
+                        "/scratch/asw462/models/sweep_1106235815_rnn_classifier_pooling_19-lr0.00029-h_size313-databnc_lm-num_layers1",
+                        "/scratch/asw462/models/sweep_1106235815_rnn_classifier_pooling_1-lr0.00022-h_size1515-databnc_lm-num_layers1",
+                        "/scratch/asw462/models/sweep_1106235815_rnn_classifier_pooling_4-lr0.00015-h_size231-databnc_lm-num_layers4"
+                      ], None)
 
 }
 
@@ -117,6 +152,11 @@ for run_id in range(SWEEP_RUNS):
             sample = 1 - np.exp(lmn + (lmx - lmn) * r)
         elif t==CHOICE:
             sample = random.choice(mn)
+            if param == "encoder_path":
+                params["encoding_size"] = \
+                    int(filter(lambda s: s.startswith("h_size"), sample.split("-"))[0].replace("h_size", ""))
+                params["encoding_num_layers"] = \
+                    int(filter(lambda s: s.startswith("num_layers"), sample.split("-"))[0].replace("num_layers", ""))
         elif t==MUL:
             x = mn + (mx - mn) * r
             sample = x + 100 - x % 100
@@ -155,7 +195,7 @@ for run_id in range(SWEEP_RUNS):
     flags += " --experiment_name " + name
 
     if SINGLE_DAY:
-        print "cd ~/acceptability; python -m rnn_classifier " + flags
+        print "FLAGS=\"" + flags + "\" sbatch ~/scripts/train_rnn.sbatch"
     else:
         print "MODEL=\"rnn_classifier\" FLAGS=\"" + flags + "\" bash ~/scripts/sbatch_submit.sh"
     print

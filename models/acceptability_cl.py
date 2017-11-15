@@ -14,62 +14,45 @@ class Classifier(nn.Module):
     def __init__(self, hidden_size, encoding_size):
         super(Classifier, self).__init__()
         self.hidden_size = hidden_size
-        self.lm2h = nn.Linear(encoding_size, self.hidden_size)
+        self.enc2h = nn.Linear(encoding_size, self.hidden_size)
         self.h20 = nn.Linear(self.hidden_size, 1)
         self.sigmoid = nn.Sigmoid()
         self.tanh = nn.Tanh()
         self.softmax = nn.Softmax()
 
     def forward(self, sentence_vecs):
-        hidden = self.tanh(self.lm2h(sentence_vecs))
+        hidden = self.tanh(self.enc2h(sentence_vecs))
         out = self.sigmoid(self.h20(hidden))
         return out
 
 
 class AJTrainer(model_trainer.ModelTrainer):
     def __init__(self,
-                 corpus_path,
-                 embedding_path,
-                 vocab_path,
-                 embedding_size,
+                 FLAGS,
                  model,
-                 encoder,
-                 stages_per_epoch,
-                 prints_per_stage,
-                 convergence_threshold,
-                 max_epochs,
-                 gpu,
-                 learning_rate=.01):
-        super(AJTrainer, self).__init__(corpus_path, embedding_path, vocab_path, embedding_size, model, stages_per_epoch,
-                                         prints_per_stage, convergence_threshold, max_epochs, gpu, learning_rate)
+                 encoder):
+        super(AJTrainer, self).__init__(FLAGS, model)
         self.encoder = encoder
-        self.LOGS_PATH = "logs/aj_logs_" + self.time_stamp
-        self.OUTPUT_PATH = "models/aj_classifier_" + self.time_stamp
-        self.LOGS = open(self.LOGS_PATH, "a")
-        self.OUT_LOGS = open("logs/aj_outputs_" + self.time_stamp, "a")
-        if self.gpu:
-            self.encoder = self.encoder.cuda()
 
     def to_string(self):
-        return "data\t\t\t" + self.corpus_path + "\n" + \
-            "input size\t\t" + str(self.embedding_size) + "\n" + \
-            "hidden size\t\t" + str(self.model.hidden_size) + "\n" + \
-            "encoder hidden\t\t" + str(self.encoder.hidden_size) + "\n" + \
-            "encoder reduction\t" + str(self.encoder.reduction_size) + "\n" + \
-            "dencoder num layers\t" + str(self.encoder.num_layers) + "\n" + \
-            "learning rate\t\t" + str(self.learning_rate) + "\n" + \
-            "output\t\t\t" + str(self.OUTPUT_PATH)
+
+        return "data\t\t\t" + self.FLAGS.data_dir + "\n" + \
+            self.model.to_string() + \
+            "learning rate\t\t\t" + str(self.FLAGS.learning_rate) + "\n" + \
+            "encoding size\t\t\t" + str(self.FLAGS.encoding_size) + "\n" + \
+            "encoder name\t\t\t" + str(self.FLAGS.encoder_path) + "\n" + \
+            "experiment name\t\t\t" + self.FLAGS.experiment_name
 
     def get_batch_output(self, batch):
         hidden = self.encoder.init_hidden(batch.batch_size)
-        input = torch.Tensor(len(batch.tensor_view), batch.batch_size, self.embedding_size)
+        input = torch.Tensor(len(batch.tensor_view), batch.batch_size, self.FLAGS.embedding_size)
         for i, t in enumerate(batch.tensor_view):
             input[i] = t
-        if self.gpu:
+        if self.FLAGS.gpu:
             hidden = (hidden[0].cuda(), hidden[1].cuda())
             input = input.cuda()
-        _, reduction = self.encoder.forward(Variable(input), hidden)
-        output = self.model.forward(reduction)
+        _, encoding = self.encoder.forward(Variable(input), hidden)
+        output = self.model.forward(encoding)
         return output, None
 
     def interact(self, sentences):
