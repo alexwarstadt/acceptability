@@ -26,6 +26,7 @@ class Classifier(nn.Module):
         return out
 
 
+
 class AJTrainer(model_trainer.ModelTrainer):
     def __init__(self,
                  FLAGS,
@@ -37,11 +38,13 @@ class AJTrainer(model_trainer.ModelTrainer):
     def to_string(self):
 
         return "data\t\t\t" + self.FLAGS.data_dir + "\n" + \
-            self.model.to_string() + \
-            "learning rate\t\t\t" + str(self.FLAGS.learning_rate) + "\n" + \
-            "encoding size\t\t\t" + str(self.FLAGS.encoding_size) + "\n" + \
-            "encoder name\t\t\t" + str(self.FLAGS.encoder_path) + "\n" + \
-            "experiment name\t\t\t" + self.FLAGS.experiment_name
+            "input size\t\t" + str(self.FLAGS.embedding_size) + "\n" + \
+            "hidden size\t\t" + str(self.FLAGS.hidden_size) + "\n" + \
+            "learning rate\t\t" + str(self.FLAGS.learning_rate) + "\n" + \
+            "learning rate\t\t" + str(self.FLAGS.learning_rate) + "\n" + \
+            "encoding size\t\t" + str(self.FLAGS.encoding_size) + "\n" + \
+            "encoder name\t\t" + str(self.FLAGS.encoder_path) + "\n" + \
+            "experiment name\t\t" + self.FLAGS.experiment_name
 
     def get_batch_output(self, batch):
         hidden = self.encoder.init_hidden(batch.batch_size)
