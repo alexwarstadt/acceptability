@@ -48,6 +48,7 @@ class AJTrainer(model_trainer.ModelTrainer):
     def get_batch_output(self, batch):
         hidden = self.encoder.init_hidden(batch.batch_size)
         input = torch.Tensor(len(batch.tensor_view), batch.batch_size, self.FLAGS.embedding_size)
+        print("batch.tensor_view!", batch.tensor_view)
         for i, t in enumerate(batch.tensor_view):
             input[i] = t
         if self.FLAGS.gpu:
