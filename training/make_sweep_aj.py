@@ -69,7 +69,7 @@ FIXED_PARAMETERS = {
     "encoder_type":    "rnn_classifier_pooling",
     "model_type":      "aj_classifier",
     "ckpt_path":  "/scratch/asw462/models/",
-    # "gpu": "",
+    # "gpu": "", TODO change back!!!!!!!!!!!!!!!!!!!!
 
     #sizes
     "embedding_size":   "300",
