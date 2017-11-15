@@ -14,7 +14,7 @@ class Classifier(nn.Module):
     def __init__(self, hidden_size, encoding_size):
         super(Classifier, self).__init__()
         self.hidden_size = hidden_size
-        self.enc2h = nn.Linear(encoding_size, self.hidden_size)
+        self.enc2h = nn.Linear(2*encoding_size, self.hidden_size)
         self.h20 = nn.Linear(self.hidden_size, 1)
         self.sigmoid = nn.Sigmoid()
         self.tanh = nn.Tanh()
@@ -40,7 +40,6 @@ class AJTrainer(model_trainer.ModelTrainer):
         return "data\t\t\t" + self.FLAGS.data_dir + "\n" + \
             "input size\t\t" + str(self.FLAGS.embedding_size) + "\n" + \
             "hidden size\t\t" + str(self.FLAGS.hidden_size) + "\n" + \
-            "learning rate\t\t" + str(self.FLAGS.learning_rate) + "\n" + \
             "learning rate\t\t" + str(self.FLAGS.learning_rate) + "\n" + \
             "encoding size\t\t" + str(self.FLAGS.encoding_size) + "\n" + \
             "encoder name\t\t" + str(self.FLAGS.encoder_path) + "\n" + \
