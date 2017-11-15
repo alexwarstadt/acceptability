@@ -74,9 +74,9 @@ class AJTrainer(model_trainer.ModelTrainer):
 
 # ============= LOAD ENCODER =============
 
-encoder_path = 'models/rnn_classifier_9-27_18:12:45'
-encoder = rnn_classifier.Classifier(hidden_size=306, embedding_size=300, num_layers=3, reduction_size=165)
-encoder.load_state_dict(torch.load(encoder_path))
+# encoder_path = 'models/rnn_classifier_9-27_18:12:45'
+# encoder = rnn_classifier.Classifier(hidden_size=306, embedding_size=300, num_layers=3, reduction_size=165)
+# encoder.load_state_dict(torch.load(encoder_path))
 
 # ============= EXPERIMENT ================
 
