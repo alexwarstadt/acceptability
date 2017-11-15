@@ -21,6 +21,9 @@ class Classifier(nn.Module):
         self.softmax = nn.Softmax()
 
     def forward(self, sentence_vecs):
+        print(sentence_vecs.size())
+        print(sentence_vecs)
+        print("forward")
         hidden = self.tanh(self.enc2h(sentence_vecs))
         out = self.sigmoid(self.h20(hidden))
         return out
