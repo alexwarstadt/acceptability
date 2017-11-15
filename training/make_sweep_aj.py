@@ -92,9 +92,9 @@ SWEEP_PARAMETERS = {
     "hidden_size": ("h_size", QUAD, 10, 200),
     "learning_rate": ("lr", EXP, 0.5, 0.00005),
     "data_dir": ("data", CHOICE, ["/scratch/asw462/data/aj_all/",
-                                  "/scratch/asw462/data/discriminator/aj_balanced",
-                                  "/scratch/asw462/data/discriminator/levin",
-                                  "/scratch/asw462/data/discriminator/levin_balanced"
+                                  "/scratch/asw462/data/aj_balanced",
+                                  "/scratch/asw462/data/levin",
+                                  "/scratch/asw462/data/levin_balanced"
                                   ], None),
     "encoder_path": ("enc", CHOICE,
                      ["/scratch/asw462/models/sweep_1106235815_rnn_classifier_pooling_10-lr0.00044-h_size279-databnc_lm-num_layers2",
@@ -155,7 +155,7 @@ for run_id in range(SWEEP_RUNS):
             if param == "encoder_path":
                 params["encoding_size"] = \
                     int(filter(lambda s: s.startswith("h_size"), sample.split("-"))[0].replace("h_size", ""))
-                params["encoding_num_layers"] = \
+                params["encoder_num_layers"] = \
                     int(filter(lambda s: s.startswith("num_layers"), sample.split("-"))[0].replace("num_layers", ""))
         elif t==MUL:
             x = mn + (mx - mn) * r

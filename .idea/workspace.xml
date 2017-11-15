@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69f0732d-a5ae-4515-92df-328b30820cd3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training/make_sweep_aj.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/balance_corpus.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/acceptability_cl.py" afterPath="$PROJECT_DIR$/models/acceptability_cl.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/model_trainer.py" afterPath="$PROJECT_DIR$/models/model_trainer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp" afterPath="$PROJECT_DIR$/temp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/training/make_sweep.py" afterPath="$PROJECT_DIR$/training/make_sweep.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/training/my_flags.py" afterPath="$PROJECT_DIR$/training/my_flags.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/training/run_training.py" afterPath="$PROJECT_DIR$/training/run_training.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/training/make_sweep_aj.py" afterPath="$PROJECT_DIR$/training/make_sweep_aj.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,7 +18,7 @@
     <favorites_list name="LM" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.70098037">
+    <splitter split-orientation="horizontal" split-proportion="0.5138889">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="model_trainer.py" pinned="false" current-in-tab="false">
@@ -42,8 +36,8 @@
           <file leaf-file-name="rnn_classifier.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/models/rnn_classifier.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-220">
-                  <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+                <state relative-caret-position="455">
+                  <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="55" selection-end-column="58" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -63,21 +57,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="my_flags.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="my_flags.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/training/my_flags.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="612">
+                <state relative-caret-position="394">
                   <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="make_sweep_aj.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="make_sweep_aj.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/training/make_sweep_aj.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="281">
-                  <caret line="195" column="0" lean-forward="true" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+                <state relative-caret-position="1200">
+                  <caret line="100" column="62" lean-forward="true" selection-start-line="100" selection-start-column="62" selection-end-line="100" selection-end-column="62" />
                   <folding>
                     <element signature="e#58#71#0" expanded="true" />
                   </folding>
@@ -92,8 +86,8 @@
           <file leaf-file-name="acceptability_cl.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/models/acceptability_cl.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1">
-                  <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+                <state relative-caret-position="297">
+                  <caret line="46" column="62" lean-forward="true" selection-start-line="46" selection-start-column="62" selection-end-line="46" selection-end-column="62" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -230,10 +224,10 @@
         <option value="$PROJECT_DIR$/training/make_sweep.py" />
         <option value="$PROJECT_DIR$/temp" />
         <option value="$PROJECT_DIR$/utils/balance_corpus.py" />
-        <option value="$PROJECT_DIR$/models/acceptability_cl.py" />
         <option value="$PROJECT_DIR$/training/my_flags.py" />
         <option value="$PROJECT_DIR$/training/run_training.py" />
         <option value="$PROJECT_DIR$/training/make_sweep_aj.py" />
+        <option value="$PROJECT_DIR$/models/acceptability_cl.py" />
       </list>
     </option>
   </component>
@@ -588,7 +582,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46385542" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6069142" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40076825" sideWeight="0.49427754" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40076825" sideWeight="0.49427754" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39308578" sideWeight="0.49492386" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -676,7 +670,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/models/acceptability_cl.py</url>
-          <line>222</line>
+          <line>225</line>
           <option name="timeStamp" value="252" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1121,26 +1115,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/acceptability_cl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/rnn_classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-220">
-          <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/model_trainer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
@@ -1148,14 +1122,6 @@
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/training/my_flags.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1171,10 +1137,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/training/make_sweep_aj.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="195" column="0" lean-forward="true" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+        <state relative-caret-position="1200">
+          <caret line="100" column="62" lean-forward="true" selection-start-line="100" selection-start-column="62" selection-end-line="100" selection-end-column="62" />
           <folding>
             <element signature="e#58#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/rnn_classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="55" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/training/my_flags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/acceptability_cl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="46" column="62" lean-forward="true" selection-start-line="46" selection-start-column="62" selection-end-line="46" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
