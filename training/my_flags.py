@@ -17,7 +17,7 @@ def get_flags():
                          "rnn_classifier_pooling",
                          "options: rnn_classifier_pooling, acceptability_classifier,....")
     gflags.DEFINE_string("ckpt_path", "/scratch/asw462/models/", "")
-    gflags.DEFINE_boolean("gpu", True, "set to false on local")
+    gflags.DEFINE_boolean("gpu", False, "set to false on local")
     gflags.DEFINE_string("experiment_name", "", "")
 
     #sizes

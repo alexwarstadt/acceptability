@@ -69,8 +69,8 @@ class ClassifierPooling(nn.Module):
         self.softmax = nn.Softmax()
 
     def forward(self, input, hidden_states):
-        print(input)
-        print(hidden_states)
+        # print(input)
+        # print(hidden_states)
         o, hc = self.ih2h(input, hidden_states)
         pool = nn.functional.max_pool1d(torch.transpose(o, 0, 2), len(input))
         pool = torch.transpose(pool, 0, 2).squeeze()

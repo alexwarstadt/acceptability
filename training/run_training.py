@@ -43,7 +43,10 @@ if __name__ == '__main__':
                 hidden_size=FLAGS.encoding_size,
                 embedding_size=FLAGS.embedding_size,
                 num_layers=FLAGS.encoder_num_layers)
-            encoder.load_state_dict(torch.load(FLAGS.encoder_path))
+            if FLAGS.gpu:
+                encoder.load_state_dict(torch.load(FLAGS.encoder_path, map_location=lambda storage, loc: storage))
+            else:
+                encoder.load_state_dict(torch.load(FLAGS.encoder_path))
         clt = models.acceptability_cl.AJTrainer(
             FLAGS,
             model=cl,
