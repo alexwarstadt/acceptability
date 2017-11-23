@@ -166,6 +166,9 @@ def permute_sentences(input_path, out_path, min_percent, max_percent):
             output.write(new_line + "\n")
     output.close()
 
+    from utils.data_processor import permute_sentences; permute_sentences("")
+
+
 def swap_permute(input_path):
     out_path = input_path[:-4] + "-permuted.txt"
     if os.path.isfile(out_path):

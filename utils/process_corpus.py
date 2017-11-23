@@ -102,9 +102,9 @@ def crop_corpus_with_prefix():
 #         cropped_sentences.append(s)
 #     return cropped_sentences
 
-def prefix():
-    file = open("../data/bnc/bnc30-half-1-permuted.txt")
-    out = open("../data/bnc/bnc30-half-1-permuted-table.txt", "w")
+def prefix(input, output):
+    file = open(input)
+    out = open(output, "w")
     for line in file:
         out.write("per	0	*	" + line)
 
