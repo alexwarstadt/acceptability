@@ -34,31 +34,6 @@ def filter_short_lines(start_corpus_path, n_words):
     os.rename(start_corpus_path+"temp", start_corpus_path)
 
 
-def split(start_corpus_path, train, valid, test):
-    train_out = start_corpus_path[:-4] + "-train.txt"
-    valid_out = start_corpus_path[:-4] + "-valid.txt"
-    test_out = start_corpus_path[:-4] + "-test.txt"
-    if os.path.isfile(train_out) or os.path.isfile(valid_out) or os.path.isfile(test_out):
-        print("split files for %s already exists" % start_corpus_path)
-    elif train + valid + test != 1.0:
-        raise Exception("train, valid, and test must sum to 1")
-    else:
-        train_file = open(train_out, "x")
-        valid_file = open(valid_out, "x")
-        test_file = open(test_out, "x")
-        print("splitting", start_corpus_path)
-        for line in open(start_corpus_path):
-            n = random.uniform(0, 1)
-            if n <= train:
-                train_file.write(line)
-            elif n <= train + valid:
-                valid_file.write(line)
-            else:
-                test_file.write(line)
-        train_file.close()
-        valid_file.close()
-        test_file.close()
-
 
 def crop(start_corpus_path, crop_pad_length):
     full_text_file = open(start_corpus_path)
@@ -171,16 +146,27 @@ def apply_xslt(text_paths, xslt_path, data_dir):
         dom = et.parse(path)
         newdom = transform(dom)
         output.write(str(newdom) + "\n")
-    # for path in paths:
-    #     txt = open(path)
-    #     for line in txt:
-    #         line = line.strip()
-    #         if line is not "":
-    #             output.write(line + "\n")
     output.close()
 
 
-def permute_sentences(input_path):
+def permute_sentences(input_path, out_path, min_percent, max_percent):
+    if os.path.isfile(out_path):
+        print("permuted file %s already exists" % out_path)
+    else:
+        output = open(out_path, "w")
+        for line in open(input_path):
+            words = line.split()
+            original_length = len(words)
+            words = remove_pad(words)
+            words, punc_map = remove_punc(words)
+            words = shuffle(words, random.uniform(.05, .3))
+            words = replace_punc(words, punc_map)
+            words = add_pad(words, original_length)
+            new_line = reduce(lambda x, y: x + " " + y, words)
+            output.write(new_line + "\n")
+    output.close()
+
+def swap_permute(input_path):
     out_path = input_path[:-4] + "-permuted.txt"
     if os.path.isfile(out_path):
         print("permuted file %s already exists" % out_path)
@@ -191,7 +177,7 @@ def permute_sentences(input_path):
             original_length = len(words)
             words = remove_pad(words)
             words, punc_map = remove_punc(words)
-            words = shuffle(words, random.uniform(.1, .6))
+            words = swap(words, random.uniform(1,5))
             words = replace_punc(words, punc_map)
             words = add_pad(words, original_length)
             new_line = reduce(lambda x, y: x + " " + y, words)

@@ -9,7 +9,7 @@ from datetime import datetime
 SINGLE_DAY = True
 now = datetime.now()
 NAME = "{0[0]:02d}{0[1]:02d}{0[2]:02d}{0[3]:02d}{0[4]:02d}".format([now.month, now.day, now.hour, now.minute, now.second])
-SWEEP_RUNS = 50
+SWEEP_RUNS = 200
 
 LIN = "LIN"
 EXP = "EXP"
@@ -90,21 +90,22 @@ FIXED_PARAMETERS = {
 SWEEP_PARAMETERS = {
 
     "hidden_size": ("h_size", QUAD, 10, 200),
-    "learning_rate": ("lr", EXP, 0.5, 0.00005),
-    "data_dir": ("data", CHOICE, ["/scratch/asw462/data/aj_all/",
+    "learning_rate": ("lr", EXP, 0.005, 0.00005),
+    "data_dir": ("data", CHOICE, [
+                                  "/scratch/asw462/data/aj_all/",
                                   "/scratch/asw462/data/aj_balanced",
                                   "/scratch/asw462/data/levin",
                                   "/scratch/asw462/data/levin_balanced"
                                   ], None),
     "encoder_path": ("enc", CHOICE,
-                     ["/scratch/asw462/models/sweep_1106235815_rnn_classifier_pooling_10-lr0.00044-h_size279-databnc_lm-num_layers2",
-                        "/scratch/asw462/models/sweep_1106235815_rnn_classifier_pooling_14-lr0.00088-h_size748-datadiscriminator-num_layers3",
-                        "/scratch/asw462/models/sweep_1106235815_rnn_classifier_pooling_15-lr0.0002-h_size1019-databnc_lm-num_layers2",
-                        "/scratch/asw462/models/sweep_1106235815_rnn_classifier_pooling_16-lr8e-05-h_size1034-datadiscriminator-num_layers3",
-                        "/scratch/asw462/models/sweep_1106235815_rnn_classifier_pooling_17-lr0.00015-h_size689-datadiscriminator-num_layers4",
-                        "/scratch/asw462/models/sweep_1106235815_rnn_classifier_pooling_19-lr0.00029-h_size313-databnc_lm-num_layers1",
-                        "/scratch/asw462/models/sweep_1106235815_rnn_classifier_pooling_1-lr0.00022-h_size1515-databnc_lm-num_layers1",
-                        "/scratch/asw462/models/sweep_1106235815_rnn_classifier_pooling_4-lr0.00015-h_size231-databnc_lm-num_layers4"
+                     ["/scratch/asw462/models/CPU_sweep_1106235815_rnn_classifier_pooling_10-lr0.00044-h_size279-databnc_lm-num_layers2",
+                        "/scratch/asw462/models/CPU_sweep_1106235815_rnn_classifier_pooling_14-lr0.00088-h_size748-datadiscriminator-num_layers3",
+                        "/scratch/asw462/models/CPU_sweep_1106235815_rnn_classifier_pooling_15-lr0.0002-h_size1019-databnc_lm-num_layers2",
+                        "/scratch/asw462/models/CPU_sweep_1106235815_rnn_classifier_pooling_16-lr8e-05-h_size1034-datadiscriminator-num_layers3",
+                        "/scratch/asw462/models/CPU_sweep_1106235815_rnn_classifier_pooling_17-lr0.00015-h_size689-datadiscriminator-num_layers4",
+                        "/scratch/asw462/models/CPU_sweep_1106235815_rnn_classifier_pooling_19-lr0.00029-h_size313-databnc_lm-num_layers1",
+                        "/scratch/asw462/models/CPU_sweep_1106235815_rnn_classifier_pooling_1-lr0.00022-h_size1515-databnc_lm-num_layers1",
+                        "/scratch/asw462/models/CPU_sweep_1106235815_rnn_classifier_pooling_4-lr0.00015-h_size231-databnc_lm-num_layers4"
                       ], None)
 
 }

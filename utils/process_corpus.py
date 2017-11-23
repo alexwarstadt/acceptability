@@ -46,7 +46,7 @@ def embeddings_vocab(path):
     return vocab
 
 
-def tokenize_corpus():
+def tokenize_corpus_with_prefix():
     out = open("acceptability_corpus/corpus_table_tokenized", "w")
     for line in open('acceptability_corpus/corpus_table'):
         vals = line.split("\t")
@@ -72,7 +72,7 @@ def any_unks():
                 print(w)
 
 
-def crop_corpus():
+def crop_corpus_with_prefix():
     file = open("lm_generated/all_lm_and_bnc-long_lines")
     out = open("lm_generated/all_lm_and_bnc-long_lines-cropped", "w")
     stop_pad = " "
@@ -89,18 +89,18 @@ def crop_corpus():
         else:
             continue
 
-def crop_sentences(sentences):
-    stop_pad = " "
-    for _ in range(crop_pad_length):
-        stop_pad = stop_pad + STOP + " "
-    cropped_sentences = []
-    for s in sentences:
-        s = START + " " + s + stop_pad
-        words = s.split()
-        words = words[:crop_pad_length]
-        s = reduce(lambda w, v: w + " " + v, words) + " " + STOP
-        cropped_sentences.append(s)
-    return cropped_sentences
+# def crop_sentences(sentences):
+#     stop_pad = " "
+#     for _ in range(crop_pad_length):
+#         stop_pad = stop_pad + STOP + " "
+#     cropped_sentences = []
+#     for s in sentences:
+#         s = START + " " + s + stop_pad
+#         words = s.split()
+#         words = words[:crop_pad_length]
+#         s = reduce(lambda w, v: w + " " + v, words) + " " + STOP
+#         cropped_sentences.append(s)
+#     return cropped_sentences
 
 def prefix():
     file = open("../data/bnc/bnc30-half-1-permuted.txt")
@@ -120,7 +120,7 @@ def corpus_bias():
     return total_acceptability/n_lines
 
 
-def remove_short_lines():
+def remove_short_lines_with_prefix():
     file = open('lm_generated/all_lm_and_bnc')
     out = open("lm_generated/all_lm_and_bnc-long_lines", "w")
     non_words = [STOP, START, ",", ".", "\"", "?", "!", "(", ")", "[", "]", "``", "''"]
