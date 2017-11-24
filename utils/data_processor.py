@@ -250,7 +250,7 @@ def add_pad(words, n):
 #=============================== MAIN ===============================
 
 
-swap_permute("/Users/alexwarstadt/Workspace/data/bnc-30/test.txt")
+# swap_permute("/Users/alexwarstadt/Workspace/data/bnc-30/test.txt")
 
 
 raw_corpus = "data/bnc/bnc.txt"
