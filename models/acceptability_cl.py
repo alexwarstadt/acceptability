@@ -7,7 +7,7 @@ import rnn_classifier
 from models import model_trainer
 from utils import classifier_data_utils as cdu
 from utils.classifier_utils import *
-from utils.process_corpus import crop_sentences
+# from utils.process_corpus import crop_sentences
 
 
 class Classifier(nn.Module):
@@ -61,7 +61,7 @@ class AJTrainer(model_trainer.ModelTrainer):
         return output, None
 
     def interact(self, sentences):
-        cropped_sentences = crop_sentences(sentences)
+        # cropped_sentences = crop_sentences(sentences)
         batch = cdu.Batch(cropped_sentences, self.dm)
         sentence_vecs = self.get_sentence_vecs_without_stop_lstm(batch)
         outputs = self.model.forward(sentence_vecs, self.encoder)

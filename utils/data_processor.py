@@ -171,21 +171,31 @@ def permute_sentences(input_path, out_path, min_percent, max_percent):
 
 def swap_permute(input_path):
     out_path = input_path[:-4] + "-permuted.txt"
-    if os.path.isfile(out_path):
-        print("permuted file %s already exists" % out_path)
-    else:
-        output = open(out_path, "w")
-        for line in open(input_path):
-            words = line.split()
-            original_length = len(words)
-            words = remove_pad(words)
-            words, punc_map = remove_punc(words)
-            words = swap(words, random.uniform(1,5))
-            words = replace_punc(words, punc_map)
-            words = add_pad(words, original_length)
-            new_line = reduce(lambda x, y: x + " " + y, words)
-            output.write(new_line + "\n")
+    output = open(out_path, "w")
+    for line in open(input_path):
+        words = line.split()
+        original_length = len(words)
+        words = remove_pad(words)
+        words, punc_map = remove_punc(words)
+        words = swap(words, random.randint(1,1))
+        words = replace_punc(words, punc_map)
+        words = add_pad(words, original_length)
+        new_line = reduce(lambda x, y: x + " " + y, words)
+        output.write(new_line + "\n")
     output.close()
+
+def swap(words, n):
+    for _ in range(n):
+        start = random.randint(0, max(len(words)-2, 1))
+        end = random.randint(start, max(len(words)-1, 1))
+        split_point = random.randint(start, end)
+        before = words[0:start]
+        first_half = words[0:split_point]
+        after = words[split_point:]
+        after.extend(before)
+        words = after
+    return words
+
 
 
 def remove_punc(words):
@@ -238,6 +248,11 @@ def add_pad(words, n):
 
 
 #=============================== MAIN ===============================
+
+
+swap_permute("/Users/alexwarstadt/Workspace/data/bnc-30/test.txt")
+
+
 raw_corpus = "data/bnc/bnc.txt"
 crop_pad_length = 30
 n_vocab = 50000
