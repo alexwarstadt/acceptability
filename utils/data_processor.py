@@ -166,7 +166,7 @@ def permute_sentences(input_path, out_path, min_percent, max_percent):
             output.write(new_line + "\n")
     output.close()
 
-    from utils.data_processor import permute_sentences; permute_sentences("")
+    # from utils.data_processor import permute_sentences; permute_sentences("")
 
 
 def swap_permute(input_path):
