@@ -229,7 +229,7 @@ class NewBatch:
             for i_w, w in enumerate(s):
                 try:
                     tensors[i_w][i_s] = self.data_manager.word_to_tensor(w)
-                except _:
+                except IndexError:
                     print(w)
                     print(i_w)
                     print(i_s)
