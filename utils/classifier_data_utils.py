@@ -227,7 +227,12 @@ class NewBatch:
             tensors.append(torch.Tensor(self.batch_size, self.data_manager.embedding_size))
         for i_s, s in enumerate(self.words_view):
             for i_w, w in enumerate(s):
-                tensors[i_w][i_s] = self.data_manager.word_to_tensor(w)
+                try:
+                    tensors[i_w][i_s] = self.data_manager.word_to_tensor(w)
+                except _:
+                    print(w)
+                    print(i_w)
+                    print(i_s)
         return tensors
 
     def true_batch_n_words(self):

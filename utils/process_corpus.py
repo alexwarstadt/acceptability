@@ -168,3 +168,12 @@ def verify_corpus_table(in_path, out_path):
 
 
 
+
+split("/Users/alexwarstadt/Workspace/data/permuted/shuff-00-05/all.txt", "/Users/alexwarstadt/Workspace/data/permuted/shuff-00-05/", .85, 0, .15)
+split("/Users/alexwarstadt/Workspace/data/permuted/shuff-05-10/all.txt", "/Users/alexwarstadt/Workspace/data/permuted/shuff-05-10/", .85, 0, .15)
+split("/Users/alexwarstadt/Workspace/data/permuted/shuff-10-15/all.txt", "/Users/alexwarstadt/Workspace/data/permuted/shuff-10-15/", .85, 0, .15)
+split("/Users/alexwarstadt/Workspace/data/permuted/shuff-15-20/all.txt", "/Users/alexwarstadt/Workspace/data/permuted/shuff-15-20/", .85, 0, .15)
+split("/Users/alexwarstadt/Workspace/data/permuted/perm-1-2/all.txt", "/Users/alexwarstadt/Workspace/data/permuted/perm-1-2/", .85, 0, .15)
+split("/Users/alexwarstadt/Workspace/data/permuted/perm-3-4/all.txt", "/Users/alexwarstadt/Workspace/data/permuted/perm-3-4/", .85, 0, .15)
+split("/Users/alexwarstadt/Workspace/data/permuted/perm-5-6/all.txt", "/Users/alexwarstadt/Workspace/data/permuted/perm-5-6/", .85, 0, .15)
+split("/Users/alexwarstadt/Workspace/data/permuted/perm-1-6/all.txt", "/Users/alexwarstadt/Workspace/data/permuted/perm-1-6/", .85, 0, .15)

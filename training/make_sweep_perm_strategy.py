@@ -9,7 +9,7 @@ from datetime import datetime
 SINGLE_DAY = False
 now = datetime.now()
 NAME = "{0[0]:02d}{0[1]:02d}{0[2]:02d}{0[3]:02d}{0[4]:02d}".format([now.month, now.day, now.hour, now.minute, now.second])
-SWEEP_RUNS = 1
+SWEEP_RUNS = 100
 
 LIN = "LIN"
 EXP = "EXP"
@@ -39,15 +39,27 @@ FLAGS(sys.argv)
 # Non-tunable flags that must be passed in.
 
 FIXED_PARAMETERS = {
-    #paths
-    "data_dir": "/home/warstadt/data/permuted_0-2/",
-    "vocab_path": "/home/warstadt/data/bnc-30/vocab_20000.txt",
-    "embedding_path": "/home/warstadt/data/bnc-30/embeddings_20000.txt",
-    "log_path": "/home/warstadt/logs/",
-    "data_type":     "discriminator",
-    "model_type":      "rnn_classifier_pooling",
-    "ckpt_path":  "/home/warstadt/models/",
+    # #paths
+    # "data_dir": "/home/warstadt/data/permuted_0-2/",
+    # "vocab_path": "/home/warstadt/data/bnc-30/vocab_20000.txt",
+    # "embedding_path": "/home/warstadt/data/bnc-30/embeddings_20000.txt",
+    # "log_path": "/home/warstadt/logs/",
+    # "data_type":     "discriminator",
+    # "model_type":      "rnn_classifier_pooling",
+    # "ckpt_path":  "/home/warstadt/models/",
+    # "gpu": "",
+
+    "vocab_path": "/scratch/asw462/data/bnc-30/vocab_20000.txt",
+    "embedding_path": "/scratch/asw462/data/bnc-30/embeddings_20000.txt",
+    "log_path": "/scratch/asw462/logs/",
+    "data_type": "discriminator",
+    "model_type": "rnn_classifier_pooling",
+    "ckpt_path": "/scratch/asw462/models/",
     "gpu": "",
+
+#
+# 0.00008		1034	discrim 	3	0.7645		0.883		0.44/0.44/0.064/0.054	sweep_1106235815_rnn_classifier_pooling_16-lr8e-05-h_size1034-datadiscriminator-num_layers3
+# 0.00015		689		discrim 	4	0.7478		0.8786		0.46/0.41/0.082/0.045 sweep_1106235815_rnn_classifier_pooling_17-lr0.00015-h_size689-datadiscriminator-num_layers4
 
     #sizes
     "embedding_size":   "300",
@@ -73,10 +85,17 @@ FIXED_PARAMETERS = {
 # Tunable parameters.
 SWEEP_PARAMETERS = {
 
-    "hidden_size": ("h_size", QUAD, 1034, 1034),
-    "num_layers": ("num_layers", LIN, 3, 3),
-    "learning_rate": ("lr", EXP, 0.00008, 0.00008),
-    "data_dir": ("data", CHOICE, ["/home/warstadt/data/permuted_0-2/"], None)
+    "hidden_size": ("h_size", QUAD, 689, 689),
+    "num_layers": ("num_layers", LIN, 4, 4),
+    "learning_rate": ("lr", EXP, 0.00015, 0.00015),
+    "data_dir": ("data", CHOICE, ["/scratch/asw462/data/perm-1-2",
+                                  "/scratch/asw462/data/perm-1-6",
+                                  "/scratch/asw462/data/perm-3-4",
+                                  "/scratch/asw462/data/perm-5-6",
+                                  "/scratch/asw462/data/shuff-00-05",
+                                  "/scratch/asw462/data/shuff-05-10",
+                                  "/scratch/asw462/data/shuff-10-15",
+                                  "/scratch/asw462/data/shuff-15-20"], None)
 
 }
 
