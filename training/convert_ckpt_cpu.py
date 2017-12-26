@@ -23,6 +23,8 @@ for dir in dirs:
             embedding_size=300,
             num_layers=num_layers)
 
+        print '/scratch/asw462/models/' + dir + "/" + model
+
         encoder.load_state_dict(torch.load(
             '/scratch/asw462/models/' + dir + "/" + model))
         encoder.cpu()
