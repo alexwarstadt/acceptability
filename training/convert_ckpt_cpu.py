@@ -26,5 +26,5 @@ for dir in dirs:
         encoder.load_state_dict(torch.load(
             '/scratch/asw462/models/' + dir + "/" + model))
         encoder.cpu()
-        torch.save(encoder.state_dict(), '/scratch/asw462/models/' + dir + 'CPU_' + model)
+        torch.save(encoder.state_dict(), '/scratch/asw462/models/' + dir + '/CPU_' + model)
 
