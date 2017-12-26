@@ -3,11 +3,10 @@ import torch
 import os
 
 
-dirs = ["sweep_1124013946",
-        # "sweep_1124_early_stop_day4",
-        "sweep_121804",
-        # "sweep_1124_early_stop_day2.5",
-        "sweep_121800"]
+dirs = ["sweep_1124_early_stop_day4",
+        # "sweep_121804",
+        "sweep_1124_early_stop_day2.5"]
+        # "sweep_121800"]
 
 for dir in dirs:
     for model in os.listdir("/scratch/asw462/models/" + dir + "/"):
@@ -22,8 +21,11 @@ for dir in dirs:
 
         print '/scratch/asw462/models/' + dir + "/" + model
 
-        encoder.load_state_dict(torch.load(
-            '/scratch/asw462/models/' + dir + "/" + model))
-        encoder.cpu()
-        torch.save(encoder.state_dict(), '/scratch/asw462/models/' + dir + '/CPU_' + model)
+        try:
+            encoder.load_state_dict(torch.load(
+                '/scratch/asw462/models/' + dir + "/" + model))
+            encoder.cpu()
+            torch.save(encoder.state_dict(), '/scratch/asw462/models/' + dir + '/CPU_' + model)
+        except KeyError:
+            pass
 
