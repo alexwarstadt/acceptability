@@ -4,12 +4,9 @@ import os
 
 
 dirs = ["sweep_1124013946",
-        "sweep_1124_early_stop_day4",
+        # "sweep_1124_early_stop_day4",
         "sweep_121804",
-        "sweep_1106002002",
-        "sweep_1115230657",
-        "sweep_1116160716",
-        "sweep_1124_early_stop_day2.5",
+        # "sweep_1124_early_stop_day2.5",
         "sweep_121800"]
 
 for dir in dirs:
