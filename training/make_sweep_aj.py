@@ -97,8 +97,66 @@ SWEEP_PARAMETERS = {
                                   "/scratch/asw462/data/levin",
                                   "/scratch/asw462/data/levin_balanced"
                                   ], None),
+
+    
+"sweep_1124013946/sweep_1124013946_rnn_classifier_pooling_1-lr0.00015-h_size689-datapermuted_0-6-num_layers4",
+"sweep_1124013946/sweep_1124014204_rnn_classifier_pooling_1-lr8e-05-h_size1034-datapermuted_0-6-num_layers3",
+"sweep_1124013946/sweep_1124013946_rnn_classifier_pooling_2-lr0.00015-h_size689-datapermuted_2-4-num_layers4",
+"sweep_1124013946/sweep_1124014204_rnn_classifier_pooling_2-lr8e-05-h_size1034-datapermuted_0-2-num_layers3",
+"sweep_1124013946/sweep_1124013946_rnn_classifier_pooling_3-lr0.00015-h_size689-datapermuted_0-2-num_layers4",
+"sweep_1124013946/sweep_1124014204_rnn_classifier_pooling_3-lr8e-05-h_size1034-datapermuted_4-6-num_layers3",
+"sweep_1124013946/sweep_1124013946_rnn_classifier_pooling_4-lr0.00015-h_size689-datapermuted_4-6-num_layers4",
+"sweep_1124013946/sweep_1124014204_rnn_classifier_pooling_4-lr8e-05-h_size1034-datapermuted_2-4-num_layers3",
+
+
+"sweep_1124_early_stop_day2.5/sweep_1124013946_rnn_classifier_pooling_1-lr0.00015-h_size689-datapermuted_0-6-num_layers4",
+"sweep_1124_early_stop_day2.5/sweep_1124014204_rnn_classifier_pooling_1-lr8e-05-h_size1034-datapermuted_0-6-num_layers3",
+"sweep_1124_early_stop_day2.5/sweep_1124013946_rnn_classifier_pooling_2-lr0.00015-h_size689-datapermuted_2-4-num_layers4",
+"sweep_1124_early_stop_day2.5/sweep_1124014204_rnn_classifier_pooling_2-lr8e-05-h_size1034-datapermuted_0-2-num_layers3",
+"sweep_1124_early_stop_day2.5/sweep_1124013946_rnn_classifier_pooling_3-lr0.00015-h_size689-datapermuted_0-2-num_layers4",
+"sweep_1124_early_stop_day2.5/sweep_1124014204_rnn_classifier_pooling_3-lr8e-05-h_size1034-datapermuted_4-6-num_layers3",
+"sweep_1124_early_stop_day2.5/sweep_1124013946_rnn_classifier_pooling_4-lr0.00015-h_size689-datapermuted_4-6-num_layers4",
+"sweep_1124_early_stop_day2.5/sweep_1124014204_rnn_classifier_pooling_4-lr8e-05-h_size1034-datapermuted_2-4-num_layers3",
+
+
+"sweep_1124_early_stop_day4/sweep_1124013946_rnn_classifier_pooling_1-lr0.00015-h_size689-datapermuted_0-6-num_layers4",
+"sweep_1124_early_stop_day4/sweep_1124014204_rnn_classifier_pooling_1-lr8e-05-h_size1034-datapermuted_0-6-num_layers3",
+"sweep_1124_early_stop_day4/sweep_1124013946_rnn_classifier_pooling_2-lr0.00015-h_size689-datapermuted_2-4-num_layers4",
+"sweep_1124_early_stop_day4/sweep_1124014204_rnn_classifier_pooling_2-lr8e-05-h_size1034-datapermuted_0-2-num_layers3",
+"sweep_1124_early_stop_day4/sweep_1124013946_rnn_classifier_pooling_3-lr0.00015-h_size689-datapermuted_0-2-num_layers4",
+"sweep_1124_early_stop_day4/sweep_1124014204_rnn_classifier_pooling_3-lr8e-05-h_size1034-datapermuted_4-6-num_layers3",
+"sweep_1124_early_stop_day4/sweep_1124013946_rnn_classifier_pooling_4-lr0.00015-h_size689-datapermuted_4-6-num_layers4",
+"sweep_1124_early_stop_day4/sweep_1124014204_rnn_classifier_pooling_4-lr8e-05-h_size1034-datapermuted_2-4-num_layers3",
+
+
+
+"sweep_121800/sweep_1218005439_rnn_classifier_pooling_89-lr8e-05-h_size1034-dataperm-1-6-num_layers3",
+"sweep_121800/sweep_1218010112_rnn_classifier_pooling_83-lr0.00015-h_size689-dataperm-3-4-num_layers4",
+"sweep_121800/sweep_1218005439_rnn_classifier_pooling_95-lr8e-05-h_size1034-dataperm-1-2-num_layers3",
+"sweep_121800/sweep_1218010112_rnn_classifier_pooling_91-lr0.00015-h_size689-dataperm-1-2-num_layers4",
+"sweep_121800/sweep_1218005439_rnn_classifier_pooling_96-lr8e-05-h_size1034-dataperm-5-6-num_layers3",
+"sweep_121800/sweep_1218010112_rnn_classifier_pooling_96-lr0.00015-h_size689-dataperm-1-6-num_layers4",
+"sweep_121800/sweep_1218005439_rnn_classifier_pooling_98-lr8e-05-h_size1034-dataperm-3-4-num_layers3",
+"sweep_121800/sweep_1218010112_rnn_classifier_pooling_97-lr0.00015-h_size689-dataperm-5-6-num_layers4",
+
+
+"sweep_121804/sweep_1218040205_rnn_classifier_pooling_93-lr0.00015-h_size689-datashuff-10-15-num_layers4",
+"sweep_121804/sweep_1218040348_rnn_classifier_pooling_94-lr8e-05-h_size1034-datashuff-10-15-num_layers3",
+"sweep_121804/sweep_1218040205_rnn_classifier_pooling_96-lr0.00015-h_size689-datashuff-05-10-num_layers4",
+"sweep_121804/sweep_1218040348_rnn_classifier_pooling_95-lr8e-05-h_size1034-datashuff-15-20-num_layers3",
+"sweep_121804/sweep_1218040205_rnn_classifier_pooling_99-lr0.00015-h_size689-datashuff-15-20-num_layers4",
+"sweep_121804/sweep_1218040348_rnn_classifier_pooling_99-lr8e-05-h_size1034-datashuff-00-05-num_layers3",
+"sweep_121804/sweep_1218040348_rnn_classifier_pooling_93-lr8e-05-h_size1034-datashuff-05-10-num_layers3 ",
+"sweep_121804/sweep_1218040503_rnn_classifier_pooling_92-lr8e-05-h_size689-datashuff-00-05-num_layers4"
+
+    
+    
     "encoder_path": ("enc", CHOICE,
-                     ["/scratch/asw462/models/CPU_sweep_1106235815_rnn_classifier_pooling_10-lr0.00044-h_size279-databnc_lm-num_layers2",
+                     [
+
+
+
+                         "/scratch/asw462/models/CPU_sweep_1106235815_rnn_classifier_pooling_10-lr0.00044-h_size279-databnc_lm-num_layers2",
                         "/scratch/asw462/models/CPU_sweep_1106235815_rnn_classifier_pooling_14-lr0.00088-h_size748-datadiscriminator-num_layers3",
                         "/scratch/asw462/models/CPU_sweep_1106235815_rnn_classifier_pooling_15-lr0.0002-h_size1019-databnc_lm-num_layers2",
                         "/scratch/asw462/models/CPU_sweep_1106235815_rnn_classifier_pooling_16-lr8e-05-h_size1034-datadiscriminator-num_layers3",
