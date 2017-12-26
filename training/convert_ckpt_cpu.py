@@ -13,7 +13,7 @@ dirs = ["sweep_1124013946",
         "sweep_121800"]
 
 for dir in dirs:
-    for model in os.listdir("/scratch/asw462/models/" + dir):
+    for model in os.listdir("/scratch/asw462/models/" + dir + "/"):
 
         h_size = int(filter(lambda s: s.startswith("h_size"), model.split("-"))[0].replace("h_size", ""))
         num_layers = int(filter(lambda s: s.startswith("num_layers"), model.split("-"))[0].replace("num_layers", ""))
@@ -24,7 +24,7 @@ for dir in dirs:
             num_layers=num_layers)
 
         encoder.load_state_dict(torch.load(
-            '/scratch/asw462/models/' + dir + model))
+            '/scratch/asw462/models/' + dir + "/" + model))
         encoder.cpu()
-        torch.save(encoder.state_dict(), '/scratch/asw462/models/' + dir + '/CPU_' + model)
+        torch.save(encoder.state_dict(), '/scratch/asw462/models/' + dir + 'CPU_' + model)
 
