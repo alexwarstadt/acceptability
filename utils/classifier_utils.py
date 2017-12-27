@@ -34,6 +34,8 @@ class Confusion:
 
     def percentages(self):
         total = float(self.tp + self.fp + self.tn + self.fn)
+        if total == 0:
+            total = 1
         return float(self.tp)/total, float(self.tn)/total, float(self.fp)/total, float(self.fn)/total
 
     def accuracy(self):

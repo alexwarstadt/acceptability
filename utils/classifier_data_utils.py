@@ -60,7 +60,8 @@ class DataManagerInMemory(data_utils.DataManager):
             for line in open(path):
                 vals = line.split("\t")
                 try:
-                    pairs.append((vals[3].strip(), vals[1]))
+                    pairs.append((vals[3].strip(), vals[1], vals[0]))   # text, score, source
+                    # pairs.append((vals[3].strip(), vals[1]))
                 except IndexError:
                     pass
             return pairs
@@ -69,129 +70,63 @@ class DataManagerInMemory(data_utils.DataManager):
         self.valid_pairs = read_pairs(self.valid)
         self.test_pairs = read_pairs(self.test)
 
-# class DataManager:
-#     def __init__(self, corpus, embedding_path, embedding_size):
-#         self.corpus = corpus
-#         self.vocab = [x.strip() for x in open(VOCAB_PATH)]
-#         self.embedding_size = embedding_size
-#         self.embeddings = dp.init_embeddings(embedding_path, self.vocab, self.corpus, embedding_size)
-#         self.data_pairs = []
-#         for line in open(self.corpus):
-#             vals = line.split("\t")
-#             self.data_pairs.append((vals[3], vals[1]))
-#         self.training, self.valid, self.test = self.split()
-#         self.corpus_bias = sum([float(x[1]) for x in self.data_pairs]) / len(self.data_pairs)
+
+# class Batch:
+#     def __init__(self, sentences, data_manager):
+#         self.sentences_view = sentences
+#         self.data_manager = data_manager
+#         self.words_view = list(map(lambda x: x.split(" "), sentences))
+#         if len(self.words_view) == 0:
+#             x = 0
+#         self.batch_size = len(sentences)
+#         self.sentence_length = len(self.words_view[0])
+#         self.indices_view = self.indices_view()
+#         self.tensor_view = self.tensor_view()
 #
-#     def split(self):
-#         train = .85
-#         valid = .1
-#         train_pairs = []
-#         valid_pairs = []
-#         test_pairs = []
-#         for line in self.data_pairs:
-#             n = random.uniform(0, 1)
-#             if n <= train:
-#                 train_pairs.append(line)
-#             elif n <= train + valid:
-#                 valid_pairs.append(line)
-#             else:
-#                 test_pairs.append(line)
-#         return train_pairs, valid_pairs, test_pairs
 #
-#     def init_embeddings(self, embeddings_file):
-#         embeddings_dict = dict.fromkeys(list(self.vocab))
-#         for line in embeddings_file:
-#             words = line.split(" ")
-#             if words[0] in embeddings_dict:
-#                 vec_list = []
-#                 for word in words[1:]:
-#                     vec_list.append(float(word))
-#                 embeddings_dict[words[0]] = torch.FloatTensor(vec_list)
-#         for w in special_words:
-#             vector = torch.FloatTensor(self.embedding_size)
-#             for i in range(self.embedding_size):
-#                 vector[i] = random.uniform(-1, 1)
-#             embeddings_dict[w] = vector
-#         for w in self.vocab:
-#             if embeddings_dict[w] is None:
-#                 vector = torch.FloatTensor(self.embedding_size)
-#                 for i in range(self.embedding_size):
-#                     vector[i] = random.uniform(-1, 1)
-#                 embeddings_dict[w] = vector
-#         return embeddings_dict
+#     def nth_words(self, n):
+#         words = []
+#         for sentence in self.words_view:
+#             words.append(sentence[n])
+#         return words
 #
-#     # def corpus_bias(self):
-#     #     sum([x[1] for x in self.data_pairs]) / len(self.data_pairs)
-#     #     total_acceptability = 0
-#     #     for pair in self.data_pairs:
-#     #         total_acceptability += pair[1]
-#     #     return total_acceptability / len(self.data_pairs)
+#     def indices_view(self):
+#         indices = []
+#         for sentence in self.words_view:
+#             sentence_indices = []
+#             for word in sentence:
+#                 try:
+#                     sentence_indices.append(self.data_manager.vocab.index(word))
+#                 except ValueError:
+#                     sentence_indices.append(self.data_manager.vocab.index(UNK))
+#             indices.append(sentence_indices)
+#         return indices
 #
-#     def word_to_tensor(self, word):
-#         """makes 50 dim vector out of word"""
-#         tensor = torch.Tensor(self.embedding_size)
-#         if word in self.embeddings.keys():
-#             tensor = self.embeddings[word]
-#         else:
-#             tensor = self.embeddings[UNK]
-#         return tensor
-
-
-class Batch:
-    def __init__(self, sentences, data_manager):
-        self.sentences_view = sentences
-        self.data_manager = data_manager
-        self.words_view = list(map(lambda x: x.split(" "), sentences))
-        if len(self.words_view) == 0:
-            x = 0
-        self.batch_size = len(sentences)
-        self.sentence_length = len(self.words_view[0])
-        self.indices_view = self.indices_view()
-        self.tensor_view = self.tensor_view()
-
-
-    def nth_words(self, n):
-        words = []
-        for sentence in self.words_view:
-            words.append(sentence[n])
-        return words
-
-    def indices_view(self):
-        indices = []
-        for sentence in self.words_view:
-            sentence_indices = []
-            for word in sentence:
-                try:
-                    sentence_indices.append(self.data_manager.vocab.index(word))
-                except ValueError:
-                    sentence_indices.append(self.data_manager.vocab.index(UNK))
-            indices.append(sentence_indices)
-        return indices
-
-    def tensor_view(self):
-        """makes a list of sentence length of dim_batch x 50 tensors"""
-        tensors = []
-        for _ in range(self.sentence_length):
-            tensors.append(torch.Tensor(self.batch_size, self.data_manager.embedding_size))
-        for i_s, s in enumerate(self.words_view):
-            for i_w, w in enumerate(s):
-                tensors[i_w][i_s] = self.data_manager.word_to_tensor(w)
-        return tensors
-
-    def true_batch_n_words(self):
-        n_words = 0
-        for sentence in self.words_view:
-            for word in sentence:
-                if word != self.data_manager.STOP:
-                    n_words += 1
-        return n_words
+#     def tensor_view(self):
+#         """makes a list of sentence length of dim_batch x 50 tensors"""
+#         tensors = []
+#         for _ in range(self.sentence_length):
+#             tensors.append(torch.Tensor(self.batch_size, self.data_manager.embedding_size))
+#         for i_s, s in enumerate(self.words_view):
+#             for i_w, w in enumerate(s):
+#                 tensors[i_w][i_s] = self.data_manager.word_to_tensor(w)
+#         return tensors
+#
+#     def true_batch_n_words(self):
+#         n_words = 0
+#         for sentence in self.words_view:
+#             for word in sentence:
+#                 if word != self.data_manager.STOP:
+#                     n_words += 1
+#         return n_words
 
 
 
 class NewBatch:
     def __init__(self, data_pairs, data_manager):
         self.sentences_view = [pair[0] for pair in data_pairs]
-        self.targets_view = [float(pair[1]) for pair in data_pairs]  # this is an unanticipated but important change
+        self.targets_view = [float(pair[1]) for pair in data_pairs]
+        self.source_view = [pair[2] for pair in data_pairs]
         self.data_manager = data_manager
         self.words_view = list(map(lambda x: x.split(" "), self.sentences_view))
         if len(self.words_view) == 0:

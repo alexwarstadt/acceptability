@@ -1,6 +1,6 @@
 import random
 
-file = open("/Users/alexwarstadt/Workspace/acceptability/acceptability_corpus/just_levin")
+file = open("/Users/alexwarstadt/Workspace/acceptability/acceptability_corpus/corpus_table")
 
 poz_list, neg_list = [], []
 
@@ -17,9 +17,9 @@ print(len(neg_list))
 print ratio
 
 
-file = open("/Users/alexwarstadt/Workspace/acceptability/acceptability_corpus/just_levin")
+file = open("/Users/alexwarstadt/Workspace/acceptability/acceptability_corpus/corpus_table")
 
-out = open("/Users/alexwarstadt/Workspace/acceptability/acceptability_corpus/levin_balanced", "w")
+out = open("/Users/alexwarstadt/Workspace/acceptability/acceptability_corpus/corpus_table_balanced", "w")
 
 for line in file:
     vals = line.split("\t")

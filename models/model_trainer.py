@@ -54,21 +54,38 @@ class ModelTrainer(object):
         # loss = self.loss(outputs, output_targets)
         return loss
 
-    def batch_confusion(self, outputs, output_targets):
+    def batch_confusion(self, outputs, output_targets, sources, by_source):
         if self.FLAGS.gpu:
             outputs = outputs.cpu()
             output_targets = output_targets.cpu()
         tp, fp, tn, fn = 0, 0, 0, 0
-        for out, target in zip(outputs, output_targets):
-            if out.data[0] > .5 and target > .5:
-                tp += 1
-            if out.data[0] > .5 and target < .5:
-                fp += 1
-            if out.data[0] < .5 and target < .5:
-                tn += 1
-            if out.data[0] < .5 and target > .5:
-                fn += 1
-        return Confusion(tp, fp, tn, fn)
+        if self.FLAGS.by_source:
+            for out, target, source in zip(outputs, output_targets, sources):
+                if source not in by_source:
+                    by_source[source] = Confusion()
+                if out.data[0] > .5 and target > .5:
+                    tp += 1
+                    by_source[source].tp += 1
+                if out.data[0] > .5 and target < .5:
+                    fp += 1
+                    by_source[source].fp += 1
+                if out.data[0] < .5 and target < .5:
+                    tn += 1
+                    by_source[source].tn += 1
+                if out.data[0] < .5 and target > .5:
+                    fn += 1
+                    by_source[source].fn += 1
+        else:
+            for out, target in zip(outputs, output_targets):
+                if out.data[0] > .5 and target > .5:
+                    tp += 1
+                if out.data[0] > .5 and target < .5:
+                    fp += 1
+                if out.data[0] < .5 and target < .5:
+                    tn += 1
+                if out.data[0] < .5 and target > .5:
+                    fn += 1
+        return Confusion(tp, fp, tn, fn), by_source
 
     def print_min_and_max(self, outputs, batch):
         max_prob, max_i_sentence = torch.topk(outputs.data, 1, 0)
@@ -78,23 +95,23 @@ class ModelTrainer(object):
         print("max:", max_prob[0][0], max_sentence)
         print("min:", min_prob[0][0] * -1, min_sentence)
 
-    def get_metrics(self, outputs, batch):
+    def get_metrics(self, outputs, batch, by_source=None):
         targets = torch.Tensor(batch.targets_view)
         # targets = Variable(torch.FloatTensor(batch.targets_view)).view(-1, 1)
         if self.FLAGS.gpu:
             targets = targets.cuda()
         loss = self.get_batch_loss(outputs, targets)
-        confusion = self.batch_confusion(outputs, targets)
-        return loss, confusion
+        confusion, by_source = self.batch_confusion(outputs, targets, batch.source_view, by_source)
+        return loss, confusion, by_source
 
-    def run_batch(self, batch, backprop):
+    def run_batch(self, batch, backprop, by_source=None):
         outputs, hidden = self.get_batch_output(batch)
-        loss, confusion = self.get_metrics(outputs, batch)
+        loss, confusion, by_source = self.get_metrics(outputs, batch, by_source)
         if backprop:
             self.backprop(loss)
         if self.FLAGS.gpu:
             loss = loss.cpu()
-        return outputs, loss.data[0], confusion
+        return outputs, loss.data[0], confusion, by_source
 
     def print_stats(self, loss, confusion):
         print("avg loss\t" + self.my_round(loss))
@@ -115,7 +132,7 @@ class ModelTrainer(object):
         self.LOGS.write("\t" + str(model_saved) + "\n")
         self.LOGS.flush()
 
-    def cluster_logs(self, n_batches, train_avg_loss, valid_avg_loss, t_confusion, v_confusion, model_saved):
+    def cluster_logs(self, n_batches, train_avg_loss, valid_avg_loss, t_confusion, v_confusion, model_saved, training_stats_by_source, valid_stats_by_source):
         self.LOGS.write("\t" + str(n_batches))
         self.LOGS.write("\t" + self.my_round(train_avg_loss) + "\t")
         self.LOGS.write("\t" + self.my_round(valid_avg_loss) + "\t")
@@ -124,8 +141,29 @@ class ModelTrainer(object):
         self.LOGS.write("\t" + self.my_round(t_confusion.f1()))
         self.LOGS.write("\t" + self.my_round(v_confusion.f1()) + "\t")
         self.LOGS.write("\t" + "tp={0[0]:.2g}, tn={0[1]:.2g}, fp={0[2]:.2g}, fn={0[3]:.2g}".format(v_confusion.percentages()) + "\t")
-        self.LOGS.write("\t" + str(model_saved) + "\n")
+        self.LOGS.write("\t" + str(model_saved))
+        if self.FLAGS.by_source:
+            self.log_by_source(training_stats_by_source, valid_stats_by_source)
+        self.LOGS.write("\n")
         self.LOGS.flush()
+
+    def log_by_source(self, training_stats_by_source, valid_stats_by_source):
+        for source in list(set(training_stats_by_source.keys()).union(valid_stats_by_source.keys())):
+            if source in training_stats_by_source:
+                t_confusion = training_stats_by_source[source]
+            else:
+                t_confusion = Confusion()
+            if source in valid_stats_by_source:
+                v_confusion = valid_stats_by_source[source]
+            else:
+                v_confusion = Confusion()
+            self.LOGS.write("\t" + source)
+            self.LOGS.write("\t" + self.my_round(t_confusion.matthews()))
+            self.LOGS.write("\t" + self.my_round(v_confusion.matthews()))
+            self.LOGS.write("\t" + self.my_round(t_confusion.f1()))
+            self.LOGS.write("\t" + self.my_round(v_confusion.f1()))
+            self.LOGS.write("\t" + "tp={0[0]:.2g}, tn={0[1]:.2g}, fp={0[2]:.2g}, fn={0[3]:.2g}".format(
+                v_confusion.percentages()) + "\t")
 
     @staticmethod
     def my_round(n):
@@ -134,17 +172,18 @@ class ModelTrainer(object):
     def run_stage(self, epoch, backprop, stages_per_epoch, prints_per_stage):
         has_next = True
         n_batches = 0
-        stage_batches = int(math.ceil(epoch.n_batches/stages_per_epoch))
-        print_batches = int(math.ceil(stage_batches/prints_per_stage))
+        stage_batches = int(math.ceil(float(epoch.n_batches)/stages_per_epoch))
+        print_batches = int(math.ceil(float(stage_batches)/prints_per_stage))
         print_loss = 0
         print_confusion = Confusion()
         stage_loss = 0
         stage_confusion = Confusion()
         outputs, batch = None, None
+        stats_by_source = {}
         while has_next and n_batches < stage_batches:
             n_batches += 1
             batch, has_next = epoch.get_new_batch()
-            outputs, loss, confusion = self.run_batch(batch, backprop)
+            outputs, loss, confusion, stats_by_source = self.run_batch(batch, backprop, stats_by_source)
             print_loss += loss
             print_confusion.add(confusion)
             stage_loss += loss
@@ -156,7 +195,7 @@ class ModelTrainer(object):
         if prints_per_stage > 1:
             self.print_stats(stage_loss/n_batches, stage_confusion)
         self.log_outputs(outputs, batch)
-        return stage_loss/n_batches, stage_confusion
+        return stage_loss/n_batches, stage_confusion, stats_by_source
 
 
     def run_epoch(self, max_matthews, n_stages_not_converging, n_stages):
@@ -167,18 +206,18 @@ class ModelTrainer(object):
                 raise NotConvergingError
             n_stages += 1
             print("-------------training-------------")
-            train_loss, train_confusion = self.run_stage(train, True, self.FLAGS.stages_per_epoch, self.FLAGS.prints_per_stage)
+            train_loss, train_confusion, training_stats_by_source = self.run_stage(train, True, self.FLAGS.stages_per_epoch, self.FLAGS.prints_per_stage)
             print("-------------validation-------------")
-            valid_loss, valid_confusion = self.run_stage(valid, False, self.FLAGS.stages_per_epoch, 1)
+            valid_loss, valid_confusion, valid_stats_by_source = self.run_stage(valid, False, self.FLAGS.stages_per_epoch, 1)
             if valid_confusion.matthews() > max_matthews:
                 max_matthews = valid_confusion.matthews()
                 n_stages_not_converging = 0
                 torch.save(self.model.state_dict(), self.OUTPUT_PATH)
                 print("MODEL SAVED")
-                self.cluster_logs(n_stages, train_loss, valid_loss, train_confusion, valid_confusion, True)
+                self.cluster_logs(n_stages, train_loss, valid_loss, train_confusion, valid_confusion, True, training_stats_by_source, valid_stats_by_source)
             else:
                 n_stages_not_converging += 1
-                self.cluster_logs(n_stages, train_loss, valid_loss, train_confusion, valid_confusion, False)
+                self.cluster_logs(n_stages, train_loss, valid_loss, train_confusion, valid_confusion, False, training_stats_by_source, valid_stats_by_source)
         return max_matthews, n_stages_not_converging, n_stages
 
     def start_up_print_and_logs(self):

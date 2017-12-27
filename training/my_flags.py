@@ -38,6 +38,7 @@ def get_flags():
                           10,
                           "number of epochs before stop, essentially unreachable")
     gflags.DEFINE_integer("batch_size", 32, "")
+    gflags.DEFINE_boolean("by_source", False, "will output stats be broken down by source")
 
     #tunable parameters
     gflags.DEFINE_integer("hidden_size", 300, "")
