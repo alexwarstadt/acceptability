@@ -4,7 +4,7 @@ import time
 import utils.data_utils as du
 import torch.nn as nn
 from utils.classifier_utils import *
-from utils.process_corpus import crop_sentences
+# from utils.process_corpus import crop_sentences
 from torch.autograd import Variable
 
 import lm as my_lm

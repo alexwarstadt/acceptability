@@ -1,9 +1,10 @@
 import operator
+import re
 
 
 
 
-file = open("../temp")
+file = open("../sweep_outputs")
 
 lines=[]
 for line in file:
@@ -36,13 +37,62 @@ def abbr(s):
     elif s == "discriminator":
         return "discr"
     else:
-        return s
+        vs = s.split("_")
+        if vs[0] == "permuted":
+            return "shuff 0.%s-0.%s" % tuple(vs[1:])
+        else:
+            return "swap %s-%sx\t" % tuple(vs[1:])
+
+
+def pretty_print(vs):
+    new_vs = []
+    for v in vs:
+        try:
+            float(v)
+            new_vs.append(v.zfill(6))
+        except ValueError:
+            conf = v.split(",")
+            if len(conf) == 4:
+                v = ""
+                for x in conf:
+                    x = x.split("=")
+                    v += x[0] + "=" + x[1].zfill(5) + ","
+            new_vs.append(v)
+    return reduce(lambda x, y: x + '\t' + y, new_vs).strip()
+
+
+def chunk(lastv):
+    """break up the stats into lists by source, containing v-matthews, v-f1, v-confusion"""
+    vs = lastv.split('\t')
+    chunks = []
+    chunk = []
+    chunk.append(vs[8])                 # v matthews
+    chunk.append(vs[11])                # v f1
+    chunk.append(vs[13])                # v confusion
+    chunks.append(chunk)
+    for x in lastv.split("\t\t")[6:]:
+        xs = x.split('\t')
+        if xs[0] == "True":             # first
+            xs = xs[1:7]
+        elif len(xs) == 12:             # double for some reason
+            chunks.append(xs[0:6])
+            xs = xs[6:]
+        del xs[1]
+        del xs[2]
+        chunks.append(xs)
+    return chunks
+
 
 outlines = []
 for k,v in d.iteritems():
     stats = []
     if k!="":
         ks = k.split("-")
+        day = re.search("day[\d\.]*", ks[4])
+        if day is None:
+            day = "day7"
+        else:
+            day = day.group()
         del ks[4]
         del ks[4]
         stats.append(ks[0].split("\t")[-1])
@@ -51,15 +101,21 @@ for k,v in d.iteritems():
         stats.append(abbr(ks[3][4:]))
         stats.append(str(ks[4][6:]).zfill(4))
         stats.append(abbr(ks[5][4:]))
+        stats.append(day)
         stats.append(ks[6][10:11])
     else:
         continue
     if v != []:
-        lastv = v[-1]
-        vs = lastv.split("\t")
-        stats.append(vs[8])
-        stats.append(vs[11])
-        stats.append(vs[13])
+        trues = filter(lambda x: "True" in x, v)
+        if len(trues) > 0:
+            lastv = trues[-1]
+        else:
+            lastv = v[-1]
+        # vs = lastv.split("\t")
+        chunks = chunk(lastv)
+        for c in chunks:
+            stats.append(pretty_print(c))
+
     else:
         stats.extend([0,0,0])
     outline = ""
@@ -71,8 +127,8 @@ for k,v in d.iteritems():
 
 
 for line in outlines:
-    vals = line.split("\t")
-    d[line] = float(vals[-4])
+    vals = filter(lambda s: s != "", line.split("\t"))
+    d[line] = float(vals[8])
 
 sorted_d = sorted(d.items(), key=operator.itemgetter(1), reverse=True)
 

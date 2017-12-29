@@ -3,6 +3,7 @@ import gflags
 import my_flags
 import models.rnn_classifier
 import models.acceptability_cl
+import models.cbow
 import torch
 
 FLAGS = gflags.FLAGS
@@ -52,4 +53,15 @@ if __name__ == '__main__':
             model=cl,
             encoder=encoder)
         clt.run()
+
+    if FLAGS.model_type == "aj_cbow":
+        cl = models.cbow.Classifier(
+            hidden_size=FLAGS.hidden_size,
+            input_size=FLAGS.embedding_size,
+            max_pool=FLAGS.max_pool)
+        clt = models.cbow.CbowTrainer(
+            FLAGS,
+            model=cl)
+        clt.run()
+
 

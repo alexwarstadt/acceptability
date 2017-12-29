@@ -132,7 +132,10 @@ class NewBatch:
         if len(self.words_view) == 0:
             x = 0
         self.batch_size = len(data_pairs)
-        self.sentence_length = len(self.words_view[0])
+        try:
+            self.sentence_length = len(self.words_view[0])
+        except IndexError:
+            print(self.sentences_view)
         self.indices_view = self.indices_view()
         self.tensor_view = self.tensor_view()
 
