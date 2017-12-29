@@ -38,8 +38,6 @@ class CbowTrainer(model_trainer.ModelTrainer):
                  FLAGS,
                  model,):
         super(CbowTrainer, self).__init__(FLAGS, model)
-        if FLAGS.gpu:
-            self.encoder = self.encoder.cuda()
 
     def to_string(self):
 
