@@ -3,10 +3,11 @@ import torch
 import os
 
 
-dirs = ["sweep_1124_early_stop_day4",
-        # "sweep_121804",
-        "sweep_1124_early_stop_day2.5"]
-        # "sweep_121800"]
+dirs = ["sweep_1229005541",
+        "sweep_1229145144",
+        "sweep_1227010500",
+        "sweep_1229132558"]
+
 
 for dir in dirs:
     for model in os.listdir("/scratch/asw462/models/" + dir + "/"):

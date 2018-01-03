@@ -63,9 +63,11 @@ class ModelTrainer(object):
             for out, target, source in zip(outputs, output_targets, sources):
                 if source not in by_source:
                     by_source[source] = Confusion()
+                # if out.data[0] >= .5 and target >= .5:
                 if out.data[0] > .5 and target > .5:
                     tp += 1
                     by_source[source].tp += 1
+                # if out.data[0] >= .5 and target <= .5:
                 if out.data[0] > .5 and target < .5:
                     fp += 1
                     by_source[source].fp += 1
@@ -77,8 +79,10 @@ class ModelTrainer(object):
                     by_source[source].fn += 1
         else:
             for out, target in zip(outputs, output_targets):
+                # if out.data[0] >= .5 and target >= .5:
                 if out.data[0] > .5 and target > .5:
                     tp += 1
+                # if out.data[0] >= .5 and target <= .5:
                 if out.data[0] > .5 and target < .5:
                     fp += 1
                 if out.data[0] < .5 and target < .5:

@@ -4,7 +4,7 @@ import re
 
 
 
-file = open("../sweep_outputs")
+file = open("../temp")
 
 lines=[]
 for line in file:
@@ -36,13 +36,11 @@ def abbr(s):
         return "ajb"
     elif s == "discriminator":
         return "discr"
-    elif s == "bnc_lm":
-        return "lm"
     else:
         vs = s.split("_")
         if vs[0] == "permuted":
             return "shuff 0.%s-0.%s" % tuple(vs[1:])
-        elif vs[0] == "perm":
+        else:
             return "swap %s-%sx\t" % tuple(vs[1:])
 
 
@@ -58,7 +56,7 @@ def pretty_print(vs):
                 v = ""
                 for x in conf:
                     x = x.split("=")
-                    v += x[0] + "=" + x[1].zfill(5) + ","
+                    v += x[0] + "=" + x[1].strip().zfill(5) + ","
             new_vs.append(v)
     return reduce(lambda x, y: x + '\t' + y, new_vs).strip()
 
@@ -74,15 +72,18 @@ def chunk(lastv):
     chunks.append(chunk)
     for x in lastv.split("\t\t")[6:]:
         xs = x.split('\t')
-        if xs[0] == "True":             # first
+        if xs[0] == "True" or xs[0] == "False":             # first
             xs = xs[1:7]
         elif len(xs) == 12:             # double for some reason
             del xs[1]
             del xs[2]
             chunks.append(xs[0:4])
             xs = xs[4:]
-        del xs[1]
-        del xs[2]
+        try:
+            del xs[1]                       # delete training scores
+            del xs[2]
+        except IndexError:
+            pass
         chunks.append(xs)
     return chunks
 
@@ -97,16 +98,15 @@ for k,v in d.iteritems():
             day = "day7"
         else:
             day = day.group()
-        del ks[4]
-        del ks[4]
-        stats.append(ks[0].split("\t")[-1])
+        sweepname = ks[0].split("\t")[-1]
+        sweepname = sweepname.split("_")
+        sweepname[-1] = sweepname[-1].zfill(3)
+        sweepname = "_".join(sweepname)
+        stats.append(sweepname)
         stats.append(str(ks[1][2:]).zfill(5))
         stats.append(ks[2][6:])
         stats.append(abbr(ks[3][4:]))
-        stats.append(str(ks[4][6:]).zfill(4))
-        stats.append(abbr(ks[5][4:]))
-        stats.append(day)
-        stats.append(ks[6][10:11])
+        stats.append("max" if ks[4].strip()[-1] == "1" else "no")
     else:
         continue
     if v != []:
@@ -132,7 +132,10 @@ for k,v in d.iteritems():
 
 for line in outlines:
     vals = filter(lambda s: s != "", line.split("\t"))
-    d[line] = float(vals[8])
+    # try:
+    d[line] = float(vals[5])
+    # except ValueError:
+    #     pass
 
 sorted_d = sorted(d.items(), key=operator.itemgetter(1), reverse=True)
 
