@@ -53,3 +53,17 @@ for dir in dirs:
             torch.save(encoder.state_dict(), '/scratch/asw462/models/' + dir + '/CPU_' + model)
         except KeyError:
             pass
+
+        sweep_1229132558_aj_classifier_57
+        sweep_1229132558_aj_classifier_34
+        sweep_1229132558_aj_classifier_470
+        sweep_1229132558_aj_classifier_322
+        sweep_1229132558_aj_classifier_400
+        sweep_1229145144_aj_classifier_121
+        sweep_1229132558_aj_classifier_12
+        sweep_1229132558_aj_classifier_257
+        sweep_1229132558_aj_classifier_318
+        sweep_1227010500_aj_classifier_268      shuff15-20  689
+        sweep_1229145144_aj_classifier_71       lm_only     1514
+        sweep_12290055241_aj_cbow_230
+        sweep_1229005541_aj_cbow_050
