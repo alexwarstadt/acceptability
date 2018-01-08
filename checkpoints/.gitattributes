@@ -1,2 +1,0 @@
-CPU_sweep_1106235815_rnn_classifier_pooling_16-lr8e-05-h_size1034-datadiscriminator-num_layers3 filter=lfs diff=lfs merge=lfs -text
-CPU_sweep_1229132558_aj_classifier_57-lr8.8e-05-h_size21-dataaj_balanced-encCPU_sweep_1106235815_rnn_classifier_pooling_16-lr8e-05-h_size1034-datadiscriminator-num_layers3 filter=lfs diff=lfs merge=lfs -text
