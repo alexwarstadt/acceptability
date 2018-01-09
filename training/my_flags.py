@@ -52,3 +52,10 @@ def get_flags():
     gflags.DEFINE_string("encoder_path", "", "location of encoder checkpoint")
     gflags.DEFINE_string("encoder_type", "rnn_classifier_pooling", "the class of the encoder model")
 
+    #interactive_flags
+    gflags.DEFINE_string("classifier_path", "", "location of classifier checkpoint")
+    gflags.DEFINE_string("classifier_type", "aj_classifier", "the class of the encoder model")
+
+    #eval flags
+    gflags.DEFINE_string("test_path", "", "location of test set")
+
