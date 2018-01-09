@@ -10,13 +10,12 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 
-import model as model
+import lm_models as model
 from utils.constants import *
 
 # TODO: split into modules(?)
 # TODO: keep track of training stats better
 # TODO: allow for larger data sets
-# TODO: split into modules(?)
 # TODO: print at better intervals
 
 # batch_size = 36
