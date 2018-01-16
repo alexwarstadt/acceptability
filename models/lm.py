@@ -2,21 +2,26 @@ import math
 import random
 import time
 from functools import reduce
-
-import utils.data_utils as du
+import utils.lm_data_utils as du
 # import matplotlib.pyplot as plt
 import numpy as np
 import torch
 import torch.nn as nn
 from torch.autograd import Variable
-
 import lm_models as model
 from utils.constants import *
 
-# TODO: split into modules(?)
-# TODO: keep track of training stats better
-# TODO: allow for larger data sets
-# TODO: print at better intervals
+
+# The language model trainer and data processing. The LM is primarily used to generate fake sentences, could be used
+# for sentence embeddings later on, but it is low priority.
+
+
+
+
+
+
+
+
 
 # batch_size = 36
 n_epochs = 20
@@ -25,10 +30,6 @@ LOGS_PATH = "logs/logs"
 ALL_LOGS = "logs/all-logs_temp"
 
 LOGS = open("logs/all-logs", "a")
-# DATA_DIR = "data/penn"
-# CROP_PAD_LENGTH = 20
-# embeddings_path = "glove.6B.300d.txt"
-# EMBEDDING_SIZE = 300
 EVALUATE_EVERY = 500
 MINI_VALID_SIZE = 50
 STOP_TRAINING_THRESHOLD = 20    # number of evaluations on which validation does not improve
@@ -36,6 +37,9 @@ STOP_TRAINING_THRESHOLD = 20    # number of evaluations on which validation does
 
 
 class ModelUtils:
+    """
+    Most of this stuff is probably deprecated by utils package. 
+    """
     def __init__(self, dm, gpu):
         self.dm = dm
         self.gpu = gpu
@@ -109,20 +113,6 @@ class ModelUtils:
             if self.gpu:
                 input = input.cuda()
         return sentence_gen
-
-    # def generate_sans_probability(self, n, model):
-    #     input = torch.Tensor(1, self.dm.embedding_size)
-    #     input[0] = self.dm.word_to_tensor(START)
-    #     hiddens = model.init_hidden_single()
-    #     sentence_gen = ""
-    #     for _ in range(n):
-    #         output, hiddens = model.forward(Variable(input), hiddens)
-    #         probs, prob_sum = self.remove_start(self.log_prob_to_prob(output)[0].tolist())
-    #         i_choice, w_choice = self.sample(probs, prob_sum)
-    #         word_gen = self.dm.vocab[i_choice]
-    #         sentence_gen += word_gen + " "
-    #         input[0] = self.dm.word_to_tensor(word_gen)
-    #     return sentence_gen
 
 
     def generate_batch(self, n, batch_size, model):

@@ -1,5 +1,7 @@
 import gflags
 
+# Define flags to be passed in to training.run_training.py script
+
 def get_flags():
     # Debug settings.
     gflags.DEFINE_string("data_dir",

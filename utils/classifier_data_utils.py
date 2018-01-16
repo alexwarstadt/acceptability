@@ -4,15 +4,19 @@ import torch.utils.data
 import subprocess
 import math
 import data_processor as dp
-import data_utils
+import lm_data_utils
+import nltk
 from constants import *
 from functools import reduce
 
-
+# Data management for all classifiers: real/fake discriminator (i.e. encoder), and acceptability
 
 VOCAB_PATH = "../data/data/bnc/bnc-tokenized-crop30-vocab-20000.txt"
 
 class CorpusEpoch:
+    """
+    new instance for each epoch, contains refs to full data set, counts progress through current epoch
+    """
 
     #TODO as stack
     def __init__(self, data_pairs, data_manager, batch_size=36):
@@ -27,14 +31,25 @@ class CorpusEpoch:
 
     def get_new_batch(self):
         pairs = [self.data_pairs.pop() for _ in range(min(self.batch_size, len(self.data_pairs)))]
-        batch = NewBatch(pairs, self.data_manager)
+        batch = Batch(pairs, self.data_manager)
         has_next = len(self.data_pairs) > 0
         self.still_going = has_next
         return batch, has_next
 
 
-class DataManagerInMemory(data_utils.DataManager):
+class DataManagerInMemory(lm_data_utils.DataManager):
+    """
+    stores all data for test/dev/training sets as lists of triples: (text, score, source)
+    """
     def __init__(self, corpus_path, embedding_path, vocab_path, embedding_size, crop_pad_length=30, unked=False):
+        """
+        :param corpus_path: directory containing train.txt, valid.txt, test.txt
+        :param embedding_path: file containing pretrained glove embeddings
+        :param vocab_path: file containing list of word types in vocabulary
+        :param embedding_size: dimension of word embeddings
+        :param crop_pad_length: length to which all sentences are cropped/padded
+        :param unked: whether or not the data contains unk tokens
+        """
         super(DataManagerInMemory, self).__init__(corpus_path, embedding_path, vocab_path, embedding_size,
                                                   crop_pad_length=30, unked=unked)
         def read_pairs(path):
@@ -53,13 +68,19 @@ class DataManagerInMemory(data_utils.DataManager):
         self.test_pairs = read_pairs(self.test)
 
 
-class InteractiveDataManager(data_utils.DataManager):
+class InteractiveDataManager(lm_data_utils.DataManager):
+    """
+    Data manager for interactive classifier
+    """
     def __init__(self, corpus_path, embedding_path, vocab_path, embedding_size, crop_pad_length=30, unked=False):
         super(InteractiveDataManager, self).__init__(corpus_path, embedding_path, vocab_path, embedding_size,
                                                   crop_pad_length=30, unked=unked)
 
 
-class DataManagerEval(data_utils.DataManager):
+class DataManagerEval(lm_data_utils.DataManager):
+    """
+    Data manager for evaluation mode
+    """
     def __init__(self, corpus_path, embedding_path, vocab_path, embedding_size, crop_pad_length=30, unked=False):
         super(DataManagerEval, self).__init__(corpus_path, embedding_path, vocab_path, embedding_size,
                                                   crop_pad_length=30, unked=unked)
@@ -78,7 +99,12 @@ class DataManagerEval(data_utils.DataManager):
 
 
 
-class NewBatch:
+class Batch:
+    """
+    all data for a single batch
+    separate lists for text, scores, sources
+    can represent text as a list of sentences, list of lists of words, or a list of lists of tensors
+    """
     def __init__(self, data_pairs, data_manager):
         self.sentences_view = [pair[0] for pair in data_pairs]
         self.targets_view = [float(pair[1]) for pair in data_pairs]
@@ -115,7 +141,7 @@ class NewBatch:
         return indices
 
     def tensor_view(self):
-        """makes a list of sentence length of dim_batch x 50 tensors"""
+        """makes a list of sentence length of dim_batch x embedding_size tensors"""
         tensors = []
         for _ in range(self.sentence_length):
             tensors.append(torch.Tensor(self.batch_size, self.data_manager.embedding_size))

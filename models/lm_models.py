@@ -3,6 +3,11 @@ import torch.nn as nn
 from torch.autograd import Variable
 
 class MyLSTM(nn.Module):
+    """
+    LSTM language model used primarily to generate "fake" sentences.
+    Could also be used as encoder.
+    uses LSTMCell instead of LSTM because forward takes in one time step at a time for greedy (or beam search) generation
+    """
     def __init__(self, input_size, hidden_size, output_size, n_layers, nonlinearity):
         super(MyLSTM, self).__init__()
 
@@ -19,7 +24,13 @@ class MyLSTM(nn.Module):
         self.softmax = nn.functional.softmax
 
     def forward(self, input, hidden_states):
-        """version for LSTM cell"""
+        """
+        call separately for each time step
+        in evaluation or generation mode, use output at t-1 to sample input at t
+        :param input: batch_size X 1, all tokens of a given time step
+        :param hidden_states: 
+        :return: distribution over vocabulary
+        """
         h, c = self.ih2h(input, hidden_states[0])
         next_hiddens = [(h, c)]
         h, c = self.h2h(h, hidden_states[1])
@@ -47,45 +58,3 @@ class MyLSTM(nn.Module):
             self.hidden_size * self.output_size
 
 
-
-class RNN(nn.Module):
-    """Multilayer but unconnected RNN. i.e. the deep layers are not RNNs in and of themselves, rather the hidden
-    state at each staged is passed through a number of linear layers and the result is the hidden state given
-    to the next iteration of the sequence"""
-    def __init__(self, input_size, hidden_size, output_size, n_layers, nonlinearity, model_type="RNN"):
-        super(RNN, self).__init__()
-
-        self.input_size = input_size
-        self.hidden_size = hidden_size
-        self.output_size = output_size
-        self.n_layers = n_layers
-        self.model_type = model_type
-
-        self.ih2h = nn.Linear(input_size + hidden_size, hidden_size)
-        self.h2h = []
-        for i in range(n_layers):
-            self.h2h.append(nn.Linear(hidden_size, hidden_size))
-        self.h2o = nn.Linear(hidden_size, output_size)
-
-        self.log_softmax = nn.functional.log_softmax
-        self.softmax = nn.functional.softmax
-        self.nonlinearity = nonlinearity
-
-    def forward(self, input, hidden):
-        combined = torch.cat((input, hidden), 1)
-        hidden = self.nonlinearity(self.ih2h(combined))
-        for hidden_layer in self.h2h:
-            hidden = self.nonlinearity(hidden_layer(hidden))
-        output = self.log_softmax(self.h2o(hidden))
-        return output, hidden
-
-    def init_hidden(self, batch_size):
-        return Variable(torch.zeros(batch_size, self.hidden_size))
-
-    def init_hidden_single(self):
-        return Variable(torch.zeros(1, self.hidden_size))
-
-    def n_params(self):
-        return (self.input_size + self.hidden_size) * self.hidden_size + \
-            self.n_layers * self.hidden_size * self.hidden_size + \
-            self.hidden_size * self.output_size

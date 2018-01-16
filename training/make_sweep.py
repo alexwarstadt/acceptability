@@ -1,10 +1,10 @@
-# Create a script to run a random hyperparameter search.
-
 import random
 import numpy as np
 import gflags
 import sys
 from datetime import datetime
+
+# A sript for generating a bash script that launches a hyperparamter search for encoder
 
 SINGLE_DAY = False
 now = datetime.now()

@@ -25,9 +25,9 @@ def time_since(since):
 
 START_TIME = time.time()
 
-class Classifier(nn.Module):
+class LSTMClassifier(nn.Module):
     def __init__(self, hidden_size, embedding_size, num_layers, reduction_size):
-        super(Classifier, self).__init__()
+        super(LSTMClassifier, self).__init__()
         self.hidden_size = hidden_size
         self.embedding_size = embedding_size
         self.num_layers = num_layers
@@ -56,9 +56,9 @@ class Classifier(nn.Module):
             "num layers\t\t" + str(self.num_layers) + "\n"
 
 
-class ClassifierPooling(nn.Module):
+class LSTMPoolingClassifier(nn.Module):
     def __init__(self, hidden_size, embedding_size, num_layers):
-        super(ClassifierPooling, self).__init__()
+        super(LSTMPoolingClassifier, self).__init__()
         self.hidden_size = hidden_size
         self.embedding_size = embedding_size
         self.num_layers = num_layers
@@ -81,11 +81,11 @@ class ClassifierPooling(nn.Module):
         return (Variable(torch.zeros(2 * self.num_layers, batch_size, self.hidden_size)),
                 Variable(torch.zeros(2 * self.num_layers, batch_size, self.hidden_size)))
 
-
     def to_string(self):
         return "input size\t\t" + str(self.embedding_size) + "\n" + \
             "hidden size\t\t" + str(self.hidden_size) + "\n" + \
             "num layers\t\t" + str(self.num_layers) + "\n"
+
 
 class RNNTrainer(model_trainer.ModelTrainer):
     def __init__(self,
@@ -93,7 +93,6 @@ class RNNTrainer(model_trainer.ModelTrainer):
                  model):
         self.FLAGS = FLAGS
         super(RNNTrainer, self).__init__(FLAGS, model)
-
 
     def to_string(self):
         return "data\t\t\t" + self.FLAGS.data_dir + "\n" + \
@@ -112,101 +111,3 @@ class RNNTrainer(model_trainer.ModelTrainer):
         outputs, hidden = self.model.forward(Variable(input), hidden)
         return outputs, hidden
 
-
-#============= EXPERIMENT ================
-
-
-
-def random_experiment():
-    h_size = int(math.floor(math.pow(random.uniform(10, 32), 2)))           # [100, 1024], quadratic distribution
-    num_layers = random.randint(1, 5)
-    reduction_size = int(math.floor(math.pow(random.uniform(7, 18), 2)))    # [49, 324], quadratic distribution
-    lr = math.pow(.1, random.uniform(3, 4.5))                               # [.001, 3E-5], logarithmic distribution
-    cl = Classifier(hidden_size=h_size, embedding_size=300, num_layers=num_layers, reduction_size=reduction_size)
-    clt = RNNTrainer('/scratch/asw462/data/discriminator/',
-                     '/scratch/asw462/data/bnc-30/embeddings_20000.txt',
-                     '/scratch/asw462/data/bnc-30/vocab_20000.txt',
-                     300,
-                     cl,
-                     stages_per_epoch=100,
-                     prints_per_stage=1,
-                     convergence_threshold=20,
-                     max_epochs=100,
-                     gpu=True,
-                     learning_rate=lr)
-    clt.run()
-
-def random_experiment_pooling(data):
-    h_size = int(math.floor(math.pow(random.uniform(15, 40), 2)))  # [225, 1600], quadratic distribution
-    num_layers = random.randint(1, 3)
-    lr = math.pow(.1, random.uniform(3, 4.5))  # [.001, 3E-5], logarithmic distribution
-    cl = ClassifierPooling(hidden_size=h_size, embedding_size=300, num_layers=num_layers)
-    clt = RNNTrainer(data,
-                     '/scratch/asw462/data/bnc-30/embeddings_20000.txt',
-                     '/scratch/asw462/data/bnc-30/vocab_20000.txt',
-                     300,
-                     cl,
-                     stages_per_epoch=100,
-                     prints_per_stage=1,
-                     convergence_threshold=20,
-                     max_epochs=100,
-                     gpu=True,
-                     learning_rate=lr)
-    clt.run()
-
-def random_local_experiment_pooling():
-    h_size = int(math.floor(math.pow(random.uniform(10, 32), 2)))  # [100, 1024], quadratic distribution
-    num_layers = random.randint(1, 5)
-    lr = math.pow(.1, random.uniform(3.5, 5.5))  # [.001, 3E-5], logarithmic distribution
-    cl = ClassifierPooling(hidden_size=h_size, embedding_size=300, num_layers=num_layers)
-    clt = RNNTrainer('../data/discriminator/',
-                     '../data/bnc-30/embeddings_20000.txt',
-                    '../data/bnc-30/vocab_20000.txt',
-                     300,
-                     cl,
-                     stages_per_epoch=100,
-                     prints_per_stage=1,
-                     convergence_threshold=20,
-                     max_epochs=100,
-                     gpu=False,
-                     learning_rate=lr)
-    clt.run()
-
-def resume_experiment(model_path, h_size, num_layers, reduction_size, lr):
-    cl = Classifier(hidden_size=h_size, embedding_size=300, num_layers=num_layers, reduction_size=reduction_size)
-    cl.load_state_dict(torch.load(model_path))
-    clt = RNNTrainer('/scratch/asw462/data/discriminator/',
-                     '/scratch/asw462/data/bnc-30/embeddings_20000.txt',
-                     '/scratch/asw462/data/bnc-30/vocab_20000.txt',
-                     300,
-                     cl,
-                     stages_per_epoch=100,
-                     prints_per_stage=1,
-                     convergence_threshold=20,
-                     max_epochs=100,
-                     gpu=False,
-                     learning_rate=lr)
-    clt.run()
-
-def resume_experiment_pooling(model_path, h_size, num_layers, lr, data):
-    cl = ClassifierPooling(hidden_size=h_size, embedding_size=300, num_layers=num_layers)
-    cl.load_state_dict(torch.load(model_path))
-    clt = RNNTrainer(data,
-                     '/scratch/asw462/data/bnc-30/embeddings_20000.txt',
-                     '/scratch/asw462/data/bnc-30/vocab_20000.txt',
-                     300,
-                     cl,
-                     stages_per_epoch=100,
-                     prints_per_stage=1,
-                     convergence_threshold=20,
-                     max_epochs=100,
-                     gpu=False,
-                     learning_rate=lr)
-    clt.run()
-
-
-
-
-
-
-        # random_local_experiment_pooling()

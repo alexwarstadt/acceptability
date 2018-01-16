@@ -6,7 +6,7 @@ import data_processor as dp
 from constants import *
 from functools import reduce
 
-
+# Data management for Language Model only
 
 class CorpusEpoch:
     def __init__(self, path, data_manager, batch_size=36):

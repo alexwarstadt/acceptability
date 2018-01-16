@@ -1,7 +1,7 @@
 import operator
 import re
 
-
+# A script for processing the CBOW logs into a table
 
 
 file = open("../temp")

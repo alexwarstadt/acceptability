@@ -11,7 +11,15 @@ from utils.classifier_utils import *
 
 
 class Classifier(nn.Module):
+    """
+    Continuous bag of words classifier.
+    """
     def __init__(self, hidden_size, input_size, max_pool):
+        """
+        :param hidden_size: 
+        :param input_size: 
+        :param max_pool: if true then max pool over word embeddings, else sum word embeddings
+        """
         super(Classifier, self).__init__()
         self.hidden_size = hidden_size
         self.input_size = input_size
@@ -34,6 +42,9 @@ class Classifier(nn.Module):
 
 
 class CbowTrainer(model_trainer.ModelTrainer):
+    """
+    extends model trainer for CBOW training
+    """
     def __init__(self,
                  FLAGS,
                  model,):

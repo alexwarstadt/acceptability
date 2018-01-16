@@ -8,6 +8,7 @@ from constants import *
 from functools import reduce
 import re
 
+# Various functions for generating permuted data for real/fake classifier
 
 # SHUFFLE PERMUTING
 

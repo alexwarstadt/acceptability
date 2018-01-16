@@ -7,7 +7,16 @@ from utils import classifier_data_utils as cdu
 
 
 class ModelTrainer(object):
+    """
+    Class overseeing training. 
+    Contains model and data, main training loop, runs batches, calculates loss,
+    does backprop, does evaluation, writes to logs
+    """
     def __init__(self, FLAGS, model):
+        """
+        :param FLAGS: passed in at training.run_train.py
+        :param model: model to be trained
+        """
         self.FLAGS = FLAGS
         self.model = model
         self.optimizer = torch.optim.Adam(self.model.parameters(), lr=self.FLAGS.learning_rate)  # or use RMSProp
@@ -33,6 +42,11 @@ class ModelTrainer(object):
 
 
     def get_batch_output(self, batch):
+        """
+        calls model.forward(). This method is usually overridden in child classes
+        :param batch: object of type utils.classifier_data_utils.Batch
+        :return: outputs and hidden state returned by model.forward
+        """
         hidden = self.model.init_hidden(batch.batch_size)
         input = torch.FloatTensor(len(batch.tensor_view), batch.batch_size, self.FLAGS.embedding_size)
         if self.FLAGS.gpu:
@@ -49,12 +63,18 @@ class ModelTrainer(object):
         self.optimizer.step()
 
     def get_batch_loss(self, outputs, output_targets):
-        # self.loss.weight = torch.Tensor([self.dm.corpus_bias for i in range(len(output_targets))])
         loss = self.loss(outputs, Variable(output_targets).view(-1, 1))
-        # loss = self.loss(outputs, output_targets)
         return loss
 
     def batch_confusion(self, outputs, output_targets, sources, by_source):
+        """
+        get confusion matrix for a batch. true positive / true negative / false positive / false negative
+        :param outputs: model outputs
+        :param output_targets: list of targets from 
+        :param sources: source of each data point
+        :param by_source: dict containing confusion matrix for each source
+        :return: confusion matrix for batch, updated by_source
+        """
         if self.FLAGS.gpu:
             outputs = outputs.cpu()
             output_targets = output_targets.cpu()
@@ -125,6 +145,9 @@ class ModelTrainer(object):
         print("tp={0[0]:.4g}, tn={0[1]:.4g}, fp={0[2]:.4g}, fn={0[3]:.4g}".format(confusion.percentages()))
 
     def logs(self, n_batches, train_avg_loss, valid_avg_loss, t_confusion, v_confusion, model_saved):
+        """
+        write stats to log file
+        """
         self.LOGS.write("\t" + str(n_batches) + "\t")
         self.LOGS.write("\t" + self.my_round(train_avg_loss) + "\t")
         self.LOGS.write("\t" + self.my_round(valid_avg_loss) + "\t")
@@ -137,6 +160,9 @@ class ModelTrainer(object):
         self.LOGS.flush()
 
     def cluster_logs(self, n_batches, train_avg_loss, valid_avg_loss, t_confusion, v_confusion, model_saved, training_stats_by_source, valid_stats_by_source):
+        """
+        write stats to log file, spacing updated for cluster
+        """
         self.LOGS.write("\t" + str(n_batches))
         self.LOGS.write("\t" + self.my_round(train_avg_loss) + "\t")
         self.LOGS.write("\t" + self.my_round(valid_avg_loss) + "\t")
@@ -152,6 +178,9 @@ class ModelTrainer(object):
         self.LOGS.flush()
 
     def log_by_source(self, training_stats_by_source, valid_stats_by_source):
+        """
+        write stats to log file broken down by data source
+        """
         for source in list(set(training_stats_by_source.keys()).union(valid_stats_by_source.keys())):
             if source in training_stats_by_source:
                 t_confusion = training_stats_by_source[source]
@@ -174,6 +203,14 @@ class ModelTrainer(object):
         return "{0:.4g}".format(n)
 
     def run_stage(self, epoch, backprop, stages_per_epoch, prints_per_stage):
+        """
+        Training loop for a single evaluation stage (sub-epoch)
+        :param epoch: an object of type utils.classifier_data_utils.CorpusEpoch
+        :param backprop: boolean switch true if in training mode, false in evaluation mode
+        :param stages_per_epoch: number of evaluation stages per epoch
+        :param prints_per_stage: number of prints to output per evaluation stage (not writing to logs)
+        :return: stats for the evaluation stage
+        """
         has_next = True
         n_batches = 0
         stage_batches = int(math.ceil(float(epoch.n_batches)/stages_per_epoch))
@@ -203,6 +240,13 @@ class ModelTrainer(object):
 
 
     def run_epoch(self, max_matthews, n_stages_not_converging, n_stages):
+        """
+        Training loop for a single epoch
+        :param max_matthews: highest dev set matthews score so far, for early stop
+        :param n_stages_not_converging: counter for number of stages without setting new best Matthews on dev set
+        :param n_stages: counter for number of stages started so far in current epoch
+        :return: updated versions of all inputs
+        """
         train = cdu.CorpusEpoch(list(self.dm.training_pairs), self.dm)
         valid = cdu.CorpusEpoch(list(self.dm.valid_pairs), self.dm)
         for _ in range(self.FLAGS.stages_per_epoch):
@@ -274,6 +318,9 @@ class ModelTrainer(object):
 
 
 class NotConvergingError(Exception):
+    """
+    Raised for early stop when model stops converging, used to exit outer training loop
+    """
     def __init__(self, value):
         self.value = value
 

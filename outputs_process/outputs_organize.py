@@ -1,7 +1,7 @@
 import operator
 import re
 
-
+# A script for processing AcceptabilityClassifier logs into a table
 
 
 file = open("../sweep_outputs")

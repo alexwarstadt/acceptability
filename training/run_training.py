@@ -6,10 +6,14 @@ import models.acceptability_cl
 import models.cbow
 import torch
 
+# Entry point for a launching a training session.
+# Creates a model and model trainer instance.
+# Pass in command line flags, for flag definitions, see training.my_flags.py
+
 FLAGS = gflags.FLAGS
 
 if __name__ == '__main__':
-    print("HELLO WORLD")
+    print("Begin training")
     my_flags.get_flags()
 
     # Parse command line flags.
@@ -20,7 +24,7 @@ if __name__ == '__main__':
     cl = None
 
     if FLAGS.model_type == "rnn_classifier_pooling":
-        cl = models.rnn_classifier.ClassifierPooling(
+        cl = models.rnn_classifier.LSTMPoolingClassifier(
             hidden_size=FLAGS.hidden_size,
             embedding_size=FLAGS.embedding_size,
             num_layers=FLAGS.num_layers)
@@ -34,13 +38,13 @@ if __name__ == '__main__':
         clt.run()
 
     if FLAGS.model_type == "aj_classifier":
-        cl = models.acceptability_cl.Classifier(
+        cl = models.acceptability_cl.AcceptabilityClassifier(
             hidden_size=FLAGS.hidden_size,
             encoding_size=FLAGS.encoding_size
         )
         encoder = None
         if FLAGS.encoder_type == "rnn_classifier_pooling":
-            encoder = models.rnn_classifier.ClassifierPooling(
+            encoder = models.rnn_classifier.LSTMPoolingClassifier(
                 hidden_size=FLAGS.encoding_size,
                 embedding_size=FLAGS.embedding_size,
                 num_layers=FLAGS.encoder_num_layers)

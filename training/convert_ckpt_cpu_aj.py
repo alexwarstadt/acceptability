@@ -3,6 +3,8 @@ import models.cbow
 import torch
 import os
 
+# A script for converting acceptability classifiers from GPU to CPU
+
 
 dirs = ["sweep_1229145144",
         "sweep_1227010500",

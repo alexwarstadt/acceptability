@@ -7,6 +7,8 @@ import models.acceptability_cl
 import training.my_flags
 import gflags
 import sys
+from itertools import islice
+
 
 
 
@@ -16,7 +18,7 @@ class Interacter():
         self.FLAGS = FLAGS
         self.classifier = None
         if FLAGS.classifier_type == "aj_classifier":
-            self.classifier = models.acceptability_cl.Classifier(
+            self.classifier = models.acceptability_cl.AcceptabilityClassifier(
                 hidden_size=FLAGS.hidden_size,
                 encoding_size=FLAGS.encoding_size
             )
@@ -32,9 +34,9 @@ class Interacter():
                                           self.FLAGS.vocab_path, self.FLAGS.embedding_size, self.FLAGS.crop_pad_length)
 
     def interact(self, sentences):
-        cropped_sentences = [dp.crop_line(s, 30) for s in sentences]
-        data_pairs = [(s, -1, -1) for s in cropped_sentences]
-        batch = cdu.NewBatch(data_pairs, self.dm)
+        sanitized_sentences = [dp.sanitize_sentence(s.strip()) for s in sentences]
+        data_pairs = [(s, -1, -1) for s in sanitized_sentences]
+        batch = cdu.Batch(data_pairs, self.dm)
         hidden = self.encoder.init_hidden(batch.batch_size)
         input = torch.Tensor(len(batch.tensor_view), batch.batch_size, self.FLAGS.embedding_size)
         for i, t in enumerate(batch.tensor_view):
@@ -42,7 +44,7 @@ class Interacter():
         _, encoding = self.encoder.forward(Variable(input), hidden)
         output = self.classifier.forward(encoding)
         for s, o in zip(sentences, output):
-            print(o[0].data[0], s)
+            print ("%.2f" % o[0].data[0]) + "\t" + s.strip()
 
     def interact_one(self, sentence):
         self.interact([sentence])
@@ -52,6 +54,13 @@ class Interacter():
             s = raw_input("\nYour sentence: ")
             self.interact_one(s)
 
+    def interact_file(self, path):
+        with open(path) as f:
+            while True:
+                next_n_lines = list(islice(f, 32))
+                if not next_n_lines:
+                    break
+                self.interact(next_n_lines)
 
 
 FLAGS = gflags.FLAGS
@@ -62,14 +71,11 @@ FLAGS(sys.argv)
 
 i = Interacter(FLAGS)
 
-i.interact(["few information was provided .",
-            "mary jumped the horse perfectly over the last fence .",
-            "there are arriving three men at that station .",
-            "it loved sandy .",
-            "who does phineas know a girl who is working with ? "])
+# i.interact(["I I."])
 
-i.interactive_mode()
+# i.interactive_mode()
 
+i.interact_file("../acceptability_corpus/temp")
 
 
 # FLAGS

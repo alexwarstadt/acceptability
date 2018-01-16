@@ -11,6 +11,7 @@ import errno
 from constants import *
 from functools import reduce
 
+# Various useful functions for processing datasets
 
 def tokenize(start_corpus_path):
     out_path = start_corpus_path[:-4] + "-tokenized.txt"
@@ -25,6 +26,16 @@ def tokenize(start_corpus_path):
             tokenized_corpus.write(token_line + "\n")
         tokenized_corpus.close()
 
+def tokenize_sentence(s):
+    tokens = nltk.word_tokenize(s)
+    s = " ".join(tokens).lower()
+    return s
+
+def sanitize_sentence(s, crop_pad_length=30):
+    s = s.strip().lower()
+    s = tokenize_sentence(s)
+    s = crop_line(s, crop_pad_length)
+    return s
 
 def filter_short_lines(start_corpus_path, n_words):
     temp_file = open(start_corpus_path + "temp", "w")
@@ -313,10 +324,10 @@ def crop_line(line, crop_pad_length):
     stop_pad = ""
     for _ in range(crop_pad_length):
         stop_pad = stop_pad + STOP + " "
-    line = START + " " + line.strip() + stop_pad
+    line = START + " " + line.strip() + " " + stop_pad
     words = line.split(" ")
     words = words[:crop_pad_length]
-    return " ".join(words) + STOP
+    return " ".join(words) + " " + STOP
 
 
 

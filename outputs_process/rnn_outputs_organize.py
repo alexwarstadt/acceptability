@@ -1,6 +1,6 @@
 import operator
 
-
+# A script for processing LSTMPoolingClassifier logs into a table
 
 
 file = open("../temp")

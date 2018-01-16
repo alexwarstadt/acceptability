@@ -1,10 +1,12 @@
-# Create a script to run a random hyperparameter search.
-
 import random
 import numpy as np
 import gflags
 import sys
 from datetime import datetime
+
+# A sript for generating a bash script that launches a hyperparamter search for encoders,
+# manipulating training data by permutation strategy
+
 
 SINGLE_DAY = False
 now = datetime.now()
@@ -21,12 +23,6 @@ QUAD = "QUAD"
 
 FLAGS = gflags.FLAGS
 
-
-# gflags.DEFINE_string("data_dir", "/home/warstadt/data/permuted_0-2/", "")
-# gflags.DEFINE_string("vocab_path", "/home/warstadt/data/bnc-30/vocab_20000.txt", "")
-# gflags.DEFINE_string("embedding_path", "/home/warstadt/data/bnc-30/embeddings_20000.txt", "")
-# gflags.DEFINE_string("log_path", "/home/warstadt/logs/", "")
-
 FLAGS(sys.argv)
 
 # Instructions: Configure the variables in this block, then run
@@ -39,8 +35,7 @@ FLAGS(sys.argv)
 # Non-tunable flags that must be passed in.
 
 FIXED_PARAMETERS = {
-    # #paths
-    # "data_dir": "/home/warstadt/data/permuted_0-2/",
+    #paths
     "vocab_path": "/home/warstadt/data/bnc-30/vocab_20000.txt",
     "embedding_path": "/home/warstadt/data/bnc-30/embeddings_20000.txt",
     "log_path": "/home/warstadt/logs/",
@@ -48,18 +43,6 @@ FIXED_PARAMETERS = {
     "model_type":      "rnn_classifier_pooling",
     "ckpt_path":  "/home/warstadt/models/",
     "gpu": "",
-
-    # "vocab_path": "/scratch/asw462/data/bnc-30/vocab_20000.txt",
-    # "embedding_path": "/scratch/asw462/data/bnc-30/embeddings_20000.txt",
-    # "log_path": "/scratch/asw462/logs/",
-    # "data_type": "discriminator",
-    # "model_type": "rnn_classifier_pooling",
-    # "ckpt_path": "/scratch/asw462/models/",
-    # "gpu": "",
-
-#
-# 0.00008		1034	discrim 	3	0.7645		0.883		0.44/0.44/0.064/0.054	sweep_1106235815_rnn_classifier_pooling_16-lr8e-05-h_size1034-datadiscriminator-num_layers3
-# 0.00015		689		discrim 	4	0.7478		0.8786		0.46/0.41/0.082/0.045 sweep_1106235815_rnn_classifier_pooling_17-lr0.00015-h_size689-datadiscriminator-num_layers4
 
     #sizes
     "embedding_size":   "300",

@@ -3,6 +3,9 @@ import torch
 
 
 class Confusion:
+    # 4-tuple counting the true positives / true negatives / false positives / false negatives
+    # can be used to calculate f1, matthews, accuracy
+    # can be added to each other
 
     def __init__(self, tp=0, fp=0, tn=0, fn=0):
         self.tp = tp

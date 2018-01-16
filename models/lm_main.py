@@ -2,12 +2,19 @@ import lm_models
 import torch
 import torch.nn as nn
 
-import utils.data_utils as du
+import utils.lm_data_utils as du
 from models import lm as my_lm
 
 
 
 def generate(n, out_path, gpu):
+    """
+    generates sentences 1 at a time and writes to file
+    :param n: number of sentences to generate
+    :param out_path: output file, creates or appends to file
+    :param gpu: run LM on gpu
+    :return: none
+    """
     lm = lm_models.MyLSTM(input_size=300, hidden_size=350, output_size=20001, n_layers=1, nonlinearity=nn.Tanh())
     lm.load_state_dict(torch.load('models/model_7-14_15:33:4_110500'))
     dm = du.DataManager('/scratch/asw462/data/bnc-30', '/scratch/asw462/data/bnc-30/embeddings_20000.txt',
@@ -24,6 +31,14 @@ def generate(n, out_path, gpu):
     out.close()
 
 def generate_batch(n, batch, out_path, gpu):
+    """
+    generates sentences 1 at a time and writes to file
+    :param n: number of sentences to generate
+    :param batch: size of batch to generate
+    :param out_path: output file, creates or appends to file
+    :param gpu: run LM on gpu
+    :return: none
+    """
     lm = lm_models.MyLSTM(input_size=300, hidden_size=350, output_size=20001, n_layers=1, nonlinearity=nn.Tanh())
     lm.load_state_dict(torch.load('models/model_7-14_15:33:4_110500'))
     dm = du.DataManager('/scratch/asw462/data/bnc-30', '/scratch/asw462/data/bnc-30/embeddings_20000.txt',
@@ -42,4 +57,4 @@ def generate_batch(n, batch, out_path, gpu):
     out.close()
 
 
-generate(1000000, "acceptability_corpus/lm_generated6", True)
+# generate(1000000, "acceptability_corpus/lm_generated6", True)
