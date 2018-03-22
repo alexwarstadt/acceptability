@@ -7,26 +7,24 @@ import os
 from constants import *
 from functools import reduce
 import re
+import data_processor
 
 # Various functions for generating permuted data for real/fake classifier
 
 # SHUFFLE PERMUTING
 
 def shuffle_permute_file(input_path, out_path, min_percent, max_percent):
-    if os.path.isfile(out_path):
-        print("permuted file %s already exists" % out_path)
-    else:
-        output = open(out_path, "w")
-        for line in open(input_path):
-            words = line.split()
-            original_length = len(words)
-            words = remove_pad(words)
-            words, punc_map = remove_punc(words)
-            words = shuffle_line(words, random.uniform(min_percent, max_percent))
-            words = replace_punc(words, punc_map)
-            words = add_pad(words, original_length)
-            new_line = reduce(lambda x, y: x + " " + y, words)
-            output.write(new_line + "\n")
+    output = open(out_path, "w")
+    for line in open(input_path):
+        words = line.split()
+        original_length = len(words)
+        words = remove_pad(words)
+        words, punc_map = remove_punc(words)
+        words = shuffle_line(words, random.uniform(min_percent, max_percent))
+        words = replace_punc(words, punc_map)
+        # words = add_pad(words, original_length)
+        new_line = reduce(lambda x, y: x + " " + y, words)
+        output.write(new_line + "\n")
     output.close()
 
 def shuffle_line(a_list, percent):
@@ -106,7 +104,7 @@ def permute_by_punc(line, rlb, rub):
     chunks = swap_split_chunks(chunks, r2)
     chunks = replace_punc(chunks, punc_map)
     words = [item for sublist in chunks for item in sublist]
-    words = add_pad(words, original_length)
+    # words = add_pad(words, original_length)
     new_line = reduce(lambda x, y: x + " " + y, words)
     return new_line
 
@@ -206,4 +204,3 @@ def add_pad(words, n):
 
 
 ################# MAIN ####################
-

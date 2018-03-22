@@ -7,9 +7,20 @@ import models.acceptability_cl
 import training.my_flags
 import gflags
 import sys
+import math
 from itertools import islice
 
 
+
+
+def matthews(tp, tn, fp, fn):
+    """tp*tn - fp*fn / sqrt( tp+fp tp+fn tn+fp tn+fn )"""
+    try:
+        m = float((tp * tn) - (fp * fn)) / \
+            math.sqrt(float((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn)))
+    except ZeroDivisionError:
+        m = 0
+    return m
 
 
 class Interacter():
@@ -24,7 +35,7 @@ class Interacter():
             )
         self.encoder = None
         if FLAGS.encoder_type == "rnn_classifier_pooling":
-            self.encoder = models.rnn_classifier.ClassifierPooling(
+            self.encoder = models.rnn_classifier.LSTMPoolingClassifier(
                 hidden_size=FLAGS.encoding_size,
                 embedding_size=FLAGS.embedding_size,
                 num_layers=FLAGS.encoder_num_layers)
@@ -45,6 +56,7 @@ class Interacter():
         output = self.classifier.forward(encoding)
         for s, o in zip(sentences, output):
             print ("%.2f" % o[0].data[0]) + "\t" + s.strip()
+        return [o[0].data[0] for o in output]
 
     def interact_one(self, sentence):
         self.interact([sentence])
@@ -62,6 +74,32 @@ class Interacter():
                     break
                 self.interact(next_n_lines)
 
+    def evaluate_file(self, path):
+        gold_labels = []
+        guesses = []
+        with open(path) as f:
+            while True:
+                next_n_lines = list(islice(f, 32))
+                gold_labels.extend([float(line.split("\t")[1]) for line in next_n_lines])
+                if not next_n_lines:
+                    break
+                guesses.extend(self.interact([line.split("\t")[3] for line in next_n_lines]))
+        (tp, tn, fp, fn) = (0, 0, 0, 0)
+        for guess, gold in zip(guesses, gold_labels):
+            if gold == 1 and guess >= 0.5:
+                tp += 1
+            if gold == 0 and guess < 0.5:
+                tn += 1
+            if gold == 1 and guess < 0.5:
+                fn += 1
+            if gold == 0 and guess >= 0.5:
+                fp += 1
+        test_matt = matthews(tp, tn, fp, fn)
+        print("Matthews: " + str(test_matt))
+        print("Accuracy: " + str((float(tp+tn)/float(tp+tn+fp+fn))))
+        print("tp=%d, tn=%d, fp=%d, fn=%d" % (tp, tn, fp, fn))
+
+
 
 FLAGS = gflags.FLAGS
 training.my_flags.get_flags()
@@ -71,39 +109,9 @@ FLAGS(sys.argv)
 
 i = Interacter(FLAGS)
 
-# i.interact(["I I."])
-
-# i.interactive_mode()
-
-i.interact_file("../acceptability_corpus/temp")
+i.evaluate_file("../acceptability_corpus/artificial/svo.tsv")
 
 
-# FLAGS
-# --encoding_size
-# 1034
-# --embedding_size
-# 300
-# --data_type
-# discriminator
-# --vocab_path
-# /Users/alexwarstadt/Workspace/data/bnc-30/vocab_20000.txt
-# --log_path
-# /Users/alexwarstadt/Workspace/acceptability/logs/interactive_output
-# --crop_pad_length
-# 30
-# --embedding_path
-# /Users/alexwarstadt/Workspace/data/bnc-30/embeddings_20000.txt
-# --encoder_type
-# rnn_classifier_pooling
-# --encoder_num_layers
-# 3
-# --classifier_type
-# aj_classifier
-# --hidden_size
-# 21
-# --learning_rate
-# .0001
-# --encoder_path
-# /Users/alexwarstadt/Workspace/acceptability/checkpoints/CPU_sweep_1106235815_rnn_classifier_pooling_16-lr8e-05-h_size1034-datadiscriminator-num_layers3
-# --classifier_path
-# /Users/alexwarstadt/Workspace/acceptability/checkpoints/CPU_sweep_1229132558_aj_classifier_57-lr8.8e-05-h_size21-dataaj_balanced-encCPU_sweep_1106235815_rnn_classifier_pooling_16-lr8e-05-h_size1034-datadiscriminator-num_layers3
+# i.interact_file("../acceptability_corpus/test_tokenized.tsv")
+
+

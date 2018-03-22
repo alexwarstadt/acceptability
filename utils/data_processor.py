@@ -7,7 +7,7 @@ import math
 import os
 import torch
 import errno
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 from constants import *
 from functools import reduce
 
@@ -25,6 +25,19 @@ def tokenize(start_corpus_path):
             token_line = reduce(lambda s, t: s + " " + t, tokens, "").strip().lower()
             tokenized_corpus.write(token_line + "\n")
         tokenized_corpus.close()
+
+def tokenize_with_header(start_corpus_path):
+    out_path = start_corpus_path[:-4] + "-tokenized.txt"
+    tokenized_corpus = open(out_path, "w")
+    print("tokenizing ", start_corpus_path)
+    for line in open(start_corpus_path):
+        vals = line.split("\t")
+        tokens = [x.strip().lower() for x in nltk.word_tokenize(vals[3])]
+        token_line = " ".join(tokens)
+        vals[3] = token_line
+        tokenized_corpus.write("\t".join(vals) + "\n")
+    tokenized_corpus.close()
+
 
 def tokenize_sentence(s):
     tokens = nltk.word_tokenize(s)
@@ -71,43 +84,41 @@ def crop(start_corpus_path, crop_pad_length):
 def get_vocab(start_corpus_path, n_vocab=float("inf")):
     counts = {}
     out_path = start_corpus_path[:-4] + "-vocab-" + str(n_vocab) + ".txt"
-    if n_vocab is math.inf:
-        out_path = start_corpus_path[:-4] + "-vocab-all.txt"
-    if os.path.isfile(out_path):
-        print("vocab file %s already exists" % out_path)
-    else:
-        out_file = open(out_path, "x")
-        print("getting vocab of size %d for %s" % (n_vocab, start_corpus_path))
-        for line in open(start_corpus_path):
-            for word in line.split():
-                if word in counts:
-                    counts[word] = counts[word] + 1
-                else:
-                    counts[word] = 1
-                    if len(counts) % 10000 is 0:
-                        print("n_words =", len(counts))
-        counts_sorted = sorted(counts.items(), key=operator.itemgetter(1), reverse=True)    # sort vocab by counts
-        if n_vocab < len(counts_sorted):
-            counts_sorted = counts_sorted[:n_vocab]
-        vocab = [x[0] for x in counts_sorted]
-        for word in vocab:
-            out_file.write(word + "\n")
+    out_file = open(out_path, "w")
+    print("getting vocab of size %d for %s" % (n_vocab, start_corpus_path))
+    for line in open(start_corpus_path):
+        for word in line.split():
+            if word in counts:
+                counts[word] = counts[word] + 1
+            else:
+                counts[word] = 1
+                if len(counts) % 10000 is 0:
+                    print("n_words =", len(counts))
+    counts_sorted = sorted(counts.items(), key=operator.itemgetter(1), reverse=True)
+    if n_vocab < len(counts_sorted):
+        counts_sorted = counts_sorted[:n_vocab]
+    vocab = [x[0] for x in counts_sorted]
+    for word in vocab:
+        out_file.write(word + "\n")
 
 
-def unkify(start_corpus_path, vocab):
+def unkify(start_corpus_path, vocab_file):
+    vocab = set()
+    for line in open(vocab_file):
+        vocab.add(line.strip())
     out_path = start_corpus_path[:-4] + "-unked-%dwords.txt" % len(vocab)
-    if os.path.isfile(out_path):
-        print("unked file %s already exists" % out_path)
-    else:
-        out_file = open(out_path, "x")
-        print("unking", start_corpus_path)
-        for line in open(start_corpus_path):
-            words = line.split()
-            for i, word in enumerate(words):
-                if word not in vocab:
-                    words[i] = UNK
-            out_file.write(reduce(lambda s, t: s + " " + t, words).strip() + "\n")
-        out_file.close()
+    out_file = open(out_path, "w")
+    for line in open(start_corpus_path):
+        vals = line.split("\t")
+        line = vals[3]
+        tokens = nltk.word_tokenize(line)
+        for i, word in enumerate(tokens):
+            if word.lower() not in vocab:
+                tokens[i] = UNK
+        line = " ".join(tokens)
+        vals[3] = line
+        out_file.write("\t".join(vals) + "\n")
+    out_file.close()
 
 
 def init_embeddings(embeddings_path, vocab, corpus_name, embedding_size):
@@ -192,17 +203,24 @@ def get_word_count_counts(path):
     return frequency_counts
 
 
-def embeddings_vocab(path):
+def embeddings_vocab(path, size, out):
     embeddings = open(path)
-    vocab = []
+    n = 0
+    out = open(out, "w")
     for line in embeddings:
-        vocab.append(line.split()[0])
-    return vocab
+        out.write(line.split()[0] + "\n")
+        # vocab.append(line.split()[0])
+        n += 1
+        if n == size:
+            break
+    # return vocab
+
+
 
 
 def tokenize_corpus_with_prefix():
-    out = open("acceptability_corpus/corpus_table_tokenized", "w")
-    for line in open('acceptability_corpus/corpus_table'):
+    out = open("../acceptability_corpus/test_tokenized", "w")
+    for line in open('../acceptability_corpus/raw/test.tsv'):
         vals = line.split("\t")
         line = vals[3]
         line = line.lower()
@@ -211,20 +229,28 @@ def tokenize_corpus_with_prefix():
         out.write("%s\t%s\t%s\t%s\n" % (vals[0], vals[1], vals[2], token_line))
 
 
-def any_unks():
+def any_unks(vocab, out=""):
     voc = {}
-    for w in embeddings_vocab('embeddings/glove.6B.300d.txt'):
-        voc[w] = 1
-    for line in open('acceptability_corpus/corpus_table_tokenized'):
+    unks = set()
+    # for w in embeddings_vocab('embeddings/glove.6B.300d.txt'):
+    for w in open(vocab):
+        voc[w.strip()] = 1
+    for line in open('../acceptability_corpus/corpus_table.tsv'):
         vals = line.split("\t")
         line = vals[3]
-        words = line.split()
-        for w in words:
+        tokens = nltk.word_tokenize(line)
+        for w in tokens:
             try:
-                voc[w]
+                voc[w.lower()]
             except KeyError:
-                print(w)
-
+                unks.add(w)
+    if out is "":
+        for u in unks:
+            print(u)
+    else:
+        out = open(out, "w")
+        for u in unks:
+            out.write(u + "\n")
 
 def crop_corpus_with_prefix():
     file = open("lm_generated/all_lm_and_bnc-long_lines")
@@ -243,6 +269,20 @@ def crop_corpus_with_prefix():
         else:
             continue
 
+def un_crop_corpus_with_prefix(in_file, out_file):
+    in_file = open(in_file)
+    out_file = open(out_file, "w")
+    for line in in_file:
+        if line is not "\n":
+            vals = line.split("\t")
+            line = vals[3].strip()
+            words = line.split(" ")
+            words = filter(lambda x: x != STOP and x != START, words)
+            line = " ".join(words)
+            out_file.write("%s\t%s\t%s\t%s\n" % (vals[0], vals[1], vals[2], line))
+        else:
+            continue
+
 # def crop_sentences(sentences):
 #     stop_pad = " "
 #     for _ in range(crop_pad_length):
@@ -256,11 +296,12 @@ def crop_corpus_with_prefix():
 #         cropped_sentences.append(s)
 #     return cropped_sentences
 
-def prefix(input, output):
+def prefix(input, output, src, score, mark):
     file = open(input)
     out = open(output, "w")
     for line in file:
-        out.write("per	0	*	" + line)
+        out.write("%s\t%s\t%s\t%s\n" % (src, score, mark, line.strip()))
+    out.close()
 
 
 
@@ -290,9 +331,9 @@ def split(in_path, out_dir, train, test, valid):
     if train + test + valid != 1:
         print("proportions should sum to 1")
     else:
-        train_out = open(out_dir + "train.txt", "w+")
-        test_out = open(out_dir + "test.txt", "w+")
-        valid_out = open(out_dir + "valid.txt", "w+")
+        train_out = open(out_dir + "train.tsv", "w+")
+        test_out = open(out_dir + "test.tsv", "w+")
+        valid_out = open(out_dir + "valid.tsv", "w+")
         for line in open(in_path):
             n = random.uniform(0, 1)
             if n <= train:
@@ -331,47 +372,40 @@ def crop_line(line, crop_pad_length):
 
 
 
+def write_percent(input, output, percent):
+    if os.path.exists(output):
+        output = open(output, "a")
+    else:
+        output = open(output, "w")
+    for line in open(input):
+        r = random.random()
+        if r < percent:
+            output.write(line)
+    output.close()
+
+
+def source_stats(file):
+    counts = {}
+    for line in open(file):
+        vals = line.split("\t")
+        if vals[0] not in counts:
+            counts[vals[0]] = (0,0,0)
+        counts[vals[0]] = (counts[vals[0]][0], counts[vals[0]][1], counts[vals[0]][2] + 1)
+        if vals[1] == '0':
+            counts[vals[0]] = (counts[vals[0]][0] + 1, counts[vals[0]][1], counts[vals[0]][2])
+        else:
+            counts[vals[0]] = (counts[vals[0]][0], counts[vals[0]][1] + 1, counts[vals[0]][2])
+    print counts.__str__()
+
 
 
 
 
 #=============================== MAIN ===============================
 
+workspace = "/Users/alexwarstadt/Workspace/"
 
-# swap_permute("/Users/alexwarstadt/Workspace/data/bnc-30/test.txt")
-
-
-raw_corpus = "data/bnc/bnc.txt"
-crop_pad_length = 30
-n_vocab = 50000
-
-
-
-
-
-# e_v = embeddings_vocab('embeddings/glove.6B.300d.txt')
-# print()
-
-# frequency_counts = get_word_count_counts(raw_corpus)
-# line_lengths = get_line_length_counts(raw_corpus)
-#
-# print(line_lengths)
-# plt.plot(list(frequency_counts.keys()),
-#          list(frequency_counts.values()))
-# plt.show()
-# plt.plot([1,2,3], [7, 8, 9])
-# plt.show()
-
-# tokenized = tokenize(raw_corpus)
-# cropped = crop(tokenized, crop_pad_length)
-# vocab = get_vocab(cropped, 20000)
-# n_vocab = len(vocab)
-# unked = unkify(cropped, vocab)
-# filter_short_lines(unked, crop_pad_length+1)
-# self.training, self.valid, self.test = dp.split(unked, .85, .05, .10)
-# self.embeddings = self.init_embeddings(open(embedding_path))
-# bnc =
-
+tokenize_with_header(workspace + "acceptability/acceptability_corpus/raw/fake_test.tsv")
 
 
 
