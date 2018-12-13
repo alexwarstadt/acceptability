@@ -1,0 +1,100 @@
+clc95	1		If Sam was going, Sally would know where.
+clc95	0	*	She mailed John a letter, but I don't know to whom.
+clc95	1		I served my guests.
+clc95	0	*	She was bathing, but I couldn't make out who.
+clc95	0	*	John was tall, but I don't know on what occasions.
+clc95	1		I know that Meg's attracted to Harry, but they don't know who.
+clc95	1		Everyone relies on someone. It's unclear who.
+clc95	1		The newspaper has reported that they are about to appoint someone, but I can't remember who the newspaper has reported that they are about to appoint.
+clc95	1		Everybody gets on well with a certain relative, but often only his therapist knows which one.
+clc95	0	*	He announced he had eaten the asparagus, but we didn't know what.
+clc95	1		She talked to John or Mary but I don't know which.
+clc95	1		She talked to John or Mary but I don't know which one.
+clc95	1		Meg is attracted to Harry, but they don't know who she is attracted to.
+clc95	0	*	What did you leave before they started playing?
+clc95	1		I think Agnes said that Bill would speak, but I don't remember what about.
+clc95	0	*	Tony sent Mo a picture that he painted, but it's not clear with what.
+clc95	0	*	Who did they see someone?
+c-05	0	*	The book was by John written.
+c-05	1		The book was seen by Mary.
+c-05	0	*	Mary was given by John the book.
+c-05	1		John was believed to be telling the truth by Mary.
+c-05	1		John was believed by Mary to be telling the truth.
+c-05	1		The car was driven by John to Maine.
+c-05	0	*	Chocolate eggs were hidden from each other by the children.
+c-05	1		Books were taken from no student and given to Mary.
+j_71	0	*	Bill ate the peaches, but Harry the grapes.
+j_71	0	*	Bill ate the peaches and Harry did the grapes.
+j_71	0	*	Because Steve's of a spider's eye had been stolen, I borrowed Fred's diagram of a snake's fang.
+j_71	1		Jerry attempted to blow up the Pentagon.
+j_71	1		Bill bought a red house, and Max bought one too.
+s_97	1		I know the person whose mother died.
+s_97	0	*	Bother you that Kim left!
+s_97	0	*	Mary arranged for, in St. Louis, John to rent a house cheap.
+s_97	0	*	I wonder in whom them to place their trust.
+s_97	0	*	I wonder whom us to trust.
+s_97	0	*	Jones, that we were talking to last night, always watches football games alone.
+s_97	1		A letter was received that Jones would be upset by.
+s_97	0	*	The only person whose kids Dana is willing to put up with was written by John.
+s_97	0	*	The book that I like - everyone else in the class hates.
+s_97	0	*	Which book's, author did you meet who you liked?
+s_97	1		All who lost money in the scam are eligible for the program.
+s_97	0	*	Who for Sandy to talk to is still enrolled in the class?
+s_97	1		The only people being added to our group who were at Harvard were students.
+swb04	0	*	Leslie told ourselves about us.
+swb04	1		Those pictures of us offended us.
+swb04	1		We admired the pictures of us in the album.
+swb04	1		We admired the pictures of ourselves in the album.
+swb04	1		Max is on the phone now.
+swb04	0	*	They lost themselves' books.
+swb04	0	*	I noticed the.
+swb04	1		This is my favorite.
+swb04	1		Some people yell at the dogs.
+swb04	0	*	The teacher handed the student.
+swb04	0	*	The bird sing.
+swb04	0	*	I was already aware of fact.
+swb04	1		The guests dined.
+swb04	1		We relied on Leslie.
+swb04	1		Newsweek appeared on the newsstands.
+swb04	1		The book surprised many people.
+swb04	1		The storm arrived while we ate lunch.
+swb04	1		These dogs barked.
+swb04	0	*	The cat slept soundly and furry.
+swb04	1		Chris walks, Pat eats broccoli, and Sandy plays squash.
+swb04	1		Nobody told Susan about herself.
+swb04	1		Protect yourself!
+swb04	0	*	the putter of books left.
+swb04	0	*	The cat was bitten the mouse.
+swb04	0	*	Chris was handed Sandy a note by Pat.
+swb04	1		The patient died.
+swb04	0	*	TV puts dumb ideas.
+swb04	1		There is a monster in Loch Ness.
+swb04	1		People are looking through the window.
+swb04	1		It never occurred to Pat that Chris knew the answer.
+swb04	0	*	It loved Sandy.
+swb04	1		We forgot our invitations.
+swb04	1		Advantage is taken of every opportunity for improvement.
+swb04	1		The bucket was kicked by Pat.
+w_80	1		John is sad.
+w_80	1		Of whom are you thinking?
+w_80	1		John is sick.
+w_80	1		John tried to leave.
+w_80	0	*	John was struck by Bill as pompous.
+w_80	0	*	John was promised by Bill to leave.
+w_80	1		They make good cooks.
+w_80	1		I would prefer to leave.
+w_80	1		I would hate for John to leave.
+w_80	0	*	It was hated for John to leave.
+w_80	1		to die is no fun.
+w_80	1		That he is here is clear.
+w_80	0	*	John believes it sincerely that Bill is here.
+w_80	0	*	John believed it that Bill was tardy.
+w_80	0	*	It is to give up to leave.
+w_80	1		I bought it to read.
+w_80	0	*	I gave Pete the book to impress.
+w_80	1		I presented it to Bill to read.
+w_80	1		I gave a book to Bill to read.
+w_80	1		John made Bill mad at himself.
+w_80	1		The correspondence school made Bill a good typist.
+w_80	0	*	John bought a dog for himself to play with.
+w_80	1		John arranged for himself to get the prize.

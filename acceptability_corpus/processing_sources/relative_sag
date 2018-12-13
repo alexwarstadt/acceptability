@@ -1,146 +1,146 @@
-    Whose sister always drinks milk?
-    Who always drinks milk?
-	The book which inspired them was very long.
-*	The book what inspired them was very long.
-	I know the person whose mother died.
-	I know the person whose mother's dog died.
-	The person whose mother's dog we were all fond of.
-	I know the person to whom they dedicated the building.
-	I wonder what inspired them.
-	I wonder whose mother died.
-	I wonder whose mother's dog died.
-	I wonder whose mother's dog we were all fond of.
-	I wonder to whom they dedicated the building.
-	Give me the phone number of the person whose mother's dog died.
-	This is the senator to whose mother's friend's sister's I sent the letter.
-	My uncle from Iowa, whose talking to Sandy yesterday annoyed John, is arriving on Tuesday.
-*	My uncle from Iowa, whom talking to Sandy yesterday annoyed John, is arriving on Tuesday.
-*	I want goes to the store.
-*	Goes to the store is bothering them.
-*	I want to be raining.
-*	I'm looking for a yard in which to be a party.
-*	I wonder what to be a clown on the cover of.
-*	Bother you that Kim left!
-*	Bother yourself that Kim left!
-*	Kim read which book.
-*	I think that who went home.
-*	A student who to talk to us just walked in.
-*	A student whom to talk to us just walked in.
-	I ran into the baker whose bagels I like.
-	I ran into the baker from whom I bought these bagels.
-	Whose bagels do you like?
-	From whom did you buy these bagels?
-	I can find the baker in whom to place your trust.
-	I wonder in whom to place my trust.
-	I wonder who to trust.
-*	These bagels, likes.
-*	I ran into the baker whose bagels likes.
-*	I ran into the baker from whom bought these bagels.
-	There were several old rocks songs that she and I were the only two who knew.
-*	When did you wonder what you should say to Sandy?
-*	It was to to amuse us that Kim was singing that they wanted.
-*	It was to show/to amuse us that Kim was singing that they wanted.
-*	What they feared most was to be no one available to help them.
-*	We tried to amuse them that Kim was singing.
-*	They persuaded us to be no one available.
-	I prefer for Sandy to do the washing and Kim to do the drying.
-	Kim gave a book to Sandy and a record to Dana.
-	Joan offered, and Mary actually gave, a gold Cadillac to Billy.
-	Mary asked me if, in St. Louis, John could rent a house cheap.
-	He doesn't intend that, in these circumstances, we be rehired.
-*	Mary arranged for, in St. Louis, John to rent a house cheap.
-*	He doesn't intend for, in these circumstances, us to be rehired.
-	It would be unwise for there to be no fire exit.
-	I believe there to be no way out.
-	There seems to be no way out.
-	It seems to be raining.
-*	I wonder in whom them to place their trust.
-*	I wonder in whom for them to place their trust.
-*	I wonder whom for us to trust.
-*	I wonder whom us to trust.
-*	I wonder who for us to trust.
-*	I wonder who us to trust.
-	I wonder in whom to place my trust.
-	I wonder who to place my trust in.
-*	I ran into the baker who to place your trust in.
-*	I ran into the baker whom to place your trust in.
-	I know the people that voted in the election.
-	I threw away a book that Sandy thought we had read.
-	I supported each argument that Sandy thought was unconvincing.
-	I thought that you were sick.
-*	I dislike all the people that I thought that voted in the election.
-*	Every essay she's written and which I've read is on that pile.
-*	Every essay she's written and that I've read is on that pile.
-	Every essay which she's written and that I've read is on that pile.
-	Every essay that she's written and which I've read is on that pile.
-*	I dislike the person with what we were talking.
-*   I dislike the people in who we placed our trust.
-*	I dislike the person with who we were talking.
-	I dislike the company in which we placed our trust.
-	I dislike the people in whose house we stayed.
-	I dislike the person with whom we were talking.
-*	Jones, that we were talking to last night, always watches football games alone.
-	A letter was received that Jones would be upset by.
-*	A letter was received Jones would be upset by.
-	I saw someone yesterday I hadn't seen for years.
-	Something happened I couldn't really talk about.
-	The people who take this course who Dana likes usually
-	The only person that I like whose kids Dana is willing to put up with is Pat.
-	The book that I like which everyone else in the class hates was written by John.
-*	The only person whose kids Dana is willing to put up with was written by John.
-	The book I like which everyone else in the class hates is Pat.
-*	The book that I like - everyone else in the class hates 
-	The only person whose kids 112 Dana is willing to put up with 2
-	The only person Dana is willing to put up with -2 who I like
-	Which book's, author1 did you meet - who* ., you liked ?
-	Which boy's, mother, did you meet - who* 1 you liked _?
-	The only person whose1 kids2 Dana is willing to put up with
-	(?)The books I like  and that my friends hate _ never seem
-	(?)The books I like _ and which my friends hate - never
-	(?)The authors I like _ and whose books have sold well are
-	(?)The contributors I visited _ and from whom we have
-*	The picture of Anson and under the shelf...
-	N" N" (S)
-	N" N' (S)
-	Who that you like -  does Sandy also like?
-	Who whose parents attended the meeting is still enrolled in
-	All who lost money in the scam are eligible for the program.
-	the Pat who/that I like _ is a genius.
-	-HEAD MOD N'
-*	Who you like _ does Sandy also like?
-*	Who for Sandy to talk to _ is still enrolled in the class?
-	Who who/that you like _ does Sandy also like?
-	Everything you like  is on the table.
-	S
-	A: The book she recommended that I liked best was X.
-	simp-inf-rel-cl ~ HEAD omp inf
-	The only person (for us) to visit_  whose kids Dana is willing
-*	The only person whose kids Dana is willing to put up with_ 
-	One book for us to read  that Leslie praised _ was Sense
-*	One book that Leslie praised - for us to read _ was Sense
-?	The problems to solve  for you to impress them with _ are
-	the prophet descended from heaven... VPperf-p
-	the bills passed by the House yesterday... VPpas
-	the people in Rome ... PP + PRD
-	the people happy with the proposal... AP + PRD
-	The bills passed by the House yesterday that we objected to
-	The bills that we objected to _ passed by the House last
-	The only people who were at Harvard being added to our
-	The only people being added to our group who were at
-	A hotel to send our relatives to  overlooking/by the river
-	A hotel overlooking/by the river you're satisfied with _
-	A hotel you're satisfied with - overlooking/by the river
-	the people from Spain standing in the hall...
-	the people standing in the hall from Spain...
-	the books about cooking advertised in the paper...
-	the books advertised in the paper about cooking...
-*	the person stand on my foot... VP inf
-*	 the person as conservative a Republican NP + PRD
-	I wondered who they had visited _  yesterday_ ... inter-cl
-	Leave town tomorrow... imp-cl
-	the prophet who we visited - last year... wh-fill-rel-cl
-	the people we saw _  yesterday... non-wh-rel-cl
-	the bills passed by the House yesterday... red-rel-cl
-	the tape recordings so many copies of which were distributed
-	the people we spied - and Dana called out to . at the
-	the celebrities more pictures of whom were taken than of any
+s_97	    Whose sister always drinks milk?
+s_97	    Who always drinks milk?
+s_97		The book which inspired them was very long.
+s_97	*	The book what inspired them was very long.
+s_97		I know the person whose mother died.
+s_97		I know the person whose mother's dog died.
+s_97		The person whose mother's dog we were all fond of.
+s_97		I know the person to whom they dedicated the building.
+s_97		I wonder what inspired them.
+s_97		I wonder whose mother died.
+s_97		I wonder whose mother's dog died.
+s_97		I wonder whose mother's dog we were all fond of.
+s_97		I wonder to whom they dedicated the building.
+s_97		Give me the phone number of the person whose mother's dog died.
+s_97		This is the senator to whose mother's friend's sister's I sent the letter.
+s_97		My uncle from Iowa, whose talking to Sandy yesterday annoyed John, is arriving on Tuesday.
+s_97	*	My uncle from Iowa, whom talking to Sandy yesterday annoyed John, is arriving on Tuesday.
+s_97	*	I want goes to the store.
+s_97	*	Goes to the store is bothering them.
+s_97	*	I want to be raining.
+s_97	*	I'm looking for a yard in which to be a party.
+s_97	*	I wonder what to be a clown on the cover of.
+s_97	*	Bother you that Kim left!
+s_97	*	Bother yourself that Kim left!
+s_97	*	Kim read which book.
+s_97	*	I think that who went home.
+s_97	*	A student who to talk to us just walked in.
+s_97	*	A student whom to talk to us just walked in.
+s_97		I ran into the baker whose bagels I like.
+s_97		I ran into the baker from whom I bought these bagels.
+s_97		Whose bagels do you like?
+s_97		From whom did you buy these bagels?
+s_97		I can find the baker in whom to place your trust.
+s_97		I wonder in whom to place my trust.
+s_97		I wonder who to trust.
+s_97	*	These bagels, likes.
+s_97	*	I ran into the baker whose bagels likes.
+s_97	*	I ran into the baker from whom bought these bagels.
+s_97		There were several old rocks songs that she and I were the only two who knew.
+s_97	*	When did you wonder what you should say to Sandy?
+s_97	*	It was to to amuse us that Kim was singing that they wanted.
+s_97	*	It was to show/to amuse us that Kim was singing that they wanted.
+s_97	*	What they feared most was to be no one available to help them.
+s_97	*	We tried to amuse them that Kim was singing.
+s_97	*	They persuaded us to be no one available.
+s_97		I prefer for Sandy to do the washing and Kim to do the drying.
+s_97		Kim gave a book to Sandy and a record to Dana.
+s_97		Joan offered, and Mary actually gave, a gold Cadillac to Billy.
+s_97		Mary asked me if, in St. Louis, John could rent a house cheap.
+s_97		He doesn't intend that, in these circumstances, we be rehired.
+s_97	*	Mary arranged for, in St. Louis, John to rent a house cheap.
+s_97	*	He doesn't intend for, in these circumstances, us to be rehired.
+s_97		It would be unwise for there to be no fire exit.
+s_97		I believe there to be no way out.
+s_97		There seems to be no way out.
+s_97		It seems to be raining.
+s_97	*	I wonder in whom them to place their trust.
+s_97	*	I wonder in whom for them to place their trust.
+s_97	*	I wonder whom for us to trust.
+s_97	*	I wonder whom us to trust.
+s_97	*	I wonder who for us to trust.
+s_97	*	I wonder who us to trust.
+s_97		I wonder in whom to place my trust.
+s_97		I wonder who to place my trust in.
+s_97	*	I ran into the baker who to place your trust in.
+s_97	*	I ran into the baker whom to place your trust in.
+s_97		I know the people that voted in the election.
+s_97		I threw away a book that Sandy thought we had read.
+s_97		I supported each argument that Sandy thought was unconvincing.
+s_97		I thought that you were sick.
+s_97	*	I dislike all the people that I thought that voted in the election.
+s_97	*	Every essay she's written and which I've read is on that pile.
+s_97	*	Every essay she's written and that I've read is on that pile.
+s_97		Every essay which she's written and that I've read is on that pile.
+s_97		Every essay that she's written and which I've read is on that pile.
+s_97	*	I dislike the person with what we were talking.
+s_97	*   I dislike the people in who we placed our trust.
+s_97	*	I dislike the person with who we were talking.
+s_97		I dislike the company in which we placed our trust.
+s_97		I dislike the people in whose house we stayed.
+s_97		I dislike the person with whom we were talking.
+s_97	*	Jones, that we were talking to last night, always watches football games alone.
+s_97		A letter was received that Jones would be upset by.
+s_97	*	A letter was received Jones would be upset by.
+s_97		I saw someone yesterday I hadn't seen for years.
+s_97		Something happened I couldn't really talk about.
+s_97		The people who take this course who Dana likes usually
+s_97		The only person that I like whose kids Dana is willing to put up with is Pat.
+s_97		The book that I like which everyone else in the class hates was written by John.
+s_97	*	The only person whose kids Dana is willing to put up with was written by John.
+s_97		The book I like which everyone else in the class hates is Pat.
+s_97	*	The book that I like - everyone else in the class hates 
+s_97		The only person whose kids 112 Dana is willing to put up with 2
+s_97		The only person Dana is willing to put up with -2 who I like
+s_97		Which book's, author1 did you meet - who* ., you liked ?
+s_97		Which boy's, mother, did you meet - who* 1 you liked _?
+s_97		The only person whose1 kids2 Dana is willing to put up with
+s_97		(?)The books I like  and that my friends hate _ never seem
+s_97		(?)The books I like _ and which my friends hate - never
+s_97		(?)The authors I like _ and whose books have sold well are
+s_97		(?)The contributors I visited _ and from whom we have
+s_97	*	The picture of Anson and under the shelf...
+s_97		N" N" (S)
+s_97		N" N' (S)
+s_97		Who that you like -  does Sandy also like?
+s_97		Who whose parents attended the meeting is still enrolled in
+s_97		All who lost money in the scam are eligible for the program.
+s_97		the Pat who/that I like _ is a genius.
+s_97		-HEAD MOD N'
+s_97	*	Who you like _ does Sandy also like?
+s_97	*	Who for Sandy to talk to _ is still enrolled in the class?
+s_97		Who who/that you like _ does Sandy also like?
+s_97		Everything you like  is on the table.
+s_97		S
+s_97		A: The book she recommended that I liked best was X.
+s_97		simp-inf-rel-cl ~ HEAD omp inf
+s_97		The only person (for us) to visit_  whose kids Dana is willing
+s_97	*	The only person whose kids Dana is willing to put up with_ 
+s_97		One book for us to read  that Leslie praised _ was Sense
+s_97	*	One book that Leslie praised - for us to read _ was Sense
+s_97	?	The problems to solve  for you to impress them with _ are
+s_97		the prophet descended from heaven... VPperf-p
+s_97		the bills passed by the House yesterday... VPpas
+s_97		the people in Rome ... PP + PRD
+s_97		the people happy with the proposal... AP + PRD
+s_97		The bills passed by the House yesterday that we objected to
+s_97		The bills that we objected to _ passed by the House last
+s_97		The only people who were at Harvard being added to our
+s_97		The only people being added to our group who were at
+s_97		A hotel to send our relatives to  overlooking/by the river
+s_97		A hotel overlooking/by the river you're satisfied with _
+s_97		A hotel you're satisfied with - overlooking/by the river
+s_97		the people from Spain standing in the hall...
+s_97		the people standing in the hall from Spain...
+s_97		the books about cooking advertised in the paper...
+s_97		the books advertised in the paper about cooking...
+s_97	*	the person stand on my foot... VP inf
+s_97	*	 the person as conservative a Republican NP + PRD
+s_97		I wondered who they had visited _  yesterday_ ... inter-cl
+s_97		Leave town tomorrow... imp-cl
+s_97		the prophet who we visited - last year... wh-fill-rel-cl
+s_97		the people we saw _  yesterday... non-wh-rel-cl
+s_97		the bills passed by the House yesterday... red-rel-cl
+s_97		the tape recordings so many copies of which were distributed
+s_97		the people we spied - and Dana called out to . at the
+s_97		the celebrities more pictures of whom were taken than of any

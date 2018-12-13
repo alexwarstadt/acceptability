@@ -1,0 +1,896 @@
+	1		his brother is here .
+	1		his brother has n't been there .
+	1		his brother likes to read .
+	1		his brother knows where to go .
+	1		his brother seems nice .
+	1		his brother is walking .
+	1		his brother sleeps here .
+	1		his brother has a problem .
+	1		his brother has to go .
+	1		his brother gets it .
+	1		his brother has the flu .
+	1		his brother feels great .
+	1		his brother is n't going to come .
+	1		his brother thinks that 's a bad idea .
+	1		his brother doubts that .
+	1		his brother refuses to say so .
+	1		his brother does n't want to .
+	1		his brother does agree .
+	1		his brother believes you .
+	1		his brother sees the issue .
+	1		his brother understands why .
+	1		his brother knows how .
+	1		his brother is trying to do that .
+	1		his brother wonders whether that 's true .
+	1		his brother acts as if that 's true .
+	1		his brother sits in this seat .
+	1		his brother works at this desk .
+	1		his brother tells the truth .
+	0		his brother are here .
+	0		his brother have n't been there .
+	0		his brother like to read .
+	0		his brother know where to go .
+	0		his brother seem nice .
+	0		his brother are walking .
+	0		his brother sleep here .
+	0		his brother have a problem .
+	0		his brother have to go .
+	0		his brother get it .
+	0		his brother have the flu .
+	0		his brother feel great .
+	0		his brother are n't going to come .
+	0		his brother think that 's a bad idea .
+	0		his brother doubt that .
+	0		his brother refuse to say so .
+	0		his brother do n't want to .
+	0		his brother do agree .
+	0		his brother believe you .
+	0		his brother see the issue .
+	0		his brother understand why .
+	0		his brother know how .
+	0		his brother are trying to do that .
+	0		his brother wonder whether that 's true .
+	0		his brother act as if that 's true .
+	0		his brother sit in this seat .
+	0		his brother work at this desk .
+	0		his brother tell the truth .
+	1		betty is here .
+	1		betty has n't been there .
+	1		betty likes to read .
+	1		betty knows where to go .
+	1		betty seems nice .
+	1		betty is walking .
+	1		betty sleeps here .
+	1		betty has a problem .
+	1		betty has to go .
+	1		betty gets it .
+	1		betty has the flu .
+	1		betty feels great .
+	1		betty is n't going to come .
+	1		betty thinks that 's a bad idea .
+	1		betty doubts that .
+	1		betty refuses to say so .
+	1		betty does n't want to .
+	1		betty does agree .
+	1		betty believes you .
+	1		betty sees the issue .
+	1		betty understands why .
+	1		betty knows how .
+	1		betty is trying to do that .
+	1		betty wonders whether that 's true .
+	1		betty acts as if that 's true .
+	1		betty sits in this seat .
+	1		betty works at this desk .
+	1		betty tells the truth .
+	0		betty are here .
+	0		betty have n't been there .
+	0		betty like to read .
+	0		betty know where to go .
+	0		betty seem nice .
+	0		betty are walking .
+	0		betty sleep here .
+	0		betty have a problem .
+	0		betty have to go .
+	0		betty get it .
+	0		betty have the flu .
+	0		betty feel great .
+	0		betty are n't going to come .
+	0		betty think that 's a bad idea .
+	0		betty doubt that .
+	0		betty refuse to say so .
+	0		betty do n't want to .
+	0		betty do agree .
+	0		betty believe you .
+	0		betty see the issue .
+	0		betty understand why .
+	0		betty know how .
+	0		betty are trying to do that .
+	0		betty wonder whether that 's true .
+	0		betty act as if that 's true .
+	0		betty sit in this seat .
+	0		betty work at this desk .
+	0		betty tell the truth .
+	1		this person is here .
+	1		this person has n't been there .
+	1		this person likes to read .
+	1		this person knows where to go .
+	1		this person seems nice .
+	1		this person is walking .
+	1		this person sleeps here .
+	1		this person has a problem .
+	1		this person has to go .
+	1		this person gets it .
+	1		this person has the flu .
+	1		this person feels great .
+	1		this person is n't going to come .
+	1		this person thinks that 's a bad idea .
+	1		this person doubts that .
+	1		this person refuses to say so .
+	1		this person does n't want to .
+	1		this person does agree .
+	1		this person believes you .
+	1		this person sees the issue .
+	1		this person understands why .
+	1		this person knows how .
+	1		this person is trying to do that .
+	1		this person wonders whether that 's true .
+	1		this person acts as if that 's true .
+	1		this person sits in this seat .
+	1		this person works at this desk .
+	1		this person tells the truth .
+	0		this person are here .
+	0		this person have n't been there .
+	0		this person like to read .
+	0		this person know where to go .
+	0		this person seem nice .
+	0		this person are walking .
+	0		this person sleep here .
+	0		this person have a problem .
+	0		this person have to go .
+	0		this person get it .
+	0		this person have the flu .
+	0		this person feel great .
+	0		this person are n't going to come .
+	0		this person think that 's a bad idea .
+	0		this person doubt that .
+	0		this person refuse to say so .
+	0		this person do n't want to .
+	0		this person do agree .
+	0		this person believe you .
+	0		this person see the issue .
+	0		this person understand why .
+	0		this person know how .
+	0		this person are trying to do that .
+	0		this person wonder whether that 's true .
+	0		this person act as if that 's true .
+	0		this person sit in this seat .
+	0		this person work at this desk .
+	0		this person tell the truth .
+	1		no more than one student is here .
+	1		no more than one student has n't been there .
+	1		no more than one student likes to read .
+	1		no more than one student knows where to go .
+	1		no more than one student seems nice .
+	1		no more than one student is walking .
+	1		no more than one student sleeps here .
+	1		no more than one student has a problem .
+	1		no more than one student has to go .
+	1		no more than one student gets it .
+	1		no more than one student has the flu .
+	1		no more than one student feels great .
+	1		no more than one student is n't going to come .
+	1		no more than one student thinks that 's a bad idea .
+	1		no more than one student doubts that .
+	1		no more than one student refuses to say so .
+	1		no more than one student does n't want to .
+	1		no more than one student does agree .
+	1		no more than one student believes you .
+	1		no more than one student sees the issue .
+	1		no more than one student understands why .
+	1		no more than one student knows how .
+	1		no more than one student is trying to do that .
+	1		no more than one student wonders whether that 's true .
+	1		no more than one student acts as if that 's true .
+	1		no more than one student sits in this seat .
+	1		no more than one student works at this desk .
+	1		no more than one student tells the truth .
+	0		no more than one student are here .
+	0		no more than one student have n't been there .
+	0		no more than one student like to read .
+	0		no more than one student know where to go .
+	0		no more than one student seem nice .
+	0		no more than one student are walking .
+	0		no more than one student sleep here .
+	0		no more than one student have a problem .
+	0		no more than one student have to go .
+	0		no more than one student get it .
+	0		no more than one student have the flu .
+	0		no more than one student feel great .
+	0		no more than one student are n't going to come .
+	0		no more than one student think that 's a bad idea .
+	0		no more than one student doubt that .
+	0		no more than one student refuse to say so .
+	0		no more than one student do n't want to .
+	0		no more than one student do agree .
+	0		no more than one student believe you .
+	0		no more than one student see the issue .
+	0		no more than one student understand why .
+	0		no more than one student know how .
+	0		no more than one student are trying to do that .
+	0		no more than one student wonder whether that 's true .
+	0		no more than one student act as if that 's true .
+	0		no more than one student sit in this seat .
+	0		no more than one student work at this desk .
+	0		no more than one student tell the truth .
+	1		that one is here .
+	1		that one has n't been there .
+	1		that one likes to read .
+	1		that one knows where to go .
+	1		that one seems nice .
+	1		that one is walking .
+	1		that one sleeps here .
+	1		that one has a problem .
+	1		that one has to go .
+	1		that one gets it .
+	1		that one has the flu .
+	1		that one feels great .
+	1		that one is n't going to come .
+	1		that one thinks that 's a bad idea .
+	1		that one doubts that .
+	1		that one refuses to say so .
+	1		that one does n't want to .
+	1		that one does agree .
+	1		that one believes you .
+	1		that one sees the issue .
+	1		that one understands why .
+	1		that one knows how .
+	1		that one is trying to do that .
+	1		that one wonders whether that 's true .
+	1		that one acts as if that 's true .
+	1		that one sits in this seat .
+	1		that one works at this desk .
+	1		that one tells the truth .
+	0		that one are here .
+	0		that one have n't been there .
+	0		that one like to read .
+	0		that one know where to go .
+	0		that one seem nice .
+	0		that one are walking .
+	0		that one sleep here .
+	0		that one have a problem .
+	0		that one have to go .
+	0		that one get it .
+	0		that one have the flu .
+	0		that one feel great .
+	0		that one are n't going to come .
+	0		that one think that 's a bad idea .
+	0		that one doubt that .
+	0		that one refuse to say so .
+	0		that one do n't want to .
+	0		that one do agree .
+	0		that one believe you .
+	0		that one see the issue .
+	0		that one understand why .
+	0		that one know how .
+	0		that one are trying to do that .
+	0		that one wonder whether that 's true .
+	0		that one act as if that 's true .
+	0		that one sit in this seat .
+	0		that one work at this desk .
+	0		that one tell the truth .
+	1		the police officer is here .
+	1		the police officer has n't been there .
+	1		the police officer likes to read .
+	1		the police officer knows where to go .
+	1		the police officer seems nice .
+	1		the police officer is walking .
+	1		the police officer sleeps here .
+	1		the police officer has a problem .
+	1		the police officer has to go .
+	1		the police officer gets it .
+	1		the police officer has the flu .
+	1		the police officer feels great .
+	1		the police officer is n't going to come .
+	1		the police officer thinks that 's a bad idea .
+	1		the police officer doubts that .
+	1		the police officer refuses to say so .
+	1		the police officer does n't want to .
+	1		the police officer does agree .
+	1		the police officer believes you .
+	1		the police officer sees the issue .
+	1		the police officer understands why .
+	1		the police officer knows how .
+	1		the police officer is trying to do that .
+	1		the police officer wonders whether that 's true .
+	1		the police officer acts as if that 's true .
+	1		the police officer sits in this seat .
+	1		the police officer works at this desk .
+	1		the police officer tells the truth .
+	0		the police officer are here .
+	0		the police officer have n't been there .
+	0		the police officer like to read .
+	0		the police officer know where to go .
+	0		the police officer seem nice .
+	0		the police officer are walking .
+	0		the police officer sleep here .
+	0		the police officer have a problem .
+	0		the police officer have to go .
+	0		the police officer get it .
+	0		the police officer have the flu .
+	0		the police officer feel great .
+	0		the police officer are n't going to come .
+	0		the police officer think that 's a bad idea .
+	0		the police officer doubt that .
+	0		the police officer refuse to say so .
+	0		the police officer do n't want to .
+	0		the police officer do agree .
+	0		the police officer believe you .
+	0		the police officer see the issue .
+	0		the police officer understand why .
+	0		the police officer know how .
+	0		the police officer are trying to do that .
+	0		the police officer wonder whether that 's true .
+	0		the police officer act as if that 's true .
+	0		the police officer sit in this seat .
+	0		the police officer work at this desk .
+	0		the police officer tell the truth .
+	1		the singer is here .
+	1		the singer has n't been there .
+	1		the singer likes to read .
+	1		the singer knows where to go .
+	1		the singer seems nice .
+	1		the singer is walking .
+	1		the singer sleeps here .
+	1		the singer has a problem .
+	1		the singer has to go .
+	1		the singer gets it .
+	1		the singer has the flu .
+	1		the singer feels great .
+	1		the singer is n't going to come .
+	1		the singer thinks that 's a bad idea .
+	1		the singer doubts that .
+	1		the singer refuses to say so .
+	1		the singer does n't want to .
+	1		the singer does agree .
+	1		the singer believes you .
+	1		the singer sees the issue .
+	1		the singer understands why .
+	1		the singer knows how .
+	1		the singer is trying to do that .
+	1		the singer wonders whether that 's true .
+	1		the singer acts as if that 's true .
+	1		the singer sits in this seat .
+	1		the singer works at this desk .
+	1		the singer tells the truth .
+	0		the singer are here .
+	0		the singer have n't been there .
+	0		the singer like to read .
+	0		the singer know where to go .
+	0		the singer seem nice .
+	0		the singer are walking .
+	0		the singer sleep here .
+	0		the singer have a problem .
+	0		the singer have to go .
+	0		the singer get it .
+	0		the singer have the flu .
+	0		the singer feel great .
+	0		the singer are n't going to come .
+	0		the singer think that 's a bad idea .
+	0		the singer doubt that .
+	0		the singer refuse to say so .
+	0		the singer do n't want to .
+	0		the singer do agree .
+	0		the singer believe you .
+	0		the singer see the issue .
+	0		the singer understand why .
+	0		the singer know how .
+	0		the singer are trying to do that .
+	0		the singer wonder whether that 's true .
+	0		the singer act as if that 's true .
+	0		the singer sit in this seat .
+	0		the singer work at this desk .
+	0		the singer tell the truth .
+	1		the senior member is here .
+	1		the senior member has n't been there .
+	1		the senior member likes to read .
+	1		the senior member knows where to go .
+	1		the senior member seems nice .
+	1		the senior member is walking .
+	1		the senior member sleeps here .
+	1		the senior member has a problem .
+	1		the senior member has to go .
+	1		the senior member gets it .
+	1		the senior member has the flu .
+	1		the senior member feels great .
+	1		the senior member is n't going to come .
+	1		the senior member thinks that 's a bad idea .
+	1		the senior member doubts that .
+	1		the senior member refuses to say so .
+	1		the senior member does n't want to .
+	1		the senior member does agree .
+	1		the senior member believes you .
+	1		the senior member sees the issue .
+	1		the senior member understands why .
+	1		the senior member knows how .
+	1		the senior member is trying to do that .
+	1		the senior member wonders whether that 's true .
+	1		the senior member acts as if that 's true .
+	1		the senior member sits in this seat .
+	1		the senior member works at this desk .
+	1		the senior member tells the truth .
+	0		the senior member are here .
+	0		the senior member have n't been there .
+	0		the senior member like to read .
+	0		the senior member know where to go .
+	0		the senior member seem nice .
+	0		the senior member are walking .
+	0		the senior member sleep here .
+	0		the senior member have a problem .
+	0		the senior member have to go .
+	0		the senior member get it .
+	0		the senior member have the flu .
+	0		the senior member feel great .
+	0		the senior member are n't going to come .
+	0		the senior member think that 's a bad idea .
+	0		the senior member doubt that .
+	0		the senior member refuse to say so .
+	0		the senior member do n't want to .
+	0		the senior member do agree .
+	0		the senior member believe you .
+	0		the senior member see the issue .
+	0		the senior member understand why .
+	0		the senior member know how .
+	0		the senior member are trying to do that .
+	0		the senior member wonder whether that 's true .
+	0		the senior member act as if that 's true .
+	0		the senior member sit in this seat .
+	0		the senior member work at this desk .
+	0		the senior member tell the truth .
+	0		his brothers is here .
+	0		his brothers has n't been there .
+	0		his brothers likes to read .
+	0		his brothers knows where to go .
+	0		his brothers seems nice .
+	0		his brothers is walking .
+	0		his brothers sleeps here .
+	0		his brothers has a problem .
+	0		his brothers has to go .
+	0		his brothers gets it .
+	0		his brothers has the flu .
+	0		his brothers feels great .
+	0		his brothers is n't going to come .
+	0		his brothers thinks that 's a bad idea .
+	0		his brothers doubts that .
+	0		his brothers refuses to say so .
+	0		his brothers does n't want to .
+	0		his brothers does agree .
+	0		his brothers believes you .
+	0		his brothers sees the issue .
+	0		his brothers understands why .
+	0		his brothers knows how .
+	0		his brothers is trying to do that .
+	0		his brothers wonders whether that 's true .
+	0		his brothers acts as if that 's true .
+	0		his brothers sits in this seat .
+	0		his brothers works at this desk .
+	0		his brothers tells the truth .
+	1		his brothers are here .
+	1		his brothers have n't been there .
+	1		his brothers like to read .
+	1		his brothers know where to go .
+	1		his brothers seem nice .
+	1		his brothers are walking .
+	1		his brothers sleep here .
+	1		his brothers have a problem .
+	1		his brothers have to go .
+	1		his brothers get it .
+	1		his brothers have the flu .
+	1		his brothers feel great .
+	1		his brothers are n't going to come .
+	1		his brothers think that 's a bad idea .
+	1		his brothers doubt that .
+	1		his brothers refuse to say so .
+	1		his brothers do n't want to .
+	1		his brothers do agree .
+	1		his brothers believe you .
+	1		his brothers see the issue .
+	1		his brothers understand why .
+	1		his brothers know how .
+	1		his brothers are trying to do that .
+	1		his brothers wonder whether that 's true .
+	1		his brothers act as if that 's true .
+	1		his brothers sit in this seat .
+	1		his brothers work at this desk .
+	1		his brothers tell the truth .
+	0		betty and dave is here .
+	0		betty and dave has n't been there .
+	0		betty and dave likes to read .
+	0		betty and dave knows where to go .
+	0		betty and dave seems nice .
+	0		betty and dave is walking .
+	0		betty and dave sleeps here .
+	0		betty and dave has a problem .
+	0		betty and dave has to go .
+	0		betty and dave gets it .
+	0		betty and dave has the flu .
+	0		betty and dave feels great .
+	0		betty and dave is n't going to come .
+	0		betty and dave thinks that 's a bad idea .
+	0		betty and dave doubts that .
+	0		betty and dave refuses to say so .
+	0		betty and dave does n't want to .
+	0		betty and dave does agree .
+	0		betty and dave believes you .
+	0		betty and dave sees the issue .
+	0		betty and dave understands why .
+	0		betty and dave knows how .
+	0		betty and dave is trying to do that .
+	0		betty and dave wonders whether that 's true .
+	0		betty and dave acts as if that 's true .
+	0		betty and dave sits in this seat .
+	0		betty and dave works at this desk .
+	0		betty and dave tells the truth .
+	1		betty and dave are here .
+	1		betty and dave have n't been there .
+	1		betty and dave like to read .
+	1		betty and dave know where to go .
+	1		betty and dave seem nice .
+	1		betty and dave are walking .
+	1		betty and dave sleep here .
+	1		betty and dave have a problem .
+	1		betty and dave have to go .
+	1		betty and dave get it .
+	1		betty and dave have the flu .
+	1		betty and dave feel great .
+	1		betty and dave are n't going to come .
+	1		betty and dave think that 's a bad idea .
+	1		betty and dave doubt that .
+	1		betty and dave refuse to say so .
+	1		betty and dave do n't want to .
+	1		betty and dave do agree .
+	1		betty and dave believe you .
+	1		betty and dave see the issue .
+	1		betty and dave understand why .
+	1		betty and dave know how .
+	1		betty and dave are trying to do that .
+	1		betty and dave wonder whether that 's true .
+	1		betty and dave act as if that 's true .
+	1		betty and dave sit in this seat .
+	1		betty and dave work at this desk .
+	1		betty and dave tell the truth .
+	0		these people is here .
+	0		these people has n't been there .
+	0		these people likes to read .
+	0		these people knows where to go .
+	0		these people seems nice .
+	0		these people is walking .
+	0		these people sleeps here .
+	0		these people has a problem .
+	0		these people has to go .
+	0		these people gets it .
+	0		these people has the flu .
+	0		these people feels great .
+	0		these people is n't going to come .
+	0		these people thinks that 's a bad idea .
+	0		these people doubts that .
+	0		these people refuses to say so .
+	0		these people does n't want to .
+	0		these people does agree .
+	0		these people believes you .
+	0		these people sees the issue .
+	0		these people understands why .
+	0		these people knows how .
+	0		these people is trying to do that .
+	0		these people wonders whether that 's true .
+	0		these people acts as if that 's true .
+	0		these people sits in this seat .
+	0		these people works at this desk .
+	0		these people tells the truth .
+	1		these people are here .
+	1		these people have n't been there .
+	1		these people like to read .
+	1		these people know where to go .
+	1		these people seem nice .
+	1		these people are walking .
+	1		these people sleep here .
+	1		these people have a problem .
+	1		these people have to go .
+	1		these people get it .
+	1		these people have the flu .
+	1		these people feel great .
+	1		these people are n't going to come .
+	1		these people think that 's a bad idea .
+	1		these people doubt that .
+	1		these people refuse to say so .
+	1		these people do n't want to .
+	1		these people do agree .
+	1		these people believe you .
+	1		these people see the issue .
+	1		these people understand why .
+	1		these people know how .
+	1		these people are trying to do that .
+	1		these people wonder whether that 's true .
+	1		these people act as if that 's true .
+	1		these people sit in this seat .
+	1		these people work at this desk .
+	1		these people tell the truth .
+	0		no more than ten student is here .
+	0		no more than ten student has n't been there .
+	0		no more than ten student likes to read .
+	0		no more than ten student knows where to go .
+	0		no more than ten student seems nice .
+	0		no more than ten student is walking .
+	0		no more than ten student sleeps here .
+	0		no more than ten student has a problem .
+	0		no more than ten student has to go .
+	0		no more than ten student gets it .
+	0		no more than ten student has the flu .
+	0		no more than ten student feels great .
+	0		no more than ten student is n't going to come .
+	0		no more than ten student thinks that 's a bad idea .
+	0		no more than ten student doubts that .
+	0		no more than ten student refuses to say so .
+	0		no more than ten student does n't want to .
+	0		no more than ten student does agree .
+	0		no more than ten student believes you .
+	0		no more than ten student sees the issue .
+	0		no more than ten student understands why .
+	0		no more than ten student knows how .
+	0		no more than ten student is trying to do that .
+	0		no more than ten student wonders whether that 's true .
+	0		no more than ten student acts as if that 's true .
+	0		no more than ten student sits in this seat .
+	0		no more than ten student works at this desk .
+	0		no more than ten student tells the truth .
+	1		no more than ten student are here .
+	1		no more than ten student have n't been there .
+	1		no more than ten student like to read .
+	1		no more than ten student know where to go .
+	1		no more than ten student seem nice .
+	1		no more than ten student are walking .
+	1		no more than ten student sleep here .
+	1		no more than ten student have a problem .
+	1		no more than ten student have to go .
+	1		no more than ten student get it .
+	1		no more than ten student have the flu .
+	1		no more than ten student feel great .
+	1		no more than ten student are n't going to come .
+	1		no more than ten student think that 's a bad idea .
+	1		no more than ten student doubt that .
+	1		no more than ten student refuse to say so .
+	1		no more than ten student do n't want to .
+	1		no more than ten student do agree .
+	1		no more than ten student believe you .
+	1		no more than ten student see the issue .
+	1		no more than ten student understand why .
+	1		no more than ten student know how .
+	1		no more than ten student are trying to do that .
+	1		no more than ten student wonder whether that 's true .
+	1		no more than ten student act as if that 's true .
+	1		no more than ten student sit in this seat .
+	1		no more than ten student work at this desk .
+	1		no more than ten student tell the truth .
+	0		those ones is here .
+	0		those ones has n't been there .
+	0		those ones likes to read .
+	0		those ones knows where to go .
+	0		those ones seems nice .
+	0		those ones is walking .
+	0		those ones sleeps here .
+	0		those ones has a problem .
+	0		those ones has to go .
+	0		those ones gets it .
+	0		those ones has the flu .
+	0		those ones feels great .
+	0		those ones is n't going to come .
+	0		those ones thinks that 's a bad idea .
+	0		those ones doubts that .
+	0		those ones refuses to say so .
+	0		those ones does n't want to .
+	0		those ones does agree .
+	0		those ones believes you .
+	0		those ones sees the issue .
+	0		those ones understands why .
+	0		those ones knows how .
+	0		those ones is trying to do that .
+	0		those ones wonders whether that 's true .
+	0		those ones acts as if that 's true .
+	0		those ones sits in this seat .
+	0		those ones works at this desk .
+	0		those ones tells the truth .
+	1		those ones are here .
+	1		those ones have n't been there .
+	1		those ones like to read .
+	1		those ones know where to go .
+	1		those ones seem nice .
+	1		those ones are walking .
+	1		those ones sleep here .
+	1		those ones have a problem .
+	1		those ones have to go .
+	1		those ones get it .
+	1		those ones have the flu .
+	1		those ones feel great .
+	1		those ones are n't going to come .
+	1		those ones think that 's a bad idea .
+	1		those ones doubt that .
+	1		those ones refuse to say so .
+	1		those ones do n't want to .
+	1		those ones do agree .
+	1		those ones believe you .
+	1		those ones see the issue .
+	1		those ones understand why .
+	1		those ones know how .
+	1		those ones are trying to do that .
+	1		those ones wonder whether that 's true .
+	1		those ones act as if that 's true .
+	1		those ones sit in this seat .
+	1		those ones work at this desk .
+	1		those ones tell the truth .
+	0		the police officers is here .
+	0		the police officers has n't been there .
+	0		the police officers likes to read .
+	0		the police officers knows where to go .
+	0		the police officers seems nice .
+	0		the police officers is walking .
+	0		the police officers sleeps here .
+	0		the police officers has a problem .
+	0		the police officers has to go .
+	0		the police officers gets it .
+	0		the police officers has the flu .
+	0		the police officers feels great .
+	0		the police officers is n't going to come .
+	0		the police officers thinks that 's a bad idea .
+	0		the police officers doubts that .
+	0		the police officers refuses to say so .
+	0		the police officers does n't want to .
+	0		the police officers does agree .
+	0		the police officers believes you .
+	0		the police officers sees the issue .
+	0		the police officers understands why .
+	0		the police officers knows how .
+	0		the police officers is trying to do that .
+	0		the police officers wonders whether that 's true .
+	0		the police officers acts as if that 's true .
+	0		the police officers sits in this seat .
+	0		the police officers works at this desk .
+	0		the police officers tells the truth .
+	1		the police officers are here .
+	1		the police officers have n't been there .
+	1		the police officers like to read .
+	1		the police officers know where to go .
+	1		the police officers seem nice .
+	1		the police officers are walking .
+	1		the police officers sleep here .
+	1		the police officers have a problem .
+	1		the police officers have to go .
+	1		the police officers get it .
+	1		the police officers have the flu .
+	1		the police officers feel great .
+	1		the police officers are n't going to come .
+	1		the police officers think that 's a bad idea .
+	1		the police officers doubt that .
+	1		the police officers refuse to say so .
+	1		the police officers do n't want to .
+	1		the police officers do agree .
+	1		the police officers believe you .
+	1		the police officers see the issue .
+	1		the police officers understand why .
+	1		the police officers know how .
+	1		the police officers are trying to do that .
+	1		the police officers wonder whether that 's true .
+	1		the police officers act as if that 's true .
+	1		the police officers sit in this seat .
+	1		the police officers work at this desk .
+	1		the police officers tell the truth .
+	0		the singers is here .
+	0		the singers has n't been there .
+	0		the singers likes to read .
+	0		the singers knows where to go .
+	0		the singers seems nice .
+	0		the singers is walking .
+	0		the singers sleeps here .
+	0		the singers has a problem .
+	0		the singers has to go .
+	0		the singers gets it .
+	0		the singers has the flu .
+	0		the singers feels great .
+	0		the singers is n't going to come .
+	0		the singers thinks that 's a bad idea .
+	0		the singers doubts that .
+	0		the singers refuses to say so .
+	0		the singers does n't want to .
+	0		the singers does agree .
+	0		the singers believes you .
+	0		the singers sees the issue .
+	0		the singers understands why .
+	0		the singers knows how .
+	0		the singers is trying to do that .
+	0		the singers wonders whether that 's true .
+	0		the singers acts as if that 's true .
+	0		the singers sits in this seat .
+	0		the singers works at this desk .
+	0		the singers tells the truth .
+	1		the singers are here .
+	1		the singers have n't been there .
+	1		the singers like to read .
+	1		the singers know where to go .
+	1		the singers seem nice .
+	1		the singers are walking .
+	1		the singers sleep here .
+	1		the singers have a problem .
+	1		the singers have to go .
+	1		the singers get it .
+	1		the singers have the flu .
+	1		the singers feel great .
+	1		the singers are n't going to come .
+	1		the singers think that 's a bad idea .
+	1		the singers doubt that .
+	1		the singers refuse to say so .
+	1		the singers do n't want to .
+	1		the singers do agree .
+	1		the singers believe you .
+	1		the singers see the issue .
+	1		the singers understand why .
+	1		the singers know how .
+	1		the singers are trying to do that .
+	1		the singers wonder whether that 's true .
+	1		the singers act as if that 's true .
+	1		the singers sit in this seat .
+	1		the singers work at this desk .
+	1		the singers tell the truth .
+	0		the senior members is here .
+	0		the senior members has n't been there .
+	0		the senior members likes to read .
+	0		the senior members knows where to go .
+	0		the senior members seems nice .
+	0		the senior members is walking .
+	0		the senior members sleeps here .
+	0		the senior members has a problem .
+	0		the senior members has to go .
+	0		the senior members gets it .
+	0		the senior members has the flu .
+	0		the senior members feels great .
+	0		the senior members is n't going to come .
+	0		the senior members thinks that 's a bad idea .
+	0		the senior members doubts that .
+	0		the senior members refuses to say so .
+	0		the senior members does n't want to .
+	0		the senior members does agree .
+	0		the senior members believes you .
+	0		the senior members sees the issue .
+	0		the senior members understands why .
+	0		the senior members knows how .
+	0		the senior members is trying to do that .
+	0		the senior members wonders whether that 's true .
+	0		the senior members acts as if that 's true .
+	0		the senior members sits in this seat .
+	0		the senior members works at this desk .
+	0		the senior members tells the truth .
+	1		the senior members are here .
+	1		the senior members have n't been there .
+	1		the senior members like to read .
+	1		the senior members know where to go .
+	1		the senior members seem nice .
+	1		the senior members are walking .
+	1		the senior members sleep here .
+	1		the senior members have a problem .
+	1		the senior members have to go .
+	1		the senior members get it .
+	1		the senior members have the flu .
+	1		the senior members feel great .
+	1		the senior members are n't going to come .
+	1		the senior members think that 's a bad idea .
+	1		the senior members doubt that .
+	1		the senior members refuse to say so .
+	1		the senior members do n't want to .
+	1		the senior members do agree .
+	1		the senior members believe you .
+	1		the senior members see the issue .
+	1		the senior members understand why .
+	1		the senior members know how .
+	1		the senior members are trying to do that .
+	1		the senior members wonder whether that 's true .
+	1		the senior members act as if that 's true .
+	1		the senior members sit in this seat .
+	1		the senior members work at this desk .
+	1		the senior members tell the truth .

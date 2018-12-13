@@ -1,0 +1,191 @@
+b_82		The Like-Attracts-Like Constraint (LALC)
+b_82		(I) Vn (a) Left periphery
+b_82		Move NP to Ila.
+b_82		Base Rules
+b_82		He began writing poems.
+b_82		He kept writing poems.
+b_82		He continued writing poems.
+b_82		He stopped writing poems.
+b_82		Wackernagel's Law
+b_82		Je les ai vues
+b_82		J'y ai vu les hommes
+b_82		Jean croit que je suis content, mais je ne le suis pas
+b_82		Move QP to Ia.
+b_82		/ would / have / been / main verb
+b_82		The men all would have been working.
+b_82		The men would all have been working.
+b_82		The men would have all been working.
+b_82		The men would have been all working.
+b_82		S'
+b_82		(1970), and Akmajian, Steele, and Wasow (1979) present evidence for the right-branching
+b_82		S
+b_82		S'
+b_82		S'
+b_82		Would the men each have been working?
+b_82	*	Would each the men have been working?
+b_82		The men would not enjoy that.
+b_82		S'
+b_82	*	Would not the men enjoy that?
+b_82		Would the men not enjoy that?
+b_82		All the men would not have been working.
+b_82	*	The men would all not have been working.
+b_82		The men all would not have been working.
+b_82		The men would not have all been working.
+b_82		The men would not all have been working.
+b_82		The men would not have been all working.
+b_82		They said that they would all work on that, and all work on that they did
+b_82	*	They said that they would all work on that, and work on that they did all
+b_82		NP [S']NP
+b_82		That John is a fool is obvious.
+b_82		It is obvious that John is a fool.
+b_82	*	VP V S' S'
+b_82	*	John believes that Fred likes steak that Joe likes pizza.
+b_82		VP -> V (NP) (S')
+b_82		a. John whined that he was hungry.
+b_82	*	That he was hungry, John whined.
+b_82	*	That he was hungry was whined by John.
+b_82		AP-> AS'
+b_82		John is certain that the Mets will win.
+b_82		That he has blood on his hands proves that John is the murderer.
+b_82	*	It proves that John is the murderer that he has blood on his hands.
+b_82		S'
+b_82		VP
+b_82		allows S' complements to be generated under AP. Therefore, sentential complements
+b_82		that extrapose from subject position should, when the predicate is adjectival, move into
+b_82		the empty S' position under the AP. For example, the derived structure of (52), the
+b_82		extraposed version of (51), would be (53).
+b_82		To please John would be difficult.
+b_82		It would be difficult to please John.
+b_82		S'
+b_82		It is believed to be obvious by everyone that Fred is crazy.
+b_82	*	John is believed to be certain by everyone that Fred is crazy.
+b_82		(50), would force us to claim that the extraposed complement in (54) is embedded under
+b_82		the infinitive VP rather than the matrix VP. This analysis is untenable for two reasons.
+b_82		It disturbed him that people didn't like Fred.
+b_82		It was believed to have disturbed him that people didn't like Fred.
+b_82		S'
+b_82		(1981).
+b_82		(58), rather than Detachment (a stylistic rule). Since base rules do not create configu
+b_82		(59):
+b_82		S'
+b_82		(Nanni's (1.35))
+b_82	*	How easy to please John is it?
+b_82	*	How difficult to study for the exam was it?
+b_82	*	How hard to read the book was it?
+b_82	*	How easy to tease John it is!
+b_82	*	How difficult to study for the exam it was!
+b_82	*	How hard to read the book it was!
+b_82		How certain that the Mets will win are you ?
+b_82		How likely to win is he ?
+b_82		St
+b_82		This book I enjoyed
+b_82		Move L V to Ila.9
+b_82	*	To whom the book did you give
+b_82	*	The book to whom did you give
+b_82		you gave the book to whom
+b_82		He's a man to whom liberty we could never grant
+b_82		It's obvious that Mary, he can't stand
+b_82		S'
+b_82		l'homme a qui je sais quelle lettre e'crire
+b_82		the man to whom I know what letter to write
+b_82		les hommes a qui les livres j'ai donne's
+b_82		the men to whom the books I have given
+b_82		Je voudrais savoir [quelles lettres] [a Jacques] tu as donnees.
+b_82		Le garqon a qui de Jacques j'ai parle', plutot que de Marie, c'est
+b_82		the boy to whom of Jacques I have spoken rather than of Marie it's
+b_82		Eg held ao smalann muni troll taka a' morgun.
+b_82	*	Eg held ad smalann troll muni taka 'a morgun.
+b_82		I think that the trolls will take the shepherd tomorrow.
+b_82		a. Hann spur6i hvejum Olafur hef6i hjalpa6.
+b_82		he asked who (dat.) Olaf had helped
+b_82	*	Hann spur6i hverum hef6i Olafur hjalpa6.
+b_82		S" -- Top S'
+b_82		Max I like.
+b_82		S"
+b_82		As for Max, I really like him.
+b_82		Max, I really like him.
+b_82		and (84) to account for topicalized constituents predicts that the latter structure will
+b_82		have the same distribution as the former.
+b_82	*	He's a man to whom as for liberty, we could never grant it
+b_82	*	He's a man to whom liberty, we could never grant it
+b_82		Move x [ + wh] to Illa.
+b_82		Comp - W - x?[ + wh] - Y
+b_82		Comp-Substitution Universal
+b_82		(Sharanahua) (Frantz's (3))
+b_82		(Cuzco Quechua) (Lefebvre and Muyksen's (2))
+b_82		senoracaq tapukus qancunata nuqaca yacanicu
+b_82		(Navajo) (Kaufman's (2.50))
+b_82		haagoola Jaan Mary doogaal nisin ni
+b_82		where.to.Q John Mary 3.F.go I.want.3.say
+b_82		Jag undrar vem som Maja seglade med
+b_82		Jag vet vem, men du vet nog inte vem, som har varit har.
+b_82		S
+b_82		(Chomsky (1973)'s (108)):
+b_82		Category A "L-contains" category B if and only if A properly contains
+b_82		B is "subjacent" to A if and only if A is superior to B and there is at most
+b_82		one cyclic category C such that C L-contains MMC(B) [the minimal major
+b_82		category containing B/MRB] and C does not contain A.'7
+b_82		Move PP.
+b_82		S'-- Comp S (PP)
+b_82		John would like that because he's such a nice guy.
+b_82		John, because he's such a nice guy, would like that.
+b_82		Because he's such a nice guy, John would like that.
+b_82		John would, because he's such a nice guy, like that.
+b_82		Because he's such a nice guy, what would John like ?
+b_82		It's obvious that, although he's a nice guy, John isn't too bright.
+b_82	*	John ate after getting home the steak.
+b_82		Adverbs cannot occur at nonperipheral positions within the VP.
+b_82		I gave Mary a book.
+b_82		I considered Fred crazy.
+b_82		I put the book on the table.
+b_82		I worded the telegram tersely.'9
+b_82	*	1 gave Mary after the party a book.
+b_82	*	I considered Fred after the party crazy.
+b_82	*	1 put the book after the party on the table.
+b_82	*	I worded the telegram after the party tersely.
+b_82	*	Because she's so pleasant, Mary I really like her.
+b_82	*	Because she's so pleasant, as for Mary I really like her.
+b_82		X -C ax {s}-Y
+b_82		X- S -PP-Y
+b_82		Because she's so pleasant, Mary I really like
+b_82		though - X - + V - + V
+b_82		a. Though he may seem intelligent, he does not seem deep.
+b_82		Intelligent though he may seem, he does not seem deep.
+b_82		a. Though I may love her, that won't affect the grade.
+b_82		Love her though I may, that won't affect the grade.
+b_82	*	Handsome though I believe the claim that Tom is ,...
+b_82	*	Handsome though they told me that Tom is ,...
+b_82	*	Handsome though my friends suggested that Mary thinks that Tom is
+b_82		(1977)), Subjacency will not allow movement to any position more distant than the left
+b_82		periphery of PP.
+b_82		Though he may hate those that criticize Carter, it doesn't matter.
+b_82		Hate those who criticize Carter though he may, it doesn't matter.
+b_82		NP - Aux
+b_82		NEG - Aux
+b_82		Would John hate that?
+b_82		Would John hate that!
+b_82		With no job would John be happy.
+b_82		S
+b_82		S'
+b_82		S'
+b_82	*	Will, after John comes home, Sally take a shower?
+b_82		Will Sally, after John comes home, take a shower?
+b_82		After John comes home, will Sally take a shower?
+b_82		to be grammatical.
+b_82		I would prefer that he not have finished.
+b_82	*	1 would prefer that he have not finished.
+b_82		He has not finished.
+b_82		He is not finishing.
+b_82		He would not finish.
+b_82		He does not finish.
+b_82		They thought that 1 would enjoy it, but I would not
+b_82		S -NP VP
+b_82		rrAux
+b_82	*	Those people will, after the party, not come home.
+b_82		Those people, after the party, will not come home.
+b_82		(2), with occasional evidence from other languages. However, the extent to which other
+b_82		languages have provided arguments for the inventory, particularly in sections 2 and 3,
+b_82		has revealed a basic assumption here that the inventory is universal.
+b_82		S /0 / I 0/ V
+b_82		Languages without VPs relocate the moved elements in VP rules between
+b_82		any two major constituents immediately domninated by S.

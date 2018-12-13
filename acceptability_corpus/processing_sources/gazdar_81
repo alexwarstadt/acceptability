@@ -1,0 +1,244 @@
+g_81		S ->NP VP
+g_81		[s NP VP]
+g_81		and analogously for all other rules.
+g_81		(1, [s NP VP], VP'(^NP'))
+g_81		(- * ot ... oandi
+g_81		where a is any syntactic category
+g_81		The Dodgers beat the Red Sox and were beaten by the Giants.
+g_81		is synonymous with (6):
+g_81		The Dodgers beat the Red Sox and the Dodgers were beaten by the Giants.
+g_81		The Dodgers beat the Red Sox and the Giants beat the Dodgers.
+g_81		(5). This analysis is hopeless for a sentence like (8) (cf. Jackendoff (1977, 193-194)):
+g_81		Different teams beat the Red Sox and were beaten by the Giants.
+g_81		<2, [a otl,s. . otj Pn ' 3(all . . ?n Ot )
+g_81		(10)3 (3, [ ,,,3 ]'
+g_81		(13), rather than CR, as Williams assumes.
+g_81		[vP V (PP) VP I
+g_81		John gave the books to Mary and the records to Sue.
+g_81		D(VN) = {a/4: a, a E VN}
+g_81		(1969). For some discussion of the properties of systems which exploit a grammar to generate a grammar, see
+g_81		D(P,G) = {L[/ u1 * .* Cri/ * (Jn ]:[a cr I (. . . . o'n,] E G & lIi?n & ot,
+g_81		oi ( V,B}
+g_81		{[s NP VP],
+g_81		[vp V VP],
+g_81		[vp V NP],
+g_81		[pp P NP],
+g_81		[s that S],
+g_81		[VP V S],
+g_81		[VP- to VP],
+g_81		[vp V NP PP],
+g_81		[NP NP PP]}
+g_81		{[S/NP NP/NP VP], [S/NP NP VP/NP],
+g_81		[VP/NP V VP/NP],
+g_81		[PP/NP P NP/NP],
+g_81		[S/NP that S/NP],
+g_81		[VP/NP V S/NP],
+g_81		[VP/NP to VP/NP],
+g_81		[VP/NP V NP/NP PP], [VP/NP V NP PP/NP],
+g_81		[NP/NP NP/NP PP], [NP/NP NP PP/NP]}
+g_81		{[s/Pp NP/PP VP], [s/PP NP VP/PP],
+g_81		[vP/pp V VP/PP],
+g_81		[vp/pp V NP/PP],
+g_81		[pp/pp P NP/PP],
+g_81		[g/pp that S/PP],
+g_81		[VP/pp V S/PP],
+g_81		[vpP to VP/PP],
+g_81		[vP/pp V NP/PP PP], [vP/pp V NP PP/PP],
+g_81		[NP/PP NP/PP PP], [NP/PP NP PP/PP]}
+g_81		[a/a . . .
+g_81		The Left Branch Condition
+g_81	*	[NP/NP NP/NP .. .]
+g_81		Generalized Left Branch Condition
+g_81		(4, [a/a t], ha)
+g_81		where a E VN
+g_81		How many did you buy of those pies at the fair?
+g_81		Combien as-tu donn6 de ces livres a ces gens?
+g_81		how many have you given of these books to these people
+g_81		(5, [NP NP RI, XR[NP'](R'))
+g_81		and Bach and Cooper (1978), and developed by McCloskey (1978; 1979), from
+g_81		which further details should be sought. All NPs are assumed to contain a free set variable
+g_81		(6, [R (NP) S/NP], Xn[XhNp[(S/NP)'](NP') AR(n)])
+g_81		(7, [R PP S/PP], Xn[Xhpp[(S/PP)'](PP') A R(n)])
+g_81		NP[ ? R, + WH, + PRO] who, where who' = XPP(n)
+g_81		NP[ + R, - WH, + PRO] that, where that' = XPP(n)
+g_81		NP
+g_81		and Klein (1980). We also assume that the features mentioned in (27) and (28) can trickle through NP
+g_81		and PP onto embedded NPs to give us such relative heads as in which, for whom, whose book, in whose book,
+g_81		etc.
+g_81		NP
+g_81		obligatory absence of a that-complementizer in Modern English wh-relatives, (iv)
+g_81		obligatory c-command position of the wh-phrase, (v) at most one hole in the complement
+g_81	*	The man chased Fido returned.
+g_81		The man that chased Fido returned.
+g_81		The man (who) I think chased Fido returned.
+g_81	*	The man (who) I think that chased Fido returned.
+g_81		[vP V XI > [Q V NP X]
+g_81		VP (34) Q
+g_81		(8, [Q a QIa], Xp3n[\ha[[(Q/o)'](p)](oa')])
+g_81		Who did you think Mary saw?
+g_81		In which car was the man seen?
+g_81		How slowly would you say he was driving?
+g_81		How suspicious was Mary?
+g_81		Who saw the man?
+g_81		Which man drove the car?
+g_81		[Q NP VP ]
+g_81		LX E/NP .. .] a [a X VP .*.]
+g_81		[Q NP Q/NP] (root constituent questions, (35) above)
+g_81		[O NP S/NP] (embedded constituent questions)
+g_81		[s NP S/NP] (NP topicalization)
+g_81		[VP/NP V S/NP] (derived rules)
+g_81		f- [VP/NP V NP S/NP]
+g_81		[VP/NP V PP S/NP]J
+g_81		[Q NP VP ] (= (38))
+g_81		[Q NP VP
+g_81		d.'8[sNP VP ]
+g_81		[VP/NPV NP VP
+g_81		[VP/NPVNP VP ]
+g_81		[VP/NP V PP VP
+g_81		Q
+g_81		Kim loves Sandy.
+g_81		[S[NP Kim] [vp loves Sandy]]
+g_81		[S[NP Kim] [S[NP t] [vP loves Sandy]]
+g_81		(iii).
+g_81		Q
+g_81	*	The man chased Fido returned.
+g_81		(= (31b)) S
+g_81		(= (31c)) S
+g_81	*	 [s/NP that VP I
+g_81	*	The man (who) I think that chased Fido returned.
+g_81		Who do you think (that) you saw?
+g_81		Who do you think (*that) saw you?
+g_81		Who do you regret *(that) you saw?
+g_81	*	Who do you regret (that) saw you?
+g_81		(45)-(48):
+g_81		(45)20 * YJNP
+g_81		that S/NP
+g_81		whether
+g_81		if
+g_81		for NP/NP VP
+g_81		lVPf
+g_81	*	 I/NP
+g_81	*	 NP/NP
+g_81		(48)2' * NP/NP
+g_81	*	Who did you believe that t came? (structure (45))
+g_81	*	Who did you wonder whether t came? (structure (45))
+g_81	*	Who did you wonder if t came? (structure (45))
+g_81	*	Who did you arrange for t to come? (structure (45))
+g_81	*	Which table did you wonder on t Kim put the book? (structure (46))
+g_81	*	Which did you buy the table on t Kim put the book? (structure (46))
+g_81	*	What do you believe that iron is t to be a fact well known to virtually everybody?
+g_81	*	Who did you wonder t saw Kim? (structure (46))
+g_81	*	Which did you buy the table t supported the book? (structure (46))
+g_81	*	The fact, I put it down to t that Kim came. (structure (47))
+g_81	*	The table, I put Kim on t which supported the book. (structure (47))
+g_81	*	The table, that I put Kim on t surprised Kim. (structure (48))
+g_81		[vp V NP R]
+g_81		then the GLBC will not block "extraction" of the NP introduced by the rule, since it
+g_81		is not on a left branch. Predictably, then, the following example (which I owe to Stan
+g_81		Who is it that Mary likes?
+g_81		NP b. NP
+g_81		L'homme qui est parti . . .
+g_81		the man who has left
+g_81		L'homme qu' est parti . . .
+g_81		the man who has left
+g_81		Q b. Q
+g_81		on French; (ii) children: Brown (1971), Smith (1974), Ferreiro et al. (1976), and de Villiers et al. (1979).
+g_81		He was longwinded.
+g_81		He was a bully.
+g_81		He was longwinded and a bully.
+g_81	*	The [longwinded and a bully] man entered.
+g_81	*	[Longwinded and a bully] entered.
+g_81		and (55):
+g_81	*	John is easy to please and to love Mary. (= VP/NP & VP)
+g_81	*	The man who Mary loves and Sally hates George computed my tax.
+g_81		John is easy to please and to love. (= VP/NP & VP/NP)
+g_81		The man who Mary loves and Sally hates computed my tax.
+g_81		The kennel which Mary made and Fido sleeps in has been stolen.
+g_81		The kennel in which Mary keeps drugs and Fido sleeps has been stolen.
+g_81	*	The kennel (in) which Mary made and Fido sleeps has been stolen.
+g_81		John saw more horses than Bill saw or Pete talked to. (= S/NP & S/NP)
+g_81		John saw more horses than Bill saw cows or Pete talked to cats.
+g_81	*	John saw more horses than Bill saw cows or Pete talked to.
+g_81		I know a man who Bill saw and Mary liked.
+g_81		I know a man who saw Bill and liked Mary.
+g_81	*	I know a man who Bill saw and liked Mary.
+g_81		I know a man who Mary likes and hopes will win.
+g_81		I wonder who Bill saw and Mary liked.
+g_81		I wonder who saw Bill and liked Mary.
+g_81	*	1 wonder who Bill saw and liked Mary.
+g_81		I wonder who Mary likes and hopes will win.
+g_81	*	John asked who and where Bill had seen.
+g_81	*	John asked who and what bought.
+g_81		Which book and which pencil did John buy?
+g_81	*	Where and when did Bill put the book?
+g_81		On which table and under which flower pot did John put the keys?
+g_81		To which city and to which conference did Bill go?
+g_81		To which city and which conference did Bill go?
+g_81		Which city and which conference did Bill go to?
+g_81	*	Which city and which conference did Bill go to to ?
+g_81	*	Which city and to which conference did Bill go to?
+g_81	*	To which city and which conference did Bill go to?
+g_81		because put subcategorizes for a locative adverbial (hence, the wh-phrase must also
+g_81		be locative, but where and when is not); (67d) because one (coordinate) wh-NP cannot
+g_81		bear a dependency relation to two (noncoordinate) holes; and (67f) because a wh-PP
+g_81		cannot bear a dependency relation to an NP hole. Thus, no extra apparatus is needed
+g_81		to handle conjoined wh-phrases: the pattern of acceptability exhibited in (62)-(67) simply
+g_81		follows from the coordination and dependency schemata given as (9) and (15) taken
+g_81		together with uncontroversial assumptions about subcategorization.
+g_81	*	John, who and whose friends you saw, is a fool. (= NP & NP)
+g_81		John, to who and to whose friends that letter was addressed, is a fool.
+g_81		SD: W COMP Y X Z
+g_81		I wonder when and how often she went that day.
+g_81		I wonder who and whose friends he handed over to the FBI.
+g_81		I have wanted to know exactly what happened to Rosa Luxemburg for
+g_81		many years.
+g_81		I have wanted to know for many years exactly what happened to Rosa
+g_81		I had hoped that it was true that Rosa Luxemburg had actually defected
+g_81		to Iceland for many years.
+g_81		I had hoped that it was true for many years that Rosa Luxemburg had
+g_81		actually defected to Iceland.
+g_81		I have wanted to meet the man who spent so much money planning the
+g_81		assassination of Kennedy for many years.
+g_81		I have wanted to meet for many years the man who spent so much money
+g_81		planning the assassination of Kennedy.
+g_81		The woman believed that the man was ill who was here.
+g_81		The woman believed that the man who was here was ill.
+g_81		The woman who was here believed that the man was ill.
+g_81		A woman hit a girl who was pregnant.
+g_81		People are said to do crazier things at higher speeds there by Dorothy than they are by other
+g_81		people.
+g_81		People are said to do such crazy things at such high speeds there by Dorothy that I am getting
+g_81		skeptical.
+g_81		A woman hit a pregnant girl.
+g_81		A pregnant woman hit a girl.
+g_81		(9, [(x, o/ PI, Xh13[(aL/P)fI(P))
+g_81		where ac ranges over clausal categories and ,B can be any phrasal or clausal category.
+g_81		S
+g_81		A man just came in and a woman went out who were similar in all kinds
+g_81		of ways.
+g_81		A man just came in and a woman went out who hate each other like poison
+g_81		and always have.
+g_81		proposes.
+g_81		S
+g_81		above. When the parser has attached caught to the first VP, it is looking for the NP
+g_81		that catch subcategorizes for: but the incoming material (and, and Mary, and Mary
+g_81		killed, . .) cannot be this NP. So, of necessity, the parser closes the VP and begins the
+g_81		analysis of a new clause.
+g_81	*	1 find it easy to believe-but Joan finds it hard to believe-Tom to be
+g_81		dishonest.
+g_81	*	John offered, and Harry gave, Sally a Cadillac.
+g_81	*	John told, and Harry showed, Seymour that Sally was a virgin.
+g_81		Jack may be t and Tony certainly is t a werewolf.
+g_81		Tom said he would t and Bill actually did t eat a raw eggplant.
+g_81		Tony used to be t and George still is t very suspicious.
+g_81		Harry has claimed t but I do not believe t that Melvin is a Communist.
+g_81		I like t but Tom doesn't like t to visit new places.
+g_81		I can tell you when t, but I can't tell you why t, he left me.
+g_81		I've been wondering whether t, but wouldn't positively want to state that
+g_81		t, your theory is correct.
+g_81		John hummed t, and Mary sang t, the same tune.
+g_81		John hummed t, and Mary sang t, at equal volumes.
+g_81		John gave Mary t, and Joan presented t to Fred, books which looked
+g_81		remarkably similar.
+g_81		The Red Sox beat t, and the Giants were beaten by t, different teams.
+g_81		Smith loaned, and his widow later donated, a valuable collection of manuscripts to the library.

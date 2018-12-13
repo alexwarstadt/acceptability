@@ -1,0 +1,1194 @@
+sks13		The clever snake disappeared into a hole in the ground
+sks13	*	Hole into disappeared ground the the in clever a little
+sks13	*	The snake clever disappeared into a hole in the ground
+sks13	*	This girl in the red coat will put a picture of Bill it on your desk before tomorrow.
+sks13	*	This girl in the red coat will put a picture of Bill on your desk there before tomorrow.
+sks13	*	This girl in the red coat one will put a picture of Bill on your desk before tomorrow.
+sks13	*	This girl in the red coat will put a picture of Bill on your desk it before tomorrow.
+sks13		This girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13		Bill will put a picture of this girl in the red coat on your desk before tomorrow
+sks13		She will put a picture of Bill on your desk before tomorrow
+sks13	*	Bill will put a picture of she on your desk before tomorrow
+sks13		She will put a picture of Bill on your desk before tomorrow
+sks13		Bill will put a picture of her on your desk before tomorrow
+sks13		She will put a picture of Bill on your desk before tomorrow
+sks13	*	Her will put a picture of Bill on your desk before tomorrow
+sks13	*	She her will put a picture of Bill on your desk before tomorrow
+sks13		Bill will put a picture of her on your desk before tomorrow
+sks13	*	Bill will put a picture of she her on your desk before tomorrow
+sks13		This girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13		This girl in your desk will put a picture of Bill on the red coat before tomorrow
+sks13		This girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13		This girl on your desk will put a picture of Bill in the red coat before tomorrow
+sks13		This girl in the red coat will put a picture of Bill on  your desk
+sks13		This girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13		This girl in the red coat will put a picture of your desk on Bill before tomorrow
+sks13		This girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13		This girl there will put a picture of Bill on your desk before tomorrow
+sks13		This girl will put a picture of Bill on your desk before tomorrow
+sks13		This did
+sks13		This girl will put a picture of Bill on your desk before tomorrow
+sks13		Clean your desk before tomorrow
+sks13		This girl will put a picture of Bill on your desk before tomorrow
+sks13		This girl will put a picture of Bill on your desk before the day after tomorrow
+sks13		This girl will put a picture of Bill on your desk before tomorrow
+sks13		This girl will put a picture of Bill on your desk before Monday because it is important
+sks13		The following sentence has 15 words, but the occurs 2 times, so there are only 14 different words (i.e. different word “types”).
+sks13		Label the parts of speech of all the words in (i).
+sks13		Specify all the subsequences of words in (i) which can be replaced by a single word (where, as usual, the word plays the same kind of role in the sentence as what it replaces)
+sks13		On the basis of the results of the previous step, put brackets around each sequence of words that you had a substitution for.
+sks13		Draw the tree corresponding to the brackets you drew in step c, which also shows the parts of speech for the words from step a.
+sks13		The categories of the 14 words in this sentence: the D entire A airline N industry N became V an D extension N of P their ? electronic A networks N and coord network N processes N
+sks13		Substitutions: the entire airline industry → it (DP) entire airline industry → one (NP) airline industry → one (NP) industry → one (NP) became an extension …and the network processes → did so (VP) an extension …and the network processes → it (DP) their electronic networks and the network processes → it (DP) their electronic networks → it (DP) the network processes → it (DP) electronic networks → ones (NP)? network processes → ones (NP)? of their electronic networks → there (PP)?
+sks13		Bracketing:
+sks13		Tree: sentence
+sks13		Yes, but this girl in the red coat will.
+sks13		Yes, but this girl in the red coat will before tomorrow.
+sks13		Yes, but this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13		Yes, but this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13	*	this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13	*	this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13	*	this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13	*	this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13	*	this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13	*	this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13	*	this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13	*	this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13	*	this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13	*	this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13		will put a picture of Bill on your desk before tomorrow is a constituent.
+sks13		will put a picture of Bill on your desk is a constituent.
+sks13		This girl will buy bread and that one will buy bread too
+sks13		This girl will not buy bread and neither will that one buy bread
+sks13		This boy must not go to school, and his father must not go to school either
+sks13		This boy must not go to France, but his father must go to France
+sks13		This actress must play in this movie and she will play in this movie
+sks13		Can Mary win the race and will Sue win the race too?
+sks13		This girl will buy bread and so will that one buy bread
+sks13		The tourists will go to the park.
+sks13		Will the tourists go to the park?
+sks13		Some student from Australia speaks Warlpiri.
+sks13		Does some student from Australia speak Warlpiri?
+sks13		They would have been walking for hours.
+sks13		Would they have been walking for hours?
+sks13		. Also, consider what happens when you try to make a question from a topicalized sentence. We will come back to some of these issues later.
+sks13		This girl will not buy bread, will she buy bread?
+sks13		Sean Penn can act well in many kinds of movies, can’t he act well in many kinds of movies?
+sks13		Take the yes/no question equivalent of the statement preceding the comma, ii. Change the polarity of the statement (make it negative if it was positive, positive if it was negative) iii. Pronominalize its subject. (we need to return to the question: what is a “subject”?) iv. Apply VP-ellipsis to the VP after the comma
+sks13		That boy will buy a picture of Bill before tomorrow and this girl in the red car will buy a picture of Bill before tomorrow too
+sks13		That boy will buy a picture of Bill before tomorrow and this girl in the red car will buy a picture of Bill before tomorrow too
+sks13		we can say each of the two sentences independently ii. these two sentences have identical parts and dissimilar parts iii. we can substitute one dissimilar part for the other, preserving acceptability.
+sks13		This girl in the red coat will put a picture of Bill on your desk before tomorrow.
+sks13		You will put a picture of Bill on your desk before tomorrow.
+sks13		This girl in the red coat or you will put a picture of Bill on your desk before tomorrow.
+sks13		This girl in the red coat will put a picture of Bill on your desk before tomorrow.
+sks13		No boys will put a picture of Bill on your desk before tomorrow.
+sks13		This girl in the red coat but no boys will put a picture of Bill on your desk before tomorrow.
+sks13		This girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13		This girl in the red coat will put it on your desk before tomorrow
+sks13		This girl in the red coat will put it and a picture of Bill on your desk before tomorrow
+sks13		This girl in the red coat will put a picture of Bill on your desk before tomorrow and This girl in the red coat will put it on your desk before tomorrow
+sks13		This girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13		This girl in the red coat will put a picture of Bill in the mailbox before tomorrow
+sks13		This girl in the red coat will put a picture of Bill in the mailbox and on your desk before tomorrow
+sks13		This girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13		This girl in the red coat will put a picture of Bill on your desk after the dinner
+sks13		This girl in the red coat will put a picture of Bill on your desk after the dinner and before tomorrow
+sks13		This girl in the red coat will put a picture of Bill on your desk before tomorrow and this girl in the red coat will put a picture of Bill on your desk after the dinner
+sks13		This girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13		This girl in the red coat will eat her breakfast before tomorrow
+sks13		This girl in the red coat will eat her breakfast before tomorrow and put a picture of Bill on your desk before tomorrow
+sks13		This girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13		This girl in the red coat will eat her breakfast before tomorrow
+sks13		This girl in the red coat will eat her breakfast and will put a picture of Bill on your desk before tomorrow.
+sks13		pre-test, anti-nuclear, en-large, nation-al, redd-en, electron-ic, inventive-ness
+sks13		post-test, pro-nuclear, en-able, government-al, black-en, magnetic, clever-ness
+sks13		pre or post - test,  anti or pro -nuclear, *en- large and able , * nation and governement - al, * red and black -en, * electron and magnet -ic, * inventive and clever -ness
+sks13		Interpreting Coordination Test Failure. If we have two acceptable sentences of the form ABD and ACD where none of A, B, C and D are bound morphemes, and the string A B and C D is not acceptable
+sks13		B is not a constituent, or ii. C is not a constituent, or iii. B and C are not of the same kind.
+sks13		This girl in the red coat will put a picture of Bill on your desk.
+sks13		This girl in the red dress must put a picture of Bill on your desk.
+sks13	*	This girl in the red coat will and dress must put a picture of Bill on your desk.
+sks13		This girl in the red coat will put a picture of Bill on your desk.
+sks13		This girl on the red coat will put a picture of Bill on your desk.
+sks13	*	This girl in the or on the red coat will put a picture of Bill on your desk.
+sks13		John and Mary will play with Henry and with Sue
+sks13		They play unusual music, and I listen to unusual music
+sks13		They play and I listen to unusual music
+sks13		I love boba ice milk tea but you hate boba ice milk tea
+sks13		I love but you hate boba ice milk tea
+sks13		She may have defrosted the roast and should have defrosted the roast
+sks13		She may have and should have defrosted the roast
+sks13		Right node raised elements are constituents.
+sks13		Smith loaned a valuable collection of manuscripts to the library, and his widow later donated a valuable collection of manuscripts to the library
+sks13		Smith loaned and his widow later donated a valuable collection of manuscripts to the library
+sks13		I borrowed large sums of money from the bank, and my sister stole large sums of money from the bank
+sks13		I borrowed and my sister stole large sums of money from the bank.
+sks13		This girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13		Before tomorrow, this girl in the red coat will put a picture of Bill on your desk before tomorrow.
+sks13		This girl in the red coat will put the picture of Bill on your desk before tomorrow
+sks13		The picture of Bill, this girl in the red coat will put the picture of
+sks13		On your desk, this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13		Put a picture of Bill on your desk, this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13		Put a picture of Bill on your desk before tomorrow, this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13		Mary should know that you must go to the station
+sks13		That you must go to the station, Mary should know that you must go to the station
+sks13	*	This your, this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13	*	Will Bill, this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13	*	Red picture desk, this girl in the red coat will put a picture of
+sks13	*	Before your, this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13	*	Girl in the red coat, this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13	*	Will put a picture of Bill on your desk before tomorrow, this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13	*	Picture of Bill, this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13	*	The red, this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13	*	Of Bill on, this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13	*	Will put, this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13	*	Your desk before, this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13		John wants to look at your notes after class
+sks13		It is your notes that/which John wants to look at after class
+sks13		It is after class that John wants to look at your notes
+sks13		It is John who wants to look at your notes after class
+sks13		Ann bought a first edition of Richard III for $1000
+sks13		It was Ann who bought a first edition of Richard III for $1000
+sks13		It was a first edition of Richard III that Ann bought for $1000
+sks13		It was for $1000 that Ann bought a first edition of Richard III
+sks13		This girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13		It is before tomorrow that this girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13		starting from some acceptable string ABC we form the new string: it BE B that AC.
+sks13		Mary saw the tall man coming from England
+sks13		it is the tall man coming from England that Mary saw the tall man coming from England
+sks13		Mary saw the tall man come from the back
+sks13		it is the tall man come from the back that Mary saw the tall man come from the back
+sks13		This girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13		It is a picture of Bill that this girl in the red coat will put on your desk before tomorrow
+sks13	*	It is put a picture of Bill on your desk before tomorrow that this girl in the red coat will
+sks13		What John wants to look at now is your notes
+sks13		What Mary bought was a first edition
+sks13	*	What Mary gave was a book to John
+sks13	*	What Mary donated was a lot of money to KPFK
+sks13		It’s Alice that John was talking to
+sks13		% Who John was talking to was Alice
+sks13		It is to Cleveland that John drove the truck
+sks13		% where John drove the truck is to Cleveland
+sks13		It’s because he was tired that Mary yelled at you
+sks13		% Why John yelled at you is because he was tired
+sks13		John became deadly afraid of flying
+sks13		What John became was deadly afraid of flying (AP)
+sks13	?	* It is deadly afraid of flying that John became
+sks13		John told us that he wants to quit school
+sks13	?	?It is that he wants to quit school that John told us
+sks13		What John told us is that he wants to quit school. (CP)
+sks13		John promised us to be gentle
+sks13	?	* It is to be gentle that John promised
+sks13		What John promised is to be gentle (CP)
+sks13		Mary will arrive tomorrow
+sks13	*	It is arrive tomorrow that Mary will
+sks13		What Mary will do is arrive tomorrow (VP)
+sks13		starting from some acceptable string ABC we form the new string: what AC BE B.
+sks13		Henri wants the book which is on the top shelf
+sks13		What Henri wants is the book which is on the top shelf
+sks13		The spy became too friendly with his new contacts
+sks13		What the spy became was too friendly with his new contacts
+sks13		starting from some acceptable string ABC we form the new string:
+sks13		This girl in the red coat will put a picture of Bill on your desk before tomorrow
+sks13		What this girl in the red coat will do is put a picture of Bill on your desk before tomorrow
+sks13		starting from some acceptable string ABC we form the new string:
+sks13		It’s Alice that John was talking to
+sks13		% Alice was who John was talking to
+sks13		It is to Cleveland that John drove the truck
+sks13		% To Cleveland is where John drove the truck
+sks13		It’s because he was tired that Mary yelled at you
+sks13		% Because he was tired is why John yelled at you
+sks13		Henri wants to buy these books about cooking.
+sks13		Henri wants to buy which books about cooking?
+sks13		which books about cooking does Henri want to buy?
+sks13		I sent it to you
+sks13	*	I sent to you it
+sks13	*	I sent to you recipes
+sks13	?	I sent to you the recipes from the paper
+sks13		I sent to you the recipes from the paper that I told you about yesterday
+sks13		Heavy shifted elements are constituents.
+sks13		This cook will only put pepper on these tomatoes
+sks13		This cook will only put pepper on these tomatoes
+sks13		This cook will only put pepper on these tomatoes
+sks13		This cook will only put pepper on these tomatoes
+sks13		This cook will only put pepper on these tomatoes
+sks13		This cook will only put pepper on these tomatoes
+sks13		This cook will only put pepper on these tomatoes
+sks13	*	This cook will only put pepper on these tomatoes
+sks13	*	This cook will only put pepper on these tomatoes
+sks13	*	This cook will only put pepper on these tomatoes
+sks13		This cook will only put pepper on these tomatoes and the maid burnt the food
+sks13		This cook will put only pepper on these tomatoes
+sks13		This cook will only put pepper on these tomatoes, and that cook will only put pepper on these tomatoes too,
+sks13		the cook will  V Ponly  V P put pepper on the tomatoes  
+sks13		the focus associated with only must be contained in a constituent sister to only.
+sks13		the cook will put  only pepper  on these tomatoes
+sks13		the cook will  put only  pepper   on these tomatoes  .
+sks13		the cook will (carefully) put (*carefully) pepper on the tomatoes
+sks13		the cook will (frequently) put (*frequently) pepper on the tomatoes
+sks13		only John (only DP)
+sks13		only with John (only PP)
+sks13		only happy (only AP)
+sks13		only put pepper on the tomatoes (only VP)
+sks13		Only John drinks beer
+sks13	*	Only John drinks beer
+sks13	*	Only John drinks beer
+sks13		Bill’s mother’s friends are waiting at the restaurant
+sks13		they are waiting at the restaurant
+sks13		Bill’s mother’s friends  and  John  are waiting at the restaurant
+sks13		It was John  that was waiting at the restaurant 
+sks13	*	It was John Bill  that were waiting at the restaurant 
+sks13		It was John and Bill  that were waiting at the restaurant 
+sks13		Using VP ellipsis and “do so” substitution in as many ways as you can, indicate what conclusions can be drawn about the following examples.
+sks13		I will fix the computer for Karyl
+sks13		I will eat spaghetti on Sunday with Marco
+sks13		I will speak to Hector about this
+sks13		Smith loaned a valuable collection of manuscripts to the library.
+sks13		The discussion of right node raising (RNR) earlier states that (33-34) make right node raising a controversial constituency test, but even
+sks13		is puzzling.
+sks13		Why is (60) puzzling? (hint: compare what the coordination test suggests about this structure with what other tests tell us)
+sks13		Why exactly does (33) make RNR controversial as a constituency test?
+sks13		The sentence below is syntactically ambiguous; it has two different structures:
+sks13		Draw two different trees for this sentence. Assuming that will has category T – don’t worry if you are not sure about how to label all the nodes.
+sks13		Explain how at least one of our tests supports the the structure in the first tree but not the second, and how at least one test supports the structure in the second tree but not the first.
+sks13		Mary will buy these books
+sks13		Mary will buy these books and Sue these magazines would suggest the following constituency:
+sks13		Mary will buy and Sue will sell, these books would suggest the following constituency:
+sks13		you will see  that the girl will put a picture on your desk 
+sks13		I doubt  that Mary reads mysteries 
+sks13		He muttered  that the visitors will leave 
+sks13		The fact  that John is snoring  is informative
+sks13		The man  that Mary saw  knew me
+sks13		That the visiting team won the race  could surprise them
+sks13		I like that student
+sks13		That is what you should see
+sks13		That is a complementizer, a word with 3 phonemes in it.
+sks13		You will
+sks13		John knows
+sks13		John wonders
+sks13		John thinks
+sks13		John knows that she left
+sks13		John knows whether she will come back
+sks13		John knows that she left and whether she will come back
+sks13		John knows that she left and John knows whether she will come back
+sks13		shows that while you can wonder about a question, you cannot wonder a proposition; and (13) shows that you can think a proposition, but not a question. That is, it seems that the complementizers play some role in specifying whether the constituent that follows is a question (an “indirect question”) or an assertion of some kind. They seem to play the same role, namely typing the constituent that follows them. This suggests they belong to the same category.
+sks13		You should say
+sks13		John knows
+sks13		John wonders
+sks13		John thinks
+sks13		John knows
+sks13		John wonders
+sks13		John thinks
+sks13		The head of a constituent tells us the category of the constituent
+sks13		The head of a constituent tells us the distribution of the constituent
+sks13		The head of a constituent also selects certain constituents to combine with.
+sks13		John asked  whether she left 
+sks13		I doubt  if she kicks perfect goals every time 
+sks13		They think  that she can do it 
+sks13		whether she left  is most unclear
+sks13		That the girl put a picture there  proves her guilt
+sks13		I prefer for the girl to put a picture there
+sks13		For the girl to put a picture there is what I prefer
+sks13		For the girl to put a picture there would surprise you
+sks13		. This suggests that the structure of (24) is very similar to the structure of (1), so we propose the following tree for (24), similar to the tree for (1) that is displayed on page 94:
+sks13		I prefer for the girl to win
+sks13	*	I prefer for the girl to will win
+sks13	*	I prefer for the girl to wins
+sks13	*	I prefer for the girl to won
+sks13		that Ann will go out every night is expected, but I cannot believe that Sophie will go out every night
+sks13	*	that Ann will go out every night is expected, but I cannot believe that Sophie will go out every night
+sks13		For Ann to go out every night is expected, but I wouldn’t like for
+sks13	*	For Ann to go out every night is expected, but I wouldn’t like for Sophie to go out every night
+sks13		, we see that to can occur as a preposition, in a position where other prepositions could occur:
+sks13		Let’s walk
+sks13		I run on the beach  too also
+sks13		He works  too extremely hard
+sks13		The  two three sunbathers went swimming
+sks13		I hope  that  Mary wins  
+sks13		They know  if  Mary won  
+sks13		I wonder  whether  Mary will win  
+sks13		They prefer  for  Mary to leave  
+sks13		I hope that
+sks13		I hope that Mary
+sks13		They hope  that  Mary
+sks13		They prefer  for  Mary
+sks13		John wonders whether Mary will win
+sks13		John wonders whether to win
+sks13		Whether she will win is a question Mary never considered
+sks13		Whether to win is a question Mary never considered
+sks13		I think that you will see that the girl will put a picture on your desk
+sks13		They understand that you will prefer for the girl to put a picture on your desk
+sks13		the head of a constituent
+sks13		determines the category of the constituent,
+sks13		determines the distribution of the constituent (where it can occur), and
+sks13		selects certain constituents to combine with
+sks13		the heads are word level categories (remember the word level categories are: C,T,N,V,P,D,…)
+sks13		if an element is the head of a string, the maximal string whose distribution is “controlled” by this element is a constituent
+sks13		there is only one head per constituent
+sks13		since constituents are continuous strings, the maximal string under the distributional control of a head must be a continuous string.
+sks13		Mary cuts the paper easily
+sks13		The paper is cut by Mary
+sks13		The paper cuts easily
+sks13		That he won the race  could surprise them
+sks13	*	 That him won the race  could surprise them
+sks13		For him to win the race  would surprise them
+sks13	*	 For he to win the race  would surprise them
+sks13		John saw Mary
+sks13		Harry likes movies
+sks13		John will leave or in infinitive clauses:
+sks13		For Mary to leave on time  is important.
+sks13		Consider the following sentence:
+sks13		Draw a complete tree for this sentence, using the labels introduced in this chapter
+sks13		For each T’ in this sentence, provide at least one example to show that it can be coordinated
+sks13		For each VP in this sentence, provide at least one example to show that it can be coordinated
+sks13		For each VP in this sentence, provide at least one example to show that it can be elided
+sks13		Confirm the constituency of the embedded CP using each of the following:
+sks13		topicalization ii. a cleft construction iii. a pseudocleft construction
+sks13		For each element of category T, show whether this element can be coordinated with to, and explain what the results mean. (Remember that coordination is one of the tests for which both success and failure are meaningful.)
+sks13		Consider the following sentence:
+sks13		Draw a complete tree for this sentence, using the labels introduced in this chapter
+sks13		For each TP in this sentence, provide at least one example to show that it can be coordinated
+sks13		For each T’ in this sentence, provide at least one example to show that it can be coordinated
+sks13		For each VP in this sentence, provide at least one example to show that it can be coordinated
+sks13		Draw a complete tree for the following sentence:
+sks13		the distribution of the constituent we call VP is determined by its V; ii. the formation of a VP is determined by what the V selects.
+sks13		The girl   Twill   sleep  
+sks13		The girl   Twill   put a picture on your desk  
+sks13		I   T should   know whether they   Twill   put a picture on your desk    
+sks13		I prefer for them   T to   put a picture on your desk  
+sks13		I wonder whether   T to   put a picture on your desk  
+sks13		Sleep , the girl will
+sks13		The girl   Twill   sleep  
+sks13		put a picture on your desk T he girl  Twill 
+sks13		The girl   Twill   put a picture on your desk  
+sks13		elapse, *elapse a book, *elapse to Bill, *elapse that Mary slept
+sks13		this girl will put a picture on your desk before tomorrow has two VPs in it! Let’s review the arguments for this.
+sks13		that girl will put a picture on your desk before tomorrow, but this girl will put a picture on your desk before tomorrow too
+sks13		that girl will put a picture on your desk before tomorrow, but this girl will put a picture on your desk before tomorrow too
+sks13	*	that girl will put a picture on your desk before tomorrow, but this girl will put a picture on your desk before tomorrow too
+sks13	*	that girl will put a picture on your desk before tomorrow, but this girl will put a picture on your desk before tomorrow too two corresponding do-so substitutions:
+sks13		that girl will put a picture on your desk before tomorrow, but this girl will do so too
+sks13		that girl will put a picture on your desk before tomorrow, but this girl will do so before tomorrow too coordination of these two constituents:
+sks13		this girl will put a picture on your desk and leave before tomorrow
+sks13		this girl will put a picture on your desk before tomorrow and leave
+sks13		Think about linguistics all night, she does think about linguistics all night
+sks13		Climb to the top, they do climb to the top
+sks13		put a picture on your desk before tomorrow, she will put a picture on your desk before tomorrow
+sks13		put a picture on your desk, she will, put a picture on your desk before tomorrow
+sks13	*	put a picture, she will, put a picture on your desk before tomorrow
+sks13	*	put, she will, put a picture on your desk before tomorrow
+sks13		John can go to the market  on his bike 
+sks13		Mary should buy some flowers  on Sunday 
+sks13		My niece could write me letters  before her third birthday 
+sks13		My nephew could write letters to his parents  with a fountain pen 
+sks13		John can go to the market  quickly 
+sks13		Mary should buy some flowers  for her mother to arrange 
+sks13		My niece could write me letters  more faithfully 
+sks13		My nephew could write letters to his parents  every week 
+sks13		John can  quickly  go to the market  
+sks13		My niece could  more faithfully  write me letters  
+sks13	?	My nephew could  every week  write letters to his parents  
+sks13	*	John can go  to the market   to India 
+sks13	*	Mary should buy  some flowers   some bread 
+sks13	*	My niece could write me you letters
+sks13	*	My nephew could write  letters   the postcards   to his parents 
+sks13		John can go to the market  on his bike  on a truck 
+sks13		Mary should buy some flowers  on Sunday   at 5 o’clock 
+sks13		My niece could write me letters  before her third birthday   before
+sks13		My nephew could write letters to his parents  with a fountain pen   with your help 
+sks13		Pelé visited his uncle
+sks13		Mary put the ice cream in the fridge the phrases the ice cream and in the fridge are both complements of put.
+sks13		She sold the car to Sam for five dollars
+sks13		She ran the car on propane from Reno to Vegas
+sks13		She built the house with her own hands from bricks and mortar
+sks13		The process changed the substance from solid to liquid to gas to energy
+sks13		We associated their subsidiaries with our corporate office
+sks13		I bicycled around France
+sks13		Mary drank  some beer   in the barn   from 6 to nine 
+sks13		It was in the barn or it took place in the barn
+sks13		It was from six to nine or it took place from six to nine
+sks13	*	It was some beer orit took place some beer
+sks13	*	It was Mary
+sks13		They wonder  whether Mary will run 
+sks13		They wonder about this
+sks13		They wonder
+sks13		I know  that she runs 
+sks13		I know this
+sks13		I know
+sks13		I said  that she runs 
+sks13		I said that
+sks13	*	? I said
+sks13		I prefer  for Mary to run 
+sks13		I prefer  this 
+sks13	*	I prefer
+sks13		I said  for Mary to run 
+sks13		I said  this 
+sks13		I put the book on the shelf
+sks13	*	I put the book
+sks13	*	I put
+sks13		Two ships appeared, arrived, remained, emerged
+sks13		Suddenly, there appeared two ships on the horizon
+sks13		Two inspectors from the INS appeared, arrived, remained, emerged
+sks13		Suddenly, there arrived two inspectors from the INS
+sks13		The ice melts, breaks
+sks13		The door opens, closes
+sks13		The soup cooks, thickens
+sks13		They melted, broke the ice
+sks13		They opened, closed the door
+sks13		They cooked, thickened the soup
+sks13		I go, run, swim, jump, fly, crawl, dance, walk
+sks13	*	They went me, ran me, swam me, jumped me, flew me, crawled me, danced me, walked me
+sks13		I danced a dance
+sks13		He walked the walk
+sks13		The time elapsed slowly
+sks13	*	The time elapsed the day
+sks13		I see stars
+sks13		I see
+sks13		I liked Mary
+sks13	*	I liked
+sks13		They surrounded the fort
+sks13	*	They surrounded
+sks13		I gave money to the charity
+sks13		I gave the charity
+sks13		I gave money
+sks13		I gave
+sks13		I handed the ball to Reg
+sks13	*	I handed the ball
+sks13	*	I handed to Reg
+sks13	*	I handed
+sks13		John ate (food or something similar)
+sks13		John knows (a proposition)
+sks13		John asked (a question)
+sks13	*	John needed
+sks13	*	John criticized
+sks13		John saw (complement implicit in context)
+sks13		John told (complement implicit in context)
+sks13		No verb selects more than 2 or 3 complements
+sks13		No verb requires more than 2 complements (cf. put, hand)
+sks13		The agency class-ified the documents
+sks13	*	The agency class-ified
+sks13		The activists union-ized the teachers
+sks13	*	The activists union-ized (no good if you mean they unionized the teachers)
+sks13		The war intens-ified the poverty
+sks13	*	The war intens-ified (no good if you mean it intensified the poverty)
+sks13	*	The agency class-ified
+sks13		The activists union-ized (meaning they became a union)
+sks13		The war intens-ified (meaning the war became more intense)
+sks13		This project is manag-able
+sks13		This document is classifi-able
+sks13	*	This train is arriv-able
+sks13		it mattered on Sunday
+sks13		I saw John on Sunday
+sks13		I put the book on the desk on Sunday
+sks13		I saw John with a telescope
+sks13	?	* It mattered with a telescope
+sks13		I covered the bread with butter
+sks13	?	*I emptied it with butter
+sks13		Mary will complete her exam within an hour
+sks13	*	Mary will complete her exam for an hour
+sks13		The alpinist will reach the top of the mountain within an hour
+sks13	*	The alpinist will reach the top of the mountain for an hour
+sks13		Henri will paint the floor for an hour
+sks13		I will read linguistics for an hour
+sks13		the book
+sks13		Bill’s book
+sks13		the description of Bill
+sks13		Mary’s description of Bill
+sks13		the destruction of the city by the barbarians
+sks13		the barbarian’s destruction of the city
+sks13		Mary’s knowledge that the barbarians will destroy the city
+sks13		beautiful book
+sks13		book about dragons
+sks13		book that I told you about yesterday
+sks13		the book
+sks13		Bill’s book
+sks13	*	Bill’s the book
+sks13	*	the Bill’s book
+sks13		I like this book of Bill’s, of your’s, of her’s, of our’s , of their’s
+sks13		the student  left
+sks13		only the student  left
+sks13		even the student  left
+sks13		all the students  left
+sks13		I saw  the student 
+sks13		I saw  only the student 
+sks13		I saw  even the student 
+sks13		I saw  all the students 
+sks13		John, who I saw yesterday,  will visit us
+sks13		I wrote to  John, who I saw yesterday 
+sks13		student
+sks13		brilliant student
+sks13		student with long hair
+sks13		student of physics
+sks13		student of physics with long hair
+sks13		description
+sks13		description of Bill
+sks13		gift of candy to the children
+sks13		claim that John stole her purse
+sks13		I saw the brilliant student
+sks13		I saw the brilliant one
+sks13		I saw the brilliant student with long hair
+sks13		I saw the brilliant one with long hair
+sks13		I saw the one with long hair
+sks13		I saw the physics student
+sks13	*	I saw the physics one
+sks13		I saw the student of physics
+sks13	*	I saw the one of physics
+sks13		I saw the student of physics with long hair
+sks13		I saw the one with long hair
+sks13	*	I saw the one of physics
+sks13		The  big  student  of physics   with long hair   in the library 
+sks13		It is big
+sks13		It is with long hair
+sks13	*	It is of physics
+sks13		It is in the library
+sks13		sad
+sks13		very sad
+sks13		proud of Bill
+sks13		extremely fond of cookies
+sks13		interesting to whales
+sks13		proud that Mary succeeded
+sks13		They are intense
+sks13	*	They are intense of Bill
+sks13		They intensified
+sks13		They are special
+sks13	*	They are special of Bill
+sks13		They specialized
+sks13		She is proud
+sks13		She is proud of him
+sks13	*	He proudized her
+sks13	*	He proudified her
+sks13		she is the mother
+sks13		she is the mother of John
+sks13	*	She motherized him
+sks13	*	She motherified him
+sks13		They read the paper
+sks13		The paper is readable
+sks13	*	It is readable of the paper
+sks13	*	They are readable of the paper
+sks13		up
+sks13		up  the rope 
+sks13		in  the south 
+sks13		from  the country 
+sks13		from  under the rug 
+sks13		right  against the grain 
+sks13		exactly  under the tree 
+sks13		before  John came 
+sks13		Each phrasal constituent has a head
+sks13		This head is always a morpheme or a word (a D or N or V or…)
+sks13		The head is unique
+sks13		Every morpheme is the head of some constituent
+sks13		In general, no non-constituent has a unique head
+sks13		I know  CPhe can sing 
+sks13		DPBears  can bite
+sks13		I know  CP  C that  he can sing 
+sks13		DP  De  Bears  can bite
+sks13		The driver of the car thinks that Mary should leave Dallas for Boise tomorrow
+sks13		Her little sister will disagree with her
+sks13		The girl he met at the departmental party will very surely call him
+sks13		Each phrasal constituent has a head
+sks13		This head is always a morpheme or a word (a D or N or V or…)
+sks13		The head is unique
+sks13		Every morpheme is the head of some constituent
+sks13		In general, no non-constituent has a unique head
+sks13		The largest constituent with head H is notated HP or Hmax and is called the maximal or phrasal projection of H.
+sks13		HP or Hmax is a constituent consisting of a constituent H’ and at most one sister called the specifier (or subject) of H. H’ is also notated and read H-bar (an H with one bar above it).
+sks13		H’ or H-bar consists of the head H and some sisters. These sisters
+sks13		HP can also consist of an HP and a sister constituent called an adjunct to H (or to HP).
+sks13		Adjuncts, complements and specifiers are themselves phrasal constituents.
+sks13		Books would please me
+sks13		Beavers build dams
+sks13		John will see you
+sks13		John thinks that Mary left
+sks13		John thinks Mary left
+sks13		John whispered that Mary left
+sks13	*	John whispered Mary left
+sks13		some Vs (like think) select either a CP or a TP
+sks13		verbs select CPs but sometimes allow the C to be silent (i.e. there is a silent C – call it silent that and note it that.)
+sks13		before  TP John left 
+sks13		after  TP John left 
+sks13		before  CP that  T P John left  
+sks13		after  CP that  T P John left  
+sks13		nadat after-that
+sks13		avant before que that
+sks13		Missing subjects in C, P, A, V, N
+sks13		Different subject options for DP and TP
+sks13		Different categories take different number of complements, kind of complements, and adjuncts:
+sks13		the V visit moves up to T, or
+sks13		the T affix -s moves down to V
+sks13		John will carefully study Russian
+sks13		John carefully studies Russian
+sks13	*	John studies carefully Russian
+sks13		she  Twill   use paints 
+sks13		I wonder if she will  use paints .
+sks13		Yes, she will / * yes, she / *yes, she will use
+sks13		she   V use  -ed T   paints
+sks13		I wonder if she used paints.
+sks13		Yes, she did / * yes, she. / *yes, she used
+sks13		does not always hold. English allows multiple auxiliary verbs to appear in the same clause – a modal, a form of have, and a form of be can all occur at once, as in
+sks13		John will have been eating cake
+sks13	*	Mary won’t have been eating cake, but John
+sks13		Mary won’t have been eating cake, but John will
+sks13		Mary won’t have been eating cake, but John will have
+sks13		Mary won’t have been eating cake, but John will have been
+sks13		John has (eaten/taken/hidden/stolen/shown/baked/left/advertised) the cake
+sks13		John is (eating/taking/hiding/stealing/showing/baking/leaving/advertising) the cake
+sks13		John will enthusiastically  V Phave been eating cake 
+sks13		John will have enthusiastically  V Pbeen eating cake 
+sks13		John will have been enthusiastically  V P eating cake 
+sks13	*	John will have been eating enthusiastically cake
+sks13		John will have been  V P eating cake  enthusiastically
+sks13	*	John studies carefully Russian
+sks13	*	John studied carefully Russian
+sks13		John has carefully studied Russian
+sks13		John had carefully studied Russian
+sks13		John is carefully studying Russian
+sks13		John was carefully studying Russian
+sks13		John will  V −tns  go  to school
+sks13		Will John  V −tns  go  to school?
+sks13		John has  V past part  gone  to school
+sks13		Has John  V past part  gone  to school?
+sks13		John is  V pres part  going  to school
+sks13		Is John  V pres part  going  to school?
+sks13		John goes to school
+sks13	*	Goes John to school?
+sks13		Does John go to school?
+sks13		Mary thinks  CP −q,+tns  that  Bill will come  
+sks13		Mary thinks  CP −q,+tns  that  Bill will come  
+sks13	*	Mary thinks  CP +q,+tns  whether  Bill will come  
+sks13	*	Mary thinks  CP −q,−tns  for  Bill to come  
+sks13	*	Mary wonders  CP −q,+tns  that  Bill will come  
+sks13	*	Mary wonders  CP −q,+tns  that  Bill will come  
+sks13		Mary wonders  CP +q,+tns  whether  Bill will come  
+sks13	*	Mary wonders  CP −q,−tns  for  Bill to come  
+sks13	*	?Mary prefers  CP −q,+tns  that  Bill will come  
+sks13	*	Mary prefers  CP −q,+tns  that  Bill will come  
+sks13	*	Mary prefers  CP +q,+tns  whether  Bill will come  
+sks13		Mary prefers  CP −q,−tns  for  Bill to come  
+sks13		I wonder has Mary worked for Microsoft
+sks13		I wonder whether Mary has worked for Microsoft
+sks13		I wonder whether Mary has worked for Microsoft
+sks13	*	I wonder whether has Mary worked for Microsoft
+sks13	*	I wonder has whether Mary worked for Microsoft
+sks13		Will John not go to school
+sks13		Should Mary not taste the soup
+sks13		Has Henri not studied for his exam
+sks13		Is Bill not sick
+sks13		Did Sue not pass her exam
+sks13		Won’t John go to school
+sks13		Shouldn’t Mary taste the soup
+sks13		Hasn’t Henri studied for his exam
+sks13		Isn’t Bill sick
+sks13		Didn’t Sue pass her exam
+sks13	*	Will not John go to school
+sks13	*	Should not Mary taste the soup
+sks13	*	Has not Henri studied for his exam
+sks13	*	Is not Bill sick
+sks13	*	Did not Sue pass her exam
+sks13		its category
+sks13		the kind of elements it selects
+sks13		its contribution to meaning etc..
+sks13		its phonological shape (i.e. how it is pronounced)
+sks13		its bound or free nature (also a phonological property)
+sks13		Locality: If a head selects an element, this element must be a sister to this head: Selection is local in the sense that it is restricted to operate under sisterhood.
+sks13		Binary branching: in any morphological tree structure, a mother node only has two daughters at most.
+sks13		Right hand head rule (RHHR): the head of a morphological constituent is (normally) the right daughter of this constituent.
+sks13		X-bar theory: The syntactic structure of a head X with 0 or more complements, 0 or 1 subjects, and 0 or more adjuncts is regular across categories.
+sks13	*	Sue put
+sks13	*	Bill elapsed
+sks13	*	Henri arrived Bill
+sks13	*	Sophie will theater
+sks13	*	Time said that Bill elapsed
+sks13	*	Mary wonders that John said if Bill left
+sks13	*	Henri told Sue in the drawer that Bill put socks
+sks13		the verb say requires an animate subject, and there is such a subject in the structure namely Bill. And the verb elapse requires a subject that talks about time, and there is such a subject in this sentence namely time. What goes wrong here is that the subject that say requires must be its subject in the structure. The subject that elapse requires must be its subject, not the subject of some other verb.
+sks13		wonder requires an if-clause as complement, and there is one, namely if Bill left. And say requires a that-clause as complement, and there is one, namely that John said if Bill left. Again we have the same problem: if a verb requires something of a complement, this complement must be realized in the structure as its own complement.
+sks13		tell wants a DP complement and a CP complement, while put wants a DP and a PP. This PP cannot occur as complement of tell instead.
+sks13		she will win the race
+sks13	*	her will the race
+sks13		John ’s book
+sks13	*	’s book
+sks13	*	John D book (if D is different from ’s)
+sks13		Locality of Selection for Syntax (preliminary):
+sks13		If a head α selects β as complement, β is a complement of α.
+sks13		If a head α selects β as subject, β is the subject of α or the subject of the clause containing α
+sks13		If a head α selects β as an adjunct, β is the adjunct of α.
+sks13		John finished the cake and drank the lemonade
+sks13		Elmer finished the cake and John did too, finish the cake
+sks13		we need to provide two trees and
+sks13		we also need to explain the relation between these trees.
+sks13		John liked Mary
+sks13	*	John not liked Mary
+sks13	*	John liked not Mary
+sks13		John did not like Mary
+sks13		John will endorse the treaty, but Georges will not endorse the treaty
+sks13		Will George indeed not endorse the treaty?
+sks13	*	He will indeed not endorse the treaty
+sks13		He will indeed endorse the treaty
+sks13		He will not endorse the treaty; and indeed
+sks13		John thinks that Bill left
+sks13	*	John thinks for Bill to leave if: C +tense,+wh , selects TP +tense 
+sks13		John asked whether Bill left
+sks13		John was wondering whether to leave (or not)
+sks13		these three big books
+sks13	*	these big three books
+sks13	*	Mary send, Mary send a book (to Bill), Mary send Bill a book,…
+sks13		Time elapse, *Bill elapse, *elapse a book, *elapse to Bill
+sks13	*	examine, Bill examine a book, *examine a book to Bill, *Sincerity examine a book
+sks13		We *put/*put a book/put a book on the table
+sks13		We think that/*for/*if TP
+sks13		We wonder whether/if/*that TP
+sks13		Mary sent a book to Bill
+sks13		Mary sent Bill a book
+sks13		Mary examined a book
+sks13	*	Mary examined a book to Bill,
+sks13		
+sks13		John came in.
+sks13		Then, John left
+sks13		He took his umbrella
+sks13		He hurt himself with it when he tried to open it.
+sks13		The idiot can’t even open an umbrella!
+sks13	?	John took John’s umbrella
+sks13	?	* John hurt John with John’s umbrella when John tried to open
+sks13		John can’t even open an umbrella!
+sks13		John said he was sick
+sks13		The TA who graded him says that John did really well
+sks13		Johnj said hej was sick
+sks13		The TA k who graded himj says that Johnj did really well
+sks13	*	Himself should decide soon
+sks13	*	Mary wrote a letter to himself last year
+sks13		He should decide soon
+sks13		Mary wrote a letter to him last year
+sks13	*	Johnj hurt himj
+sks13	*	Johnj says Maryk likes himselfj
+sks13	*	Herselfj likes Maryj ’s motherk
+sks13	*	Hej heard that  the idiot j should win.
+sks13	*	Hej saw Johnj
+sks13		Mary i likes  herself i
+sks13		Our rabbit and the neighbor’s cat i like  each other i
+sks13		The boys i fought with  each other i
+sks13	?	* Mary likes Mary
+sks13		Each of our rabbit and the neighbor’s cat likes the other
+sks13		Each of the boys fought with (some of) the other boys.
+sks13		I saw Johnj . * Billi likes himselfj .
+sks13		I saw Johnj . * Himselfj laughs.
+sks13		A reflexive must be coreferential with another DP in the same sentence, its antecedent.
+sks13		the boyi likes himselfi
+sks13	*	the boyi likes herselfi
+sks13	*	the boyi likes themselvesi
+sks13		the girlsi likes themselvesi
+sks13	*	the girlsi likes herselfi
+sks13	*	the girlsi likes yourselvesi
+sks13		A reflexive must agree with its antecedent in person, number and gender (not: case)
+sks13	*	Himselfi likes Johni
+sks13	*	Johni’s mother likes himselfi
+sks13		
+sks13		
+sks13		Node X c-commands node Y if a sister of X dominates Y.
+sks13		The DP antecedent of a reflexive must c-command the reflexive.
+sks13		and (20). These explain the following data:
+sks13		Johni believes that Billj saw himselfj
+sks13	*	Johni believes that Billj saw himselfk
+sks13		is OK because the reflexive has the c-commanding antecedent DP Bill, with which it agrees in person, number and gender. (22) is deviant because the indices indicate that we are trying to interpret the reflexive as having no antecedent in the sentence at all – and that is ruled out by (14). There is however a third possible way of interpreting this sentence, which we can make more transparent by including indices:
+sks13	*	Johni believes that Billj saw himselfi
+sks13		Johni believes that Billj saw himselfj
+sks13	*	Johni believes that Billj saw himselfk
+sks13	*	Johni believes that Billj saw himselfi
+sks13		The reflexive and its antecedent must be in all the same TPs.
+sks13		Mary revealed Johni to himselfi
+sks13	*	Mary revealed himselfi to Johni
+sks13		Maryi’s pictures of herselfi surprised Bill.
+sks13		I noticed Johni’s excessive appreciation of himselfi.
+sks13		Maryi noticed Johnj ’s excessive appreciation of himselfj
+sks13	*	Maryj noticed Johnj ’s excessive appreciation of herselfi
+sks13	*	Maryi noticed that John excessively appreciates herselfi
+sks13		The reflexive and its antecedent must be in all the same TPs and all the same DPs.
+sks13		The reflexive and its antecedent must be in all the same XPs with subjects.
+sks13		Johnk loved  the new pictures of himselfk 
+sks13		I showed Maryk  several portraits of herselfk 
+sks13		A reflexive must be coreferential with another DP in the same sentence, its antecedent.
+sks13		A reflexive must agree with its antecedent in person, number and gender.
+sks13		The DP antecedent of a reflexive must c-command the reflexive.
+sks13		The reflexive and its antecedent must be in all the same XPs which have a subject
+sks13		(=26) * Johni believes that Billj saw himselfi
+sks13		Johni believes that Billj saw himselfj
+sks13		(=33) * Maryi noticed that John excessively appreciates herselfi
+sks13		Maryi noticed that Johnj excessively appreciates himselfj
+sks13		Maryi appreciates only   John  and herselfi 
+sks13	?	? Maryi appreciates  Johnj and himselfj  
+sks13		Maryi really appreciates and constantly praises herselfi and Sue knows it.
+sks13	*	Maryi really appreciates and constantly praises herselfj and
+sks13	*	The man who reads Shakespearei appreciates himselfi
+sks13		The man who reads Shakespeare i appreciates himselfi
+sks13	*	The biographer of  Elizabeth Bishop i appreciates herselfi
+sks13		The biographer of  Elizabeth Bishop i j appreciates himselfi
+sks13		Our rabbit and the neighbor’s cat i like  each other I
+sks13		Our rabbit x and the neighbor’s cat y  are such that  x likes y and y likes x 
+sks13		Johni heard theirj criticism of each otherj .
+sks13		Johni heard theirj criticism of themselvesj .
+sks13	*	Theyi heard Johnj ’s criticism of each otheri.
+sks13	*	Theyi heard Johnj ’s criticism of themselvesi.
+sks13	*	Johnj heard that theyi criticized each otheri
+sks13	*	Johnj heard that theyi criticized themselvesi
+sks13	*	Theyi heard that Johnj criticized each otheri.
+sks13		Johni likes himselfi
+sks13		The studentsk boys are proud of themselvesk
+sks13		Everyonei likes himselfi
+sks13		No spyk betrayed himselfk
+sks13		Everyone likes everyone # wrong meaning!!
+sks13		No spy betrayed no spy # wrong meaning!!
+sks13		For every person x, x likes x
+sks13		For no spy x, x betrayed x
+sks13		of “referring-to-the-same-objects-as” between the reflexive and its antecedent.
+sks13		A DP is bound just in case it is interpreted as coreferential with a c-commanding DP.
+sks13		The domain of a DP is the part of the structure that is contained in all the same XPs with a subject: the smallest XP with a subject that contains the DP.
+sks13		an anaphor must have an antecedent, and
+sks13		the antecedent must be c-commanding, and
+sks13		the antecedent must be in the domain of the anaphor, in the sense that it is in all the same XPs with a subject as the anaphor.
+sks13		Ii heard Johnj ’s criticism of himselfj
+sks13	*	Ii heard Johnj ’s criticism of myselfi
+sks13		Johnj heard that Ii criticized myselfi
+sks13	*	Ii heard that Johnj criticized myselfi
+sks13		Maryi likes herselfi
+sks13	*	Maryi likes heri
+sks13		Our rabbit and the neighbor’s cat i like  each other i
+sks13	*	 Our rabbit and the neighbor’s cat i like themi
+sks13		The boys i fought with  each other i
+sks13	*	 The boys i fought with themi
+sks13		I saw Johnj . * Billi likes himselfj .
+sks13		I saw Johnj . Billi likes himj .
+sks13		I saw Johnj . * Himselfj laughs.
+sks13		I saw Johnj . * Hej laughs.
+sks13		the boyi likes himselfi
+sks13	*	the boyi likes himi
+sks13		the girlsi likes themselvesi
+sks13		the girlsi likes themi
+sks13	*	Johni’s mother likes himselfi
+sks13		Johni’s mother likes himi
+sks13	*	Johni believes that Billj saw himj
+sks13		Johni believes that Billj saw himselfj
+sks13		Johni believes that Billj saw himi
+sks13	*	Johni believes that Billj saw himselfi
+sks13		Theyj like theirj books
+sks13		They like  each other j ’s books
+sks13		Maryi thinks that shei is smart
+sks13	?	Mary thinks that Mary is smart
+sks13		Mary is someone x, such that x thinks x is smart
+sks13		Everyonei thinks hei is smart
+sks13		# Everyone thinks everyone is smart
+sks13		For every person x, x thinks x is smart
+sks13		Whoi in this class thinks hei is smart
+sks13		# Who in this class thinks who in this class is smart
+sks13		for which person x in this class is it the case that, x thinks that x is smart
+sks13		Billj ’s mother saw himj
+sks13	*	?Noonej ’s mother saw himj
+sks13		The mayor of Johnj ’s hometown wrote to himj
+sks13	*	The mayor of everyonej ’s hometown wrote to himj
+sks13		I showed your description of Johnj to himj
+sks13	*	I showed your description of  every boy j to himj
+sks13		If a pronoun has a quantified expression as antecedent, the pronoun must be must c-commanded by this antecedent.
+sks13		Johnj came in. Hej was wearing a hat
+sks13		Nobodyj came in. *Hej was wearing a hat
+sks13	*	Johnj hurt himj
+sks13	*	Johnj says Maryk likes himselfj
+sks13	*	Herselfj likes Maryj ’s motherk
+sks13	*	Hej heard that  the idiot j should win.
+sks13	*	Hej saw Johnj
+sks13	*	Hei likes Johni
+sks13	*	Hei likes  the student i
+sks13	*	Hei knows that Maryj likes Johni
+sks13	*	Hei knows that Maryj likes  the student i
+sks13	*	Hei said that Peteri took the car
+sks13		After you spoke to himi, Peteri took the car
+sks13		The builder of hisi house visited Peteri
+sks13	*	Hei said that Johni would leave
+sks13	*	Hei said that Mary thought that you talked to the person who saw Peteri
+sks13	*	? Johni said that Johni would leave
+sks13	*	The studenti said that Mary thought that you talked to the person who saw Peteri
+sks13		Thati is  a bird i
+sks13		Thati’s  the truth I
+sks13		Hej is Johnj
+sks13		Bob Dylan i is  Robert Zimmerman i
+sks13		Ice-T i and  Tracy Marrow i are  the same person i
+sks13		John saw him. John saw the guy in the white tuxedo, since everyone did!
+sks13		Johni saw himi. Johni saw  the guy in the white tuxedo i
+sks13		Ii like Maryj and shej likes mei
+sks13	*	Ii like Maryj and shej does too.
+sks13	*	Ii like Maryj and shej does  like Maryj   too
+sks13		Jean
+sks13		Jean
+sks13		Jean
+sks13		cOOni
+sks13		cOOni
+sks13	*	khˇawi he chOaâOp likes cOOni
+sks13	*	khˇawi he khít thinks wâa that cOOni
+sks13		Johni likes himselfi
+sks13	*	Johni likes Johni
+sks13	*	* Hei likes Johni
+sks13		A DP is bound just in case it is interpreted as coreferential with a ccommanding
+sks13		The domain of a DP is the part of the structure that is contained in all the same XPs with a subject: the smallest XP with a subject that contains the DP.
+sks13		Locality of Selection (LoS), preliminary version:
+sks13		If a head α selects β as complement, β is a complement of α.
+sks13		If a head α selects β as subject, β is the subject of α or the subject of the clause containing α
+sks13		If a head α selects β as an adjunct, β is the adjunct of α.
+sks13		Each phrasal constituent has a head
+sks13		This head is always a morpheme or a word (a D or N or V or…)
+sks13		The head is unique
+sks13		Every morpheme is the head of some constituent
+sks13		In general, no non-constituent has a unique head
+sks13		The largest constituent with head H is notated HP or Hmax and is called the maximal or phrasal projection of H.
+sks13		HP or Hmax is a constituent consisting of a constituent H’ and at most one sister called the specifier (or subject) of H. H’ is also notated and read H-bar (an H with one bar above it).
+sks13		H’ or H-bar consists of the head H and some sisters. These sisters
+sks13		HP can also consist of an HP and a sister constituent called an adjunct to H (or to HP).
+sks13		Adjuncts, complements and specifiers are themselves phrasal constituents.
+sks13		Mary prefers her icecream in a cone
+sks13		She considers John proud of his work
+sks13		Henry found Bill sad
+sks13		They saw Bill leave
+sks13		Mary prefers that her icecream is in a cone
+sks13	?	She considers that John is proud of his work
+sks13		Henry found that Bill is sad
+sks13		Henry saw that Bill left
+sks13		Mary prefers her icecream in a cone
+sks13		She considers John proud of his work
+sks13		Henry found Bill sad
+sks13		They saw Bill leave
+sks13		What Mary prefers is her icecream in a cone
+sks13	*	What she considers is John proud of his work
+sks13	*	What Henry found is Bill sad
+sks13	*	What they saw is Bill leave
+sks13		What does Mary prefer? (Answer: her icecream in a cone)
+sks13		What does she consider? (*Answer: John proud of his work)
+sks13		What did Henry find? (?Answer: Bill sad)
+sks13		What did they see? (?Answer: Bill leave)
+sks13		her icecream in a cone
+sks13		John proud of his work
+sks13		Bill sad
+sks13		Bill leave
+sks13		could be something like the following. (We show the complete trees for practice, but notice that the only new thing in these trees is the subject in
+sks13		prefer, V, selecting DP-Experiencer, PP-Theme
+sks13		consider, V, selecting DP-Experiencer, AP-Theme
+sks13		find, V, selecting DP-Experiencer, AP-Theme
+sks13		see, V, selecting DP-Experiencer, VP-Theme
+sks13		in, V, selecting DP-Theme, DP-Location
+sks13		proud, V, DP-Experiencer, DP-Theme
+sks13		sad, V, DP-Experiencer
+sks13		leave, V, DP-Agent
+sks13	*	Johnj heard  VP Mary describe himselfj  
+sks13		Johnj heard  VP Mary describe himj  
+sks13		Johnj heard  VP Mary describe herselfj  
+sks13	*	Johnj heard  VP Mary describe herj  
+sks13	*	Maryj considers John proud of herselfj
+sks13		Maryj considers John proud of herj
+sks13		Maryj considers John proud of himselfj
+sks13	*	Maryj considers John proud of himj
+sks13		Johni considers himselfi proud of Mary.
+sks13		Johni believes himselfi to be proud of Mary.
+sks13		They like each other’s books
+sks13		The pictures of Bill  T P she  V P put on your desk  
+sks13		Which pictures of Bill did  T P she  V P put on your desk  
+sks13		T P Time  V P seems  T P to  V P elapse slowly in the tropics    
+sks13		T P Susan  V P wanted  T P to  V P sleep    
+sks13		She put the pictures of Bill on your desk
+sks13		The pictures of Bill, she put on your desk
+sks13	*	The picture of Bill she slept
+sks13	*	She slept the picture of Bill
+sks13		, and this could help us understand LoS, since in the second sentence there is no locality problem. The simple idea is this: to solve the locality problem we postulate that the first sentence is the same as the second except that the object has been moved to the front of the clause, and we impose LoS only on the underlying phrase, before the object has moved.
+sks13		Mary thinks  CP that  the picture of Bill   T P she put on your desk   in which the topicalized phrase (underlined) is sandwiched between the C that and the TP boundary. And it is also consistent with the fact that the
+sks13		Mary thinks that  the picture of Bill, she put on your desk  and  the sandwich, she ate 
+sks13		You put  which picture of Bill  on his desk?
+sks13		Which picture of Bill  did you put on his desk?
+sks13		selecting a verb ii. asking what entities the verb relates iii. finding what strings of morphemes correspond to these entities
+sks13		Time seems to elapse slowly in the tropics
+sks13	*	Mary seems to elapse slowly in the tropics
+sks13		How many strings did you say she had to pull in order to do that?
+sks13		How much care do you think he would be taking of his patients under those circumstances?
+sks13		How much headway is he likely to make
+sks13		Who left Bill
+sks13	*	Whom left Bill
+sks13		Who did Bill leave
+sks13		Whom did Bill leave
+sks13		There were 3 firemen available
+sks13		There is no largest prime number
+sks13		Is there anything to do today?
+sks13		There are two main characters in the novel
+sks13		There are 3 firemen available
+sks13	?	Suddenly, there arrived two strange men
+sks13	*	There stabbed an animal
+sks13	*	There ran many people
+sks13	*	Mary judged there (object of V)
+sks13	*	You should sit before there (object of P)
+sks13	*	I had a realization of there (object of N)
+sks13		# I ate there (object of V, OK only with locative there)
+sks13		Existential there can only occur as subject of certain verbs
+sks13		There were seven people
+sks13		There were several doctors available
+sks13		Rodney was eating some squid, wasn’t he?
+sks13		There is a man ready to jump from the roof, isn’t there?
+sks13		Time seems to elapse slowly in the tropics
+sks13	*	Time seems to swim in the tropics
+sks13		Sharks seem to swim slowly in the tropics
+sks13		the cat seems to be out of the bag
+sks13		the shit seems to have hit the fan
+sks13		There is a nurse available
+sks13	*	There run many people
+sks13	*	There stabbed an animal
+sks13	?	There arrived many people
+sks13		There seems to be a nurse available
+sks13	*	There seems to stab an animal
+sks13	*	There seems to run many people to the station
+sks13	?	There seemed to arrive many people
+sks13		it seems that John left
+sks13		it seems that time elapses slowly in the tropics
+sks13		Time seems to elapse slowly in the tropics the main clause subject is selected by the infinitival verb, and the main clause subject is not selected by the main verb. To resolve the conflict between these conclusions and our ideas about locality of selection, we conclude that the DP time originates in the embedded clause. The simplest idea is that it originates as subject of the VP. Then the structure of this sentence before movement looks like this:
+sks13		Time seems to elapse slowly in the tropics is well formed if and only the following is well formed too.
+sks13		Time elapses slowly in the tropics
+sks13		Several people seem sick
+sks13		Several people seem  AP several people sick 
+sks13		Mary seems (to Bill)  CP Mary to be sick 
+sks13		Mary seemed  AP Mary sick  (to Bill)
+sks13		it seems (to Bill)  CP that Mary is sick 
+sks13		John considers  AP several people sick 
+sks13		There are  AP several people sick 
+sks13		Several people seem  AP several people sick 
+sks13		Several people are sick
+sks13		The shit will  V P hit the fan 
+sks13		Locality of Selection (LoS), preliminary version:
+sks13		If a head α selects β as complement, β is a complement of α.
+sks13		If a head α selects β as subject, β is the subject of α or the subject of the clause containing α
+sks13		If a head α selects β as an adjunct, β is the adjunct of α.
+sks13		Locality of Selection (LoS), final version: If a head α selects β, β appears as the complement, subject, or adjunct of α.
+sks13		Billk is  tk sick 
+sks13		The shit k will  tk hit the fan 
+sks13		The girl in the red coat k will  V P tk  put a picture of Bill on your desk   in two seconds
+sks13		Will John leave
+sks13		Will  T P John  T will  V P John leave   
+sks13		T P Will  V P John leave  
+sks13		DP all  DP the children  
+sks13		underlying structure: will  V P  DP all  DP the children    leave   whole DP moved:
+sks13		Several men are sick underlying structure: pres be  AP several men sick  raising to subject, affix hopping⇒surface structure: several men be+pres be  AP several mean sick  
+sks13		There are several men sick underlying structure: pres be  AP several men sick  there insertion, affix hopping⇒surface structure:
+sks13		Susan hopes to sleep
+sks13		Susanj hopes that shej will sleep
+sks13	*	Susan hopes to elapse
+sks13		Susan hopes that time will elapse
+sks13	*	Time hopes to elapse
+sks13		Susan hopes  Susan to sleep 
+sks13		Susanj hopes  that shej will sleep 
+sks13		Everyone hopes  everyone to sleep 
+sks13		Everyone hopes  him to sleep 
+sks13		Everyone hopes to sleep
+sks13		Everyone hopes  that everyone will sleep 
+sks13		Everyone hopes  that he will sleep 
+sks13		Susanj hopes  herj to sleep 
+sks13		(without the coindexing) can mean that Susan hopes that some other female than her will sleep. This option does not exist for (31).
+sks13		Only Churchill remembered  ?? giving the Blood, Sweat and Tears speech 
+sks13		Only Churchill remembered  Churchill giving the Blood, Sweat and Tears speech 
+sks13		Only Churchill remembered  his giving the Blood, Sweat and Tears speech 
+sks13		Only Churchill remembered  himself giving the Blood, Sweat and
+sks13		Susan hopes  herself to sleep 
+sks13		for  John to hurt his friends   is stupid
+sks13		  to hurt his friends   is stupid
+sks13		for  John to hurt himself   is stupid
+sks13		  to hurt oneself   is stupid
+sks13		for  John to hurt oneself   is stupid
+sks13		 PRO to hurt oneself   is stupid
+sks13		for  John to hurt him   is stupid
+sks13		 to hurt him   is stupid
+sks13		John promised Bill to leave
+sks13		John promised Bill that he(John) would leave
+sks13		Bill is a complement of the verb promise ii. the infinitival clause is also a complement of the verb promise iii. this infinitive has a missing subject – a PRO – interpreted as coreferential with the subject John, so we are dealing with a subject control verb.
+sks13		Johnj promised Mary  T P PROj to cut the grass 
+sks13		John promise Mary to control himself
+sks13	*	John promised Mary to control herself
+sks13		Johnj promise Mary  T P PROj to control himself  
+sks13	*	Johnj promised Mary  T P PROj to shave herself  
+sks13		John promise Mary  T P to shave himself  
+sks13	*	John promised Mary  T P to control herself  
+sks13		John seems to sleep all day
+sks13		John hopes to sleep
+sks13		John tried to sleep
+sks13	*	John believes to have slept
+sks13		John believes Bill to have slept
+sks13	*	John believes for Bill to have slept
+sks13		John believes that Bill has slept
+sks13	*	John believes Bill that Mary has slept
+sks13	*	John convinced to sleep
+sks13		John convinced Bill to sleep
+sks13	*	John convinced Bill for Mary to sleep
+sks13	*	John convinced that Bill has slept
+sks13	*	it convinced Bill that Mary should sleep
+sks13		John convinced Bill that Mary should sleep
+sks13		John believes Bill to have slept
+sks13		John convinced Bill to sleep
+sks13		John believes it to be obvious that Bill left
+sks13		John believes it to be raining
+sks13		John believes there to be several firemen available
+sks13	*	John convinced it to be obvious that Bill left
+sks13	*	John convinced it to be raining
+sks13	*	John convinced there to be several firemen available
+sks13		Bill cooked the rice
+sks13		the rice was cooked by Bill
+sks13		Bill visited Mary
+sks13		Mary was visited by Bill
+sks13		John believes Bill to have cooked the rice
+sks13		John believes the rice to have been cooked by Bill
+sks13		John believes Bill to have visited Mary
+sks13		John believes Mary to have been visited by Bill
+sks13		John convinced Bill to cook the rice
+sks13	*	John convinced the rice to be cooked by Bill
+sks13		John convinced Bill to visit Mary
+sks13		# John convinced Mary to be visited by Bill (#=ok but wrong meaning)
+sks13		John believes  CP  Bill to have slept   (inf-CP complement)
+sks13		John convinced Billk  CP  PROk to sleep   (inf-CP complement)
+sks13		John believes  CP that  Bill slept   (+tns CP complement)
+sks13		John convinced Bill  CP that  Mary should sleep   (+tns CP complement)
+sks13		(PRO subject disallowed)
+sks13		(DP object of convince is required) *John convinced to sleep
+sks13		Each phrasal constituent has a head ii. This head is always a morpheme or a word (a D or N or V or…) iii. The head is unique iv. Every morpheme is the head of some constituent
+sks13		In general, no non-constituent has a unique head vi. The largest constituent with head H is notated HP or Hmax and is called the maximal or phrasal projection of H. vii. HP or Hmax is a constituent consisting of a constituent H’ and at most one sister called the specifier (or subject) of H. H’ is also notated and read H-bar (an H with one bar above it). viii. H’ or H-bar consists of the head H and some sisters. These sisters (if any) are called the complements of H. ix. HP can also consist of an HP and a sister constituent called an adjunct to H (or to HP).
+sks13		Adjuncts, complements and specifiers are themselves phrasal constituents.
+sks13		I sent money
+sks13		I sent Mary money
+sks13		I sent money  to Mary 
+sks13	*	I sent  Bill  money  to Mary   to Sam 
+sks13		I worked on Sunday in the city on that project without a break.
+sks13		Semantic considerations: These should probably be mentioned first, since they are often easy to apply and usually lead to conclusions that are supported by the structural tests below. The semantic proposal is simply this: the subject and complements name the essential, distinctive parts of the action or event named by the verb. So a “putting” involves essentially an agent (the subject), a theme (the thing being put) and a location. Each putting occurs at a time and place too, but this is true of any action and so these are not distinctive to puttings.
+sks13		Iteration: The number of complements is strictly limited by the selection properties of lexical items, but there can be any number of adjuncts. That is, adjuncts can be “iterated” or “repeated.”
+sks13		Optionality: Complements are sometimes required, sometimes optional.
+sks13		I praised  Mary  (obligatory complement)
+sks13	?	* I praised
+sks13		The moon glows  in the darkness  (optional adjunct)
+sks13		The moon glows
+sks13		adjuncts can modify “do so” VPs:
+sks13		I sang a song with Mary while you did so  with Bill . (adjunct)
+sks13	*	I saw Bill while you did so  Mary . (complement)
+sks13		unlike complements, adjuncts are OK in “do what” pseudoclefts:
+sks13		What Mary did  with Bill  was sing a song. (adjunct PP)
+sks13	*	What Mary did  Bill  was give a book. (complement NP)
+sks13		adjuncts can modify coordinated VPs: (not so useful as a test because of right node raising complements)
+sks13		adjuncts can be left behind in VP-preposing:
+sks13	*	Shei likes Maryi
+sks13	*	Theyi like themi
+sks13		Theyi like each otheri
+sks13		Theyi like themselvesi
+sks13		Node X c-commands node Y if a sister of X dominates Y.
+sks13		A DP is bound just in case it is interpreted as coreferential with a c-commanding DP.
+sks13		The domain of a DP is the part of the structure that is contained in all the same XPs with a subject: the smallest XP with a subject that contains the DP.
+sks13		Draw the morphological structure of the word postmodernism, and provide lexical entries for each of its morphemes (you don’t need to include semantic info in the lexical entries).
+sks13		Draw the underlying syntactic structure for the sentence
+sks13		In the structure of (21), is that he could leave an adjunct or a complement?
+sks13		Draw the underlying syntactic structure for the sentence
+sks13		In (23), is before she met him an adjunct or a complement?
+sks13		Consider the following contrast:
+sks13		Johnj came in. Hej was wearing a hat
+sks13		Every studentj came in. *Hej was wearing a hat
+sks13		Draw the morphological structure of the word postmodernism, and provide lexical entries for each of its morphemes. (You don’t need to include semantic info in the lexical entries. We had this exercise earlier but did not solve it).
+sks13		Draw the underlying syntactic structure for the sentence Mary told every studenti that hei could leave and explain whether the indicated interpretation of he is allowed by binding theory.
+sks13		In the structure of (21), is that he could leave an adjunct or a complement? a complement
+sks13		Draw the underlying syntactic structure for the sentence Mary graded every studenti before she met himi and explain whether the indicated interpretation of he is allowed by binding theory.
+sks13		In the structure of (23), is before she met him an adjunct or a complement? an adjunct
+sks13		The following facts were mentioned on page 188:
+sks13		Johnj came in. Hej was wearing a hat
+sks13		Every studentj came in. *Hej was wearing a hat
+sks13		, the pronoun him has a quantified expression every student as antecedent but it is not c-commanded by that antecedent.

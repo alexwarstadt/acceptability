@@ -1,0 +1,106 @@
+clc95	1		I served leek soup to my guests.
+clc95	1		I served my guests.
+clc95	0	*	She said she had spoken to everybody, but he wasn't sure who.
+clc95	1		The newspaper has reported that they are about to appoint someone, but I can't remember who they are about to appoint.
+clc95	1		I never know which papers Sandy has read, but I usually know how many.
+clc95	1		Sandy had read how many papers?!
+clc95	1		Which book did each author recommend?
+clc95	1		His or her least known work.
+clc95	1		John likes some students, but I don't know who.
+clc95	0	*	Joan said she talked to the students, but Fred couldn't figure out who.
+clc95	0	*	It has been determined that somebody will be appointed; it's just not clear yet who.
+clc95	1		Sandy is very anxious to see if the students will be able to solve the homework problem in a particular way, but she won't tell us in which way.
+clc95	0	*	In which way is Clinton anxious to find out which budget dilemmas Panetta would be willing to solve?
+clc95	0	*	What did you leave before they started playing?
+clc95	1		The administration has issued a statement that it is willing to meet a student group.
+clc95	0	*	Agnes wondered how John could eat but it's not clear what.
+c-05	1		That professor is feared by all students.
+c-05	1		Ted was bitten by the spider.
+c-05	0	*	John was spoken by Mary to.
+c-05	0	*	John was seen the book.
+c-05	1		The book was written.
+c-05	0	*	John was spoke by Mary to.
+c-05	1		Books were taken from each student by the other.
+c-05	0	*	Books were taken from each student and given to Mary by the other.
+j_71	1		Bob tried to wash himself, and Mary to read the funnies.
+j_71	0	*	Millie will send the President an obscene telegram, and Paul, the Secretary a rude letter.
+j_71	0	*	Bill didn't eat the peaches, nor Harry.
+j_71	1		Whenever Russia has made a major political blunder, the U.S. has too.
+j_71	0	*	As a teacher, you have to deal simultaneously with the administration's pressure on you to succeed, and the children's to be a nice guy.
+j_71	0	*	Because Steve's of a spider's eye had been stolen, I borrowed Fred's diagram of a snake's fang.
+j_71	1		Tom's dog with one eye attacked Fred's.
+s_97	1	 	Who always drinks milk?
+s_97	0	*	I wonder what to be a clown on the cover of.
+s_97	0	*	Bother you that Kim left!
+s_97	0	*	A student who to talk to us just walked in.
+s_97	1		I believe there to be no way out.
+s_97	0	*	I wonder who for us to trust.
+s_97	1		I thought that you were sick.
+s_97	0	*	I dislike the people in who we placed our trust.
+s_97	0	*	A letter was received Jones would be upset by.
+s_97	0	*	Which boy's, mother, did you meet who you liked?
+s_97	1		Which boy's, mother, did you meet?
+s_97	0	*	Who for Sandy to talk to is still enrolled in the class?
+swb04	1		We like ourselves.
+swb04	0	*	Ourselves like ourselves.
+swb04	0	*	We think that Leslie likes ourselves.
+swb04	0	*	We appeared to them to vote for themselves.
+swb04	1		These stockings will run.
+swb04	1		Max is on the phone now.
+swb04	1		I'm creating a committee. Kim – you're in charge.
+swb04	1		Lights go out at ten. There will be no talking afterwards.
+swb04	1		They found the book on the atom.
+swb04	0	*	Sentences some go on and on and on and on.
+swb04	1		This is my favorite.
+swb04	1		Some people consider noisy dogs in my neighborhood dangerous.
+swb04	1		Some people consider noisy dogs dangerous.
+swb04	1		Some people consider dogs in my neighborhood dangerous.
+swb04	1		Most elections are quickly forgotten, but the election of 2000, everyone will remember for a long time.
+swb04	0	*	The teacher disappeared the problem.
+swb04	0	*	Birds sings.
+swb04	0	*	Terry delighted my pain.
+swb04	0	*	I was already aware of fact.
+swb04	1		How many feature structures categories can label the first daughter?
+swb04	1		The child put the toy on the table.
+swb04	1		The jury believed the defendant lied.
+swb04	1		A magazine about crime appeared on the newsstands.
+swb04	1		The storm arrived after the picnic.
+swb04	1		A chair was broken.
+swb04	1		They preferred them arrested.
+swb04	1		They like us.
+swb04	0	*	Us like them.
+swb04	1		The person responsible confessed.
+swb04	0	*	The cat slept soundly and furry.
+swb04	1		Protect yourself!
+swb04	1		The police sprayed the protesters with water.
+swb04	1		The students drove cars.
+swb04	1		Lou forgot the umbrella in the closet.
+swb04	1		Lou hoped the umbrella was broken.
+swb04	1		Lou put the umbrella in the closet.
+swb04	1		The artist drew the child with a pencil.
+swb04	0	*	The cat was bitten the mouse.
+swb04	0	*	Chris was handed Sandy a note by Pat.
+swb04	1		Dumb ideas are put in children's heads by TV.
+swb04	1		Dumb ideas are put in children's heads.
+swb04	1		Many people were fond of Pat.
+swb04	1		Tabs are kept on suspected drug dealers by the FBI.
+swb04	1		The bucket was kicked by Pat.
+w_80	0	*	I presented John with it dead.
+w_80	1		how mad was Bill made?
+w_80	1		John left singing.
+w_80	1		John promised Bill to leave.
+w_80	0	*	John was promised by Bill to leave.
+w_80	1		there is nothing to do.
+w_80	1		I would prefer to leave.
+w_80	1		I would prefer for John to leave.
+w_80	0	*	the election of John president surprised me.
+w_80	1		the attempt by John to leave surprised me.
+w_80	1		John left orders to follow Pete.
+w_80	0	*	John believes it sincerely that Bill is here.
+w_80	1		The problem we are discussing is George.
+w_80	1		John grudgingly accepted judgments of his incompetence as an auto mechanic.
+w_80	1		It was to John that I gave the book.
+w_80	0	*	I presented Bill with it to read.
+w_80	1		John made Bill master of himself.
+w_80	1		John considers Bill silly.
+w_80	1		John considers Bill to be silly.

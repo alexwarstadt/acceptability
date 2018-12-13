@@ -13,12 +13,13 @@ from functools import reduce
 
 # Various useful functions for processing datasets
 
-def tokenize(start_corpus_path):
-    out_path = start_corpus_path[:-4] + "-tokenized.txt"
+def tokenize(start_corpus_path, out_path=None):
+    if out_path is None:
+        out_path = start_corpus_path[:-4] + "-tokenized.txt"
     if os.path.isfile(out_path):
         print("tokenized file %s already exists" % out_path)
     else:
-        tokenized_corpus = open(out_path, "x")
+        tokenized_corpus = open(out_path, "w")
         print("tokenizing ", start_corpus_path)
         for line in open(start_corpus_path):
             tokens = nltk.word_tokenize(line)
@@ -26,10 +27,12 @@ def tokenize(start_corpus_path):
             tokenized_corpus.write(token_line + "\n")
         tokenized_corpus.close()
 
-def tokenize_with_header(start_corpus_path):
-    out_path = start_corpus_path[:-4] + "-tokenized.txt"
+def tokenize_with_header(start_corpus_path, out_path=None):
+    if out_path is None:
+        out_path = start_corpus_path[:-4] + "-tokenized.tsv"
     tokenized_corpus = open(out_path, "w")
-    print("tokenizing ", start_corpus_path)
+    print "tokenizing ", start_corpus_path
+    print "out: ", out_path
     for line in open(start_corpus_path):
         vals = line.split("\t")
         tokens = [x.strip().lower() for x in nltk.word_tokenize(vals[3])]
@@ -218,9 +221,9 @@ def embeddings_vocab(path, size, out):
 
 
 
-def tokenize_corpus_with_prefix():
-    out = open("../acceptability_corpus/test_tokenized", "w")
-    for line in open('../acceptability_corpus/raw/test.tsv'):
+def tokenize_corpus_with_prefix(input_path, output_path):
+    out = open(output_path, "w")
+    for line in open(input_path):
         vals = line.split("\t")
         line = vals[3]
         line = line.lower()
@@ -400,14 +403,64 @@ def source_stats(file):
 
 
 
+def de_dup(file, out):
+    out = open(out, "w")
+    lines = [x for x in open(file)]
+    new_lines = []
+    for l in lines:
+        if l not in new_lines:
+            new_lines.append(l)
+    for line in new_lines:
+        out.write(line)
+    out.close()
+
+
+
 
 #=============================== MAIN ===============================
 
 workspace = "/Users/alexwarstadt/Workspace/"
 
-tokenize_with_header(workspace + "acceptability/acceptability_corpus/raw/fake_test.tsv")
+# split(workspace + "data/real_fake/dev.tsv", workspace + "data/real_fake/small", 0.989, 0.01, 0.001)
 
 
+# split("/Users/alexwarstadt/Workspace/acceptability/acceptability_corpus/splits/split_1/in_domain_1.tsv",
+#       "/Users/alexwarstadt/Workspace/acceptability/acceptability_corpus/splits/split_1/in_domain_1",
+#       0.54, 0.23, 0.23)
+#
+# split("/Users/alexwarstadt/Workspace/acceptability/acceptability_corpus/splits/split_1/out_domain_1.tsv",
+#       "/Users/alexwarstadt/Workspace/acceptability/acceptability_corpus/splits/split_1/out_domain_1",
+#       0, 0.5, 0.5)
+
+
+
+split("/Users/alexwarstadt/Workspace/acceptability/acceptability_corpus/splits/split_2/in_domain_2.tsv",
+      "/Users/alexwarstadt/Workspace/acceptability/acceptability_corpus/splits/split_2/in_domain_2",
+      0.8, 0.1, 0.1)
+
+# split("/Users/alexwarstadt/Workspace/acceptability/acceptability_corpus/splits/split_2/out_domain_2.tsv",
+#       "/Users/alexwarstadt/Workspace/acceptability/acceptability_corpus/splits/split_2/out_domain_2",
+#       0, 0.5, 0.5)
+
+
+
+split("/Users/alexwarstadt/Workspace/acceptability/acceptability_corpus/splits/split_3/in_domain_3.tsv",
+      "/Users/alexwarstadt/Workspace/acceptability/acceptability_corpus/splits/split_3/in_domain_3",
+      0.8, 0.1, 0.1)
+#
+# split("/Users/alexwarstadt/Workspace/acceptability/acceptability_corpus/splits/split_3/out_domain_3.tsv",
+#       "/Users/alexwarstadt/Workspace/acceptability/acceptability_corpus/splits/split_3/out_domain_3",
+#       0, 0.5, 0.5)
+#
+#
+#
+# split("/Users/alexwarstadt/Workspace/acceptability/acceptability_corpus/splits/split_4/in_domain_4.tsv",
+#       "/Users/alexwarstadt/Workspace/acceptability/acceptability_corpus/splits/split_4/in_domain_4",
+#       0.8, 0.1, 0.1)
+#
+# split("/Users/alexwarstadt/Workspace/acceptability/acceptability_corpus/splits/split_4/out_domain_4.tsv",
+#       "/Users/alexwarstadt/Workspace/acceptability/acceptability_corpus/splits/split_4/out_domain_4",
+#       0, 0.5, 0.5)
 
 
 

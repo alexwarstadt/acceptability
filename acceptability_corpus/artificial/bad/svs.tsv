@@ -1,0 +1,360 @@
+	1		Michael met Christopher.
+	0		met Michael Christopher.
+	1		Michael talked to Christopher.
+	0		talked to Michael Christopher.
+	1		Michael met Jason.
+	0		met Michael Jason.
+	1		Michael talked to Jason.
+	0		talked to Michael Jason.
+	1		Michael met David.
+	0		met Michael David.
+	1		Michael talked to David.
+	0		talked to Michael David.
+	1		Michael met James.
+	0		met Michael James.
+	1		Michael talked to James.
+	0		talked to Michael James.
+	1		Michael met Nicole.
+	0		met Michael Nicole.
+	1		Michael talked to Nicole.
+	0		talked to Michael Nicole.
+	1		Michael met Jessica.
+	0		met Michael Jessica.
+	1		Michael talked to Jessica.
+	0		talked to Michael Jessica.
+	1		Michael met Elizabeth.
+	0		met Michael Elizabeth.
+	1		Michael talked to Elizabeth.
+	0		talked to Michael Elizabeth.
+	1		Michael met Rebecca.
+	0		met Michael Rebecca.
+	1		Michael talked to Rebecca.
+	0		talked to Michael Rebecca.
+	1		Michael met Kelly.
+	0		met Michael Kelly.
+	1		Michael talked to Kelly.
+	0		talked to Michael Kelly.
+	1		Christopher met Michael.
+	0		met Christopher Michael.
+	1		Christopher talked to Michael.
+	0		talked to Christopher Michael.
+	1		Christopher met Jason.
+	0		met Christopher Jason.
+	1		Christopher talked to Jason.
+	0		talked to Christopher Jason.
+	1		Christopher met David.
+	0		met Christopher David.
+	1		Christopher talked to David.
+	0		talked to Christopher David.
+	1		Christopher met James.
+	0		met Christopher James.
+	1		Christopher talked to James.
+	0		talked to Christopher James.
+	1		Christopher met Nicole.
+	0		met Christopher Nicole.
+	1		Christopher talked to Nicole.
+	0		talked to Christopher Nicole.
+	1		Christopher met Jessica.
+	0		met Christopher Jessica.
+	1		Christopher talked to Jessica.
+	0		talked to Christopher Jessica.
+	1		Christopher met Elizabeth.
+	0		met Christopher Elizabeth.
+	1		Christopher talked to Elizabeth.
+	0		talked to Christopher Elizabeth.
+	1		Christopher met Rebecca.
+	0		met Christopher Rebecca.
+	1		Christopher talked to Rebecca.
+	0		talked to Christopher Rebecca.
+	1		Christopher met Kelly.
+	0		met Christopher Kelly.
+	1		Christopher talked to Kelly.
+	0		talked to Christopher Kelly.
+	1		Jason met Michael.
+	0		met Jason Michael.
+	1		Jason talked to Michael.
+	0		talked to Jason Michael.
+	1		Jason met Christopher.
+	0		met Jason Christopher.
+	1		Jason talked to Christopher.
+	0		talked to Jason Christopher.
+	1		Jason met David.
+	0		met Jason David.
+	1		Jason talked to David.
+	0		talked to Jason David.
+	1		Jason met James.
+	0		met Jason James.
+	1		Jason talked to James.
+	0		talked to Jason James.
+	1		Jason met Nicole.
+	0		met Jason Nicole.
+	1		Jason talked to Nicole.
+	0		talked to Jason Nicole.
+	1		Jason met Jessica.
+	0		met Jason Jessica.
+	1		Jason talked to Jessica.
+	0		talked to Jason Jessica.
+	1		Jason met Elizabeth.
+	0		met Jason Elizabeth.
+	1		Jason talked to Elizabeth.
+	0		talked to Jason Elizabeth.
+	1		Jason met Rebecca.
+	0		met Jason Rebecca.
+	1		Jason talked to Rebecca.
+	0		talked to Jason Rebecca.
+	1		Jason met Kelly.
+	0		met Jason Kelly.
+	1		Jason talked to Kelly.
+	0		talked to Jason Kelly.
+	1		David met Michael.
+	0		met David Michael.
+	1		David talked to Michael.
+	0		talked to David Michael.
+	1		David met Christopher.
+	0		met David Christopher.
+	1		David talked to Christopher.
+	0		talked to David Christopher.
+	1		David met Jason.
+	0		met David Jason.
+	1		David talked to Jason.
+	0		talked to David Jason.
+	1		David met James.
+	0		met David James.
+	1		David talked to James.
+	0		talked to David James.
+	1		David met Nicole.
+	0		met David Nicole.
+	1		David talked to Nicole.
+	0		talked to David Nicole.
+	1		David met Jessica.
+	0		met David Jessica.
+	1		David talked to Jessica.
+	0		talked to David Jessica.
+	1		David met Elizabeth.
+	0		met David Elizabeth.
+	1		David talked to Elizabeth.
+	0		talked to David Elizabeth.
+	1		David met Rebecca.
+	0		met David Rebecca.
+	1		David talked to Rebecca.
+	0		talked to David Rebecca.
+	1		David met Kelly.
+	0		met David Kelly.
+	1		David talked to Kelly.
+	0		talked to David Kelly.
+	1		James met Michael.
+	0		met James Michael.
+	1		James talked to Michael.
+	0		talked to James Michael.
+	1		James met Christopher.
+	0		met James Christopher.
+	1		James talked to Christopher.
+	0		talked to James Christopher.
+	1		James met Jason.
+	0		met James Jason.
+	1		James talked to Jason.
+	0		talked to James Jason.
+	1		James met David.
+	0		met James David.
+	1		James talked to David.
+	0		talked to James David.
+	1		James met Nicole.
+	0		met James Nicole.
+	1		James talked to Nicole.
+	0		talked to James Nicole.
+	1		James met Jessica.
+	0		met James Jessica.
+	1		James talked to Jessica.
+	0		talked to James Jessica.
+	1		James met Elizabeth.
+	0		met James Elizabeth.
+	1		James talked to Elizabeth.
+	0		talked to James Elizabeth.
+	1		James met Rebecca.
+	0		met James Rebecca.
+	1		James talked to Rebecca.
+	0		talked to James Rebecca.
+	1		James met Kelly.
+	0		met James Kelly.
+	1		James talked to Kelly.
+	0		talked to James Kelly.
+	1		Nicole met Michael.
+	0		met Nicole Michael.
+	1		Nicole talked to Michael.
+	0		talked to Nicole Michael.
+	1		Nicole met Christopher.
+	0		met Nicole Christopher.
+	1		Nicole talked to Christopher.
+	0		talked to Nicole Christopher.
+	1		Nicole met Jason.
+	0		met Nicole Jason.
+	1		Nicole talked to Jason.
+	0		talked to Nicole Jason.
+	1		Nicole met David.
+	0		met Nicole David.
+	1		Nicole talked to David.
+	0		talked to Nicole David.
+	1		Nicole met James.
+	0		met Nicole James.
+	1		Nicole talked to James.
+	0		talked to Nicole James.
+	1		Nicole met Jessica.
+	0		met Nicole Jessica.
+	1		Nicole talked to Jessica.
+	0		talked to Nicole Jessica.
+	1		Nicole met Elizabeth.
+	0		met Nicole Elizabeth.
+	1		Nicole talked to Elizabeth.
+	0		talked to Nicole Elizabeth.
+	1		Nicole met Rebecca.
+	0		met Nicole Rebecca.
+	1		Nicole talked to Rebecca.
+	0		talked to Nicole Rebecca.
+	1		Nicole met Kelly.
+	0		met Nicole Kelly.
+	1		Nicole talked to Kelly.
+	0		talked to Nicole Kelly.
+	1		Jessica met Michael.
+	0		met Jessica Michael.
+	1		Jessica talked to Michael.
+	0		talked to Jessica Michael.
+	1		Jessica met Christopher.
+	0		met Jessica Christopher.
+	1		Jessica talked to Christopher.
+	0		talked to Jessica Christopher.
+	1		Jessica met Jason.
+	0		met Jessica Jason.
+	1		Jessica talked to Jason.
+	0		talked to Jessica Jason.
+	1		Jessica met David.
+	0		met Jessica David.
+	1		Jessica talked to David.
+	0		talked to Jessica David.
+	1		Jessica met James.
+	0		met Jessica James.
+	1		Jessica talked to James.
+	0		talked to Jessica James.
+	1		Jessica met Nicole.
+	0		met Jessica Nicole.
+	1		Jessica talked to Nicole.
+	0		talked to Jessica Nicole.
+	1		Jessica met Elizabeth.
+	0		met Jessica Elizabeth.
+	1		Jessica talked to Elizabeth.
+	0		talked to Jessica Elizabeth.
+	1		Jessica met Rebecca.
+	0		met Jessica Rebecca.
+	1		Jessica talked to Rebecca.
+	0		talked to Jessica Rebecca.
+	1		Jessica met Kelly.
+	0		met Jessica Kelly.
+	1		Jessica talked to Kelly.
+	0		talked to Jessica Kelly.
+	1		Elizabeth met Michael.
+	0		met Elizabeth Michael.
+	1		Elizabeth talked to Michael.
+	0		talked to Elizabeth Michael.
+	1		Elizabeth met Christopher.
+	0		met Elizabeth Christopher.
+	1		Elizabeth talked to Christopher.
+	0		talked to Elizabeth Christopher.
+	1		Elizabeth met Jason.
+	0		met Elizabeth Jason.
+	1		Elizabeth talked to Jason.
+	0		talked to Elizabeth Jason.
+	1		Elizabeth met David.
+	0		met Elizabeth David.
+	1		Elizabeth talked to David.
+	0		talked to Elizabeth David.
+	1		Elizabeth met James.
+	0		met Elizabeth James.
+	1		Elizabeth talked to James.
+	0		talked to Elizabeth James.
+	1		Elizabeth met Nicole.
+	0		met Elizabeth Nicole.
+	1		Elizabeth talked to Nicole.
+	0		talked to Elizabeth Nicole.
+	1		Elizabeth met Jessica.
+	0		met Elizabeth Jessica.
+	1		Elizabeth talked to Jessica.
+	0		talked to Elizabeth Jessica.
+	1		Elizabeth met Rebecca.
+	0		met Elizabeth Rebecca.
+	1		Elizabeth talked to Rebecca.
+	0		talked to Elizabeth Rebecca.
+	1		Elizabeth met Kelly.
+	0		met Elizabeth Kelly.
+	1		Elizabeth talked to Kelly.
+	0		talked to Elizabeth Kelly.
+	1		Rebecca met Michael.
+	0		met Rebecca Michael.
+	1		Rebecca talked to Michael.
+	0		talked to Rebecca Michael.
+	1		Rebecca met Christopher.
+	0		met Rebecca Christopher.
+	1		Rebecca talked to Christopher.
+	0		talked to Rebecca Christopher.
+	1		Rebecca met Jason.
+	0		met Rebecca Jason.
+	1		Rebecca talked to Jason.
+	0		talked to Rebecca Jason.
+	1		Rebecca met David.
+	0		met Rebecca David.
+	1		Rebecca talked to David.
+	0		talked to Rebecca David.
+	1		Rebecca met James.
+	0		met Rebecca James.
+	1		Rebecca talked to James.
+	0		talked to Rebecca James.
+	1		Rebecca met Nicole.
+	0		met Rebecca Nicole.
+	1		Rebecca talked to Nicole.
+	0		talked to Rebecca Nicole.
+	1		Rebecca met Jessica.
+	0		met Rebecca Jessica.
+	1		Rebecca talked to Jessica.
+	0		talked to Rebecca Jessica.
+	1		Rebecca met Elizabeth.
+	0		met Rebecca Elizabeth.
+	1		Rebecca talked to Elizabeth.
+	0		talked to Rebecca Elizabeth.
+	1		Rebecca met Kelly.
+	0		met Rebecca Kelly.
+	1		Rebecca talked to Kelly.
+	0		talked to Rebecca Kelly.
+	1		Kelly met Michael.
+	0		met Kelly Michael.
+	1		Kelly talked to Michael.
+	0		talked to Kelly Michael.
+	1		Kelly met Christopher.
+	0		met Kelly Christopher.
+	1		Kelly talked to Christopher.
+	0		talked to Kelly Christopher.
+	1		Kelly met Jason.
+	0		met Kelly Jason.
+	1		Kelly talked to Jason.
+	0		talked to Kelly Jason.
+	1		Kelly met David.
+	0		met Kelly David.
+	1		Kelly talked to David.
+	0		talked to Kelly David.
+	1		Kelly met James.
+	0		met Kelly James.
+	1		Kelly talked to James.
+	0		talked to Kelly James.
+	1		Kelly met Nicole.
+	0		met Kelly Nicole.
+	1		Kelly talked to Nicole.
+	0		talked to Kelly Nicole.
+	1		Kelly met Jessica.
+	0		met Kelly Jessica.
+	1		Kelly talked to Jessica.
+	0		talked to Kelly Jessica.
+	1		Kelly met Elizabeth.
+	0		met Kelly Elizabeth.
+	1		Kelly talked to Elizabeth.
+	0		talked to Kelly Elizabeth.
+	1		Kelly met Rebecca.
+	0		met Kelly Rebecca.
+	1		Kelly talked to Rebecca.
+	0		talked to Kelly Rebecca.

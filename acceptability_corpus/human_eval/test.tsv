@@ -1,0 +1,107 @@
+clc95	1		Somebody just left - guess who.
+clc95	1		They're going to serve the guests something, but it's unclear what.
+clc95	0	*	John ate dinner but I don't know who.
+clc95	0	*	John was tall, but I don't know on what occasions.
+clc95	1		Joan ate dinner with someone but I don't know who.
+clc95	1		I know that Meg's attracted to Harry, but they don't know who.
+clc95	0	*	Each of the performers came in, but were sitting so far back that we couldn't see who.
+clc95	1		Everyone relies on someone. It's unclear who.
+clc95	1		Everybody gets on well with a certain relative, but often only his therapist knows which one.
+clc95	0	*	John likes some students, but I don't know who John likes some students.
+clc95	0	*	He announced he had eaten the asparagus, but we didn't know what.
+clc95	1		He announced he would marry the woman he loved most, but none of his relatives could figure out who.
+clc95	1		She talked to Harry, but I don't know who else.
+clc95	1		Everyone who knows either Susan or Laura likes her.
+clc95	0	*	She said she talked to three students but I don't know how many.
+clc95	0	*	She said she talked to those students but I don't know how many.
+clc95	1		Several firefighters were injured, but it's not known.
+clc95	1		Sandy was trying to work out which students would be able to solve a certain problem, but she wouldn't tell us which one.
+clc95	0	*	Sandy was trying to work out which students would be able to solve a certain problem, but she wouldn't tell us which one.
+clc95	1		Clinton is anxious to find out which budget dilemmas Panetta would be willing to tackle in a certain way, but he won't say in which.
+clc95	1		I know how many assignments I've graded, but I don't know how many Bill has.
+clc95	1		Sandy was trying to work out which students would be able to solve a certain problem.
+clc95	1		The administration has issued a statement that it is willing to meet with one of the student groups.
+clc95	1		The administration has issued a statement that it is willing to meet a student group, but I'm not sure which one.
+c-05	1		Mary was respected by John.
+c-05	0	*	The argument was summed by the coach up.
+c-05	1		John was spoken to by Mary.
+c-05	1		The table was wiped clean by John.
+c-05	1		John was believed to be telling the truth by Mary.
+c-05	1		John was believed by Mary to be telling the truth.
+c-05	0	*	The magazines were sent to herself by Mary.
+c-05	0	*	Chocolate eggs were hidden from each other by the children.
+c-05	1		Chocolate eggs were hidden from no child by any adult.
+c-05	1		Tabs were kept on each agent by the other.
+c-05	1		Chocolate eggs were hidden from every child by his mother.
+c-05	1		Books were taken from no student and given to Mary.
+c-05	0	*	Books were taken from no student and given to Mary by any professor.
+c-05	1		Books were taken from each student and given to Mary.
+j_71	1		Vera sent a baby alligator to Max and a leather dinosaur to Phyllis.
+j_71	1		Either Sam plays the bassoon or Jekyll the oboe.
+j_71	0	*	Tom will smoke the grass, and Reuben has the hash.
+j_71	1		Harry told Sue that Albania is a lovely place for a vacation, and Tom.
+j_71	1		Max seemed to be trying to begin to love Harriet, and Fred to be trying to begin to love Sue.
+j_71	0	*	Arizona elected Goldwater Senator, and Massachusetts, McCormack.
+j_71	0	*	Tom's dog with one eye attacked Frank's with three legs.
+j_71	1		Neither von Karajan's recording of Beethoven's 6th on Columbia nor Klemperer's has the right tempo.
+j_71	1		Jerry attempted to blow up the Pentagon.
+s_97	1		I know the person whose mother died.
+s_97	0	*	I want goes to the store.
+s_97	1		I know the people that voted in the election.
+s_97	1		I saw someone yesterday I hadn't seen for years.
+s_97	1		The book that I like which everyone else in the class hates was written by John.
+s_97	0	*	The only person whose kids Dana is willing to put up with was written by John.
+swb04	1		We gave ourselves to the cause.
+swb04	0	*	Leslie told us about us.
+swb04	1		Our friends like us.
+swb04	0	*	We found your letter to ourselves in the trash.
+swb04	0	*	Vote for you!
+swb04	1		We admired the pictures of ourselves in the album.
+swb04	1		We put the pigs in a pen.
+swb04	1		The car won't run.
+swb04	1		Visiting relatives can be boring.
+swb04	1		I saw her duck.
+swb04	1		They were interested in his.
+swb04	1		Some people consider the dogs in my neighborhood dangerous.
+swb04	1		People with children who use drugs should be locked up.
+swb04	0	*	The bird sing.
+swb04	0	*	Terry delighted.
+swb04	1		We celebrated in the streets.
+swb04	0	*	The book that crime was declining surprised many people.
+swb04	0	*	The soundly and furry cat slept.
+swb04	1		There was some particular dog who saved every family.
+swb04	1		Leslie slept.
+swb04	1		The police sprayed water on the protesters.
+swb04	1		The evidence assembled by the prosecution convinced the jury.
+swb04	1		Lou forgot the umbrella.
+swb04	0	*	Lou hoped the umbrella in the closet.
+swb04	0	*	Lou put the umbrella was broken.
+swb04	1		The dog bit the cat.
+swb04	1		Chris was handed a note.
+swb04	0	*	Chris was handed Sandy a note.
+swb04	1		The cat got bitten.
+swb04	1		There is a monster in Loch Ness.
+swb04	1		Pat is the captain of the team.
+swb04	1		There was a felon elected to the city council.
+swb04	1		There is a seat available.
+swb04	1		A felon was elected to the city council.
+swb04	1		It mattered that the Giants had lost.
+swb04	1		Cohen proved that the continuum hypothesis was independent.
+swb04	1		Nobody saw Pat.
+swb04	1		The candidates bring advantage to the voters.
+w_80	1		John loaded the wagon full with hay.
+w_80	1		John became rich.
+w_80	1		I gave John gold apples.
+w_80	0	*	John was struck as sick.
+w_80	1		John tried to leave.
+w_80	1		John has something for Bill to do.
+w_80	1		I am counting on Bill to incriminate himself.
+w_80	1		I would hate for John to leave.
+w_80	0	*	John decided for Bill to get the prize.
+w_80	1		John wants to leave.
+w_80	1		I bought Bill a book to read.
+w_80	1		John, told Mary that it would be appropriate to leave together.
+w_80	0	*	It was believed to be illegal by them to do that.
+w_80	0	*	I gave Pete the book to impress.
+w_80	1		The correspondence school made Bill a good typist.
+w_80	0	*	John bought a dog for himself to play with.

@@ -1,0 +1,227 @@
+d_98		(2):2,3
+d_98		John didn't talk to any woman.
+d_98		Any owl can hunt mice.
+d_98		Any owl hunts mice.
+d_98	*	John talked to any woman.
+d_98	*	Any woman contributed to the fund.
+d_98	*	Any man didn't eat dinner.
+d_98		(1996)).
+d_98		John talked to any woman who came up to him.
+d_98		Any woman who heard the news contributed to the fund.
+d_98		Any man who saw the fly in the food didn't eat dinner.
+d_98		You may pick any flower.
+d_98	*	You must pick any flower.
+d_98		Any pilot could be flying this plane.
+d_98	*	Any pilot must be flying this plane.
+d_98		Any student must work hard.
+d_98		Any doctor will tell you that.
+d_98		Any soldier should be prepared to die for her country.
+d_98		any CN = the corresponding indefinite NP + additional seman tic/pragmatic characteristics (i.e. widening and strengthening) contributed by any. The sole difference between PS any and
+d_98		Widening: In an NP of the form any CN, any widens the interpretation of the common noun phrase along a contextual dimension.
+d_98		Strengthening: Any is licensed only if the widening that it in duces creates a stronger statement. That is, only if the state ment with any CN entails the corresponding statement with a
+d_98		A= {a, b, c}
+d_98		John talked to a woman. 3x E A[talk(j, x)] b'. John talked to any woman. 3x E B[talk(j, x)]
+d_98		John didn't talk to a woman. 73x E A[talk(j, x)] c'. John didn't talk to any woman. -3x E B[talk(j, x)]
+d_98		John kissed even the ugliest woman.
+d_98		John kissed even the ugliest woman who came up to him.
+d_98		A lion is usually majestic.
+d_98	*	Any lion is usually majestic.
+d_98		A philosopher is sometimes wrong.
+d_98		Any philosopher is sometimes wrong.
+d_98		You must pick a flower.
+d_98		A pilot must be flying this plane.
+d_98		A student must work hard.
+d_98		A doctor will tell you that.
+d_98		A soldier should be prepared to die for her country.
+d_98		Rarely/seldom/never is any lion majestic.
+d_98	*	Usually, Often, Always, any lion is majestic.
+d_98		You may pick almost/absolutely any flower.
+d_98		Almost/Absolutely any pilot could be flying this plane.
+d_98		You may pick any flower except the rose.
+d_98		Any pilot except Sue could be flying this plane.
+d_98		You may pick a flower.
+d_98		A pilot could be flying this plane.
+d_98		John talked to almost/absolutely any woman who came up to him.
+d_98		John talked to any woman who came up to him except Sue.
+d_98		John talked to women/women who came up to him.
+d_98		John put carrots from his garden in the salad.
+d_98		John put any carrot from his garden in the salad.
+d_98		John talked to a woman who came up to him.
+d_98		A woman who heard the news contributed to the fund.
+d_98		A man who saw the fly in the food didn't eat dinner.
+d_98		John talked to every woman who came up to him.
+d_98		Every woman who heard the news contributed to the fund.
+d_98		Every man who saw the fly in the food didn't eat dinner.
+d_98		John talked to every woman who came up to him.
+d_98		John talked to every woman. Vx[x E A -> talk(j, x)] b'. John talked to any woman. Vx[x E B -> talk(j, x)]
+d_98		Contextual Vagueness: any is only appropriate in contexts where the speaker cannot identify the individual or individuals that verify p.
+d_98		Non-existence: An occurence of [NP any B] in a statement p is licit iff it does not entail 3Bp.
+d_98		(1996)) and Greek (Giannakidou (1997)), it has also been criticized as a slippery notion to use as a licensing principle (Tovena and Jayez (1997)).
+d_98		Mary regretted that she did anything to help him.
+d_98	*	Mary talked to any man or any woman.
+d_98		Every student who is in Mary's class is working on polarity items.
+d_98		It happens to be true of every student in Mary's class that he/she is working on polarity items.
+d_98		Every student in Mary's class, by virtue of being in her class, is working on polarity items.
+d_98		Every student (who is) in Mary's class happened to vote Repub lican.
+d_98		Every woman standing under that tree is Mary's friend.
+d_98		The President thanked every soldier who had fought in the
+d_98		Everybody who attended last week's huge rally signed the peti tion.
+d_98		(23), as shown in (24). Incorporating them into (22), to the extent that it is even possible, has a semantic impact. In (25a) the choice of happen to seems to signal disbelief that the main clause event was a coincidence. In the case of (25b), the addition is odd because it seems to call for an
+d_98		We didn't keep a list of the names, but the President thanked every soldier who had fought in the Gulf War.
+d_98		Everybody who attended last week's huge rally, whoever they were, signed the petition.
+d_98	*	Every student (who is) in Mary's class, whoever they were, happened to vote Republican.
+d_98	*	Every woman standing under that tree, whoever she may be, is Mary's friend.
+d_98		(24):
+d_98	*	Any student (who is) in Mary's class happened to vote
+d_98	*	Any woman standing under that tree is Mary's friend.
+d_98		The President thanked any soldier who had fought in the Gulf
+d_98		Anybody who attended last week's huge rally signed the petition.
+d_98		Every restaurant that advertises in any of these papers happens to have four stars in the handbook.
+d_98		Everybody who is in Mary's semantics seminar/Field Methods course is writing a paper on polarity items.
+d_98		Anybody who is in Mary's semantics seminar is writing a paper on polarity items.
+d_98	*	Anybody who is in Mary's Fields Methods course is writing a paper on polarity items.
+d_98		John talked to any woman at the party.
+d_98		John talked to any politician who is powerful.
+d_98	*	John talked to any powerful politician.
+d_98		Mary confidently answered any objections.
+d_98		After the dinner, we threw away any leftovers.
+d_98	*	John bought any picture of Queen Elizabeth.
+d_98		John bought any picture of Queen Elizabeth that was on sale.
+d_98		Owls hunt mice/An owl hunts mice.
+d_98		GEN s, x [owl(x, s) & C(s)] 3y[mice(y) & hunt(x, y, s)]
+d_98		Every philosopher is sometimes wrong. He usually doesn't admit it.
+d_98		Any philosopher is sometimes wrong. He usually won't/*doesn't admit it.
+d_98		Any owl hunts mice.
+d_98		Vs,x [owl(x, s) & C(s)]
+d_98		Any lion is majestic.
+d_98		Vs, x [lion(x, s) & C(s)]
+d_98	*	Any lion is generally majestic.
+d_98		Vs, x [lion(x, s) & C(s)]
+d_98		Any philosopher is sometimes wrong.
+d_98		Vs, x [philosopher(x, s) & C(s)]
+d_98	*	Any lion is rare.
+d_98		Vs, x [lion(x, s) & C(x)]
+d_98		Any tiger has orange fur, marked with black stripes.
+d_98		Any female tiger has orange fur, marked with black stripes.
+d_98		Any albino tiger has orange fur, marked with black stripes.
+d_98		Birds fly.
+d_98		GEN s, x [bird(x, s) & C(s)] [fly(x, s)]
+d_98		Any bird flies
+d_98		Vs, x [bird(x, s) & C'(s)]
+d_98		All fugitives are in jail now.
+d_98		Vx[fugitive at t(x) - in jail at t'(x) & NOW (t')]
+d_98		All lizards will die.
+d_98		F Vx[lizard(x) - die(x)]
+d_98		Vx[lizard(x) F die(x)]
+d_98	*	Yesterday John talked to any woman.
+d_98		Vs, x [woman(x, s) & C(s)]
+d_98		Yesterday John talked to any woman he saw.
+d_98		Vs, x [woman(x, s) & C(s) & 3s"[s < s" & P(s") & see(j, x, s")]] 3s'[s < s' & yesterday(s') & talk(j, x, s')]
+d_98		Snow is white and snow is not white.
+d_98		Any man didn't eat dinner.
+d_98		Mary talks to any student.
+d_98		Vs, x [student(x, s) & C(s)] [GEN s' [s < s' & in(m, s')] [talk(m, x, s')]]
+d_98	*	Mary talked to any angry student.
+d_98		Vs, x [student (x, s) & angry (x, s) & C(s)]
+d_98		Mary talked to any student who was angry.
+d_98		Vs, x [student (x, s) & C(s) & 3s"[s < s" & P(s")
+d_98	*	Mary talked to any actual student.
+d_98		You may pick any flower.
+d_98	*	You must pick any flower.
+d_98		Vs, x [flower(x, s)] ![pick(you, x, s)]
+d_98		Vs, x [flower(x, s)] i[pick(you, x, s)]
+d_98		You must pick any flower you see.
+d_98		Vs, x [flower(x, s) & 3s"[F(s") & see(you, x, s")]] i[pick(you, x, s)]
+d_98		Any pilot could be flying this plane.
+d_98	*	Any pilot must be flying this plane.
+d_98		Any pilot on duty today could be flying this plane.
+d_98	*	Any pilot on duty today must be flying this plane.
+d_98		Any student must work hard.
+d_98		Any soldier should be prepared to die for her country.
+d_98		Any pilot must be out flying planes today.
+d_98		Any pilot could be flying this plane.
+d_98		Vs, x [pilot(x, s) & C(s)] 3s'[s <s' & Ofly(x, pi, s')]
+d_98	*	Any pilot must be flying this plane.
+d_98		Vs,x [pilot(x,s) & C(s)] s'[s < s' & Dfly(x, pi,s')]
+d_98		Any pilot must be out flying planes today.
+d_98		Vs, x [pilot(x, s) & C(s)] 3s'[s < s' & 03y[plane(y) & fly(x, y, s')]]
+d_98		Every studenti read [any book on giraffes hei found].
+d_98		3s[Vx [student(x, s)]
+d_98		You must pick any flower you see.
+d_98	*	You must pick any flower in this bed.
+d_98		Contextual Vagueness: any is only appropriate in contexts where the speaker cannot identify the individual or individuals who verify p.
+d_98		Revised Vagueness Requirement: Any (A) (Op B) is felicitous iff A n B is not contextually salient in any relevant world; where Op may be 0, 0, !, i or null.
+d_98		You may pick any of the flowers.
+d_98	*	You must pick any of the flowers.
+d_98	*	Mary picked any of the flowers.
+d_98		You may pick every flower.
+d_98		You may pick any/*every flower, but leave a few for Mary.
+d_98		You may pick any five flowers.
+d_98		Mary didn't pick any of the flowers.
+d_98		Pick any flower.
+d_98		Confiscate any liquor.
+d_98		Pick any of these flowers.
+d_98	*	Confiscate any of this liquor.
+d_98	*	Mary didn't see almost any/every flower.
+d_98		Every student in Mary's class is working on negative polarity.
+d_98		Any student in Mary's class is working on negative polarity.
+d_98		There were twenty students at the lecture and every student who was there said it was inspiring.
+d_98	*	There were twenty students at the lecture and any student who was there said it was inspiring.
+d_98		We have many graduate students but this year the graduate director met with every student in the graduate program indivi dually to discuss their progress.
+d_98	*	We have many graduate students but this year the graduate director met with any student in the graduate program indivi dually to discuss their progress.
+d_98		Susan found every book she had been looking for at Borders.
+d_98	*	Susan found any book she had been looking for at Borders.
+d_98		Paul has interviewed every student who was at the scene of the crime and Kate has interviewed them too.
+d_98	*	Paul has interviewed any student who was at the scene of the crime and Kate has interviewed them too.
+d_98		Which student would any professor support?
+d_98		His or her advisee.
+d_98	*	Prof. Smith would support Sue and Prof Jones Bill.
+d_98		There is every/*any book by Chomsky in this library.
+d_98		There's everything/*anything Mary had asked for in this store.
+d_98		There is any book you could imagine in this library.
+d_98		There's anything Mary could desire in this store.
+d_98		idea of any as domain widener and Tovena and Jayez's (1997) or
+d_98		That evening John misbehaved with everybody/anybody he talked to.
+d_98		John talked to everybody/anybody who came up to him at the party.
+d_98		Bill offered Mary everything/*anything he had cooked for dinner.
+d_98		Those days Bill offered Mary everything/anything he cooked.
+d_98		John made a fool of himself in front of everyone/anyone who was there.
+d_98		Mary sang for everyone/anyone who wanted to hear her.
+d_98		John slipped in front of everyone/*anyone who was there.
+d_98		At 4 p.m. I saw John lecturing to everyone/*anyone who was near him.
+d_98		John knew every/any language that we encountered on our trip.
+d_98		John liked everything/anything that was placed before him.
+d_98		At the end of his speech, the president thanked any soldier who had fought in the gulf war.
+d_98		(1989).
+d_98		(1994), treated them both as universals. These too have been challenged on empirical grounds. Since the present account of FC any as universal is somewhat different from the earlier versions it does not suffer from some of the problems that have been pointed out for them. However, I will still argue on the basis of language internal and crosslinguistic evidence that
+d_98		John didn't talk to any woman.
+d_98		Vs, x [woman(x, s)] -3s'[s < s' & P(s') & talk(j, x, s')]
+d_98	*	Any man didn't eat dinner.
+d_98		Vs, x [man(x, s)] - i3s'[s < s' & P(s') & eat-dinner(x, s')]
+d_98		Bob does not think that there is anyone from Greece in his basement.
+d_98		Vx[from-Greece(x) ) -ithink(b, in-his-basement(x))]
+d_98		Vs, x[from-Greece(x, s)] - 3s'[s < s' & NOW(s') & think(b, in-his-base ment(x, s'), s')
+d_98		If anyone can solve this problem, Bill can.
+d_98		(Vs, x[person(x, s)][Osolve(x, pi, s)])(3s[s < s'
+d_98		Vs, x[person(x, s)][(Osolve(x, p, s))(3s'[s < s'
+d_98		Vs(3x[person(x, s) & Osolve(x,pi, s)])(3s'[s < s'
+d_98		(1980).
+d_98		Can anyone pledge ATO?
+d_98		Is it possible for everyone to to pledge ATO?
+d_98		Is there someone who can pledge ATO?
+d_98		If anybodyi comes, hei rings the doorbell.
+d_98		Every student who wins any trophy displays iti in a prominent place.
+d_98	*	John saw anything.
+d_98		John didn't see anything.
+d_98	*	Some/every/no student who read anything passed.
+d_98	*	Some/*every/no student answered any question.
+d_98		(1995), that treat the contribution of any as invoking a set of scalar alternatives of which PS any marks an extreme endpoint. The generaliza tion about distribution is then related to the pragmatics of assertion. The point I would like to make here is equally compatible with either approach.
+d_98		Every student who read something passed = Every student who read everything passed.
+d_98		Every student answered something #= Every student answered everything.
+d_98		Any cat doesn't like mice.
+d_98		Every cat doesn't like mice.
+d_98		-(every(cat)(like mice))
+d_98		{every(cat)(like mice), -every(cat)(like mice)}
+d_98		{every(cat)(like mice), levery(cat)(like mice) most(cat)(like mice), -most(cat)(like mice) some(cat)(like mice), -isome(cat)(don't like mice)...}
+d_98		Every cat doesn't like mice. For example/*but Felix doesn't.
+d_98		Almost every cat likes mice. *For example/but Felix doesn't.

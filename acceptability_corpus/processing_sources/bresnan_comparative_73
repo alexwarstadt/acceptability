@@ -1,0 +1,459 @@
+b_73		Introduction
+b_73		Syntax of the Head
+b_73		She has more independence.
+b_73		She is happier.
+b_73		[[-er much] independence]
+b_73		[[-er much] happy]
+b_73		They think she has too much independence.
+b_73	*	They think she is too much happy.
+b_73		i more < -er much or -er many
+b_73		as much bread as little bread
+b_73		too much bread too little bread
+b_73		that much bread that little bread
+b_73		so much bread so little bread
+b_73		as many people as few people
+b_73		too many people too few people
+b_73		that many people that few people
+b_73		so many people so few people
+b_73		QP
+b_73		-er much more
+b_73		Mary is <(more intelligent. ~*so much)
+b_73		Mary speaks so mu ch ogently.
+b_73	*	as much tall ->. as tall
+b_73		I drank as much milk -/* *I drank as milk.
+b_73		I ate as much +-/ *I ate as.
+b_73		not any different not any taller *not any tall
+b_73		so much different so much taller *so much tall
+b_73		A tangerine isn't as much different from an orange as I'd thought.
+b_73		A tangerine isn't as different from an orange as I'd thought.
+b_73		You and I are as much alike as a horse and a cow.
+b_73		You and I are as alike as a horse and a cow.
+b_73		You and I are as little alike as a horse and a cow.
+b_73	*	as much intelligent -- as intelligent
+b_73		as much more intelligent -s *as more intelligent
+b_73	*	as much clearly -* as clearly
+b_73		as much more clearly -s *as more clearly
+b_73	*	as much tall -? as tall
+b_73		as much taller ,* *as taller
+b_73		QP Q'P
+b_73		[[-er much]tall] [[as much]tall]
+b_73		[[s much-er]tall] not applicable Rule 20
+b_73		not applicable [[as c]tall] Rule io
+b_73		[[much-er]tall-er] not applicable rules for simple compara
+b_73		John is more than 6 feet tall.
+b_73		John is taller than 6 feet.
+b_73		These plants may grow as much as 6 feet high.
+b_73		These plants may grow as high as 6 feet.
+b_73		a bit long a bit of rope
+b_73		an inch long an inch of rope
+b_73		long enough enough rope
+b_73		More has happened in the last week than will happen in the next year.
+b_73		He offers more than we had hoped for.
+b_73		He was hoping for more than we offered.
+b_73		Enough is going on to keep them confused.
+b_73		You've said enough to convince me.
+b_73		I've thought about enough for twelve to think about.
+b_73		Sally eats caviar more than I had expected.
+b_73		Susan doesn't eat her vegetables enough.
+b_73		, (36), and (37):
+b_73		Sally eats the stuff pretty often.
+b_73	*	Sally eats pretty often the stuff.
+b_73		Sally eats the stuff more.
+b_73	*	Sally eats more the stuff.
+b_73	*	Susan doesn't eat enough her vegetables.
+b_73		John eats more.
+b_73		John doesn't eat enough.
+b_73		John eats more than he pays for.
+b_73		John eats more than he sleeps.
+b_73		He gave me more of his marbles than I wanted.
+b_73		Sally *enough eats caviar.
+b_73	*	Enough Sally eats caviar.
+b_73		Jack is more tall than thin.
+b_73		I did it more in jest than in anger.
+b_73		There is enough of the bread left to have tomorrow.
+b_73		He gave me more marbles than I wanted.
+b_73		There is enough bread for all of you.
+b_73		There is bread enough for all of you.
+b_73		She has enough of a problem as it is.
+b_73	*	She has enough a problem as it is.
+b_73	*	She has enough problem as it is.
+b_73	*	She has problem enough as it is.
+b_73	*	She has enough of problems as it is.
+b_73		She has enough problems as it is.
+b_73		She has problems enough as it is.
+b_73		0 ->Of / Q-Det N
+b_73		He looks more formidable than he is.
+b_73	*	He seems enough intelligent for you.
+b_73		He seems intelligent enough for you.
+b_73		She writes more clearly than she speaks.
+b_73	*	She speaks enough clearly to be understood.
+b_73		and (32), more and enough signify degree extent; or occurring as substantives and
+b_73		partitives, they signify amount. There is yet another construction in which more and
+b_73		enough occur; this curious construction is isomorphic to the partitive constructions (42)
+b_73		and (43), but more and enough signify degree or extent rather than amount:
+b_73		I'm more of a man than you are, my dear.
+b_73		He's enough of a fool to try it.
+b_73		He's fool enough to try it.
+b_73		I saw more of the man than you did.
+b_73		I saw enough of the fool to be convinced.
+b_73		Harry got to be more of a celebrity. ~*the)
+b_73		He's enough of *th coward to pull the trigger.
+b_73	?	John is more of a nextdoor neighbor than Pete.
+b_73		John is more of a nextdoor-neighbor-type than Pete.
+b_73		is odd because nextdoor neighbor, unlike celebrity, coward,fool, man, bastard, and such,
+b_73		is a rather vapid epithet; (69) makes it clear that nextdoor neighbor is intended as an
+b_73		epithet. Third, the constructions of (61I)-(63) appear in typically predicative positions:
+b_73		What his father wants him to be is more of a man.
+b_73	?	More of a man is here.
+b_73	?	I've kicked more of a man than you have.
+b_73	?	I've known more of a man than Frank.
+b_73		I've never known more of a man than Frank.
+b_73		As much has happened in the last week as has happened all year.
+b_73		He offers so much that we feel he is overqualified.
+b_73		He was hoping for too much.
+b_73		Sally eats caviar too much for her own good.
+b_73		John eats so much.
+b_73		He gave me many marbles.
+b_73		I have much of the manuscript left to type.
+b_73		I have much typing to do.
+b_73	*	He looks so much formidable He looks so formidable.
+b_73	*	She speaks too much clearly -- She speaks too clearly.
+b_73		I'm as much of a man as you are, my dear.
+b_73		Harry got to be as much of a*th3 celebrity as his father.
+b_73	?	As much of a man is here.
+b_73	?	I've seen as much of a coward as Frank.
+b_73		Many are called; few are chosen.
+b_73		More are called than are ever chosen.
+b_73		We made enough pudding to last for days Prtation>
+b_73	*	We ate enough a pudding to satisfy us Rule (54)>
+b_73		We made enough puddings to last for days Permutation>
+b_73	*	We ate enough the puddings to satisfy us Rule (54)>
+b_73		John is the kind of a fool that I told you about. sort ~*the)
+b_73		He's ~a bit of a gossip. (something} {*the}
+b_73		John is the kind}of fool that I told you about.
+b_73		sort
+b_73	*	He's fool.
+b_73	*	He's a fool enough to try it.
+b_73	*	She's (just) enough tall
+b_73	*	She speaks enough clearly
+b_73		QP
+b_73		He's that reliable a man.
+b_73	*	He's a that reliable man.
+b_73		He's too reliable a man.
+b_73	*	He's a too reliable man.
+b_73		He's as reliable a man.
+b_73	*	He's an as reliable man.
+b_73		He's so reliable a man.
+b_73	*	He's a so reliable man.
+b_73	?	He's more reliable a man.
+b_73		He's a more reliable man.
+b_73	?	He's reliable enough a man.
+b_73		He's a reliable enough man.
+b_73		Tom was not more reliable than a grasshopper.
+b_73		Tom wasn't any more reliable than a grasshopper.
+b_73		Tom was no more reliable than a grasshopper.
+b_73	*	Not more reliable a man could be found.
+b_73		No more reliable a man could be found.
+b_73	*	Any more reliable a man could not be found.
+b_73		merely reflects a general prohibition against negative-dependent elements occurring
+b_73		to the left of the negative under certain conditions:
+b_73		I don't want trouble
+b_73		fany trouble
+b_73		{*Any trouble} is what I don't want.)
+b_73	?	John is not more reliable a fellow than Bill.
+b_73		John is not a more reliable fellow than Bill.
+b_73		John isn't any more reliable a fellow than Bill.
+b_73	*	John isn't an any more reliable fellow than Bill.
+b_73		John is no more reliable a fellow than Bill.
+b_73	*	John is a no more reliable fellow than Bill.
+b_73		many too many too many.
+b_73		QP
+b_73		that the proper bracketing is (I3oa) rather than (I3ob):
+b_73		[[[as many] too] many] marbles
+b_73		[[as many] [too many]] marbles
+b_73		Qp
+b_73		I have as many too many marbles as you
+b_73		I have as many marbles too many as you.
+b_73		I have six too many marbles
+b_73		I have six marbles too many.
+b_73		NP
+b_73		I have six more of them.
+b_73	*	I have six of them more.
+b_73		I have half a dozen too many of these marbles.
+b_73	*	I have half a dozen of these marbles too many.
+b_73		much too much bread
+b_73	*	much bread too much
+b_73		many too many marbles
+b_73		many marbles too many
+b_73		P (Q(P) QP
+b_73		QP (Det) Q
+b_73		AP
+b_73		AP
+b_73		AP
+b_73		AP-> (AP) AP
+b_73		AP- (Adv) A
+b_73		:
+b_73		X -(X)X
+b_73		X (Spec, X) X
+b_73		{P} A({p}) {QP}
+b_73		AP- (Adv)A
+b_73		QP -+ (Det)Q
+b_73		She writes legibly enough.
+b_73	?	It's a legibly enough written letter.
+b_73		AP (I48) AP
+b_73		:
+b_73		AP
+b_73		AP
+b_73		AP
+b_73		AA
+b_73		AP
+b_73		[NrP] ('57) ~~~~~[Pred]
+b_73		NP
+b_73		She is as brilliant {*ah} woman as her mother.
+b_73	?	As brilliant a woman is here.
+b_73	?	I've known as strong a person as Louise.
+b_73		I've never known as strong a person as Louise.
+b_73		Fido is {*a} smarter dog than Spot.
+b_73		What his father wants him to be is a better pool player.
+b_73	?	A taller man than Bill is here.
+b_73	?	I've known a smarter dog than Fido.
+b_73		I've never known a smarter dog than Fido.
+b_73		He's so tall a man that doors are dangerous to him
+b_73		He's such a tall man that doors are dangerous to him.
+b_73		He's such a tall man. ~*the)
+b_73		What her mother wants her to be is such a fine surgeon that everyone will
+b_73		respect her.
+b_73	?	Such a vile man was there that we left.
+b_73	?	I've known such a vile man that ...
+b_73		I've never known such a vile man that ...
+b_73		so tall a man-*
+b_73		so -such / [- NP]
+b_73		SO tall a man *such tall a man
+b_73		It was {as} awful a picture as it first seemed.
+b_73		aso
+b_73		It wasn't as awful a picture as it first seemed.
+b_73		It wasn't such an awful picture as it first seemed.
+b_73		It was so awful a picture that I tore it up.
+b_73		It was such an awful picture that I tore it up.
+b_73		S
+b_73		S
+b_73		Mary is such a wit that people are afraid of her.
+b_73		Sally isn't such a fool as people think.
+b_73	*	Sally is such a fool as people think.
+b_73		S
+b_73		I love her so much -* I love her so.
+b_73		I gave her so much 4-> *I gave her so.
+b_73		I resemble her too much f *I resemble her too
+b_73		as as
+b_73		S
+b_73		Hilda is such a scholar.
+b_73		Hilda is such [so much of] a scholar (that all her work is impeccable).
+b_73		Hilda is such [the kind of] a scholar (as you were speaking ofjust now).
+b_73		NP
+b_73		So eminent a scholar as Dr. Lucille Hein was here.
+b_73		Such an eminent scholar as Dr. Lucille Hein was here.
+b_73		So elegant a solution as you have presented us with can elicit only admiration.
+b_73		You have presented so elegant a solution that we can only admire it.
+b_73	?	Such a scholar that people are impressed is here.
+b_73		Such a scholar as you were speaking of just now is here.
+b_73		:
+b_73	?	So much of a scholar is here.
+b_73		Her mother wants Mary to be such an eminent woman that everyone
+b_73		will respect her.
+b_73	?	Her mother wants Mary to be such an eminent woman as Sappho.
+b_73	*	such person such trouble
+b_73		6. APShift
+b_73		NP
+b_73		[NP [(so) AP] [(Det) N]]NP AP Shift
+b_73		and (206) can be illustrated as follows:
+b_73		NP
+b_73		NP
+b_73		NP
+b_73	*	SO fine food such fine food
+b_73		NP
+b_73		NP
+b_73		a more obviously correct solution
+b_73		NP
+b_73		so obviously correct a solution --
+b_73		such an obviously correct solution
+b_73		a decidedly taller man
+b_73	*	a decidedly too tall man
+b_73		an obviously better solution
+b_73	*	an obviously {so} good solution
+b_73		.
+b_73		She made so much better a reply.
+b_73		NP
+b_73	*	She made such a much better reply.
+b_73	*	She made such a better reply.
+b_73		much + -er = more little + -er = less
+b_73		much + -est = most little + -est = least
+b_73		many + -er = more few + -er = fewer
+b_73		many + -est = most few + -est = fewest
+b_73		as ,as
+b_73		too too
+b_73		more friendly most friendly
+b_73		more bread most bread
+b_73	?	more friendly an answer a more friendly answer
+b_73		a most kind answer
+b_73	*	the most kind answer
+b_73	*	a most kind answer that I ever heard
+b_73	*	a kindest answer
+b_73		the kindest answer
+b_73		the kindest answer that I ever heard
+b_73		Most helpful advice is unwanted.
+b_73		You've given me most helpful advice.
+b_73		Sally will give me more helpful advice than destructive criticism.
+b_73		Sally will give me more helpful advice than the advice I got from you.
+b_73		NP
+b_73		NP
+b_73		: Most of it is unwanted; she'll giveyou more of it. The presence of pronouns causes
+b_73		of to show up and reveals the underlying structure more clearly.
+b_73		I've never seen more intelligent dogs.
+b_73		= more (intelligent dogs)
+b_73		= (more intelligent) dogs
+b_73		NP
+b_73		NP
+b_73		much more intelligent dogs
+b_73		there is only one analysis, since much cannot modify plurals: much too much, *much too
+b_73		many, *much dogs. Therefore the presence of much in (235) "forces" the much interpreta
+b_73		NP
+b_73		many more intelligent dogs
+b_73		= many (more intelligent) dogs
+b_73		= (many more) (intelligent dogs)
+b_73		NP
+b_73		NP
+b_73		more more intelligent dogs
+b_73		NP
+b_73		I've never seen a man taller than my father.
+b_73		I've never seen a taller man than my father.
+b_73		I've never seen a man taller than my mother.
+b_73		I've never seen a taller man than my mother.
+b_73		AP NP
+b_73		is the underlying head of the comparative clause construction in both (242b)
+b_73		and (242d).
+b_73		. Shown circled in (244), this NP is eventually deleted by a transformation of
+b_73		S
+b_73		represents two deep structures: with my father as subject, we have the
+b_73		underlying structure for the clause in (242b); with my mother, we have that for (242d).
+b_73		. (In (245) the clause is displayed extraposed, although it may originate in the
+b_73		Pred
+b_73		I've never seen a man (who is) taller than my { father
+b_73		the man (who is) taller than my father
+b_73		or
+b_73		the one man taller than my father.
+b_73	*	the taller man than my father
+b_73	*	the one taller man than my father
+b_73		AP
+b_73		John wants to come up with as good a solution as Christine did
+b_73		John wants to come up with a solution as good as Chrti' f
+b_73		John wants to find a solution better than Christine's f
+b_73		Jack eats caviar more than he eats mush.
+b_73		Jack eats more caviar than he eats mush.
+b_73		Jack eats caviar more than he sleeps.
+b_73	*	Jack eats more caviar than he sleeps.
+b_73		s
+b_73		Caviar is eaten by Jack more than mush.
+b_73		More caviar than mush is eaten by Jack.
+b_73		s
+b_73		Jack ate more of this than he ate of that.
+b_73		The table is longer than the door is wide.
+b_73		has an underlying structure, according to my analysis, similar to that represented
+b_73		in (263).
+b_73		S
+b_73		Mary's happy about her work, and John's happy about his children.
+b_73	*	Mary's happy about her work, and John's about his children.
+b_73		Mary's happy about her work, and John is __ about his children.
+b_73		Mary is happy with her work, and John is with his children.
+b_73		Mary's happy with her work, and John's with his children.
+b_73	*	The table is longer than the door's wide.
+b_73		The table is long, and the door's wide.
+b_73		S
+b_73		
+b_73	*	I was happier there than I'm here.
+b_73		I'm sad, more than I'm angry.
+b_73		has the approximate meaning, 'It's more true of me than I'm sad than that I'm
+b_73		angry'. But (27I) is no counterexample at all, as we see by considering the relation
+b_73		between sad and more, which is somewhat similar to that of caviar and more in (257).
+b_73		
+b_73	*	I'm sadder than I'm angry.
+b_73		S
+b_73	?	I'm sad, more than angry.
+b_73		I'm more sad than angry.
+b_73		I'm worrying, more than thinking. +
+b_73	*	I'm more worrying than thinking.
+b_73	*	I'm sadder than angry.
+b_73		I'm sad, as much as I'm angry. --. (Truncation)
+b_73	?	I'm sad, as much as angry. (Permutation)
+b_73		I'm as much sad as angry. 9* (Much Deletion)
+b_73	*	I'm as sad as angry.
+b_73		I am more angry today than I was yesterday.
+b_73		I am angrier today that I was yesterday.
+b_73		I am more angry than sad.
+b_73	*	I am angrier than sad.
+b_73		John is more than six feet tall.
+b_73	*	John is more than Bill tall.
+b_73		John is taller than six feet.
+b_73		John is taller than Bill.
+b_73		Mary has more than two friends.
+b_73	*	Mary has more than just Bill and Pete friends.
+b_73		Mary has more friends than two.
+b_73		Mary has more friends than just Bill and Pete.
+b_73		They may grow as much as six feet high.
+b_73	*	They may grow as much as bamboo high.
+b_73		They may grow as high as six feet.
+b_73		They may grow as high as bamboo.
+b_73		Some of them made as many as 20 errors.
+b_73	*	Some of them made as many as Joan errors.
+b_73		Some of them made as many errors as 20.
+b_73		Some of them made as many errors as Joan.
+b_73		(more than six feet) tall
+b_73		((more than six) feet) tall
+b_73		Six feet = that much QP = QP
+b_73	*	Bill = that much *NP = QP
+b_73		Six feet (tall) = that (much) tall AP = AP or QP = AP
+b_73		Bill is that (much) tall NP is AP
+b_73		two = that many QP = QP
+b_73	*	just Bill and Pete = that many *NP = QP
+b_73		two friends = that many friends NP = NP
+b_73		just Bill and Pete = that many friends NP = NP
+b_73		and (287) embody the generalization that syntactic identities (indicated by
+b_73		John said he's six feet tall. How tall is that?
+b_73	*	John is taller than six feet is.
+b_73		John is taller than Pete is.
+b_73	*	Mary has more friends that two {s}.
+b_73	*	Mary has more friends than just Bill and Pete are
+b_73		S
+b_73		S
+b_73		S
+b_73		s
+b_73		What, then, accounts for the difference between (28oa,c) and (296a,b) ?
+b_73	*	John is more than five feet short.
+b_73		John is shorter than five feet.
+b_73		_
+b_73		A second question is why it is that in derivations (294) and (295), Com
+b_73		Mary has more enemies than Bill has friends.
+b_73		S
+b_73	*	Mary has more than Bill has friends enemies.
+b_73		illustrates this forbidden situation:
+b_73		NP
+b_73		.
+b_73		NP
+b_73		A third question to be answered is why assume that the comparative
+b_73		clause originates in the determiner? This assumption may or may not be ultimately
+b_73		correct, but it has several practical advantages. The cooccurrence between each
+b_73		clause and its governing determiner is easily stated on this assumption. Since the
+b_73		distance between the extraposed clause and its associated determiner can be extended
+b_73		at will, it would be hard to express the cooccurrence otherwise. For example, in
+b_73		, the surface structure distance between the Det element and its associated
+b_73		Mary doesn't have as many too many too many ... as Jane.
+b_73		t-~~~~~~~~~
+b_73		Jane has more nearly as many too many ... than Mary.
+b_73		S
+b_73		S
+b_73		Mary swam five more laps than Joan swam.
+b_73		it is understood that Joan swam an unspecified number of laps-"x many laps"-and
+b_73		that Mary swam five more than that number; the number five does not enter into
+b_73		the understood contents of the than clause. This fact is represented in (307):
+b_73		s
+b_73		Mary swam as many more laps than Joan (swam) as Linda (swam).
+b_73		S

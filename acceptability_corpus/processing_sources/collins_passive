@@ -1,0 +1,74 @@
+c-05		John wrote the book.
+c-05		The book was written by John.
+c-05		The passive suffix -en absorbs accusative Case.
+c-05		The passive suffix -en absorbs the external h-role.
+c-05		The book was written by John.
+c-05		The book was written by John.
+c-05		It was believed by everybody that Mary was a thief.
+c-05		Danger was sensed by John.
+c-05		A black smoke was emitted by the radiator.
+c-05		That professor is feared by all students.
+c-05		Mary was respected by John.
+c-05		A copy of Guns, Germs, and Steel has now been received by each member of the incoming class.
+c-05		Ted was bitten by the lovebug.
+c-05		I was told that by a little bird.
+c-05		The book was written by John
+c-05	*	The book was by John written.
+c-05		The book was written by John.
+c-05		The argument was summed up by the coach.
+c-05	*	The argument was summed by the coach up.
+c-05		The paper was written up by John.
+c-05	*	The paper was written by John up.
+c-05		John was spoken to by Mary.
+c-05	*	John was spoken by Mary to.
+c-05		John has seen the book.
+c-05	*	The book has seen by Mary.
+c-05		The book was seen by Mary.
+c-05	*	John was seen the book.
+c-05	*	The book was by John written.
+c-05		Breakfast is eaten nude by the campers.
+c-05		Breakfast is eaten by the campers nude.
+c-05		The book was written.
+c-05		John was spoken to by Mary.
+c-05	*	John was spoke by Mary to.
+c-05		The table was wiped clean by John.
+c-05	*	The table was wiped by John clean.
+c-05		The metal was hammered flat by John.
+c-05	*	The metal was hammered by John flat.
+c-05		Mary was given the book by John.
+c-05	*	Mary was given by John the book.
+c-05		I was convinced to leave by John.
+c-05		I was convinced by John to leave.
+c-05		John was believed to be telling the truth by Mary.
+c-05		John was believed by Mary to be telling the truth.
+c-05		The car was driven to Maine by John.
+c-05		The car was driven by John to Maine.
+c-05		The book was given to Mary by John.
+c-05		The book was given by John to Mary.
+c-05		It was believed by the students that they would have an exam.
+c-05	*	The magazines were sent to herself by Mary.
+c-05	*	Testimony was given about himself by the suspect.
+c-05	*	Books were sent to each other by the students.
+c-05	*	Money was hidden from himself by Bill.
+c-05	*	Chocolate eggs were hidden from each other by the children.
+c-05	*	Medals were given to themselves by the generals.
+c-05	*	Medals were given to each other by the generals.
+c-05	*	Tabs were kept on each other by the agents.
+c-05		The magazines were sent by Mary to herself.
+c-05		Testimony was given by the suspect about himself.
+c-05	*	Money was given to his mother by every boy.
+c-05		Books were given to no student by any professor.
+c-05		Chocolate eggs were hidden from no child by any adult.
+c-05		Tabs were kept on no criminal by any agent.
+c-05		Books were given to each student by the other.
+c-05		Chocolate eggs were hidden from each child by the other.
+c-05		Tabs were kept on each agent by the other.
+c-05		Books were given to every student by his mother.
+c-05		Chocolate eggs were hidden from every child by his mother.
+c-05		Tabs were kept on every agent by his supervisor.
+c-05		Books were taken from no student by any professor.
+c-05		Books were taken from no student and given to Mary.
+c-05	*	Books were taken from no student and given to Mary by any professor.
+c-05		Books were taken from each student by the other.
+c-05		Books were taken from each student and given to Mary.
+c-05	*	Books were taken from each student and given to Mary by the other.

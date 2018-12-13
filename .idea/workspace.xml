@@ -1,8 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/acceptability_corpus/artificial/svo.tsv" line="500" mnemonic="4" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="69f0732d-a5ae-4515-92df-328b30820cd3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/acceptability_corpus/artificial/tokenized/singular_plural/dev.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/acceptability_corpus/artificial/tokenized/singular_plural/test.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/acceptability_corpus/artificial/tokenized/singular_plural/train.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/acceptability_corpus/by_source/bc01.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/acceptability_corpus/levin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/acceptability_corpus/parsed/all_parsed.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/acceptability_corpus/parsed/just_categories.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/acceptability_corpus/raw/mixed_valid.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_generation/benefactive.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_generation/body_parts.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_generation/dative.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_generation/directional.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_generation/inchoative.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_generation/spray_load.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_generation/subject_agreement.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_generation/there.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_generation/understood_object.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_generation/wh.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/outputs_process/combine_output.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/smart_splitting.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/acceptability_corpus/corpus" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/acceptability_corpus/corpus_table" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/acceptability_corpus/corpus_table_all_binary.tsv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/acceptability_corpus/corpus_table_tokenized_crop30" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/acceptability_corpus/corpus_table_tokenized_crop30_balanced" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/acceptability_corpus/all/test.txt" afterPath="$PROJECT_DIR$/acceptability_corpus/all_old/test.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/acceptability_corpus/all/train.txt" afterPath="$PROJECT_DIR$/acceptability_corpus/all_old/train.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/acceptability_corpus/all/valid.txt" afterPath="$PROJECT_DIR$/acceptability_corpus/all_old/valid.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/acceptability_corpus/all_balanced/test.txt" afterPath="$PROJECT_DIR$/acceptability_corpus/all_old_balanced/test.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/acceptability_corpus/all_balanced/train.txt" afterPath="$PROJECT_DIR$/acceptability_corpus/all_old_balanced/train.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/acceptability_corpus/all_balanced/valid.txt" afterPath="$PROJECT_DIR$/acceptability_corpus/all_old_balanced/valid.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/acceptability_corpus/corpus_table.tsv" afterPath="$PROJECT_DIR$/acceptability_corpus/raw/all_w_unks.tsv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/acceptability_corpus/corpus_table_tokenized" afterPath="$PROJECT_DIR$/acceptability_corpus/tokenized/all.tsv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/acceptability_corpus/raw/all.tsv" afterPath="$PROJECT_DIR$/acceptability_corpus/artificial/tokenized/reflexives/train.tsv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/acceptability_corpus/raw/test.tsv" afterPath="$PROJECT_DIR$/acceptability_corpus/raw/out_of_domain.tsv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acceptability_corpus/processing_sources/relative_sag" afterPath="$PROJECT_DIR$/acceptability_corpus/processing_sources/relative_sag" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artificial_generation/principle_a.py" afterPath="$PROJECT_DIR$/artificial_generation/principle_a.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artificial_generation/svo.py" afterPath="$PROJECT_DIR$/artificial_generation/svo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/evaluate_acceptability.py" afterPath="$PROJECT_DIR$/models/evaluate_acceptability.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/interactive_acceptability.py" afterPath="$PROJECT_DIR$/models/interactive_acceptability.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp" afterPath="$PROJECT_DIR$/temp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/data_processor.py" afterPath="$PROJECT_DIR$/utils/data_processor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/permuting.py" afterPath="$PROJECT_DIR$/utils/permuting.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,148 +62,50 @@
     <favorites_list name="LM" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5703057">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="temp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/temp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="133656">
-                  <caret line="11138" column="62" lean-forward="false" selection-start-line="11138" selection-start-column="62" selection-end-line="11138" selection-end-column="62" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="outputs_organize.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/utils/outputs_organize.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="338">
-                  <caret line="79" column="12" lean-forward="false" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="make_sweep_aj.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/training/make_sweep_aj.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="12">
-                  <caret line="96" column="48" lean-forward="false" selection-start-line="96" selection-start-column="48" selection-end-line="96" selection-end-column="48" />
-                  <folding>
-                    <element signature="e#58#71#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="process_corpus.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/utils/process_corpus.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="583">
-                  <caret line="88" column="13" lean-forward="true" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
-                  <folding>
-                    <element signature="e#0#11#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="acceptability_cl.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/models/acceptability_cl.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="900">
-                  <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#13#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="data_utils.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/utils/data_utils.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="data_processor.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/utils/data_processor.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-707">
-                  <caret line="173" column="12" lean-forward="true" selection-start-line="173" selection-start-column="12" selection-end-line="173" selection-end-column="12" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="make_sweep.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/training/make_sweep.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="194">
-                  <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="61" />
-                  <folding>
-                    <element signature="e#58#71#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="my_flags.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/training/my_flags.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
-                  <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="random.py" pinned="false" current-in-tab="false">
-            <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/random.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="make_sweep.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/training/make_sweep.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="12">
-                  <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="49" />
-                  <folding>
-                    <element signature="e#58#71#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="make_sweep_perm_strategy.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/training/make_sweep_perm_strategy.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="366">
-                  <caret line="44" column="53" lean-forward="false" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
-                  <folding>
-                    <element signature="e#58#71#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="smart_splitting.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/smart_splitting.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data_processor.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utils/data_processor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="all-tokenized.tsv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/acceptability_corpus/raw/all-tokenized.tsv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="all_2.0.tsv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/acceptability_corpus/tokenized/all_2.0.tsv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -168,134 +116,136 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>my_CEloss</find>
-      <find>init_hi</find>
-      <find>&lt;unk&gt;</find>
-      <find>EPO</find>
-      <find>(f1|matthews).*|EPOCH .</find>
-      <find>(f1|matthews).*|EPOCH \d*</find>
-      <find>to_string</find>
-      <find>the tank leaked</find>
-      <find>MAX</find>
-      <find>f1</find>
-      <find>TR</find>
-      <find>test f1</find>
-      <find>matthews</find>
-      <find>valid</find>
-      <find>self.</find>
-      <find>.*&lt;s&gt;</find>
-      <find>LOGS</find>
-      <find>log_outpu</find>
-      <find>output</find>
-      <find>.*\*.*</find>
-      <find>^([a-z0-9]+)</find>
-      <find>asw17-..</find>
-      <find>^[^\*\n]*$</find>
-      <find>data_type</find>
-      <find>self.embedding_size</find>
-      <find>self.learning_rate</find>
-      <find>hidden</find>
-      <find>^$</find>
-      <find>.*\tlv\t.*\n</find>
-      <find>e-0</find>
+      <find>71</find>
+      <find>97</find>
+      <find>80</find>
+      <find>squirmed</find>
+      <find>95</find>
+      <find>'(.*)': \((.*), (.*), (.*)\),?</find>
+      <find>\t0\t</find>
+      <find>uncovered</find>
+      <find>passed</find>
+      <find>delivered</find>
+      <find>sat</find>
+      <find>divorce</find>
+      <find>forest floor</find>
+      <find>out.write</find>
+      <find>ID=\d+\n</find>
+      <find>ID</find>
+      <find>beats</find>
+      <find>1 gave</find>
+      <find>I would like to</find>
+      <find>, mother,</find>
+      <find>Anson</find>
+      <find>Anson became a</find>
+      <find>\t([a-zA-Z].*)$</find>
+      <find>\t([^01\*\?].*)$</find>
+      <find>A proof that the</find>
+      <find>sources</find>
+      <find>_0</find>
+      <find>tokenz</find>
+      <find>token</find>
+      <find>tokenize</find>
     </findStrings>
     <replaceStrings>
-      <replace>$1 +\\</replace>
-      <replace>$3\t$4</replace>
-      <replace>*\t$1</replace>
-      <replace>$1</replace>
-      <replace>blond</replace>
-      <replace>\t$2$3$4</replace>
-      <replace>\t$3$5$6</replace>
+      <replace>j_71\t$1\t</replace>
+      <replace>d_98\t</replace>
       <replace />
-      <replace>$1 +</replace>
-      <replace>$1\t</replace>
-      <replace>0\t*\t</replace>
-      <replace>ks08\t</replace>
-      <replace>n`t</replace>
-      <replace>'m</replace>
-      <replace>'re</replace>
+      <replace>.</replace>
+      <replace>$1$3</replace>
+      <replace>$1\t1\t\t$2</replace>
+      <replace>$10\t\*$2</replace>
       <replace>'</replace>
-      <replace>_\t</replace>
-      <replace>lm</replace>
-      <replace>bnc\t</replace>
-      <replace>bnc\t1\t\t</replace>
-      <replace>my_CELoss</replace>
+      <replace>the</replace>
       <replace>\t</replace>
-      <replace>test</replace>
-      <replace>&lt;s&gt;</replace>
-      <replace>self.LOGS</replace>
-      <replace>asw</replace>
-      <replace>asw17</replace>
-      <replace>self.FLAGS.embedding_size</replace>
-      <replace>self.FLAGS.learning_rate</replace>
-      <replace>e&amp;0</replace>
+      <replace>\%</replace>
+      <replace>\\\\\n</replace>
+      <replace>(&quot;$1&quot;, 0.5),</replace>
+      <replace>\t$1\t</replace>
+      <replace>$1</replace>
+      <replace>out.write</replace>
+      <replace>ad03\t1\t</replace>
+      <replace>Aphrodite</replace>
+      <replace>Lucy</replace>
+      <replace>Achilles</replace>
+      <replace>satisfied me</replace>
+      <replace>$1\t$2\t$3\t$4</replace>
+      <replace>soundscape</replace>
+      <replace>proctor</replace>
+      <replace>out2.write</replace>
+      <replace>1</replace>
+      <replace>_1</replace>
+      <replace>_2</replace>
+      <replace>_3</replace>
+      <replace>_4</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/artificial_generation/spray_load.py" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/logs/acceptability-logs" />
-        <option value="$PROJECT_DIR$/acceptability_corpus/corpus_table_tokenized_crop30" />
-        <option value="$PROJECT_DIR$/rnn_acceptability.py" />
-        <option value="$PROJECT_DIR$/logs/rnn-acceptability-logs" />
-        <option value="$PROJECT_DIR$/acceptability_corpus/pre-permute" />
-        <option value="$PROJECT_DIR$/data_processor.py" />
-        <option value="$PROJECT_DIR$/data_utils.py" />
-        <option value="$PROJECT_DIR$/acceptability_corpus/lm_generated" />
-        <option value="$PROJECT_DIR$/lm.py" />
-        <option value="$PROJECT_DIR$/acceptability_corpus/lm_generated5" />
-        <option value="$PROJECT_DIR$/acceptability_corpus/lm_generated6" />
-        <option value="$PROJECT_DIR$/logs/rnn-logs" />
-        <option value="$PROJECT_DIR$/classifier_utils.py" />
-        <option value="$PROJECT_DIR$/model.py" />
-        <option value="$PROJECT_DIR$/lm_main.py" />
-        <option value="$PROJECT_DIR$/classifier_data_utils.py" />
-        <option value="$PROJECT_DIR$/logs/aj_logs_101194746_760244_OUTPUTS_101194746_760244" />
-        <option value="$PROJECT_DIR$/logs/aj_logs_101195358_777345_OUTPUTS_101195358_777345" />
-        <option value="$PROJECT_DIR$/acceptability_corpus/corpus_table_balanced" />
-        <option value="$PROJECT_DIR$/acceptability_corpus/temp" />
-        <option value="$PROJECT_DIR$/acceptability_corpus/sample_output" />
-        <option value="$PROJECT_DIR$/acceptability_corpus/corpus_table_tokenized_crop30_balanced" />
-        <option value="$PROJECT_DIR$/acceptability_cl.py" />
-        <option value="$PROJECT_DIR$/model_trainer.py" />
-        <option value="$PROJECT_DIR$/process_corpus.py" />
-        <option value="$PROJECT_DIR$/sweep_sample.txt" />
-        <option value="$PROJECT_DIR$/models/flags.py" />
-        <option value="$PROJECT_DIR$/make_sweep.py" />
-        <option value="$PROJECT_DIR$/flags.py" />
-        <option value="$PROJECT_DIR$/rnn_classifier.py" />
-        <option value="$PROJECT_DIR$/run_training.py" />
-        <option value="$PROJECT_DIR$/models/lm.py" />
-        <option value="$PROJECT_DIR$/models/lm_main.py" />
-        <option value="$PROJECT_DIR$/models/rnn_acceptability.py" />
-        <option value="$PROJECT_DIR$/training/model_trainer.py" />
-        <option value="$PROJECT_DIR$/training/test.py" />
-        <option value="$PROJECT_DIR$/utils/balance_corpus.py" />
-        <option value="$PROJECT_DIR$/training/my_flags.py" />
-        <option value="$PROJECT_DIR$/models/rnn_classifier.py" />
-        <option value="$PROJECT_DIR$/training/run_training.py" />
-        <option value="$PROJECT_DIR$/models/model_trainer.py" />
-        <option value="$PROJECT_DIR$/training/local_exp" />
-        <option value="$PROJECT_DIR$/training/convert_ckpt_cpu.py" />
-        <option value="$PROJECT_DIR$/training/make_sweep_aj.py" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/raw/in_domain.tsv" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/raw/mixed_valid.tsv" />
         <option value="$PROJECT_DIR$/temp" />
-        <option value="$PROJECT_DIR$/utils/outputs_organize.py" />
-        <option value="$PROJECT_DIR$/utils/process_corpus.py" />
-        <option value="$PROJECT_DIR$/training/make_sweep.py" />
-        <option value="$PROJECT_DIR$/training/make_sweep_perm_strategy.py" />
-        <option value="$PROJECT_DIR$/models/acceptability_cl.py" />
+        <option value="$PROJECT_DIR$/models/interactive_acceptability.py" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/human_eval/in_domain.tsv" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/human_eval/out_of_domain.tsv" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/by_source/r-67.tsv" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/by_source/bc01.tsv" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/by_source/l-93.tsv" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/by_source/ks08" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/by_source/ad03.tsv" />
+        <option value="$PROJECT_DIR$/outputs_process/combine_outputs..py" />
+        <option value="$PROJECT_DIR$/outputs_process/combine_outputs.py" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/levin" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/artificial/tokenized/reflexives/test.tsv" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/artificial/tokenized/reflexives/train.tsv" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/artificial/tokenized/reflexives/dev.tsv" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/artificial/tokenized/singular_plural/test.tsv" />
+        <option value="$PROJECT_DIR$/artificial_generation/principle_a.py" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/artificial/tokenized/singular_plural/train.tsv" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/artificial/tokenized/singular_plural/dev.tsv" />
+        <option value="$PROJECT_DIR$/artificial_generation/subject_agreement.py" />
+        <option value="$PROJECT_DIR$/utils/permuting.py" />
+        <option value="$PROJECT_DIR$/artificial_generation/benefactive.py" />
+        <option value="$PROJECT_DIR$/artificial_generation/directional.py" />
+        <option value="$PROJECT_DIR$/artificial_generation/body_parts.py" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/artificial/all_verbs/there.csv" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/artificial/all_verbs/all_verbs.csv" />
+        <option value="$PROJECT_DIR$/artificial_generation/de_dup_verbs.py" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/artificial/tokenized/combined/dev.tsv" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/artificial/tokenized/combined/test.tsv" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/artificial/tokenized/combined/train.tsv" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/combined/dev.tsv" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/combined/test.tsv" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/combined/train.tsv" />
+        <option value="$PROJECT_DIR$/artificial_generation/understood_object.py" />
+        <option value="$PROJECT_DIR$/artificial_generation/spray_load.py" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes_cola/inchoative/test.tsv" />
+        <option value="$PROJECT_DIR$/artificial_generation/inchoative.py" />
+        <option value="$PROJECT_DIR$/artificial_generation/dative.py" />
+        <option value="$PROJECT_DIR$/artificial_generation/there.py" />
+        <option value="$PROJECT_DIR$/outputs_process/combine_output.py" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/spray_load/test.tsv" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/parsed/all_parsed.txt" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/parsed/just_categories.txt" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/raw/out_of_domain_valid.tsv" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/raw/all.tsv" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/raw/in_domain_valid.tsv" />
+        <option value="$PROJECT_DIR$/acceptability_corpus/raw/all-tokenized.txt" />
+        <option value="$PROJECT_DIR$/utils/smart_splitting.py" />
         <option value="$PROJECT_DIR$/utils/data_processor.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="873" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -331,6 +281,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -367,7 +319,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="training" />
+              <option name="myItemId" value="outputs_process" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -381,30 +333,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="acceptability_corpus" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="SearchEverywhereHistoryKey" value="split&#9;null&#9;null&#10;F1&#9;null&#9;null&#10;embedding_data_path&#9;null&#9;null&#10;model&#9;FILE&#9;file:///Users/alexwarstadt/Workspace/acceptability/model_trainer.py&#10;rnn&#9;FILE&#9;file:///Users/alexwarstadt/Workspace/acceptability/rnn_classifier.py&#10;ermute&#9;null&#9;null&#10;addmm&#9;null&#9;null&#10;_functions/lin&#9;FILE&#9;file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/torch/nn/_functions/linear.py&#10;linear.p&#9;FILE&#9;file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/torch/nn/modules/linear.py" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="SearchEverywhereHistoryKey" value="matthews&#9;null&#9;null&#10;unk&#9;null&#9;null&#10;tokeni&#9;null&#9;null&#10;classifier_da&#9;FILE&#9;file:///Users/alexwarstadt/Workspace/acceptability/utils/classifier_data_utils.py&#10;split&#9;null&#9;null&#10;F1&#9;null&#9;null&#10;embedding_data_path&#9;null&#9;null&#10;model&#9;FILE&#9;file:///Users/alexwarstadt/Workspace/acceptability/model_trainer.py&#10;rnn&#9;FILE&#9;file:///Users/alexwarstadt/Workspace/acceptability/rnn_classifier.py&#10;ermute&#9;null&#9;null&#10;addmm&#9;null&#9;null&#10;_functions/lin&#9;FILE&#9;file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/torch/nn/_functions/linear.py&#10;linear.p&#9;FILE&#9;file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/torch/nn/modules/linear.py" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/acceptability_corpus" />
-      <recent name="$PROJECT_DIR$/acceptability_corpus/levin/levin_balanced" />
-      <recent name="$PROJECT_DIR$/models" />
-      <recent name="$PROJECT_DIR$/training" />
-      <recent name="$PROJECT_DIR$/utils" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/acceptability_corpus/tokenized" />
+      <recent name="$PROJECT_DIR$/acceptability_corpus/raw" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes" />
+      <recent name="$PROJECT_DIR$/acceptability_corpus/artificial/all_verbs/spray_load.csv" />
+      <recent name="$PROJECT_DIR$/acceptability_corpus/artificial/spray_load.csv" />
+      <recent name="$PROJECT_DIR$/acceptability_corpus/artificial/tokenized/sp_long_heldout_subj" />
+      <recent name="$PROJECT_DIR$/acceptability_corpus/processed" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -419,8 +372,62 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.make_sweep_perm_strategy">
-    <configuration default="false" name="balance_corpus" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.data_processor">
+    <configuration default="false" name="there" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_generation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="acceptability" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_generation/there.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="dative" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_generation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="acceptability" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_generation/dative.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="combine_output" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/outputs_process" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="acceptability" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/outputs_process/combine_output.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="smart_splitting" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -432,43 +439,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="acceptability" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/balance_corpus.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="make_sweep_aj" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/training" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="acceptability" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/training/make_sweep_aj.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="outputs_organize" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="acceptability" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/outputs_organize.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/smart_splitting.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -492,22 +463,15 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="make_sweep_perm_strategy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
       <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/training" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="acceptability" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/training/make_sweep_perm_strategy.py" />
+      <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -587,7 +551,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="acceptability" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/training/run_training.py" />
-      <option name="PARAMETERS" value="--embedding_size 300 --data_dir /scratch/asw462/data/discriminator/ --data_type discriminator --vocab_path /scratch/asw462/data/bnc-30/vocab_20000.txt --log_path /scratch/asw462/logs/ --convergence_threshold 20 --num_layers 1 --crop_pad_length 30 --ckpt_path /scratch/asw462/models/ --batch_size 32 --prints_per_stage 1 --max_epochs 100 --embedding_path /scratch/asw462/data/bnc-30/embeddings_20000.txt --stages_per_epoch 100 --model_type rnn_classifier_pooling --gpu  --hidden_size 475 --learning_rate 0.00143242751693 --experiment_name sweep_10_30_discriminator_rnn_classifier_pooling_0-lr0.0014-h_size475-num_layers1" />
+      <option name="PARAMETERS" value="--embedding_size 300 --data_dir $PROJECT_DIR$/../data/permuted/shuff-05-10 --data_type discriminator --vocab_path $PROJECT_DIR$/../data/bnc-30/vocab_20000.txt --log_path $PROJECT_DIR$/logs/ --convergence_threshold 20 --num_layers 1 --crop_pad_length 30 --ckpt_path /scratch/asw462/models/ --batch_size 32 --prints_per_stage 1 --max_epochs 100 --embedding_path $PROJECT_DIR$/../data/bnc-30/embeddings_20000.txt --stages_per_epoch 100 --model_type rnn_classifier_pooling --hidden_size 475 --learning_rate 0.00143242751693 --experiment_name sweep_10_30_discriminator_rnn_classifier_pooling_0-lr0.0014-h_size475-num_layers1" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Train_CBOW_Flags" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="acceptability" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/training/run_training.py" />
+      <option name="PARAMETERS" value="--by_source --embedding_size 300 --data_dir $PROJECT_DIR$/acceptability_corpus/all_balanced --data_type discriminator --vocab_path $PROJECT_DIR$/../data/bnc-30/vocab_20000.txt --log_path $PROJECT_DIR$/logs/ --convergence_threshold 20 --crop_pad_length 30 --ckpt_path $PROJECT_DIR$/checkpoints/ --batch_size 32 --prints_per_stage 1 --max_epochs 500 --embedding_path $PROJECT_DIR$/../data/bnc-30/embeddings_20000.txt --stages_per_epoch 1 --model_type aj_cbow --nomax_pool --hidden_size 169 --learning_rate 0.00081764338505 --experiment_name sweep_1228233023_aj_cbow_499-lr0.00082-h_size169-dataaj_balanced" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
@@ -605,27 +587,47 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="acceptability" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/training/run_training.py" />
-      <option name="PARAMETERS" value="--encoding_size 748 --embedding_size 300 --data_dir $PROJECT_DIR$/acceptability_corpus/levin --data_type discriminator --vocab_path $PROJECT_DIR$/../data/bnc-30/vocab_20000.txt --log_path $PROJECT_DIR$/logs/ --convergence_threshold 20 --crop_pad_length 30 --ckpt_path $PROJECT_DIR$/checkpoints/ --batch_size 32 --prints_per_stage 1 --max_epochs 500 --embedding_path $PROJECT_DIR$/../data/bnc-30/embeddings_20000.txt --encoder_type rnn_classifier_pooling --encoder_num_layers 3 --stages_per_epoch 1 --model_type aj_classifier --hidden_size 170 --learning_rate 5.43141153636e-05 --encoder_path $PROJECT_DIR$/checkpoints/CPU_sweep_1106235815_rnn_classifier_pooling_14-lr0.00088-h_size748-datadiscriminator-num_layers3 --experiment_name sweep_1115035802_aj_classifier_42-lr5.4e-05-h_size170-datalevin-encsweep_1106235815_rnn_classifier_pooling_14-lr0.00088-h_size748-datadiscriminator-num_layers3" />
+      <option name="PARAMETERS" value="--encoding_size 748 --embedding_size 300 --data_dir $PROJECT_DIR$/acceptability_corpus/all_balanced --data_type discriminator --vocab_path $PROJECT_DIR$/../data/bnc-30/vocab_20000.txt --log_path $PROJECT_DIR$/logs/ --convergence_threshold 20 --crop_pad_length 30 --ckpt_path $PROJECT_DIR$/checkpoints/ --batch_size 32 --prints_per_stage 1 --max_epochs 500 --embedding_path $PROJECT_DIR$/../data/bnc-30/embeddings_20000.txt --encoder_type rnn_classifier_pooling --encoder_num_layers 3 --stages_per_epoch 5 --model_type aj_classifier --by_source --hidden_size 25 --learning_rate .0001 --encoder_path $PROJECT_DIR$/checkpoints/CPU_sweep_1106235815_rnn_classifier_pooling_14-lr0.00088-h_size748-datadiscriminator-num_layers3 --experiment_name toy_model1-lr.0001-h_size25-datalevin-encsweep_1106235815_rnn_classifier_pooling_14-lr0.00088-h_size748-datadiscriminator-num_layers3" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <list size="7">
+    <configuration default="false" name="make_sweep_aj" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/training" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="acceptability" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/training/make_sweep_aj.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <list size="9">
       <item index="0" class="java.lang.String" itemvalue="Python.Train_Flags" />
-      <item index="1" class="java.lang.String" itemvalue="Python.train_aj_flags" />
-      <item index="2" class="java.lang.String" itemvalue="Python.balance_corpus" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Train_CBOW_Flags" />
+      <item index="2" class="java.lang.String" itemvalue="Python.train_aj_flags" />
       <item index="3" class="java.lang.String" itemvalue="Python.make_sweep_aj" />
-      <item index="4" class="java.lang.String" itemvalue="Python.outputs_organize" />
-      <item index="5" class="java.lang.String" itemvalue="Python.data_processor" />
-      <item index="6" class="java.lang.String" itemvalue="Python.make_sweep_perm_strategy" />
+      <item index="4" class="java.lang.String" itemvalue="Python.there" />
+      <item index="5" class="java.lang.String" itemvalue="Python.dative" />
+      <item index="6" class="java.lang.String" itemvalue="Python.combine_output" />
+      <item index="7" class="java.lang.String" itemvalue="Python.smart_splitting" />
+      <item index="8" class="java.lang.String" itemvalue="Python.data_processor" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.make_sweep_perm_strategy" />
-        <item index="1" class="java.lang.String" itemvalue="Python.data_processor" />
-        <item index="2" class="java.lang.String" itemvalue="Python.outputs_organize" />
-        <item index="3" class="java.lang.String" itemvalue="Python.make_sweep_aj" />
-        <item index="4" class="java.lang.String" itemvalue="Python.balance_corpus" />
+        <item index="0" class="java.lang.String" itemvalue="Python.data_processor" />
+        <item index="1" class="java.lang.String" itemvalue="Python.smart_splitting" />
+        <item index="2" class="java.lang.String" itemvalue="Python.combine_output" />
+        <item index="3" class="java.lang.String" itemvalue="Python.there" />
+        <item index="4" class="java.lang.String" itemvalue="Python.dative" />
       </list>
     </recent_temporary>
   </component>
@@ -655,18 +657,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18097281" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24391988" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46385542" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.05761844" sideWeight="0.49427754" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31566265" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2614458" sideWeight="0.49427754" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25736237" sideWeight="0.49492386" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3746988" sideWeight="0.49492386" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47631243" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4199744" sideWeight="0.49713877" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35180724" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5746988" sideWeight="0.49713877" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -674,29 +676,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6069142" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46385542" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26888603" sideWeight="0.49427754" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39308578" sideWeight="0.49492386" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47631243" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12446352" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6069142" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39308578" sideWeight="0.49713877" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -754,98 +735,29 @@
           <option name="timeStamp" value="153" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/models/model.py</url>
-          <line>74</line>
-          <option name="timeStamp" value="184" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/models/lm.py</url>
-          <line>464</line>
+          <line>453</line>
           <option name="timeStamp" value="196" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/utils/classifier_data_utils.py</url>
-          <line>128</line>
-          <option name="timeStamp" value="205" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/models/acceptability_cl.py</url>
-          <line>227</line>
+          <line>76</line>
           <option name="timeStamp" value="252" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/models/rnn_acceptability.py</url>
-          <line>85</line>
-          <option name="timeStamp" value="269" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/models/lm.py</url>
-          <line>129</line>
+          <line>118</line>
           <option name="timeStamp" value="280" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/models/lm.py</url>
-          <line>149</line>
+          <line>138</line>
           <option name="timeStamp" value="281" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/models/lm.py</url>
-          <line>140</line>
+          <line>129</line>
           <option name="timeStamp" value="283" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/utils/classifier_data_utils.py</url>
-          <line>64</line>
-          <option name="timeStamp" value="286" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/models/model_trainer.py</url>
-          <line>202</line>
-          <option name="timeStamp" value="295" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/models/model_trainer.py</url>
-          <line>206</line>
-          <option name="timeStamp" value="297" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/models/rnn_classifier.py</url>
-          <line>76</line>
-          <option name="timeStamp" value="301" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/utils/process_corpus.py</url>
-          <option name="timeStamp" value="304" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/gflags/flagvalues.py</url>
-          <line>758</line>
-          <option name="timeStamp" value="310" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/gflags/flagvalues.py</url>
-          <line>768</line>
-          <option name="timeStamp" value="311" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/gflags/flagvalues.py</url>
-          <line>777</line>
-          <option name="timeStamp" value="312" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/training/run_training.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="316" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/gflags/flagvalues.py</url>
-          <line>759</line>
-          <option name="timeStamp" value="320" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/gflags/flagvalues.py</url>
-          <line>772</line>
-          <option name="timeStamp" value="322" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/training/make_sweep.py</url>
@@ -853,19 +765,129 @@
           <option name="timeStamp" value="325" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/training/make_sweep_aj.py</url>
-          <line>158</line>
-          <option name="timeStamp" value="327" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/utils/outputs_organize.py</url>
-          <line>72</line>
+          <url>file://$PROJECT_DIR$/outputs_process/outputs_organize.py</url>
+          <line>132</line>
           <option name="timeStamp" value="330" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/permuting.py</url>
+          <line>160</line>
+          <option name="timeStamp" value="335" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/permuting.py</url>
+          <line>168</line>
+          <option name="timeStamp" value="337" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/permuting.py</url>
+          <line>148</line>
+          <option name="timeStamp" value="339" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/outputs_process/rnn_outputs_organize.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="343" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/model_trainer.py</url>
+          <line>291</line>
+          <option name="timeStamp" value="347" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/model_trainer.py</url>
+          <line>237</line>
+          <option name="timeStamp" value="348" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/model_trainer.py</url>
+          <line>183</line>
+          <option name="timeStamp" value="354" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/model_trainer.py</url>
+          <line>165</line>
+          <option name="timeStamp" value="355" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/model_trainer.py</url>
+          <line>150</line>
+          <option name="timeStamp" value="356" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/outputs_process/outputs_organize.py</url>
+          <line>136</line>
+          <option name="timeStamp" value="363" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/outputs_process/outputs_organize.py</url>
+          <line>68</line>
+          <option name="timeStamp" value="369" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/outputs_process/outputs_organize.py</url>
+          <line>75</line>
+          <option name="timeStamp" value="370" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/cbow.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="372" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/outputs_process/organize_cbow.py</url>
+          <line>137</line>
+          <option name="timeStamp" value="378" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/outputs_process/organize_cbow.py</url>
+          <line>108</line>
+          <option name="timeStamp" value="379" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/utils/data_processor.py</url>
-          <line>179</line>
-          <option name="timeStamp" value="331" />
+          <line>248</line>
+          <option name="timeStamp" value="394" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/interactive_acceptability.py</url>
+          <line>87</line>
+          <option name="timeStamp" value="402" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/artificial_generation/svo.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="405" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/permuting.py</url>
+          <line>122</line>
+          <option name="timeStamp" value="406" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/outputs_process/combine_output.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="410" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/outputs_process/combine_output.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="411" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/outputs_process/combine_output.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="412" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/outputs_process/combine_output.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="416" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/outputs_process/combine_output.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="417" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -878,139 +900,332 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="332" />
+      <option name="time" value="422" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/torch/nn/_functions/rnn.py">
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/there/train.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="62" column="54" lean-forward="false" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/aj_logs_101181856_561972_OUTPUTS_101181856_561972" />
-    <entry file="file://$PROJECT_DIR$/logs/aj_logs_101194530_221736_OUTPUTS_101194530_221736" />
-    <entry file="file://$PROJECT_DIR$/logs/aj_logs_101194746_760244_OUTPUTS_101194746_760244">
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/there/dev.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="272" column="61" lean-forward="false" selection-start-line="272" selection-start-column="61" selection-end-line="272" selection-end-column="61" />
+        <state relative-caret-position="180">
+          <caret line="21" column="50" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/aj_logs_101195358_777345_OUTPUTS_101195358_777345">
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/understood/train.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="1584" column="13" lean-forward="true" selection-start-line="1584" selection-start-column="13" selection-end-line="1584" selection-end-column="13" />
+        <state relative-caret-position="903">
+          <caret line="233" column="43" lean-forward="true" selection-start-line="233" selection-start-column="43" selection-end-line="233" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/aj_logs_101203732_47728_OUTPUTS_101203732_47728">
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/dative/train.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28236">
-          <caret line="2353" column="18" lean-forward="false" selection-start-line="2353" selection-start-column="0" selection-end-line="2354" selection-end-column="0" />
+        <state relative-caret-position="-1030">
+          <caret line="201" column="30" lean-forward="false" selection-start-line="201" selection-start-column="30" selection-end-line="201" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/acceptability_corpus/temp">
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/spray_load/train.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="35" column="170" lean-forward="false" selection-start-line="35" selection-start-column="170" selection-end-line="35" selection-end-column="170" />
+        <state relative-caret-position="491">
+          <caret line="2208" column="0" lean-forward="true" selection-start-line="2208" selection-start-column="0" selection-end-line="2208" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/aj_logs_101203732_47728">
+    <entry file="file://$PROJECT_DIR$/artificial_generation/understood_object.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="113" lean-forward="false" selection-start-line="20" selection-start-column="113" selection-end-line="21" selection-end-column="120" />
+        <state relative-caret-position="172">
+          <caret line="683" column="41" lean-forward="true" selection-start-line="683" selection-start-column="41" selection-end-line="683" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/acceptability_corpus/sample_output">
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/there/dev.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="55" column="39" lean-forward="false" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+        <state relative-caret-position="-2005">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/acceptability_corpus/corpus">
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/there/train.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11807">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/spray_load/dev.tsv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/understood/dev.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/combined/dev.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10960">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/acceptability_corpus/lm_generated6">
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes_cola/dative/train.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-842">
+        <state relative-caret-position="-2962">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/acceptability_corpus/corpus_table_tokenized_crop30_balanced">
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/inchoative/dev.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-50634">
+        <state relative-caret-position="155">
+          <caret line="117" column="27" lean-forward="false" selection-start-line="117" selection-start-column="27" selection-end-line="117" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes_cola/inchoative/dev.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1366">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/acceptability_corpus/corpus_table_tokenized_crop30">
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes_cola/inchoative/test.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="14" column="60" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6893" selection-end-column="0" />
+        <state relative-caret-position="-5656">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/torch/nn/modules/module.py">
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/inchoative/train.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3048">
-          <caret line="261" column="0" lean-forward="false" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="5629">
+          <caret line="433" column="16" lean-forward="false" selection-start-line="433" selection-start-column="16" selection-end-line="433" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/acceptability_corpus/corpus_table_balanced">
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/combined/train.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6600">
-          <caret line="550" column="48" lean-forward="false" selection-start-line="550" selection-start-column="48" selection-end-line="550" selection-end-column="48" />
+        <state relative-caret-position="-48815">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/lm_backup.py" />
-    <entry file="file://$PROJECT_DIR$/models/lm.py">
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes_cola/combined/train.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-138048">
+          <caret line="4837" column="5" lean-forward="false" selection-start-line="4837" selection-start-column="0" selection-end-line="4838" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/lm_main.py">
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes_cola/combined/dev.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        <state relative-caret-position="-12078">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/model.py">
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/combined/test.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+        <state relative-caret-position="506">
+          <caret line="3608" column="0" lean-forward="true" selection-start-line="3608" selection-start-column="0" selection-end-line="3608" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes_cola/combined/test.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-46398">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_generation/spray_load.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="113" column="9" lean-forward="false" selection-start-line="113" selection-start-column="9" selection-end-line="125" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_generation/dative.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="505" column="36" lean-forward="false" selection-start-line="505" selection-start-column="36" selection-end-line="505" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs_process/combine_output.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/classifier_utils.py">
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/inchoative/test.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="52">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="5" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/constants.py">
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/there/test.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/understood/test.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3172">
+          <caret line="244" column="24" lean-forward="false" selection-start-line="244" selection-start-column="24" selection-end-line="244" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_generation/inchoative.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6253">
+          <caret line="482" column="30" lean-forward="false" selection-start-line="482" selection-start-column="30" selection-end-line="482" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/spray_load/test.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22971">
+          <caret line="1767" column="53" lean-forward="false" selection-start-line="1767" selection-start-column="53" selection-end-line="1769" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/there/all.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23166">
+          <caret line="1782" column="27" lean-forward="false" selection-start-line="1782" selection-start-column="27" selection-end-line="1782" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_generation/there.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6773">
+          <caret line="522" column="0" lean-forward="false" selection-start-line="522" selection-start-column="0" selection-end-line="522" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes_cola/inchoative/train.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="11207" column="0" lean-forward="true" selection-start-line="1083" selection-start-column="64" selection-end-line="11207" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/final/out_of_domain_test.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/parsed/all_parsed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138216">
+          <caret line="10632" column="49" lean-forward="false" selection-start-line="10632" selection-start-column="49" selection-end-line="10632" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/inchoative/all.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8762">
+          <caret line="674" column="0" lean-forward="false" selection-start-line="674" selection-start-column="0" selection-end-line="1167" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/dative/dev.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/dative/test.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2795">
+          <caret line="215" column="17" lean-forward="false" selection-start-line="215" selection-start-column="17" selection-end-line="215" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/artificial/verb_classes/dative/all.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4628">
+          <caret line="356" column="15" lean-forward="false" selection-start-line="356" selection-start-column="15" selection-end-line="356" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/tokenized/in_domain_test.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/tokenized/in_domain_valid.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/parsed/just_categories.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132483">
+          <caret line="10191" column="13" lean-forward="false" selection-start-line="10191" selection-start-column="13" selection-end-line="10191" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/raw/out_of_domain_valid.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1898">
+          <caret line="146" column="100" lean-forward="false" selection-start-line="146" selection-start-column="100" selection-end-line="146" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/raw/all.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22113">
+          <caret line="1701" column="71" lean-forward="false" selection-start-line="1701" selection-start-column="71" selection-end-line="1701" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/raw/in_domain_valid.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="73" column="13" lean-forward="false" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/tokenized/all_2.0.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39899">
+          <caret line="5020" column="34" lean-forward="false" selection-start-line="5020" selection-start-column="34" selection-end-line="5020" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/raw/all-tokenized.txt" />
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/raw/all-tokenized.tsv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1018,247 +1233,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/training/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="1" column="37" lean-forward="false" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/gflags/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="48" column="3" lean-forward="true" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/gflags/flagvalues.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="804" column="0" lean-forward="false" selection-start-line="804" selection-start-column="0" selection-end-line="804" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/google/protobuf/internal/factory_test1_pb2.py">
+    <entry file="file://$PROJECT_DIR$/acceptability_corpus/tokenized/all_2.0.tsv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sweep_sample.txt" />
-    <entry file="file://$PROJECT_DIR$/models/rnn_acceptability.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/acceptability_corpus/just_levin">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/classifier_data_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="201" column="13" lean-forward="false" selection-start-line="201" selection-start-column="13" selection-end-line="201" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/rnn_classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="77" column="27" lean-forward="true" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/training/run_training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="46" column="44" lean-forward="false" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/training/local_exp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="6" column="58" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/training/convert_ckpt_cpu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="16" column="75" lean-forward="true" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/acceptability_corpus/levin_balanced/levin_balanced">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11523">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/acceptability_corpus/levin/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/acceptability_corpus/levin/train.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/acceptability_corpus/levin_balanced/train.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/model_trainer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1032">
-          <caret line="90" column="54" lean-forward="false" selection-start-line="90" selection-start-column="54" selection-end-line="90" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/training/make_sweep_aj.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="96" column="48" lean-forward="false" selection-start-line="96" selection-start-column="48" selection-end-line="96" selection-end-column="48" />
-          <folding>
-            <element signature="e#58#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133656">
-          <caret line="11138" column="62" lean-forward="false" selection-start-line="11138" selection-start-column="62" selection-end-line="11138" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/balance_corpus.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/acceptability_corpus/corpus_table">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1189">
-          <caret line="583" column="46" lean-forward="false" selection-start-line="583" selection-start-column="46" selection-end-line="583" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/data_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/outputs_organize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="79" column="12" lean-forward="false" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/random.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+        <state relative-caret-position="110">
+          <caret line="274" column="0" lean-forward="false" selection-start-line="274" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/smart_splitting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/training/make_sweep.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="61" />
-          <folding>
-            <element signature="e#58#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/acceptability_cl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/training/my_flags.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/process_corpus.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="88" column="13" lean-forward="true" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/training/make_sweep_perm_strategy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="44" column="53" lean-forward="false" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
-          <folding>
-            <element signature="e#58#71#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/data_processor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-707">
-          <caret line="173" column="12" lean-forward="true" selection-start-line="173" selection-start-column="12" selection-end-line="173" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="256">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

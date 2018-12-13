@@ -1,0 +1,251 @@
+w_80		John is sad.
+w_80		John ate the meat raw.
+w_80		John ate the meat nude.
+w_80		John made Bill mad.
+w_80		John loaded the wagon full with hay.
+w_80		John loaded the hay into the wagon green.
+w_80	*	John loaded the wagon with hay green.
+w_80	*	John loaded the hay into the wagon full.
+w_80		I presented it to John dead.
+w_80	*	1 presented John with it dead.
+w_80		John thinks of Bill as silly.
+w_80		Bill was thought of as silly.
+w_80		Who do you think of as silly?
+w_80		Of whom are you thinking?
+w_80	*	Of whom do you think as silly?
+w_80		Johni became richi.
+w_80		Johni [became richi]i
+w_80		I gave Johni [goldi apples]NP
+w_80		. .. .. . AP. .. .-* . . . NPi. .APi.
+w_80		In PS, NP must c-command any predicate coindexed with it.
+w_80		In PS, NP must c-command any predicate or trace coindexed with it.
+w_80		how sillyi do you consider Bill ti
+w_80		.. .NP.. .AP... NP. . .N. .APi... bA . NPit .s .AP. .b.. Nh .NP. APh b
+w_80		.NP ... APi. . . .NPi... APi
+w_80		how sillyi is Billj considered tj t,
+w_80		how mad, was Billj made tj ti
+w_80		how silly is Bill considered t t
+w_80		The C-Command Condition on Predication
+w_80		AP: John made Bill sick.
+w_80		Coindex NP and X. where coindexing is done as shown in (10).
+w_80		NP VP John died.
+w_80		NP VP X John left nude./John left singing.
+w_80		NP be X John is sick./John is near Larry.
+w_80		John gave Bill the dog dead. dead must modify dog, the theme of give, not Bill, the goal, even though both dog and
+w_80		If X is in the VP, then X is predicated of the theme of V.
+w_80		John became sick.
+w_80		John made Bill sick.
+w_80		John strikes Bill as stupid.
+w_80	*	Bill was struck by John as stupid.
+w_80	*	John was struck as sick.
+w_80		can be ruled out if we insist that every predicate have an antecedent. Since the predicate in (22) is in the VP, its antecedent must be theme, and there is no theme, so the sentence is unacceptable.
+w_80		John was struck by Bill's pomposity.
+w_80		John arrived dead.
+w_80		John [arrived]vp dead
+w_80		John [arrived dead]vp
+w_80		John promised Bill [PRO to leave]
+w_80		John persuaded Bill [PRO to leave]
+w_80		John tried [PRO to leave]
+w_80		John [died]vp [PRO waiting for a bus]
+w_80		OCI. Lexical NP cannot appear in the position of PRO.
+w_80		[PRO to leave] would be John's pleasure
+w_80		For John to leave would be my pleasure.
+w_80		To leave would be a pleasure.
+w_80		
+w_80		[PRO VP]s to be a complex predicate, with PRO as the "predicate variable", that is, the open position in the S which makes it a (one-place) predicate. Similarly, we can define (30)
+w_80		[{PRO} S]- to be a complex predicate, with PRO or WH as the predicate variable.
+w_80		John promised Bill [PRO to leave]
+w_80		Johni promised Bill [PRO to leave]i
+w_80		John [died]vp nude
+w_80		John [died]vp [PRO waiting for a bus]
+w_80		John promised Bill [PROi to be examined ti]
+w_80		:
+w_80		Johnk promised Bill [PROi [to be examined]ijk
+w_80		John wants pictures of PRO to be on sale. since PRO is not in the domain of the subject, and since control is not subject to
+w_80	*	John was struck by Bill as pompous.
+w_80	*	John was promised by Billi [PRO to leave]i
+w_80		John was struck by Bill's pomposity.
+w_80		John was promised.
+w_80		John was promised the book.
+w_80		):
+w_80		Theyi make good cooksi.
+w_80	*	Good cooksi are made by themi.
+w_80		NP VP SAP John left nude.
+w_80		NP be FAP) John is sick.
+w_80		NP VP
+w_80		If X is in VP, and V specifies that X is a predicate, then the antecedent of X is the theme of V (or, in the worst case, V specifies which NP is the antecedent).
+w_80		[PRO to leave] is nice (for Bill)
+w_80		[PRO to leave]arb is nice (for Bill)
+w_80		[PRO to leave]i is nice for Billi
+w_80		No antecedent is necessary.
+w_80		If there is an antecedent, it need not c-command.
+w_80		The antecedent may follow S.
+w_80		The antecedent is not uniquely determined.
+w_80		Lexical NP can appear in the position of PRO.
+w_80		what [PRO to do] is a mystery
+w_80		what [PRO to do] is a mystery to John
+w_80		there is nothing [PRO to do]
+w_80		John has something [PRO to do]
+w_80		John has something for Bill to do.
+w_80	*	1 wondered what Bill to do.
+w_80		I am counting [on Bill] [PRO to perjure himself]
+w_80		On whom are you counting to perjure himself?
+w_80		I am counting on Bill to get there on time.
+w_80		I am counting on you for Mary to get there on time.
+w_80		John wants PRO to win.
+w_80		John wants for Bill to win.
+w_80		I would hate (for John) to leave.
+w_80		I would prefer (for John) to leave.
+w_80		I arranged (for Pete) to leave.
+w_80		It was arranged to have dinner at 6.
+w_80		It was preferred to have dinner at 6.
+w_80	*	It was hated for John to leave.
+w_80		It was decided to have dinner at 6.
+w_80	*	John decided (for) Bill to get the prize.
+w_80		It was decided by the committee to have dinner at 6.
+w_80		[PRO to die]arb is no fun
+w_80		John wants [PRO to leave]arb
+w_80		it is important to John [PRO to leave]arb
+w_80		DS Ss - PS LF
+w_80		Arb Rewriting Rule I
+w_80		I want [PRO to leave]arb
+w_80		[PRO to leave]arb would be my pleasure
+w_80		it is important to me [PRO to leave]arb
+w_80		John counted on Bill [PRO to get there on time]arb
+w_80		):
+w_80		I bought a book [PRO to read]arb
+w_80		I bought Bill a book [PRO to read]arb
+w_80		Arb Rewriting Rule II
+w_80		John told Mary that it would be important [to leave early].
+w_80		John told Mary that it was important to Fred to leave early.
+w_80		John, told Maryk that it would be appropriate to leave together.
+w_80	*	John promised Mary to leave together.
+w_80		I want to meet at 6.
+w_80	*	I will try to meet at 6.
+w_80	*	John's arrival dead
+w_80	*	the arrival of John dead
+w_80	*	the election of John president
+w_80		Poss -NP s hence that the determiner NP did not c-command anything outside Poss, and therefore
+w_80		John's arriving dead
+w_80		John's attempt to leave
+w_80		the attempt by John to leave
+w_80		any attempt to leave
+w_80		John left orders to follow Pete.
+w_80		John left us orders to follow Pete.
+w_80		John left orders not to be disturbed.
+w_80		John left orders for Bill not to leave.
+w_80		It is clear that he is here. (extraposition structure)
+w_80		That he is here is clear. (intraposition structure)
+w_80		it is clear that S iti is clear that Si
+w_80		it is clear that S
+w_80		AP S is a predication environment, with AP the predicate and S the subject. This environment must be generalized, since VP and NP can also be predicated of S:
+w_80		It is a problem that he is here.
+w_80		It bothers me that he is here.
+w_80		X S Xpred i Ssubi i
+w_80		NP XS there are two possible subjects of X, NP and S, and X, a predicate, can have only one subject, as the following example shows:
+w_80	*	John's reluctance is clear that he is here.
+w_80		It is upsetting, the way he goes on that he won't help
+w_80		John considers it clear that Bill is here.
+w_80		.
+w_80		John saw to it that Bill had a good time.
+w_80		John regretted it that Bill had a goQd time.
+w_80	*	John believes it (sincerely) that Bill is here.
+w_80	*	John is aware of it that Bill is here.
+w_80	*	John stated it succinctly that he was leaving.
+w_80		NP V it S
+w_80		it be V+en S
+w_80	*	John felt it that Bill was tardy.
+w_80		It was felt that Bill was tardy.
+w_80	*	John believed it that Bill was tardy.
+w_80		It was believed that Bill was tardy.
+w_80		S
+w_80		X S but in (76b) the that S is the subject of clear by virtue of the predication environment
+w_80		,
+w_80		NP be AP where the topicalized S governs a trace in the NP position in (92). I believe that this is all that needs to be said about the relation between the two.
+w_80	*	John's reluctance seems.
+w_80	*	That John is reluctant seems.
+w_80		John seems t to be here
+w_80	*	It is the problem that he is here.
+w_80		It is a problem that he is here.
+w_80		That he is here is the problem.
+w_80		The problem we are discussing is George.
+w_80		To leave is to give up.
+w_80	*	It is to give up to leave.
+w_80	?	It proves that John was lying that he left town.
+w_80		S "~~~ iti believed S
+w_80		Many people said they were sick who weren't.
+w_80		It's that John won't help that bothers me.
+w_80		It would prove our theory to be untenable for carrots to be vegetables.
+w_80	*	It is to give up to leave.
+w_80	*	It is the problem that he is here.
+w_80	*	It is believed to be the problem that he is here.
+w_80		That John is here seems to be believed to be the problem.
+w_80	*	It seems to be believed to be the problem that John is here.
+w_80		S
+w_80	*	It is believed to have been shown that Extraposition is cyclic, but it isn't that VP Deletion is.
+w_80		S
+w_80		It is believed that Extraposition is cyclic, but it isn't that VP Deletion is.
+w_80		It is believed to be true by everyone that Extraposition is cyclic.
+w_80	?	It was believed to be illegal by them to do that.
+w_80		[. ..[. . .S]s. . .]s S [- I... I .. I]s. . SIs
+w_80		John grudgingly accepted judgments of his incompetence as an auto me
+w_80		It was John that I saw. subject predicate
+w_80		X S Xsubi i Spred i
+w_80		It was to John that I gave the book. subject predicate
+w_80		, like other rules of predication, applies to surface structure to derive PS.
+w_80		[N X]N
+w_80		[{PRO }S]s can be interpreted as predicates, with PRO or wh as the predicate variable. Such structures have only one other interpretation-as Q (questions).
+w_80		S ([PRO VP])
+w_80		S([{PRO}s])
+w_80		a man to do the job
+w_80		a man to talk to
+w_80		. Since this S is in the environment of X in (1 17), it is interpreted as a predicate, as all relatives must be.
+w_80		[man]& [[PRO to do the job]s]s
+w_80		I bought it to read.
+w_80		I bought it [PROi [PRO to read ti]s]s
+w_80		I bought it dead.
+w_80		I bought it to give to Pete.
+w_80		I gave it to Pete dead.
+w_80		I gave it to Pete to take to the fair.
+w_80	*	1 gave Petei the bookk [PROi [PROk to impress ti]]
+w_80		I wrote a letter to Bill to read.
+w_80		I wrote to Bill.
+w_80	*	1 wrote to Bill to read.
+w_80		I presented it to Bill to read.
+w_80	*	1 presented Bill with it to read.
+w_80		It was bought to read.
+w_80		I gave a book to Bill to read.
+w_80		The book was bought by Bill to read.
+w_80		I bought it to read.
+w_80		I bought Bill a book to read.
+w_80		I bought it to read.
+w_80		I bought it for Bill to read.
+w_80		I bought it to hold books.
+w_80		I bought iti [[PRO to hold books]i]
+w_80		Opacity (from Chomsky (1980))
+w_80		S -> NP VP
+w_80		Predicate Opacity Condition (POC)
+w_80		Johni [likes himselfi]i
+w_80		
+w_80		John is proud that there are pictures of himself here.
+w_80		John thinks that it is appropriate for there to be a picture of himself in the corridor.
+w_80	*	John thinks it would upset himself to die.
+w_80		John thinks it would [upset himselfli [to die]i
+w_80		Johni made Billj [mad at himself1 yI]
+w_80		Johni kept the snakej [near {*him ]i
+w_80		Johni made Billj [master of himself{ J ]2
+w_80		John made Bill [PRO be mad at himselfl.
+w_80		The correspondence school made Bill a good typist.
+w_80		The correspondence school sent Bill a good typist.
+w_80		John considers Bill silly.
+w_80		John considers Bill to be silly.
+w_80	*	John bought a dog for himself to play with.
+w_80		John arranged for himself to get the prize.
+w_80	*	Johni met someone who pictures of himselfi had pleased.
+w_80		Johni wondered who pictures of himselfi would please.
+w_80	*	John knew that the book for himself to read was Parnell.
+w_80		John knew that for himself to be there would cause problems.
+w_80		A picture of himself frightened John.
+w_80		John talked to Billi about himselfi.
+w_80		, and elsewhere, are rules of indexing. In this, they do not differ from transfor
+w_80		filters c-command restriction Opacity

@@ -1,0 +1,293 @@
+sgww85		Pat is either stupid or a liar. [AP or NP]
+sgww85		Pat is a Republican and proud of it. [NP and AP]
+sgww85		Pat is healthy and of sound mind. [AP and PP]
+sgww85		Pat is either asleep or at the office. [AP or PP]
+sgww85		That was a rude remark and in very bad [NP and PP] taste.
+sgww85		Sandy is either a lunatic or under the [NP or PP] influence of drugs.
+sgww85		I am hoping to get an invitation and [VP and AP] optimistic about my chances.
+sgww85		I am neither an authority on this subject [NP nor VP] nor trying to portray myself as one.
+sgww85		I am both expecting to get the job and of [VP and PP] the opinion that it is a desirable one.
+sgww85		Pat was awarded the Golden Fleece Award [VP and AP] and very upset about it.
+sgww85		Pat was neither recommended for [VP nor PP] promotion nor under any illusions about what that meant.
+sgww85		Pat has become a banker and very [NP and AP] conservative.
+sgww85		I consider that a rude remark and in very [NP and PP] bad taste.
+sgww85		If we have two sentences Z + X + W and Z + Y+ W, and if
+sgww85		The scene of the movie was in Chicago.
+sgww85		The scene that I wrote was in Chicago.
+sgww85	*	The scene of the movie and that I wrote was in Chicago.
+sgww85		John sang beautifully.
+sgww85		John sang a carol.
+sgww85	*	John sang beautifully and a carol.
+sgww85		If a phrase structure rule introduced a category a, then any conjunct of a is a superset of a.
+sgww85		VP- V XP.
+sgww85		VP-- V(NP).
+sgww85		Only a fully specified category may label a node.
+sgww85		(12).
+sgww85		{(SLASH, {(BAR, 2)})}.
+sgww85		{(SING, +), (N, +), (V, -), (BAR, 2)}.
+sgww85		{(N, -), (V, +), (SUBJ,-), (BAR, 2),
+sgww85		A category C2 is an extension of a category Cl if an only if:
+sgww85		Every atom-valued feature-value pair in Cl is in C2, and
+sgww85		For every category-valued feature-value pair in Cl, the value of the feature in C2 is an extension of the value of that feature in Cl.
+sgww85		The UNIFICATION of a set of categories is the smallest cate
+sgww85		Boolean features (value set = {+, -}):
+sgww85		Category-valued features: AGR, RE, WH, SLASH.
+sgww85		Unary features (value set = {+}): SING, XSP, THP, NULL.
+sgww85		Other features:
+sgww85		(1982). SING is used to mark singular nouns: the only permissible value for SING is +. We assume that plural nouns are distinguished by lacking a specification for SING. XSP and THP are person features whose semantic correlates are 'excluding the speaker' and 'third person', res
+sgww85		HEAD = {N, V, BAR, SING, XSP, THP, CASE, VFORM,
+sgww85		FOOT = {SLASH, RE, WH}.
+sgww85		FCR: [CASE] = [+N] & [-V].
+sgww85		FCR: [+INV] v [+AUX] & [FIN].
+sgww85		VP-* V S.
+sgww85		S[+INV]-). V[+AUX] NP VP[BSE].
+sgww85		VP
+sgww85		VP
+sgww85		FSD: [-INV].
+sgww85		FSD: - [CONJ].
+sgww85		VP
+sgww85		VP [CONJ and]
+sgww85		A-*BCD C-*ABD
+sgww85		A -B, C, D.
+sgww85		A B, C, D
+sgww85		A<B<C<D.
+sgww85		(27), i.e., the two admit exactly the same set of tree fragments. But the
+sgww85		S[+INV] -* Ho, NP, VP[BSE].
+sgww85		VP-- H,NP.
+sgww85		VP-) H0, NP, VP[INF].
+sgww85		X0 < X2.
+sgww85		N2<V2.
+sgww85		S [FIN]
+sgww85		S [+INV, +AUX]
+sgww85		VP [FIN]
+sgww85		VP [GER]
+sgww85		HFC: version 1
+sgww85		HFC: version 2
+sgww85		HFC: version 3
+sgww85		HFC: version 4 (final version)
+sgww85		VP-- Ho, S[BSE].
+sgww85		S -- NP, H[-SUBJ].
+sgww85		VP [FIN]
+sgww85		VP [FIN, -PLUR]
+sgww85		fails because the set of free HEAD features on the mother category is {(N, -), (V, +), (VFORM, FIN), (-PLUR)} whereas the instantiated free HEAD features on the head daughter are {(N, -), (V, +), (VFORM,
+sgww85		VP [FIN]
+sgww85		S [BSE]
+sgww85		VPfFIN]
+sgww85		Kim sang and Sandy danced.
+sgww85		Kim and Sandy met.
+sgww85		Kim sang and was accompanied by Sandy.
+sgww85		which we consider below, is (i) the way in which their authors embrace formal devices that have little or no precedent within the framework within which they work, and (ii) the extent to which the formal details of their proposals and their consequences for other aspects of the grammar simply have not been worked out in a serious way.
+sgww85		{and, both, but, NIL, neither, nor, or}.
+sgww85		X[CONJ NIL]-- H.
+sgww85		X[CONJ a] -a, H where a e {and, both, but, either, neither, nor, or}.
+sgww85		Iterating Coordination Schema (CS')
+sgww85		X-* H[CONJ ao], H[CONJ al]l.
+sgww85		aE{(and, NIL), (NIL, and), (neither, nor), (or, NIL), (NIL, or)}.
+sgww85		Binary Coordination Schema (CS2)
+sgww85		X -H[CONJ ao], H[CONJ al].
+sgww85		a is in {(both, and), (either, or), (NIL, but)}.
+sgww85		(1980), Cooper (1979), Partee and Rooth (1983), and Rooth and Partee
+sgww85		(1982), and all of them, as far as we can tell, assume variables across categories. The present proposal does not: X is here, as before, not a variable over the set of categories, but a category - albeit a minimally specified one. In effect, if we abstract away from the details concerning the values for the CONJ feature, all that (50a) and (51a) say is that the mother is a category, and that the daughters are all heads. If completely free feature instantiation were permitted (which of course it is not), then
+sgww85		[CONJ ao] < [CONJ aJ] where a0 E {both, NIL, either, neither}, and a1 E {and, but, nor, or}.
+sgww85		made a speech and stuttered
+sgww85		made a speech or stuttered
+sgww85		neither made a speech nor stuttered
+sgww85		both made a speech and stuttered
+sgww85		either made a speech or stuttered
+sgww85		made a speech but stuttered
+sgww85		whimpered, shouted, and screamed
+sgww85		whimpered and shouted and screamed
+sgww85		whimpered, shouted or screamed
+sgww85		whimpered or shouted or screamed
+sgww85		neither whimpered nor shouted nor screamed
+sgww85		moaned, whimpered, shouted and screamed
+sgww85		moaned and whimpered and shouted and screamed
+sgww85		moaned, whimpered, shouted or screamed
+sgww85		moaned or whimpered or shouted or screamed
+sgww85		neither moaned nor whimpered nor shouted nor screamed
+sgww85		(56).
+sgww85		either whimpered or shouted or screamed
+sgww85		either moaned or whimpered or shouted or screamed
+sgww85		(1983), that it is often the case in languages that a single Boolean conjunction meaning is signalled by multiple occurrences of given con
+sgww85		We walked slowly and with great care. [Adv and PP]
+sgww85		Terry turned out to be longwinded and a bully. [AP and NP]
+sgww85	*	The longwinded and a bully man was my brother.
+sgww85	*	Soon longwinded and a bully started shouting again.
+sgww85		VP__ HO, X2[+PRD].
+sgww85		Kim was a banker.
+sgww85		Dana was quite competent.
+sgww85		Leslie was in the flood zone.
+sgww85		Ronnie was talking to Lou.
+sgww85		Jean was given a prize.
+sgww85		Vl -' H?, X2{[+PRD], [+N]}.
+sgww85		requires that the complement of becomes be a predicative N2 or A2.
+sgww85		Pat has become a Republican.
+sgww85		Gerry became quite conservative.
+sgww85	*	Connie has become of the opinion that we should get out.
+sgww85	*	Tracy became awarded a prize.
+sgww85	*	Chris will become talking to colleagues.
+sgww85		s
+sgww85		Pat became a republican and quite conservative. [N2 and A2]
+sgww85	*	Tracy has become a republican and of the opinion that we must place nuclear weapons in Europe. [N2 and p2]
+sgww85	*	Chris became quite conservative and trying to change their minds. [A2 and V2[PRP]]
+sgww85	*	Gerry became a republican and awarded a prize. [N2 and
+sgww85		We walked slowly and with great care.
+sgww85		ADV2 __ p2 then examples like (57) are analyzable as coordination of like category, namely ADV2. However, as suggested to us by Donka Farkas, there is an alternative approach to adverbials, consistent with our syntactic analysis of coordination, that eliminates the need for rules like (68). One need assume only that there are adverbial features like MANNER which cooccur with various combinations of major features, and that syntax rules introducing manner adverbials introduce X2[+MANNER]. Such a constituent may then be expanded in such a way as to generate
+sgww85		They wanted to leave tomorrow or on Tuesday.
+sgww85		We are open Saturdays, any national holiday, and on alternate
+sgww85	*	The longwinded and a bully man was my brother.
+sgww85	*	Soon longwinded and a bully started shouting again.
+sgww85		(59).
+sgww85		VP{[FIN], [-PAST1}
+sgww85		VP [FIN]
+sgww85		VPJ[FIN]
+sgww85		VP{[FIN], [+PAST]}
+sgww85		Kim alienates cats and beats his dog.
+sgww85		Kim alienates cats and beat his dog.
+sgww85		Kim alienated cats and beats his dog.
+sgww85		Kim alienated cats and beat his dog.
+sgww85	*	Kim alienated cats and beating his dog.
+sgww85	*	Kim alienated cats and to beat his dog.
+sgww85	*	Kim alienated cats and beaten his dog.
+sgww85	*	Kim beating his dog and alienates cats.
+sgww85	*	Kim to beat his dog and alienated cats.
+sgww85	*	Kim beaten his dog and alienates cats.
+sgww85		S{[+INV], [WH NP]}
+sgww85		VP [SLASH NP]
+sgww85		S[WH NP]
+sgww85		Foot Feature Principle (FFP):
+sgww85		A student whose teacher was out of town ...
+sgww85		Which student's grades went unreported?
+sgww85		They found pictures of themselves.
+sgww85		They knew that pictures of each other would be on sale.
+sgww85	*	Who did you say [[my talking to-] [would bother Hilary]]?
+sgww85		Who did you say [[my talking to -] [would bother ]]?
+sgww85	*	Which article did Terry [[file papers] [without reading _]]?
+sgww85		Which article did Terry [[file -] [without reading _]]?
+sgww85		Which books did Robin read-and hate-?
+sgww85	*	Which books did Robin talk to Chris and read-?
+sgww85	*	Which books did Robin read-and talk to Chris?
+sgww85	*	Who did Robin visitL and-?
+sgww85		They talked to Kim and to each other.
+sgww85		He hated himself and his friends.
+sgww85		They were wary of themselves and (of) each other.
+sgww85	?	They asked which student and Lee could get along together.
+sgww85		They asked which students and which teachers would get along together.
+sgww85	?	We called up every man whose father and Sandy had played on the same team.
+sgww85		We called up every man whose father and whose mother had played on the team.
+sgww85		I went to the store and bought some whiskey.
+sgww85		She's gone and ruined her dress now.
+sgww85		I've got to try and find that screw.
+sgww85		VP-* Ho, (PP), H[CONJ and].
+sgww85		VP-- H[BSE], H[CONJ and].
+sgww85		She goes and buys some whiskey.
+sgww85		I have gone and bought some whiskey.
+sgww85		Going and buying whiskey is not the solution to your prob
+sgww85		I will go and buy some whiskey.
+sgww85		I will try and buy some whiskey.
+sgww85		I want to try and buy some whiskey.
+sgww85	*	She goes and buying some whiskey.
+sgww85	*	1 have gone and buys some whiskey.
+sgww85	*	To go and buying whiskey is not the solution to your prob
+sgww85	*	1 will go and bought some whiskey.
+sgww85	*	I tried and buy some whiskey.
+sgww85	*	1 was trying and buying some whiskey.
+sgww85	*	What did you say I went and get?
+sgww85	*	What did you say I go and got?
+sgww85		I went to the store and I bought some whiskey.
+sgww85	?	She's gone and she's ruined her dress now.
+sgww85		I've got to try and I've got to find that screw.
+sgww85		I both went to the store and bought some whiskey.
+sgww85	?	She's both gone and ruined her dress now.
+sgww85		I've got to both try and find that screw.
+sgww85		Here's the whiskey which I went to the store and bought.
+sgww85		Which dress has she gone and ruined now?
+sgww85		The screw which I've got to try and find holds the frammis to the myolator.
+sgww85		NPa NPb NPa CONJ NPb
+sgww85		Either we Americans or I myself will get ourselves in trouble.
+sgww85		Either you or I will perjure ourselves.
+sgww85		You and I may perjure ourselves.
+sgww85		We Americans and the British pamper ourselves.
+sgww85		You British and you Americans pamper yourselves.
+sgww85		You British or you Americans will get yourselves in trouble.
+sgww85		You and Kerry have outdone yourselves.
+sgww85		You or Kerry have perjured yourselves.
+sgww85		1 st Person: { }.
+sgww85		2nd Person: {[+XSPI}.
+sgww85		3rd Person: {[+THP], [+XSP]}.
+sgww85		NPa NPt NPaCONJ NPh
+sgww85		The boys and the girls seem/*seems happy.
+sgww85		Either the boys or the girls are/*is going to be there.
+sgww85		The students and Professor Swansong are/*is meeting in the park.
+sgww85		Either Professor Swansong or the graduate students are/*is going to invigilate the exam.
+sgww85		Either Dana or Lee is/are going to lead the parade.
+sgww85		Kim and Terry are/*is happy.
+sgww85		NPa NPb NPaCONJ NPb
+sgww85		X[CONJ a]-- a, H([+SING]), where a E {and, both, but, either, neither, nor, or}.
+sgww85		Kim likes Sandy, and Lee Leslie. to try to go to Rome.
+sgww85		Pat wanted to try to go to Berne, and Chris to go to Rome. to Rome.
+sgww85		Kim gave a dollar to Bobbie and a dime to Jean.
+sgww85		Kim went to the store, and (then) Lou.
+sgww85	?	Jean likes Lou, but Rene, Dominique. the explanation for this deviance need not be grammatical in nature, as many examples of Gapping with but are contextualizable, as noted by
+sgww85		Some people go by car, but others by bike.
+sgww85		Some people like bagels, but others cream cheese.
+sgww85		Fourteen-year-olds like punk and new wave, but sixteen-year
+sgww85		On weekdays, Terry eats meat and vegetables, but on weekends, only vegetables.
+sgww85		[ = Hudson's (5a), (7)]
+sgww85	*	John drinks coffee at 11, and Mary, tea at 10:30.
+sgww85		John gave the books to Mary at Christmas, and the records to
+sgww85		(1976), and elsewhere:
+sgww85		Peter talked to his boss on Tuesday, and Betsy to her super
+sgww85		John talked to his supervisor about his thesis, and Erich to the dean about department politics.
+sgww85		A businessman will drink a martini to relax, and a health nut, a glass of wine, just to remain healthy.
+sgww85	*	John left at 11 and at 12, Bill.
+sgww85		John left his office at 11 and at 12, the library.
+sgww85		A policeman walked in at 11, and at 12, a fireman.
+sgww85		Two days ago, we went out to dinner, and this afternoon, to the movies.
+sgww85		On this table, they put a lamp, and on that table, a radio.
+sgww85	*	John didn't see Mary and Bill Sue.
+sgww85		John didn't give the books to Mary and the papers to Sue.
+sgww85		(1967). Below we will suggest that (108a) is a case of sentence-level ellipsis, and (108b) is a case of VP-level ellipsis. We conjecture that this distinction will play a central role in the analysis of such contrasts.
+sgww85		Kim likes Sandy, and Lee Leslie.
+sgww85		Pat wanted to try to go to Berne, to try to go to Rome. and Chris to go to Rome. to Rome.
+sgww85		Kim gave a dollar to Bobbie and a dime to Jean.
+sgww85		Kim went to the store, and (then) Lou.
+sgww85	*	Kim likes Sandy, and Lee to Leslie.
+sgww85	*	Pat wanted to go to Berne, and Chris going to Rome.
+sgww85	*	Kim gave a dollar to Bobbie and a dime into his pocket.
+sgww85	*	Kim likes Lee, and to Ronnie.
+sgww85		SD: XPI-WI-XP2- W2-C- XP3-W3- XP4- W4
+sgww85	*	Kim likes Sandy and Lee likes to Leslie.
+sgww85		(1978), no account is provided of the dependency just illustrated.
+sgww85		Leslie is rather foolish, and Lou a complete idiot.
+sgww85		Kim seems to be just surviving, and Terry in dire need of our help.
+sgww85		We consider Leslie rather foolish, and Lou a complete idiot.
+sgww85		Pat has become crazy, and Chris an incredible bore.
+sgww85	*	Pat has become crazy, and Chris in good spirits.
+sgww85	*	I gave a book to John's mother and a magazine to him.
+sgww85		V2[CONJ a]-- a, X2+ where a E {and, but, nor, or}.
+sgww85		(118):
+sgww85		S[CONJ and] and NP NP
+sgww85		VP [CONJ or] or NP PP a book to Kerry
+sgww85		The interpretation of an elliptical construction is obtained by uniformly substituting its immediate constituents into some immediately preceding structure, and computing the inter
+sgww85		S
+sgww85		S
+sgww85		(122)a and'(like'(Stacy*)(Terry*), likeS(Lee*)(Tracy*)).
+sgww85		[andl(give'(Lee*)(the'(bookI)), giveF(Kim*)(the'(record')))]
+sgww85		Pat remembered the appointment and that it was important to be on time.
+sgww85		That Himmier appointed Heydrich and the implications thereof frightened many observers.
+sgww85		We talked about Mr. Colson and that he had worked at the
+sgww85		You can depend on my assistant and that he will be on time.
+sgww85		Pat was annoyed by the children's noise and that their parents did nothing to stop it.
+sgww85	*	We talked about that he had worked at the White House.
+sgww85	*	You can depend on that he will be on time.
+sgww85	*	Pat was annoyed by that their parents did nothing to stop it.
+sgww85		N2[NFORM a]-- a, where a E {S[COMP that], S[COMP for]}.
+sgww85		FSD: [NFORM] v [CONJ].
+sgww85		P'-+H(', NP.
+sgww85		NP
+sgww85		(125).
+sgww85		We talked about the issues we had worked on as students and that our perspectives had changed over the years.
+sgww85		b.*We talked about that our perspectives had changed over the years and the issues we had worked on as students.
+sgww85		That our prespectives had changed over the years and the issues we had worked on as students were the topics of discussion.
+sgww85		[ACC] < [NFORM S].

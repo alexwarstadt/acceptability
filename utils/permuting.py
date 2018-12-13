@@ -12,8 +12,14 @@ import data_processor
 # Various functions for generating permuted data for real/fake classifier
 
 # SHUFFLE PERMUTING
+# select a subset of words from a sequence and randomly reorder that subset, keeping all other words in situ.
+# e.g.: 1 2 3 4 5 6 7 8 --> select 2 3 7 --> reorder 3 7 2 --> return 1 3 7 4 5 6 2 8
 
 def shuffle_permute_file(input_path, out_path, min_percent, max_percent):
+    """
+    applies shuffle permutation to a file, 
+    randomly selecting p percent of words to be shuffled, where min_percent < p < max_percent.
+    """
     output = open(out_path, "w")
     for line in open(input_path):
         words = line.split()
@@ -22,13 +28,14 @@ def shuffle_permute_file(input_path, out_path, min_percent, max_percent):
         words, punc_map = remove_punc(words)
         words = shuffle_line(words, random.uniform(min_percent, max_percent))
         words = replace_punc(words, punc_map)
-        # words = add_pad(words, original_length)
         new_line = reduce(lambda x, y: x + " " + y, words)
         output.write(new_line + "\n")
     output.close()
 
 def shuffle_line(a_list, percent):
-    """shuffle n elements of a list"""
+    """
+    Shuffle p percent of elements of a list (of words), where where min_percent < p < max_percent.
+    """
     n = int(math.floor(percent * len(a_list)))
     if n < 2 and len(a_list) >= 2:
         n = 2
@@ -45,7 +52,7 @@ def shuffle_line(a_list, percent):
 
 
 
-# SWAP PERMUTING
+# SWAP PERMUTING --- deprecated
 
 def swap_permute(input_path):
     out_path = input_path[:-4] + "-permuted.txt"
@@ -79,22 +86,32 @@ def swap(words, n):
 
 
 # SWAP PERMUTING BY PUNC
+# chunk a sentence by selecting a number of split-points in a sequence
+# (giving preference to immediately after punctuation)
+# randomly reorder chunks
 
-def permute_file_by_punc(input_path, out_path, rlb, rub):
+def permute_file_by_punc(input_path, out_path, lwr_bound, upr_bound):
+    """
+    Applies swap permuting to a file,
+    with n number of chunks randomly chosen per sentence such that rlb <= n < rub
+    """
     output = open(out_path, "w")
     for line in open(input_path):
-        new_line = permute_by_punc(line, rlb, rub)
+        new_line = permute_by_punc(line, lwr_bound, upr_bound)
         output.write(new_line + "\n")
     output.close()
 
 
-def permute_by_punc(line, rlb, rub):
+def permute_by_punc(line, lwr_bound, upr_bound):
+    """
+    Applies swap permuting to a sequence.
+    """
     words = line.split()
     original_length = len(words)
     words = remove_pad(words)
     words = apostrophe_s(words)
     chunks, punc_map = chunk_at_punc(words)
-    r = random.randint(rlb, rub)
+    r = random.randint(lwr_bound, upr_bound)
     try:
         r1 = random.randint(0, min(r, len(chunks)-1))
     except ValueError:
@@ -104,12 +121,14 @@ def permute_by_punc(line, rlb, rub):
     chunks = swap_split_chunks(chunks, r2)
     chunks = replace_punc(chunks, punc_map)
     words = [item for sublist in chunks for item in sublist]
-    # words = add_pad(words, original_length)
     new_line = reduce(lambda x, y: x + " " + y, words)
     return new_line
 
 
 def chunk_at_punc(words):
+    """
+    Chunks a sequence of words at the punctuation.
+    """
     punc = [".", ",", ";", ":", "?", "!", "\"", "\'", "`", "``", "\'\'", "(", ")", "[", "]", "‘", "’"]
     chunks = []
     curr_chunk = []
@@ -130,6 +149,9 @@ def chunk_at_punc(words):
     return chunks, punc_map
 
 def swap_chunks(chunks, r):
+    """
+    
+    """
     idx = range(len(chunks))
     random.shuffle(idx)
     idx = idx[:r]
@@ -153,7 +175,6 @@ def swap_split_chunks(chunks, r2):
 
 
 def apostrophe_s(words):
-    prev = ""
     new_list = []
     for w in words:
         if re.match(".*\'.*", w) and new_list:
@@ -161,11 +182,6 @@ def apostrophe_s(words):
         else:
             new_list.append(w)
     return new_list
-
-
-
-
-
 
 
 def remove_punc(words):
@@ -204,3 +220,8 @@ def add_pad(words, n):
 
 
 ################# MAIN ####################
+
+shuffle_permute_file("/Users/alexwarstadt/Workspace/data/bnc/bnc_sample.txt",
+                     "/Users/alexwarstadt/Workspace/data/bnc/shuff.txt",
+                     0.2,
+                     0.4)

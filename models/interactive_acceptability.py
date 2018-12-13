@@ -109,7 +109,7 @@ FLAGS(sys.argv)
 
 i = Interacter(FLAGS)
 
-i.evaluate_file("../acceptability_corpus/artificial/svo.tsv")
+i.evaluate_file("../acceptability_corpus/artificial/inchoative.tsv")
 
 
 # i.interact_file("../acceptability_corpus/test_tokenized.tsv")

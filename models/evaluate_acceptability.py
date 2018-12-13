@@ -8,7 +8,7 @@ import training.my_flags
 import gflags
 import sys
 
-class Interacter():
+class Interacter(model_trainer.ModelTrainer):
 
     def __init__(self, FLAGS):
         self.FLAGS = FLAGS
@@ -28,6 +28,7 @@ class Interacter():
         self.classifier.load_state_dict(torch.load(FLAGS.classifier_path))
         self.dm = cdu.DataManagerEval(self.FLAGS.test_path, self.FLAGS.embedding_path,
                                           self.FLAGS.vocab_path, self.FLAGS.embedding_size, self.FLAGS.crop_pad_length)
+        super(Interacter).__init__(FLAGS, self.classifier)
 
     def eval(self):
         epoch = cdu.CorpusEpoch(self.dm.test_pairs, self.dm)
@@ -40,8 +41,19 @@ class Interacter():
                 input[i] = t
             _, encoding = self.encoder.forward(Variable(input), hidden)
             output = self.classifier.forward(encoding)
-        for s, o in zip(sentences, output):
-            print(o[0].data[0], s)
+
+
+            sanitized_sentences = [dp.sanitize_sentence(s.strip()) for s in sentences]
+            data_pairs = [(s, -1, -1) for s in sanitized_sentences]
+            batch = cdu.Batch(data_pairs, self.dm)
+            hidden = self.encoder.init_hidden(batch.batch_size)
+            input = torch.Tensor(len(batch.tensor_view), batch.batch_size, self.FLAGS.embedding_size)
+            for i, t in enumerate(batch.tensor_view):
+                input[i] = t
+            _, encoding = self.encoder.forward(Variable(input), hidden)
+            output = self.classifier.forward(encoding)
+            for s, o in zip(sentences, output):
+                print ("%.2f" % o[0].data[0]) + "\t" + s.strip()
 
 
 

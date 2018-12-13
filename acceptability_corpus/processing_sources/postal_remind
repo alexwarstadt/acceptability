@@ -1,0 +1,696 @@
+p_70		Harry strikes me as being incompetent.
+p_70		Margaret struck Pete as having a grudge against Lucy.
+p_70		Max is like my brother.
+p_70		Pete resembles his father.
+p_70		That suggestion is similar to Max's idea.
+p_70		Harry reminds me of Fred Astaire.
+p_70		Johnson reminded Betty of an Argentinian admiral.
+p_70	*	Harry reminds me.
+p_70	*	Harry reminds of Fred Astaire.
+p_70	*	Reminds me of Fred Astaire.
+p_70		Harry reminded Betty to visit her sick uncle.
+p_70		Lucille reminded me of a party I was supposed to attend.
+p_70	*	Remind me of your brother.
+p_70		Remind me to visit your brother.
+p_70		I convinced John of that.
+p_70		I warned John of the danger.
+p_70	*	I convinced John of the dog.
+p_70	*	I warned John of your mother.
+p_70	*	I informed John of Bill's parakeet.
+p_70	*	Harry reminds himself of a gorilla.
+p_70	*	Johnson reminds himself of an Argentinian admiral.
+p_70	*	Harry reminds me of himself.
+p_70	*	Johnson reminded Betty of himself.
+p_70	*	Harry reminded me of myself.
+p_70	*	Harry reminded Barbara of herself.
+p_70		Larry reminds me of Winston Churchill.
+p_70		I perceive that Larry is similar to Winston Churchill.
+p_70		Harry is similar to Ben.
+p_70		Jack is like Tommy.
+p_70		Your mother resembles my aunt.
+p_70	*	Jack perceives that Bill is similar to Tony resembles.
+p_70		Jack perceived that he was like Bill are well-formed.
+p_70		It struck Jack that Betty was like Bill.
+p_70		It struck Jack that he was like Bill.
+p_70	*	Jack reminds himself of Bill.
+p_70		Joe believed Bill to be a vampire.
+p_70		Bill was believed to be a vampire by Joe.
+p_70		Joe believed that Bill was a vampire.
+p_70	*	Bill was believed that was a vampire by Joe.
+p_70		Joe believed himself to be a vampire.
+p_70	*	Joe believed that himself was a vampire.
+p_70	*	Joe believed himself was a vampire.
+p_70		I think that vampires have large livers
+p_70		it seems to me that vampires have large livers
+p_70		vampires seem to me to have large livers
+p_70		I perceive that Max has a large liver
+p_70		it struck me that Max had a large liver
+p_70		Max struck me as having a large liver
+p_70		that Betty was like Bill struck Jack.
+p_70		it struck Jack that Betty was like Bill.
+p_70		Jack struck Betty to be like Bill
+p_70		Betty struck Jack to be like Bill
+p_70		Betty struck Jack as being like Bill
+p_70	*	Jack struck himself as being like Bill
+p_70	*	Jack was stabbed by himself
+p_70	*	Louise was criticized by herself
+p_70	*	Jack reminds himself of me.
+p_70		Jack reminds me of Bill.
+p_70	*	Harry reminded Mary of herself.
+p_70	*	That nurse reminded Jack of himself.
+p_70	*	Tony appeared to Louise to recognize her.
+p_70		It seemed to me that Jack knew me.
+p_70	*	Jack seemed to me to know me.
+p_70	*	Jack impressed Sally as being fond of her.
+p_70		Harriet believes Jack to have been unfaithful to her
+p_70		Harriet proved Melvin to be inferior to her
+p_70		it was proved by Harriet that Melvin was inferior to her
+p_70	*	Melvin was proved by Harriet to be inferior to her
+p_70		Greg assumed that Linda was fond of him
+p_70		it was assumed by Gregg that Linda was fond of him
+p_70	*	Linda was assumed by Gregg to be fond of him
+p_70		Tony appeared to Louise to recognize her
+p_70		Tony appeared to Louise to be cruel to hers
+p_70	*	Joe reminds me of himself
+p_70	*	Joe reminded himself of you
+p_70	*	Joe reminded Betty of herself
+p_70	*	Joe struck himself as being like you
+p_70		it struck Joe that he was similar to you
+p_70		it struck Joe that he was like you
+p_70		it struck Betty, that Joe was similar to her
+p_70		it struck Betty that Joe was like her
+p_70	*	John and Bill reminded each other of Louise
+p_70		John and Bill reminded me of each other
+p_70	*	I reminded John and Bill of each other
+p_70	*	John and Bill reminded each other of each other
+p_70		John and Bill talked to each other about Louise
+p_70		John and Bill talked to me about each other
+p_70	*	I talked to John and Bill about each other
+p_70	*	John and Bill talked to each other about each other
+p_70	*	John and Bill struck each other as being similar to Louise
+p_70		John and Bill struck me as being similar to each other
+p_70	*	I struck John and Bill as being similar to each other
+p_70	*	John and Bill struck each other as being similar to each other
+p_70	*	John and Bill seemed to each other to be fond of Louise
+p_70		John and Bill seemed to me to be fond of each other
+p_70	*	Max seemed to John and Bill to be fond of each other
+p_70	*	John and Bill seemed to each other to be fond of each other
+p_70		John and Bill know each other
+p_70	*	John and Bill think that Mary hates each other
+p_70	*	John and Bill talked to the boy who visited each other
+p_70	*	it seemed to John and Bill that each other were fond of Louise
+p_70		it seemed to me that John and Bill were fond of each other
+p_70	*	it seemed to John and Bill that Max was fond of each other
+p_70	*	it seemed to John and Bill that each other were fond of each other
+p_70		(68). Because of this, the reciprocal constraints of remind clauses provide a powerful argument for the strike-like analysis.
+p_70		John and Bill each reminded the other of Louise
+p_70		John and Bill each reminded me of the other
+p_70		I reminded each one of the men of the other'8
+p_70	?	John and Bill each reminded the other of the other
+p_70		John and Bill each struck the other as being similar to Louise
+p_70		John and Bill each struck me as being similar to the other
+p_70		I struck each of the men as being similar to the other
+p_70	?	John and Bill each struck the other as being similar to the other
+p_70		John and Bill each seemed to the other to be fond of Louise
+p_70		John and Bill each seemed to me to be fond of the other
+p_70		Max seemed to each of the men to be fond of the other
+p_70	?	John and Bill each seemed to the other to be fond of the other
+p_70		it struck each one of the men that the other was similar to Louise
+p_70		it struck me that John and Bill were each similar to the other
+p_70		it struck each one of the men that I was similar to the other
+p_70	?	it struck each one of the men that the other was similar to the other
+p_70		John strikes me as being intelligent
+p_70		John struck Barbara as having a quick mind it can readily be determined that it falls into that class which has come to be called
+p_70		No occurrence with do so
+p_70		No imperatives
+p_70		No occurrence with the modal may of permission
+p_70		No occurrence with progressive
+p_70		No occurrence as the embedded verb with main verbs such as tell (to), order, permit, force, persuade, etc.
+p_70		No occurrence with what NP did was ...
+p_70		No occurrence with subject-selected adverbs like enthusiastically, reluctantly
+p_70		John thought about Bill but Tom wouldn't do so
+p_70	*	John struck Bill as being dumb but Jack didn't do so
+p_70		think about Bill
+p_70	*	strike Bill as being over six feet tall
+p_70		may I think about Bill
+p_70	*	may Bill strike me as being clever
+p_70	*	John is striking me as being too fat
+p_70		I ordered John to think about the digestion of rhinoceri
+p_70	*	1 ordered John to strike Bill as being overweight
+p_70		what John did next was think about rhinoceros digestion
+p_70	*	what John did next was strike Bill as being overweight
+p_70		John thought about rhinoceros digestion enthusiastically
+p_70	*	John enthusiastically struck Bill as being dumb
+p_70	*	John reminded Bill of Tom but Jack didn't do so
+p_70	*	remind Bill of Mary
+p_70	*	may Bill remind you of Lucille
+p_70	*	John is reminding me of a gorilla
+p_70	*	I ordered John to remind Betty of a tap dancer
+p_70	*	what John did next was to remind Bill of a gorilla
+p_70	*	John enthusiastically reminded Betty of Boris Karloff
+p_70	*	Harry was struck as being foolish by Jack
+p_70	*	Harry was struck by a I936 Chevrolet as being similar to a I946
+p_70	*	Harry was reminded of a I936 Chevrolet by a 1946 Packard
+p_70	*	Harry was reminded by a I946 Packard of a 1936 Chevrolet
+p_70		Harriet struck me as being clever we find an initial subject NP, a post-verbal NP, and a clausal fragment without its subject which is understood as a coreferent of the subject of strike. The selectional facts, then, are these:
+p_70		the subject in such cases is unrestricted with respect to strike itself, but is restricted with respect to the clausal fragment
+p_70		the post-verbal NP in such cases must be animate, possibly "human" in some sense (exclusive of babies, for example)
+p_70		Harriet struck me as being nice
+p_70		that dump truck struck me as being nice
+p_70		that proposal struck me as being nice
+p_70		that month struck me as being a dreary one
+p_70		that location struck me as being a lonely one
+p_70	?	that proposal struck most hydrogen bombs as being inconsistent
+p_70	?	your first home run struck my second double as being shorter than
+p_70		Harriet reminded me of a monkey
+p_70		that dump truck reminded me of Harry's tractor
+p_70		that proposal reminded me of Harry's suggestion
+p_70		that month reminded me of last month
+p_70		that location reminded me of the place where Harry's mortuary used to be
+p_70		illustrates that remind does not restrict the nature of its subjects. However, such subjects are restricted with respect to the remnant in remind sentences of the clausal fragment of strike sentences, which is just the 0 NP. Observe:
+p_70	?	Harriet struck me as being similar to Willy Mays' 434th home run
+p_70	?	Harriet reminded me of Willy Mays' 434th home run
+p_70	?	your right nostril struck me as being similar to Fermat's last theorem
+p_70	?	your right nostril reminds me of Fermat's last theorem
+p_70	?	this onion soup strikes me as being similar to I943
+p_70	?	this onion soup reminds me of I943
+p_70	?	your nose reminded my foot of Harry's armpit
+p_70	?	that idea reminded that nonnull set of the Declaration of Independence
+p_70	?	Khruschev's mother reminded the election of Nixon of Harriet's sister
+p_70	?	Irving's notebooks will remind the arrest of Schwarz of the fact that everything either does or does not exist
+p_70		Harry reminded me of a gorilla
+p_70		Max thought that Harry reminded me of a gorilla
+p_70		who did Max think reminded me of a gorilla
+p_70		the one who Max thought reminded me of a gorilla
+p_70		what did Max think Harry reminded me of
+p_70		the thing that Max thought Harry reminded me of
+p_70	*	who did Max think Harry reminded of a gorilla
+p_70	*	the one who Max thought Harry reminded of a gorilla
+p_70		me Harry reminds of a gorilla
+p_70		Max Harry seemed to remind of Joe Dimaggio
+p_70		Pete I am sure Marsha reminded of Louise
+p_70		Harry struck me as being similar to a gorilla
+p_70		Max thought that Harry struck me as being similar to a gorilla
+p_70		who did Max think struck me as being similar to a gorilla
+p_70		the one who Max thought struck me as being similar to a gorilla
+p_70		what did Max think Harry struck me as being similar to
+p_70		the thing that Max thought Harry struck me as being similar to
+p_70	*	the one who Max thought Harry struck as being similar to a gorilla
+p_70	*	I understand Max personally
+p_70		I understand myself
+p_70		that is boring to me personally
+p_70	*	Harry personally is boring to me
+p_70	*	Harry is boring to himself
+p_70		mild if the Experiencer NP is preceded by a preposition which accompanies it under extraction or is not preceded by a preposition
+p_70		severe if the Experiencer NP is preceded by a preposition which does not accompany it under extraction
+p_70		(the fact) that Billy kissed Greta was disgusting to Melvin
+p_70		it was disgusting to Melvin that Billy kissed Greta
+p_70		to whom was the fact that Billy kissed Greta disgusting
+p_70	*	to whom was it disgusting that Billy kissed Greta
+p_70	*	who was it disgusting to that Billy kissed Greta
+p_70		who did Harry's proposing to Sally annoy the most
+p_70		the one who Harry's proposing to Sally annoyed the most was Max
+p_70		that Max was a Hungarian was obvious to me
+p_70		it was obvious to me that Max was a Hungarian
+p_70		to whom was that obvious
+p_70		who was that obvious to
+p_70	*	to whom was it obvious that Max was a Hungarian
+p_70	*	who was it obvious to that Max was a Hungarian
+p_70		that Max was a Hungarian disturbed me
+p_70		it disturbed me that Max was a Hungarian
+p_70		who did that disturb
+p_70	*	who did it disturb that Max was a Hungarian
+p_70	*	the one who it disturbed that Max was a Hungarian
+p_70		Max disgusted me
+p_70		An adjectival construction in which the Experiencer NP is a Surface
+p_70		Max was disgusting to me
+p_70		An adjectival construction in which the Experiencer NP is Surface
+p_70		I was disgusted with Max
+p_70	*	Max was disgusting to himself
+p_70		I was disgusted with myself
+p_70	*	who did it disgust that you refused to play
+p_70	*	the one who it disgusted that you refused to play
+p_70		it was disgusting to Max that I refused to play
+p_70	*	who was it disgusting to that I refused to play
+p_70	*	the one who it was disgusting to that I refused to play
+p_70	*	to whom was it disgusting that I refused to play
+p_70	*	the one to whom it was disgusting that I refused to play
+p_70		Max said Barbara was disgusted by the fact that Pete quit
+p_70		who did Max say was disgusted by the fact that Pete quit
+p_70		the one who Max said was disgusted by the fact that Pete quit
+p_70		Max disgusted me the most
+p_70		who did Max disgust the most
+p_70		it disgusted me the most that Max quit
+p_70	*	who did it disgust the most that Max quit
+p_70		Max was most disgusting to me
+p_70		who was Max most disgusting to
+p_70		to whom Max was most disgusting
+p_70		the one to whom Max was most disgusting
+p_70		it was most disgusting to me that Max quit
+p_70	*	who was it most disgusting to that Max quit
+p_70	*	to whom was it most disgusting that Max quit
+p_70	*	the one to whom it was most disgusting that Max quit
+p_70		holds. This is also predictably the case for the elements seem, appear, and impress in sentences like the following. The reader can easily determine for himself that these are PSYCH MOVEMENT verbals in terms of the position of the Experiencer NP, the impossibility of reflexives, and the distribution of personally.
+p_70		(i I6)
+p_70		Max impresses me as (being) clever by certain late rules and constraints of an unclear sort. No complement is, however, required:
+p_70		that impressed me
+p_70		Max impressed everyone as (being) honest
+p_70		that impressed everyone
+p_70	*	who did Max impress as (being) honest
+p_70	*	the one who Max impressed as (being) honest
+p_70		who did that impress
+p_70		it seemed to Max that Paulette was nervous
+p_70		Paulette seemed to Max to be nervous (seemed nervous to Max)
+p_70		(122)
+p_70	*	who did it seem to that Paulette was nervous
+p_70	*	to whom did it seem that Paulette was nervous
+p_70	*	who did Paulette seem nervous to (*seem to to be nervous)
+p_70	*	to whom did Paulette seem (to be) nervous
+p_70	*	the one to whom it seemed that Paulette was nervous
+p_70	*	the one to whom Paulette seemed nervous
+p_70		it appeared to Max that Paulette was nervous
+p_70		Paulette appeared nervous to Max
+p_70	*	who did Paulette appear nervous to
+p_70	*	to whom did Paulette appear nervous
+p_70	*	to whom did it appear that Paulette was nervous
+p_70	*	the one to whom it appeared that Paulette was nervous
+p_70		this book fe ek Ito me as if it is made of iron
+p_70	*	to whom does this bookflooklas if it were made of iron
+p_70	*	the one to whom this bookfeels }as if it were made of iron flooks
+p_70	*	it was Harry to whom this bookfeloked}as if it were made of iron
+p_70		that monkey s 1un1dsto me as if it were dying smellsoun
+p_70	*	to whom does that monkey sound}as if it were dying ~smell)
+p_70	*	the one to whom that monke soun dsas if it were dying
+p_70	*	it was Harry to whom that monkeyt l1dd }as if it were dying
+p_70		that soup tasted to me like it was made out of wombat meat
+p_70	*	who did that soup taste to like it was made out of wombat meat
+p_70	*	the one whom that soup tasted to like it was made out of wombat meat
+p_70	*	it was Harry who that soup tasted to like it was made out of wombat meat
+p_70		the fact that the Experiencer NP is the Surface Object
+p_70		the fact that personally can occur with the Surface Object
+p_70		the fact that the Surface Object cannot be (a noncontrastively stressed) reflexive
+p_70		I smelled the statue
+p_70		what did you smell
+p_70		the thing that you smelled
+p_70		I smelled the gorilla
+p_70		I smelled funny to the gorilla
+p_70		who did you smell
+p_70	*	what gorilla did you smell funny to
+p_70	*	to what gorilla did you smell funny
+p_70		I believe (that Max is a vampire)
+p_70		I believe Max (to be a vampire)
+p_70		who do you believe to be a vampire
+p_70		the one who he believes to be a vampire
+p_70		I regard Max as a vampire
+p_70		who do you regard as a vampire
+p_70		the one who he regards as a vampire
+p_70		I believe myself to be a vampire
+p_70		Max regards himself as a genius
+p_70		I find myself unable to go
+p_70		I consider myself to be innocent
+p_70		The IO NP of remind clauses is unextractable by the rules WH REL
+p_70		There is a general constraint, formulable roughly and preliminarily as (I03),21 blocking the extractability of derived object NP which
+p_70		it was claimed by Max's mother that Arthur was a vampire
+p_70	*	by whom was it claimed that Arthur was a vampire
+p_70		The regularity in b holds for the hundreds of verbals in the class annoy, bother, disgust, in their pure verbal forms, and in their ing-to adjectival forms, for pure verbs like seem, appear, impress, smell, and other verbs of sensation, for pure adjectives like obvious, important, vital.
+p_70		The regularity in b holds predictably for the verb strike.
+p_70		Given a superficial analysis of remind as a deep verb occurring with no complement and three NP within its immediate clause, fact a and fact b are unrelated, merely accidental cofeatures of English.
+p_70		Given the strike-like analysis, (I 35b), by way of its special case, (I 35d), automatically has (I35a) as a consequence.
+p_70		is thus the deeper argument for the strike-like analysis derivable from the extract
+p_70		Remarks. In part B of this section, several arguments were given showing that the underlying structures of remind sentences must contain a main verbal element with the properties of that verb strike which undergoes both RAISING and PSYCH
+p_70	*	who was it claimed by that Arthur was a vampire
+p_70		who was that claimed by
+p_70		by whom was that claimed
+p_70		I gave a shrunken head to someone
+p_70		I gave someone a shrunken head
+p_70		who did you give a shrunken head to
+p_70		to whom did you give a shrunken head
+p_70	*	who did you give a shrunken head
+p_70	*	Martha is like herself
+p_70	*	you no longer resemble yourself
+p_70	*	I used to be similar to myself
+p_70		Chevrolets resemble Volkswagens
+p_70		monkeys are similar to acrobats
+p_70		reptiles are like diplomats
+p_70	*	Harry is like gorillas
+p_70	*	Joan resembles tap dancers
+p_70	*	I am similar to researchers
+p_70	*	you and I resemble linguists
+p_70	*	Jack and Jill were like idiots
+p_70	*	the men were similar to villains
+p_70		Chevrolets remind me of Volkswagens
+p_70		monkeys remind me of diplomats
+p_70	*	that Chevrolet reminds me of Volkswagens
+p_70	*	Jack reminds me of tap dancers
+p_70	*	Jack and Jill remind me of travellers
+p_70		John is fond of diplomats
+p_70		Jack and Jill are friendly to travellers
+p_70		Harry understands monkeys
+p_70		the average linguist is a university employee
+p_70		the typical Nazi liked to hit people on the head
+p_70		the typical linguist is similar to Max
+p_70	?	Max is similar to the typical linguist
+p_70		the typical communist is like that man over there
+p_70	?	that man over there is like the typical communist
+p_70		the average gorilla resembles your mother
+p_70	?	your mother resembles the average gorilla
+p_70		a the average bureaucrat is like Nixon
+p_70	?	Nixon is like the average bureaucrat
+p_70		the typical linguist reminds me of Max
+p_70	?	Max reminds me of the typical linguist
+p_70		John is like Bill is to presuppose that the listener knows what Bill is like and to assert that in some respect John matches Bill.
+p_70		the typical communist reminds me of that man over there
+p_70	?	that man over there reminds me of the typical communist
+p_70	?	your mother reminds me of the average gorilla
+p_70		the average bureaucrat reminds me of Nixon
+p_70	?	Nixon reminds me of the average bureaucrat
+p_70		Johnson reminded me of de Gaulle in that he had a long nose
+p_70		Pete reminded me of Fast Louis Parsons in that he could run the mile in 4.2 seconds
+p_70	*	Joet punched Bill in that hei was sick for a week
+p_70	*	my doctor, fell down in that hei knows French very well
+p_70	*	Harryt knows algebra in that hisi mouth is open
+p_70	*	Lucillei is singing in that shet is wiggling her vocal cords26
+p_70		one is similar to other people
+p_70	?	other people are similar to one
+p_70	?	other people reminded Harry of one should be out, which is correct. It also seems that the well-formedness of (i) should predict that:
+p_70		Harryi is similar to Jack in that hei has a big nose
+p_70		that mani resembles my brother in that hei has red hair
+p_70		Bettyi is like Lucille in that shei has an enormous liver
+p_70		Z does not occur with most verbals
+p_70		Z occurs with Similarity Predicates (and also the related forms different, equivalent, etc.)
+p_70		Z occurs with remind
+p_70		Lucille impressed me as resembling her mother in that both of them have red hair
+p_70		this meat looks to me like it is rotten in that it is covered with bugs
+p_70		that child seems to me to resemble Pete in that it has dark skin
+p_70		that dog appears to me to be similar to my wolf in that it eats rabbits
+p_70	*	Fred believes that Harry was similar to Kennedy in that he had no judgment
+p_70	*	I claim Lucille resembles her mother in that both of them have blonde hair
+p_70		Fred believes that Harry was similar to Kennedy
+p_70		I claim Lucille resembles her mother
+p_70		(I57), which do not? The answer, if one recalls the analysis of verbs presented in part B(5), is that the verbs in (I56) undergo PSYCH MOVEMENT, while those in
+p_70		do not. Hence the latter have their Experiencer NP in subject position, while the former have them in the predicate. There would then appear to exist in English, in some form, the restriction:
+p_70		Z can occur with an embedded Similarity Predicate, just in case the first verb above the Similarity Predicate undergoes PSYCH MOVE
+p_70		John struck me as resembling his mother in that he was not too bright
+p_70		John struck me as being like his father in that he was musically inclined27
+p_70		I told John to visit Sally
+p_70	*	I told John to resemble Mary
+p_70		I told John not to be seen in public without his beard
+p_70	*	Lucille impressed Max as being similar to her mother in that she had red hair
+p_70	*	that child seemed to Bob to resemble Pete in that he had dark skin
+p_70	*	that dog appeared to you to be similar to my wolf in that it eats rabbits
+p_70		Johns says Lucille impressed himi as being similar to Mary in that she was very emotional
+p_70	*	John says Lucille impressed me as being similar to Mary in that she was very emotional
+p_70		Dorisi claimed that Lucille seemed to heri to resemble Gladys in that she was seven feet tall
+p_70	*	Doris claimed that Lucille secmed to me to resemble Gladys in that she was seven feet tall
+p_70		Z can occur with a symmetrical predicate which is embedded below a
+p_70		Lucille reminded me of Betty in that she was beautiful
+p_70	*	Lucille reminded Max of Betty in that she was beautiful
+p_70		Maxi says Lucille reminded himi of Betty in that she was beautiful
+p_70	*	Maxi says Lucille reminded me of Betty in that she was beautiful
+p_70		Max is similar to Pete in the way that he talks
+p_70		Max reminds me of Pete in the way that he talks
+p_70		Max resembles Barbara in the way he gives an argument
+p_70		Max reminds me of Barbara in the way he gives an argument
+p_70		meeting Mary is like kissing a gorilla
+p_70		hitting a home run is similar to finding a hundred dollars reveal a peculiar restriction between the nominalized clauses in the two nominals.
+p_70		shaving is like cutting one's throat
+p_70		shaving oneself is like torturing oneself
+p_70	*	shaving himself was like torturing herself
+p_70	*	shaving himself was like scratching myself
+p_70	*	Mary's criticizing herself was similar to Pete's praising himself
+p_70	*	criticizing Mary was similar to Pete's praising himself
+p_70	*	Mary's criticizing Lou was similar to praising yourself
+p_70		the underlying subjects of the nominalized clauses must be coreferents
+p_70		these subjects must be deleted28
+p_70		(I69). A further restriction is that the subject NP which are deleted in both clauses must be either the special general pronominal element one or else they must be co
+p_70		Harryi says that shaving himselfi is like torturing himselft
+p_70	*	Harryi says that shaving herself is like torturing herself
+p_70		(Harryi says) shaving oneself is like torturing oneself
+p_70		Maryi thinks criticizing herselfi is similar to torturing herselfi
+p_70	*	Maryi thinks criticizing myself is similar to torturing myself
+p_70		(Maryi thinks) criticizing oneself is like torturing oneself
+p_70		Petei told Louisj that criticizing himselfi would be like torturing himselfi
+p_70		Petei told Louisj that criticizing himselfj would be like torturing himselfj
+p_70		Pete told Louis that criticizing oneself would be like torturing oneself
+p_70		shaving myself is like torturing myself
+p_70	*	shaving yourself is like torturing yourself
+p_70	*	is shaving myself like torturing myself
+p_70		is shaving yourself like torturing yourself
+p_70		you'r shaving Max is like my torturing Pete
+p_70	?	my criticizing Billy is like my attacking Tom
+p_70		is shaving myself like torturing myself
+p_70		is shaving yourself like torturing yourself
+p_70		why is shaving myself like torturing myself
+p_70		the underlying subjects of the nominalized clauses must be coreferents
+p_70		these subjects must be deleted
+p_70		these subjects must be coreferents of an NP in the clause of the immediately higher verb of saying or thinking, or:
+p_70		they must be the general pronominal element one.33 3
+p_70		there being no love between us is similar to there being no food in China
+p_70		there being trouble in Africa is equivalent to there being trouble in Persia
+p_70	*	being no love between us is similar to (there) being no food in China
+p_70		on Mars, one builds one's house near a canal to refer to Martians, then we can say:
+p_70		do you like having your house near a canal to a Martian. However, this does not exhaust the relation between the variable element one and I/you. For in fact, one has the same inherent subjectivity that I does. Thus observe the contrast between a science-fiction computer saying:
+p_70		people (sentient beings) should not destroy valuable property
+p_70	*	it strikes me that shaving himself is like torturing himself
+p_70		it strikes me that shaving oneself is like torturing oneself
+p_70		it struck Harryi that shaving himselfi was like torturing himself
+p_70	*	it struck Harry that shaving myself was like torturing myself
+p_70		it struck Harry that shaving oneself is like torturing oneself
+p_70		it struck Lucille1 that praising herself1 was similar to criticizing herself1
+p_70	*	it struck Lucillei that my praising her1 was similar to Pete's criticizing her:
+p_70	*	it struck Lucille, that praising herselft was similar to Pete's criticizing her1
+p_70	*	it struck Lucille1 that my praising her, was similar to criticizing herselfj
+p_70	*	shaving himself reminds me of torturing himself
+p_70		shaving oneself reminds me of torturing oneself
+p_70		shaving himself1 reminded Harry of torturing himself1
+p_70	*	shaving myself reminded Harry of torturing myself
+p_70		shaving oneself reminded Harry of torturing oneself
+p_70		praising herself1 reminded Lucille1 of criticizing herself1
+p_70	*	my praising her1 reminded Lucille1 of Pete's criticizing her1
+p_70	*	praising herselfi reminded Lucille1 of Pete's criticizing her1
+p_70	*	my praising heri reminded Lucille1 of criticizing herself1
+p_70		shaving myself reminds me of torturing myself
+p_70		shaving himself1 reminded Harry of torturing himself1
+p_70	*	shaving myself reminded Harry of torturing myself
+p_70	*	shaving himself reminded me of torturing himself
+p_70		Max thought that shaving myself reminded me of torturing myself
+p_70	*	Max thought that shaving himself reminded me of torturing himself
+p_70		I thought that shaving himself reminded Max of torturing himself
+p_70	*	I thought that shaving myself reminded Max of torturing myself
+p_70		a regular rule (I 76c (i))
+p_70		a statement to the effect that remind is an exception to (I 76c (i))
+p_70		a special rule limited in scope to remind which says just what (I 76c (i)) says for the regular cases
+p_70		shows that the alternative to the strike-like analysis is an account in which the perfectly regular properties of remind must be taken to involve two separate irregularities, an exception statement for (I 76c (i)) and a special rule to do the work of (I 76c (i)) in the single case. It is hard to conceive of a stronger argument for an analysis of the type under discussion.
+p_70		Max, thinks Greta, is similar to Petek but Lucille, can't see that they are similar
+p_70		Maxi thinks Gretai is similar to Petek and I can see they are similar too
+p_70		Maxi thinks Gretaj is similar to Petek but Lucille, can't see the similarity between them
+p_70		Maxi thinks Gretaj resembles Petek and I can see the resemblance between them too
+p_70		Harry1 reminds me of Larryj but Lucillek can't see that they are similar
+p_70		Harry1 reminds me of Joe Dimaggio, but Lucillek can't see the resem
+p_70	*	Harry said something to Betty but Lucille can't see that they are similar as are verbs with complements of the nonSimilarity Predicate type:
+p_70	*	Harry said that Max liked Bill but Lucille can't see the resemblance between them
+p_70		BECOME S
+p_70		s
+p_70		is then the structure which, according to McCawley, underlies sentences of the form x killy.
+p_70		Max reminded me of Pete
+p_70		(I96)
+p_70		Max struck me as resembling Pete into those like (I95). I referred to such an operation in passing as REMIND FOR
+p_70		- (196) RAISING
+p_70		(1I99)
+p_70		S1 PSYCH MOVEMENT
+p_70		Si SUBJECT FORMATION
+p_70		(202)
+p_70		Harry put the garbage in the can
+p_70		I put the cat under the table (iii) s
+p_70		Max is similar to Pete in size
+p_70		Joe resembles you in weight
+p_70		Tom is like Bill in coloring and eyebrow texture
+p_70		Max struck me as being similar to Pete in size
+p_70		Joe struck me as resembling you in weight
+p_70		Tom struck me as being like Bill in coloring and eyebrow texture
+p_70	*	Max reminded me of Pete in size
+p_70	*	Joe reminded me of you in weight
+p_70	*	Tom reminded me of Bill in coloring and eyebrow texture there are now two different mechanisms by which the shape of the main verb which represents (A) in Surface
+p_70		Max is similar to George in the way he treats girls
+p_70		the way Max treats girls is similar to the way George treats girls
+p_70		Max resembles Pete in coloring
+p_70		Max's coloring resembles Pete's coloring
+p_70		this proposal is equivalent to that proposal in empirical content
+p_70		the empirical content of this proposal is equivalent to the empirical content of that proposal
+p_70		Harry's calling Mary annoyed me
+p_70		Harry annoyed me by calling Mary
+p_70		Harry's leaving early bothered me
+p_70		Harry bothered me by leaving early
+p_70		Mary's flashing smile brightened up the party
+p_70		Mary brightened up the party with her flashing smile
+p_70		Max excited everyone with his discovery
+p_70		Max resembles Pete in weight
+p_70	*	Max's weight resembles Pete's weight
+p_70	*	the Queen Mary's gross tonnage is similar to the New Jersey's gross tonnage
+p_70		the saint resembled Louis in mannerisms
+p_70		the saint's mannerisms resembled Louis's mannerisms
+p_70		(2II), on the other, carries over when Similarity Predicates are embedded below strike:
+p_70		it struck me that Max resembled Pete in weight
+p_70	*	it struck me that Max's weight resembled Pete's weight
+p_70		it struck me that the Queen Mary was similar to the New Jersey in gross tonnage
+p_70	*	the Queen Mary's gross tonnage struck me as being similar to the
+p_70		it struck me that the saint resembled Louis in mannerisms
+p_70		the saint's mannerisms struck me as resembling Louis's mannerisms
+p_70		on the basis of his observation that to indirect objects have two passives, butfor indirect objects only one.
+p_70		No Similarity Predicate may undergo both PREDICATE RAISING and PROPERTY FACTORING40
+p_70		is to be regarded as a filter which marks any sentence arising through a deriva
+p_70		as ill-formed.
+p_70		PROPERTY FACTORING is obligatory in Similarity Predicate clauses for abstract, measurable nominalizations
+p_70	*	Pete's height reminds me of Joe's height
+p_70	*	Pete's length reminded everyone of the box's length
+p_70	*	Pete's weight reminded everyone of Max's mass
+p_70		John's gestures are similar to Pete's gestures
+p_70		John is similar to Pete in gestures
+p_70		John's gestures remind me of Pete's gestures
+p_70	*	John reminds me of Pete in gestures there is none in (ii):
+p_70		the way John gesticulates is similar to the way Pete gesticulates
+p_70		John is similar to Pete in the way he gesticulates
+p_70		the way John gesticulates reminds me of the way Pete gesticulates
+p_70		John reminds me of Pete in the way he gesticulates
+p_70		Pete's gestures reminded me of Harry's mannerisms
+p_70		Pete's coloring reminded me of Lucy's coloring
+p_70		Pete's accent reminded me of Herbie's accent
+p_70		(2 I 6), required for Similarity Predicates. Further, it explains why Similarity Predicate clauses have both Entity and Property sentence variants, while remind clauses have only Property sentence versions. That is, under the analysis suggested here, (2I5) explains in addition the contrast between:
+p_70		Harry's gestures struck me as being similar to Pete's gestures
+p_70		Harry struck me as being similar to Pete in gestures and:
+p_70		Harry's gestures reminded me of Pete's gestures
+p_70	*	Harry reminded me of Pete in gestures
+p_70		this function's value is identical to that function's value
+p_70		this function is identical to that function in value
+p_70		I identified the value of this function with the value of that function
+p_70		I identified this function's value with that function's value
+p_70		I identified the value of this function with the value of that function
+p_70	*	I identified this function with that function in value
+p_70		Harry's proposal's value is equivalent to your proposal's value
+p_70		Harry's proposal is equivalent to your proposal in value
+p_70		I equated Harry's proposal's value with your proposal's value
+p_70	*	I equated Harry's proposal to your proposal in value
+p_70		Harry's proposal's value differs from your proposal's value
+p_70		Harry's proposal differs from your proposal in value
+p_70		I differentiated Harry's proposal's value from your proposal's value
+p_70	*	I differentiated Harry's proposal from your proposal in value
+p_70		Harry's proposal's meaning is distinct from your proposal's meaning
+p_70		Harry's proposal is distinct from your proposal in meaning
+p_70		I distinguished Harry's proposal's meaning from your proposal's meaning
+p_70	*	I distinguished Harry's proposal from your proposal in meaning
+p_70		my idea's origin is connected to your idea's origin
+p_70		my idea is connected to your idea in origin
+p_70		I connected my idea's origin with your idea's origin
+p_70	*	I connected my idea to your idea in origin
+p_70		this invention's cost is related to that invention's cost
+p_70		this invention is related to that invention in cost
+p_70		I related this invention's cost to that invention's cost
+p_70	*	I related this invention to that invention in cost
+p_70		There is no Deep verb remind
+p_70		The Surface verb remind does not correspond to any single verbal element in those structures which are the input to transformational rules
+p_70		In general, those structures which provide the input to transformational rules are not defined even in part by a relation to Surface Structures which is "lexical item preserving"
+p_70		the lexical items occurring in the Surface Structure of a sentence provide a minimal skeleton out of which its "Deep Structure" is formed
+p_70		(I965), I will refer to as Classical Transformational Theory.
+p_70		Semantic Representation = sets of Readings
+p_70		Deep Structure
+p_70		Surface Structure
+p_70		Phonological Representation 46
+p_70		Phonetic Representation
+p_70		Base Syntactic Rules, whose function is to generate Deep Structures, or at least their nonlexical skeletons
+p_70		Grammatical Transformations, whose function is to map Deep Struc
+p_70		Projection Rules, whose function is to map Deep Structures onto sets of Readings
+p_70		Phonological Rules, whose function is to map Surface Structures onto
+p_70		(i967), Lakoff (i 968a, to appear), and McCawley (i967, i968a, i968b, i 968c, i 968d,
+p_70		The Deep Structure of a sentence (in the neutral sense just given) is its
+p_70		The Base Component of the grammar must generate Semantic
+p_70		There are no Projection Rules
+p_70		Semantic Representations must be trees, rather than sets of markers
+p_70		There must be transformations operating on "pre-lexical" structures
+p_70		i.e., trees.
+p_70		I washed Harry's will have successively more remote Structures like:
+p_70		I washed Harry's one
+p_70		I washed the one of Harry's
+p_70		are derived from reduced relative clauses (say with the verb have), (244) might have a more Remote Structure:
+p_70		I washed the one which Harry had etc.
+p_70		R1 R I R2 R3 Surface Structure
+p_70		stab yourself
+p_70	*	stab himself
+p_70	*	stab myself
+p_70	*	stab themselves
+p_70		you stab yourself
+p_70		Harry wants to kiss Greta
+p_70		Harry wants Max to kiss Greta
+p_70		Harry visited{*1y }own father
+p_70		you visited{MY}own father
+p_70		Harry blinked{hiy}eyes
+p_70		you blinked{yur }eyes
+p_70		visit your own father
+p_70	*	visit my own father
+p_70	*	blink my eyes
+p_70		Harryi wants Harryi to kiss Greta where identically subscripted lexical items serve as a gross and inadequate way of indicating nominal coreference.55 The arguments for an analysis like (251) of sentences like (25oa) are many. One is the parallelism with sentences like (25ob), which shows that want takes infinitival complements with full sentence form. Hence, to block com
+p_70		Harry wants to justify himself
+p_70		Harry wants to visit his own father since these forms are in general subject to the constraint that a coreferent in the same clause must precede them. Other arguments include the fact that the deletion analysis from Remote Structures like (251) explains such gaps as:
+p_70	*	I want me to go
+p_70		the boy who is sitting on the corner
+p_70		the boy sitting on the corner also the rules which yield preposed adjectives by deforming structures like (255a) into those like (255b):
+p_70		the rocket which is unstable
+p_70		the unstable rocket
+p_70		[i] want [i] to kiss Greta
+p_70		Morton singled to left and Tom to right
+p_70		Morton singled to left and Tom singled to right
+p_70		Harry likes meat from pigs
+p_70		Harry likes meat which is from pigs
+p_70		this meat is from pigs
+p_70		most meat is from pigs
+p_70		NP
+p_70		Harry likes pork
+p_70		to determine its meaning, since it must be able to determine such meanings from Surface NP with no structure, like the object in (26I ). It could do this in the case of the object NP of (257) by treating it in effect as an idiom, and assigning the same reading assigned to the lexical item pork to the whole NP meatfrom pigs. The Classical
+p_70		Noun
+p_70		( I968).
+p_70		John believes that Bill didn't come of the form:
+p_70		John doesn't believe Bill came and having Projection Rules operate on the structure of (264) to determine, among other things, that the scope of the negative element is the subordinate clause, despite its Deep Structure appearance in the main clause. Thus in this case, the Surface
+p_70		Harry bralched Max
+p_70		Harry bralched a zebra mean respectively:
+p_70		"Harry saw Max and a gorilla"
+p_70		"Harry saw a zebra and a gorilla"
+p_70		Classical Generative Semantic
+p_70		S
+p_70		Harry is askingJoani whether Max strikes hers as crazy
+p_70	*	Harry is asking Joan whether Max strikes him as crazy the Experiencer NP must apparently be a coreferent of the "indirect object" of the next highest verb of saying/ thinking. Consequently, in superficially unembedded interrogatives, the Experiencer NP must be second person:
+p_70		does Max strike you as being crazy
+p_70	*	it seems to Pete that you are crazy
+p_70		it seems to me that you are crazy
+p_70		Pete thinks you are crazy
+p_70		I think you are crazy
+p_70	*	it strikes Pete that you are unfriendly
+p_70		it strikes me that you are unfriendly
+p_70		Pete perceives that you are unfriendly
+p_70		I perceive that you are unfriendly
+p_70		Harryi says I strike him, as being a vampire
+p_70	*	Harryi says Max strikes me as being a vampire
+p_70		Harryi says hei perceives that I am a vampire
+p_70		Harryi says I perceive that Max is a vampire
+p_70		Lucyi says I seem to heri to be an egomaniac
+p_70	*	Lucyi says Max seems to me to be an egomaniac but:
+p_70		Lucyi says shei thinks I am an egomaniac
+p_70		Lucyi says I think Max is an egomaniac
+p_70		Harry is thinking that you are an idiot
+p_70	?	it seems to Harry that you are an idiot
+p_70	?	you seem to Harry to be an idiot
+p_70		(the machine says) Harry perceives that you are a vampire
+p_70	?	(the machine says) it strikes Harry that you are a vampire
+p_70	?	(the machine says) you strike Harry as being a vampire
+p_70		the wall looked green to me (it looked to me as if the wall were green)
+p_70		I saw that the wall was green one could be wrong only in the latter case. That is, if it is pointed out that the wall was blue and only seemed green due to artificial light, one would agree that (ii) expressed a false statement. But (i) would still express a truth. And indeed, if used honestly, it is difficult to conceive of circumstances in which (i) could fail to express a truth. This difference also seems valid for such pairs as seem, think, although possibly not so clear for them.
+p_70		John seemed sick to me (it seemed to me that John was sick)
+p_70		you're wrong
+p_70		you're wrong
+p_70		it struck Harry that you were a vampire which are in the past tense. However, the natural interpretation of the conditions under which these are used is that the individual designated by Harry has informed others of his subjective experience in the time interval whose existence is guaranteed by the past tense. In short, sentences like (277) seem equivalent to those of the form:
+p_70		Harryi said that it struck himi that you were a vampire and may indeed be derived from the same source.
+p_70		I must strike yo as being insane teveryone g
+p_70		Harry reminds me of a gorilla
+p_70	*	Harry reminds Max of a gorilla
+p_70		Maxi says I remind himi of a gorilla
+p_70	*	Max says Mary reminds me of a gorilla
+p_70	?	(the machine says) Max reminds Pete of a gorilla
+p_70		(I968).

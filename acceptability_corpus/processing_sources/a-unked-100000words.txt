@@ -1,0 +1,949 @@
+ad03	1		She tried to leave
+ad03	1		Who said he would give the cloak to Lee ?
+ad03	0	*	Gilgamesh does n't be in the dungeon
+ad03	1		Which book about herself did Jenny say that Anson had written .
+ad03	1		Paul had eighty eight billion sixty three million forty-four thousand nine hundred at
+ad03	0	*	What I said that was we would go .
+ad03	1		The boy thought she was happy .
+ad03	1		The landlord donated a helicopter
+ad03	1		Most dragons have been neutered .
+ad03	1		Who did you meet all when you were in Derry ?
+ad03	1		The bears sniffed
+ad03	1		Jason persuaded Medea to desert her family .
+ad03	1		to steal talismans from witches is dangerous
+ad03	1		Michael abandoned an old friend at Mardi Gras
+ad03	1		You friends of the king are all the same
+ad03	1		He is that kind of actor
+ad03	0	*	Him knows him .
+ad03	0	*	Lucy 's Gomez 's wallet
+ad03	1		Medea tended to appear to be evil .
+ad03	1		He 's bound to could do it
+ad03	1		Nathan received the cloak from Benjamin
+ad03	1		That the world is round is obvious .
+ad03	1		Poseidon wept , after the executioner left .
+ad03	1		I asked who did Medea poison .
+ad03	1		I never liked his analysis .
+ad03	0	*	Peter is some happy pigs which can fly .
+ad03	0	*	Gilgamesh not left .
+ad03	0	*	There arrived by Medea .
+ad03	1		I might have eaten some seaweed .
+ad03	1		There appears to be a problem with this solution .
+ad03	1		What Julie became was fond of Lloyd .
+ad03	1		Bill did not defeat the gods but Gilgamesh did .
+ad03	1		Aphrodite frees animals
+ad03	0	*	The hospital was donated the book to .
+ad03	1		Medea , Jason poisoned .
+ad03	0	*	They kicked himself
+ad03	1		Emily showed Benjamin himself in the mirror .
+ad03	1		Jason was killed by Medea .
+ad03	0	*	Anson demonized
+ad03	1		How did you eat the cake ?
+ad03	1		I asked who Medea poisoned .
+ad03	1		Aphrodite wanted to live and Ishtar tried to
+ad03	1		I was sitting not under the tree but under the bush
+ad03	1		The child wails
+ad03	1		Gilgamesh has n't left
+ad03	0	*	Whiskey do I drink .
+ad03	1		Dracula thought that he was the Prince of Darkness .
+ad03	1		You kicked yourselves
+ad03	1		He looked up the number .
+ad03	1		She has kissed her .
+ad03	1		Agamemnon stopped Jason casting the spell
+ad03	1		Humans love to eat some disgruntled old pigs in those ditches .
+ad03	1		The book that I said that I 'd never read .
+ad03	1		Jason whispered that the phoenix had escaped
+ad03	1		Ron definitely has bought a dog .
+ad03	0	*	He book
+ad03	1		Who is it obvious that Plato loves .
+ad03	0	*	Which god the statue ?
+ad03	0	*	Kiss pigs is my happiest memory
+ad03	0	*	Dante accused
+ad03	1		That picture of Jenny in a rubber dress does n't flatter her .
+ad03	1		He might could go
+ad03	1		Benjamin gave Lee the cloak and Nathan the chalice .
+ad03	1		That monkey is ate the banana
+ad03	1		I bought a book about Harry
+ad03	0	*	The children wails
+ad03	1		Who was it obvious that Plato loved ?
+ad03	1		It was for Jenny that I intended to be present .
+ad03	1		I think she is pregnant
+ad03	1		It 's extremely windy today .
+ad03	0	*	Who did you believe that to kiss seemed wrong ?
+ad03	1		Jason would prefer Medea to have cursed Agamemnon .
+ad03	0	*	Anson demonized up the Khyber
+ad03	0	*	The therapist 's analysis of Lucy 's
+ad03	1		Who did Athena introduce to whom ?
+ad03	1		It is not true that I might be going to the party .
+ad03	0	*	I asked what who saw ?
+ad03	1		Why are you leaving ?
+ad03	0	*	Kick you !
+ad03	1		It appears that Poseidon owns a dragon
+ad03	1		I have often eaten muffins .
+ad03	1		Gilgamesh can seek Ishtar
+ad03	1		Jason persuaded the doctor to treat Medea
+ad03	1		You kicked yourself
+ad03	1		Agamemnon seems to have left .
+ad03	1		The dragons had all eaten the pigs .
+ad03	0	*	Medea murdered
+ad03	1		Anson shot the dinosaur with his rifle in the jungle
+ad03	0	*	Genie intoned the mirror .
+ad03	1		I often have eaten muffins .
+ad03	1		He kicked himself
+ad03	1		Gilgamesh has not read the cuneiform tablets .
+ad03	1		He might maybe do that , might n't he ?
+ad03	1		I intended for Jenny to be present .
+ad03	0	*	We believed to be omnipotent .
+ad03	1		Whose poem about Achilles did Homer persuade Jason that he should read ?
+ad03	1		Who did you get an accurate description of ?
+ad03	1		Jason would prefer for Medea to have cursed Agamemnon .
+ad03	1		I asked who Medea gave what ?
+ad03	1		I have every hope that you will defeat him .
+ad03	1		Paris is no more
+ad03	1		He will can do it
+ad03	1		We believed him to be the headmaster
+ad03	1		Who kissed who ?
+ad03	1		Who did you say that John thought would leave early ?
+ad03	0	*	Any boy saw no one .
+ad03	0	*	What I arranged for Jenny was to be present .
+ad03	0	*	He kicked herself
+ad03	1		Cassandra has warned Agamemnon again .
+ad03	1		Gilgamesh has been fighting the dragon .
+ad03	1		Lucy 's photograph of Jane
+ad03	1		Who did Jason think Medea had poisoned ?
+ad03	1		That Jason abandoned Medea stinks !
+ad03	1		Gilgamesh may have quickly cast the spell
+ad03	0	*	Having read of Shakespeare satisfied me
+ad03	0	*	Medea tried her to leave .
+ad03	1		Humans love to eat some happy pigs which can fly .
+ad03	0	*	She intended Jenny to be there
+ad03	1		The potion boiled over
+ad03	1		There arrived a new actor .
+ad03	1		I ate fruit
+ad03	1		I hoped that you would defeat him .
+ad03	1		Who seems to be certain to leave first ?
+ad03	0	*	She liked Moya 's football .
+ad03	1		His hen loves Anson .
+ad03	1		I ate a mango and Gillian did too .
+ad03	1		Why did you eat the cake ?
+ad03	0	*	He would can go
+ad03	1		Perhaps Gilgamesh should be leaving
+ad03	1		I want to can do it
+ad03	1		Jason intended for him to learn magic .
+ad03	1		I went to the shop for to get bread .
+ad03	1		I asked which king invaded which city .
+ad03	1		We made the claim that Perseus killed the Gorgon .
+ad03	1	*	Gilgamesh did n't ate the honey .
+ad03	1		Plato listened to DP Demosthenes ' oration about Philip .
+ad03	1		The old house collapsed .
+ad03	0	*	I believed she is pregnant
+ad03	1		How are you feeling ?
+ad03	1		Aphrodite misses Gilgamesh .
+ad03	1		Anson very happily demonized David .
+ad03	1		That Plato loved Aster proved to be his undoing .
+ad03	1		Has n't the potion worked ?
+ad03	1		Bill 's reading Shakespeare satisfied me
+ad03	1		Every vampire slept .
+ad03	1		I might be leaving soon .
+ad03	0	*	It 's arrived first that Julie and Jenny
+ad03	1		The man I saw left .
+ad03	0	*	He replied his answer .
+ad03	1		Because they hated him , the druids forced Jason to live in a cupboard
+ad03	1		We kicked ourselves
+ad03	1		Did Medea poison Jason ?
+ad03	1		Aphrodite freed animals
+ad03	1		The book was donated to the hospital .
+ad03	1		Medea poisoned more children than Jason did .
+ad03	1		Nathan showed Benjamin himself in the mirror .
+ad03	1		That Plato loved Aster deeply was obvious .
+ad03	1		He kicked him
+ad03	1		Jason expected the doctor to treat Medea
+ad03	1		The therapist 's analysis of Lucy
+ad03	1		Where are you living ?
+ad03	1		Who showed what to who ?
+ad03	1		Medea thought that , after the executioner had left , Poseidon would be relieved .
+ad03	0	*	His loves him
+ad03	1		The consul 's gift of the gladiator to himself .
+ad03	1		All the dragons have been slain .
+ad03	1		Gilgamesh should slowly be tickling the mandrake .
+ad03	1		Odysseus planned to hear the sirens .
+ad03	1		Bill reading Shakespeare and Maureen singing Schubert satisfies me
+ad03	1		The Peter we all like was at the party
+ad03	1		It was Julie and Jenny that arrived first
+ad03	1		The shooting of the hunters was very loud .
+ad03	0	*	The librarians likes books .
+ad03	0	*	Can he will do it ?
+ad03	0	*	I ordered there to be three books on the subject .
+ad03	1		Truman punched Johnson
+ad03	1		He became fond of peanuts .
+ad03	1		The therapist analysed Lucy
+ad03	1		Dracula thought himself to be the Prince of Darkness .
+ad03	0	*	Which poem did you hear those recitals of last night ?
+ad03	1		Athena introduced Medea to Jason
+ad03	1		He 'll no can do it , will he ?
+ad03	1		Anson is incredibly difficult to please .
+ad03	1		It was claimed by everyone that the poison was neutralised
+ad03	1		The banana is being eaten by that monkey .
+ad03	1		I want to kiss pigs
+ad03	1		Hermione fortunately has passed biology .
+ad03	1		The government 's imposition of a fine .
+ad03	1		Burn letters to him !
+ad03	1		His analysis of her was flawed
+ad03	1		Did the potion boil over ?
+ad03	1		He is unhappy about his contact lenses .
+ad03	1		I did n't see him ever .
+ad03	0	*	She said Moya liked football .
+ad03	1		We all thought him to be unhappy
+ad03	1		Which book are you reading ?
+ad03	1		That monkey is eating the banana .
+ad03	1		That bottle of water might have cracked open .
+ad03	1		Who did Gilgamesh believe to have kissed Aphrodite ?
+ad03	1		Paul had three affairs . . .
+ad03	1		Close the door !
+ad03	1		I was eating not a peach but an apple
+ad03	1		Which poem did you go to hear a recital of last night ?
+ad03	0	*	when time will you be there .
+ad03	1		I have sent 0 letters to Environmental Heath .
+ad03	1		Why did you kill Pegasus ?
+ad03	1		Aphrodite does free animals
+ad03	1		Gilgamesh will seek Ishtar
+ad03	1		I assumed him to be innocent
+ad03	1		I am being whipped
+ad03	1		Never will I do syntax again .
+ad03	1		The children wail
+ad03	1		Mary fell .
+ad03	1		I inquired if we could leave early .
+ad03	1		Benjamin gave the cloak and sent the book to Lee
+ad03	1		Hera tried to appear to be happy .
+ad03	1		Did Athena help us ?
+ad03	0	*	I arranged for to see her .
+ad03	0	*	Bill 's reading Shakespeare and Maureen 's singing Schubert satisfies me
+ad03	0	*	Myself shaved me .
+ad03	0	*	No reading Shakespeare satisfied me
+ad03	1		The Emperor 's every wish was immediately carried out .
+ad03	1		Jenny has eaten a cake .
+ad03	0	*	Moya played football with her
+ad03	0	*	I intoned fruit
+ad03	1		Lloyd 's car fell over a cliff last year .
+ad03	1		The sheep cry
+ad03	1		I swore that never again would I drink absinthe .
+ad03	1		He ca n't possibly do that , can he
+ad03	1		We believed that Aphrodite was omnipotent .
+ad03	1		Which book about Ulysses did you say that you would read ?
+ad03	1		You wanted to meet the man I saw .
+ad03	0	*	I wanted any cake .
+ad03	1		Gilgamesh is not reading the cuneiform tablets .
+ad03	1		Jason persuaded Medea to try to run away .
+ad03	1		We believed Aphrodite to be omnipotent
+ad03	1		Anson demonized David every day
+ad03	1		That bottle of water might have .
+ad03	1		I do n't remember what all I said ?
+ad03	0	*	Aphrodite said he freed the animals and freed the animals he
+ad03	1		That Aphrodite was so promiscuous astounded the other gods .
+ad03	0	*	Gilgamesh does n't ate the honey
+ad03	1		I claimed that she was pregnant
+ad03	0	*	Aphrodite do freed animals .
+ad03	1		David wrote that you said that Anson thought that Julie had fainted
+ad03	0	*	Gilgamesh failed often biology
+ad03	1		It rained
+ad03	1		Poseidon was asleep , when the executioner arrived .
+ad03	1		Romeo sent Juliet letters .
+ad03	1		People are in the garden
+ad03	1		Anson became happy
+ad03	1		It is tough to teach syntax .
+ad03	1		There 's going to be a party , is n't there ?
+ad03	0	*	I have might be flying helicopters .
+ad03	1		They brought the hat to the teacher
+ad03	1		What Medea attempted was to poison her children .
+ad03	1		Benjamin gave the cloak 0 and sent the book to Lee
+ad03	1		The man chuckles
+ad03	1		Milena will make pasta .
+ad03	1		Aphrodite did free animals
+ad03	1		Gilgamesh should seek Ishtar
+ad03	1		They depend on Mary .
+ad03	0	*	The Greeks arrived all .
+ad03	0	*	Has not the potion worked
+ad03	0	*	Gomez 's photograph of Pugsley of Lucy 's
+ad03	0	*	Will can he do it ?
+ad03	1		Humans love to eat the old pigs .
+ad03	0	*	He could might go
+ad03	1		It 's under the bed that 's the best place to hide
+ad03	1		He left .
+ad03	1		That picture of her pleases Jenny .
+ad03	1		Constantly reading Shakespeare satisfied me
+ad03	1		There was a dragon in the cave .
+ad03	1		People like lard .
+ad03	1		These ones are to be smuggled from Hungary .
+ad03	0	*	Emily showed himself to Benjamin in the mirror .
+ad03	0	*	I said that that Jason was jealous annoyed Medea
+ad03	1		We donated a chopper to the new hospital
+ad03	1		These expensive and illegal bottles of Absinthe are to be smuggled from Hungary .
+ad03	1		A programme about Euripides is on a Radio 4 tonight .
+ad03	1		Lucy 's analysis was the most successful
+ad03	0	*	I am having eaten seaweed .
+ad03	1		Medea tried to poison her children .
+ad03	0	*	Anson demonized old
+ad03	1		What I said was that we would go .
+ad03	1		There are many fish in the sea .
+ad03	1		Jason gave the poisoned clothes to who ?
+ad03	0	*	By is eaten monkey banana that the being
+ad03	1		There is a programme about Euripides on a Radio 4 tonight ?
+ad03	1		Benjamin said he would run away and he did .
+ad03	1		Who is sailing to Ithaca ?
+ad03	1		They sat on Mary .
+ad03	1		Julie filed letters to herself .
+ad03	1		He looked it up
+ad03	1		Who 's there ?
+ad03	0	*	There was he in the garden .
+ad03	1		He might no could have done it
+ad03	0	*	Gilgamesh did n't ate the honey
+ad03	1		The sheep cries
+ad03	1		For Aphrodite to appear to be happy would be impossible .
+ad03	1		When did you eat the cake ?
+ad03	0	*	Who did Plato listen to DP Demosthenes ' oration about ?
+ad03	0	*	Me gave it to him .
+ad03	1		If one were to steal talismans from witches , then that would be dangerous .
+ad03	1		Bill did not destroy the world .
+ad03	1		Both the twins might have been at the party .
+ad03	1		That Plato loved Aster was obvious .
+ad03	1		The pigs grunt
+ad03	0	*	where place are you living .
+ad03	0	*	Who was for Medea to poison awful ?
+ad03	0	*	Julie maintained if the barman was sober .
+ad03	1		The analysis of Lucy took longer than that of Gomez .
+ad03	1		By is eaten monkey banana that the being .
+ad03	0	*	Julie became a fond .
+ad03	1		I climbed up the tree .
+ad03	1		I inquired when we could leave .
+ad03	1		Where Alison and David soaked their feet was in the kitchen
+ad03	0	*	What Medea wondered if was the potion was ready
+ad03	1		That photograph of Jane of Lucy 's
+ad03	1		The constant reading of Shakespeare satisfied me
+ad03	0	*	Medea wondered if that the potion was ready
+ad03	1		What she thought was that the poison was neutralised
+ad03	1		Because she had got the highest marks , Medea was happy
+ad03	1		When did you arrive ?
+ad03	1		Medea denied poisoning the phoenix .
+ad03	1		Which poisonous plant is it certain that we will find in Amazonia ?
+ad03	1		The elixir was hidden in a hole in the ground
+ad03	1		The microphone salesman 's 0 irritating patter was relentless .
+ad03	1		The Paris I used to know is no more
+ad03	1		Sam gave the cloak to Lee and gave the magic chalice to Matthew .
+ad03	1		Gilgamesh has eaten the honey
+ad03	1		Extremely frantically , Anson danced at Trade
+ad03	1		I will eat a mango , and Gillian will too .
+ad03	1		Computer viruses increased in virulence last year .
+ad03	1		At Trade , Anson danced extremely frantically
+ad03	1		Richard is going to chop some wood .
+ad03	1		The poem that Homer wrote .
+ad03	1		Who did drink the poison ?
+ad03	0	*	Anson demonized
+ad03	1		Evan 's every idea was completely insane .
+ad03	0	*	What did you ask who Medea gave ?
+ad03	1		Sally is making scones , and Gillian is too .
+ad03	1		Everyone claimed that the poison was neutralized .
+ad03	0	*	Jonathan persuaded Kate to lick himself .
+ad03	1		That Jason arrived infuriated Medea .
+ad03	1		Medea was happy , because she had got the highest marks
+ad03	1		Keep yourself clean !
+ad03	1		It 's Anson that I like
+ad03	1		Cassandra has foretold disaster again .
+ad03	1		Bill 's reading of Shakespeare satisfied me
+ad03	1		Who poisoned who ?
+ad03	1		Pigs love truffles .
+ad03	1		Owners of pigs love truffles
+ad03	1		So quickly did the vampire move , that we barely saw him .
+ad03	1		Humans love to eat those pigs .
+ad03	0	*	Medea tried the nurse to poison her children .
+ad03	0	*	She has kissed she .
+ad03	0	*	Jason intended for he to learn magic .
+ad03	1		Jason persuaded Medea to be treated by the doctor
+ad03	1		It is true that I might be doing something other than going to the party .
+ad03	1		Jason expected Medea to be treated by the doctor
+ad03	0	*	I found there .
+ad03	1		Moya said she liked football .
+ad03	1		Anson became the Mayor
+ad03	1		Kane ate dirt .
+ad03	1		What we donated a chopper to was the new hospital
+ad03	1		Benjamin gave the cloak to Nathan
+ad03	0	*	The fig chuckled
+ad03	1		Poseidon had run away , because the executioner murdered Hera .
+ad03	1		A description of Aristotle is in the book .
+ad03	1		Julie and Jenny did .
+ad03	1		It 's quarter past four .
+ad03	1		Owners of a pig love to eat truffles .
+ad03	0	*	That whether the world is round is unknown bothered Athena .
+ad03	1		No one expected Agamemnon to to win
+ad03	1		Euclid was interested in Plato 's description of geometry .
+ad03	0	*	Every reading Shakespeare satisfied me
+ad03	0	*	Can will he do it ?
+ad03	1		Medea poisoned who ?
+ad03	0	*	He looked up it
+ad03	0	*	who guy did you see .
+ad03	0	*	We kicked myself
+ad03	0	*	Who would Poseidon run away , if the executioner murdered ?
+ad03	0	*	Anson kissed him
+ad03	1		which city the claim that Philip would invade .
+ad03	1		I have n't left yet
+ad03	0	*	I am eating a mango and Gillian has too .
+ad03	0	*	letter is on the table
+ad03	1		Who ate the cake ?
+ad03	1		Why did you say that you were leaving ?
+ad03	1		Michael left Meg
+ad03	0	*	Aphrodite quickly may free the animals
+ad03	1		The reading of Shakespeare satisfied me
+ad03	0	*	The weather rained
+ad03	0	*	Gilgamesh seek may Ishtar
+ad03	1		No one expected to win .
+ad03	0	*	Who did that Plato loved seem to be known by everyone .
+ad03	1		The bear sniffs
+ad03	1		It hung on the wall .
+ad03	0	*	Jason killed .
+ad03	0	*	Many people were there playing on the beach
+ad03	1		Know yourself !
+ad03	1		Agamemnon attempted to behave well .
+ad03	1		Julie felt he was there
+ad03	1		He thought that Dracula was the Prince of Darkness .
+ad03	1		I have eaten already
+ad03	1		It is not true that I have left yet .
+ad03	0	*	That monkeys is eating the banana .
+ad03	1		I could have been flying helicopters by now .
+ad03	1		I felt that I know you .
+ad03	0	*	Anson put a book
+ad03	0	*	Gilgamesh might have not been reading the cuneiform tablets .
+ad03	1		I asked if Medea poisoned Jason .
+ad03	1		Who did you persuade to go ?
+ad03	1		What did you get all for Xmas ?
+ad03	1		Some disgruntled old pigs in those ditches love truffles
+ad03	1		Jason was killed .
+ad03	1		Will he can do it ?
+ad03	0	*	I would like to might do it
+ad03	1		Gilgamesh must seek Ishtar
+ad03	0	*	Peter is some disgruntled old pigs in those ditches .
+ad03	0	*	There was him in the garden .
+ad03	1		Gilgamesh is in the dungeon .
+ad03	1		Anson will come to the party .
+ad03	1		I love toast and sun dried tomatoes
+ad03	0	*	Gilgamesh not flew the dragon .
+ad03	1		Gilgamesh has never flown a dragon .
+ad03	0	*	Julie maintained her own questions over the course of the argument .
+ad03	1		His analysis , I never liked .
+ad03	1		That bottle of water might .
+ad03	0	*	Did Medea poison who ?
+ad03	1		Had the potion boiled over ?
+ad03	1		The monkey wrote a poem on its favourite banana
+ad03	1		She took a picture of the phoenix
+ad03	0	*	I ate that she was happy
+ad03	0	*	Look after herself !
+ad03	1		Who did Medea poison ?
+ad03	1		I tried for to get them .
+ad03	1		Anson believed himself to be handsome .
+ad03	1		Who did you introduce Athena to ?
+ad03	1		Can I keep the screwdriver just like a carpenter keep the screwdriver ?
+ad03	1		Jason refrained from casting the spell
+ad03	1		Andrew likes lard on his sandwiches
+ad03	1		Who seemed to have left first ?
+ad03	0	*	Ron asked that the potion was ready
+ad03	1		Hierarchy of Projections :
+ad03	1		We decided to paint the bathroom a lurid lime green colour .
+ad03	1		She kicked her
+ad03	0	*	He knows he .
+ad03	1		I believed there to be three books on the subject .
+ad03	0	*	The child wail
+ad03	1		We arrived about six o'clock
+ad03	1		Which girl ate the cake ?
+ad03	1		That Plato lived in the city of Athens was well-known .
+ad03	0	*	Collapsed Harry .
+ad03	1		For you to do that would be a mistake .
+ad03	0	*	Jason thinks who Medea had poisoned .
+ad03	1		I believe she is pregnant
+ad03	1		No one expected him to to win .
+ad03	0	*	Gilgamesh is having fought the dragon .
+ad03	1		He 'll no can do it , can he ?
+ad03	0	*	Which poem did you hear Homer 's recital of last night ?
+ad03	1		Raffi slept well , and Gillian will too
+ad03	1		He 's bound to should do it
+ad03	1		It might have cracked open
+ad03	1		Where did Perseus see the Gorgon ?
+ad03	1		The scissors are lost
+ad03	1		Gilgamesh should be slowly tickling the mandrake
+ad03	0	*	Agamemnon seems PRO to be a maniac
+ad03	0	*	Anson thought that himself was happy .
+ad03	0	*	Myself saw me
+ad03	1		I believed she was pregnant
+ad03	1		Fortunately Hermione passed biology
+ad03	1		Anson gave Fluffy to Jenny .
+ad03	1		The very old and extremely wise owl .
+ad03	0	*	Who did that Plato loved prove to be his undoing .
+ad03	0	*	What Medea believed was Jason to be a murderer .
+ad03	1		The owl hated the evil bat and loved the wise eagle .
+ad03	1		No one could remove the blood on the wall
+ad03	0	*	He can can go
+ad03	0	*	Gillian has made pasta and David is too .
+ad03	0	*	Jason intended for PRO to learn magic .
+ad03	1		The boys should could all go
+ad03	0	*	I assumed to be innocent
+ad03	1		Anson danced extremely frantically at Trade .
+ad03	0	*	The Gorgon is easy to believe the claim that Perseus slew .
+ad03	0	*	She kicked itself
+ad03	1		I might be not going to the party but washing my hair
+ad03	1		Julie became a fond of Lloyd .
+ad03	1		Lee 's youngest and Dawn 's oldest son ran away .
+ad03	1		Anson kicked the cat
+ad03	1		Merlin is extremely evil .
+ad03	1		Syntax is easy to pretend that you can teach .
+ad03	1		I want to eat macaroni
+ad03	1		Which ode did which poet write ?
+ad03	0	*	What she thought that was the poison was neutralised
+ad03	1		Who drank the poison ?
+ad03	0	*	The man chuckle
+ad03	1		What Medea arranged was for her children to be poisoned .
+ad03	1		No one 's mother had baked anything .
+ad03	1		What kind of actor is he ?
+ad03	1		What did she eat ?
+ad03	0	*	Frantically at , Anson danced extremely Trade
+ad03	1		I have often a cold .
+ad03	1		Who did Maria say that she 'd kiss and kick ?
+ad03	1		Where did they go all for their holidays ?
+ad03	1		They came running over the hill and through the woods
+ad03	0	*	The airport yawned
+ad03	1		How quickly did you eat the cake ?
+ad03	1		Many fish are in the sea .
+ad03	1		They arrived first
+ad03	1		People were playing on the beach .
+ad03	0	*	Benjamin gave to Lee it .
+ad03	0	*	He liked Anson .
+ad03	0	*	The bear sniff
+ad03	0	*	I inquired could we leave early .
+ad03	1		The bears sniff
+ad03	0	*	I persuaded there to be a problem .
+ad03	1		His book
+ad03	1		He looked the number up
+ad03	1		Has Jenny eaten a cake ?
+ad03	1		Which goddess helped us ?
+ad03	1		Medea killed Jason .
+ad03	1		Ron certainly will buy a dog .
+ad03	0	*	They shaved David and Anson .
+ad03	0	*	We believed to be the headmaster
+ad03	1		Which king did you wonder invaded which city ?
+ad03	1		Kiss Anson quickly !
+ad03	0	*	I thought he liked myself
+ad03	1		In every club in London , people threw up their hands in the air
+ad03	1		No one expected Agamemnon to win .
+ad03	0	*	The day snowed
+ad03	1		Gilgamesh never flies dragons .
+ad03	0	*	Keep myself clean !
+ad03	1		The dragons have all been slain .
+ad03	0	*	Did that Medea killed her children upset Jason ?
+ad03	1		The amoeba coughed and then it fainted .
+ad03	1		I want to sing
+ad03	1		He will can go
+ad03	0	*	Medea seemed that has poisoned Jason .
+ad03	1		Having read Shakespeare satisfied me
+ad03	0	*	Peter is owners of pigs .
+ad03	0	*	Odysseus attempted the helmsman to hear the sirens .
+ad03	1		Gilgamesh may seek Ishtar
+ad03	1		The librarian likes books .
+ad03	1		Alison and David soaked their feet after dinner
+ad03	1		Mary is faster than John is .
+ad03	1		The butler sent the poison to Dinah .
+ad03	1		Alison and David soaked their feet in the kitchen
+ad03	0	*	You kicked you
+ad03	1		Did you see Mary ?
+ad03	1		Raffi has made pasta , and David has too .
+ad03	1		There seemed to be three men in the garden .
+ad03	1		That Medea murdered Jason did n't surprise anyone .
+ad03	1		Moya 's football team loved her
+ad03	0	*	I sent she away .
+ad03	1		Jason persuaded Medea that she should desert her family
+ad03	0	*	Aphrodite stinks to be omnipotent .
+ad03	1		Alison collapsed
+ad03	1		Every reading of Shakespeare satisfied me
+ad03	0	*	Bill reading Shakespeare and Maureen singing Schubert satisfy me
+ad03	1		Jason happens to appear to seem to be sick .
+ad03	1		When the executioner arrived , Poseidon was asleep
+ad03	1		They kicked themselves
+ad03	1		Many vampires have become vegetarian .
+ad03	0	*	That that the world is round is obvious upset Hermes .
+ad03	0	*	Bill not destroyed the world .
+ad03	1		John saw Stephan
+ad03	0	*	I destroyed there .
+ad03	0	*	What was Euclid interested in Plato 's description of ?
+ad03	1		I like Anson
+ad03	1		He asked did I live there .
+ad03	1		The dragons simply all died out .
+ad03	1		Gilgamesh did not fly the dragon .
+ad03	1		Which goddess might help us ?
+ad03	1		Humans love to eat pigs .
+ad03	1		Which poem about Achilles did Homer recite ?
+ad03	1		The boys should all could go
+ad03	0	*	What did you ask who saw ?
+ad03	1		There were people playing on the bea
+ad03	0	*	The owl hated the evil and the wise eagle .
+ad03	1		The shield that saved Achilles life .
+ad03	1		Evan 's every desire
+ad03	1		I wondered whether Medea had fled .
+ad03	1		I have eaten my hat already
+ad03	0	*	He will could go
+ad03	1		Jenny swallowed the fly
+ad03	1		The flying car hit the tree in the air
+ad03	1		I have a book .
+ad03	1		Jason thought of defending the dragon
+ad03	1		It seems that Agamemnon is a maniac
+ad03	0	*	Which city do you believe the claim that Philip would invade ?
+ad03	1		We claimed that Perseus had killed the Gorgon
+ad03	1		We need some technician to help us .
+ad03	0	*	The scissors is lost
+ad03	1		I have been flying helicopters for years .
+ad03	1		Sam gave the cloak to Lee and the magic chalice to Matthew .
+ad03	0	*	We kicked us
+ad03	1		No reading of Shakespeare satisfied me
+ad03	1		What did he reply ?
+ad03	0	*	It was claimed that by everyone the poison was neutralised
+ad03	1		I asked which city which king invaded .
+ad03	1		Raffi makes pesto pasta , and David does too
+ad03	1		Eat dirt !
+ad03	0	*	The men chuckles
+ad03	1		Look after yourself !
+ad03	0	*	She wanted to can leave
+ad03	1		Arthur gave the tapestry to Lancelot .
+ad03	1		We took the car to the town
+ad03	1		Benjamin gave the cloak to Lee .
+ad03	1		Not reading Shakespeare satisfied me
+ad03	0	*	There were killed three men .
+ad03	1		Gilgamesh has not been reading the cuneiform tablets
+ad03	1		We linguists love to argue
+ad03	0	*	The imposition of the government of a fine .
+ad03	1		When Alison and David soaked their feet was after dinner
+ad03	1		This problem 's analysis is made a lot easier when you understand differential equations .
+ad03	0	*	Dracula thought that himself was the Prince of Darkness .
+ad03	0	*	He can will go
+ad03	0	*	Gilgamesh might have been not reading the cuneiform tablets .
+ad03	1		Who asked which statue which tourist had taken a photo of ?
+ad03	1		Willow said that she 'd kiss Tara and kick Xander .
+ad03	1		I climbed right up the tree .
+ad03	1		All the dragons had escaped .
+ad03	1		Who did you attempt to force Jason to kill ?
+ad03	1		I thought of the moon
+ad03	0	*	Benjamin thought he would give the cloak to Lee and the cloak to Lee he gave .
+ad03	1		I wondered had he left yet .
+ad03	1		I thought she was pregnant
+ad03	1		I arranged for him to see her .
+ad03	1		It was over the hill and through the woods that they came running
+ad03	1		Who did you ask saw what ?
+ad03	0	*	Gilgamesh might can seek Ishtar
+ad03	1		Gilgamesh arrived
+ad03	0	*	Jason arrived by Medea .
+ad03	1		Oil spread over the sea shore .
+ad03	1		What Jason asked was whether the potion was ready
+ad03	0	*	Jason asked whether that the potion was ready
+ad03	1		Have you seen Mary ? I have vP seen Mary
+ad03	1		It seems that Agamemnon left .
+ad03	0	*	How fierce the battle ?
+ad03	1		Those monkeys are eating the banana .
+ad03	0	*	I introduced her to he .
+ad03	0	*	Nathan showed to Benjamin it .
+ad03	0	*	He kicked yourself
+ad03	1		Anson tried to shave himself .
+ad03	0	*?	Gilgamesh never has flown a dragon .
+ad03	0	*	What Julie did of Lloyd was become fond .
+ad03	1		It is not allowed to incriminate oneself .
+ad03	1		I have eaten the muffin .
+ad03	0	*	Which king did you ask which city invaded ?
+ad03	1		The analysis of the problem was flawed
+ad03	1		Which goddess did help us ?
+ad03	1		Poseidon appears to have turned out to have left .
+ad03	0	*	Gilgamesh has been not reading the cuneiform tablets .
+ad03	0	*	Danced extremely , Anson frantically at Trade
+ad03	1		It is some disgruntled old pigs in those ditches that humans love to eat .
+ad03	0	*	Aphrodite wanted to live and Ishtar tried to do
+ad03	0	*	I kicked yourself
+ad03	1		How fond of Esther is Agamemnon ?
+ad03	1		Ron heard a discussion in the foyer
+ad03	0	*	My mother hated myself
+ad03	1		That banana is eating the monkey .
+ad03	1		The students demonstrated the technique this morning
+ad03	1		He walked up the hill .
+ad03	0	*	We wanted to ate cake
+ad03	0	*	Jason knew those Medea had cast the spell
+ad03	0	*	Gilgamesh must should seek Ishtar
+ad03	1		Aphrodite said he freed the animals and free the animals he did
+ad03	1		Did you drink the poison ?
+ad03	1		Whether Agamemnon had triumphed was unknown .
+ad03	0	*	Her has kissed her .
+ad03	1		I often have a cold .
+ad03	0	*	Jason whispered the phoenix had escaped
+ad03	0	*	Bill reading of Shakespeare satisfied me
+ad03	1		Did n't the magic work ?
+ad03	1		Anson thought Julie had fainted
+ad03	1		The horse fell
+ad03	1		Burn them !
+ad03	0	*	Odysseus attempted Odysseus to hear the sirens .
+ad03	1		Burn letters to Peter !
+ad03	1		Genie intoned the prayer
+ad03	1		Gilgamesh did n't fly the broomstick .
+ad03	1		It stinks that Aphrodite is omnipotent .
+ad03	1		Ron 's likely to be on the Web , is n't he ?
+ad03	1		Bill 's reading Shakespeare and Maureen 's singing Schubert satisfy me
+ad03	0	*	Owners of a pig loves to eat truffles
+ad03	0	*	Gilgamesh might loved Ishtar
+ad03	1		Paul had an affair
+ad03	1		Poseidon appears to own a dragon
+ad03	1		Agamemnon seems to be a maniac
+ad03	1		The twins might have both been at the party .
+ad03	0	*	That Jason had arrived was obvious infuriated Medea .
+ad03	1		That I should evaporate is my fondest dream
+ad03	1		Will Anson come to the party ?
+ad03	1		What Gilgamesh may do is seek Ishtar
+ad03	1		You said that Anson thought that Julie had fainted
+ad03	1		I wondered who Medea had poisoned .
+ad03	1		The owl hated the evil bat and the wise eagle
+ad03	1		What did John buy ?
+ad03	1		Agamemnon forced Aphrodite to leave the school .
+ad03	1		There is a description of Aristotle in the book .
+ad03	0	*	Medea exclaimed if the potion was ready
+ad03	1		Humans love to eat them .
+ad03	0	*	Someone did Medea poison .
+ad03	1		Perhaps Iphigenia will have murdered Oedipus by tomorrow .
+ad03	1		So that he could escape , Jason became invisible
+ad03	0	*	I wondered who had Medea poisoned .
+ad03	1		I asked did Medea poison Jason .
+ad03	1		Agamemnon stopped Jason from casting the spell
+ad03	1		No one wanted any cake .
+ad03	1		I wanted Jimmy for to come with me .
+ad03	0	*	He walked the hill up .
+ad03	1		They should have all sent Oedipus to Thebes
+ad03	0	*	Those monkey are eating the banana .
+ad03	0	*	Who had Poseidon run away , before the executioner murdered ?
+ad03	1		I asked Anson if he was happy
+ad03	1		Daniel became a blond .
+ad03	0	*	I inquired when could we leave .
+ad03	0	*	Has that we have arrived back at our starting point proved that the world is round ?
+ad03	1		It was the man I saw that you wanted to meet .
+ad03	1		That photograph by Gomez of Pugsley of Lucy 's
+ad03	1		I ate that .
+ad03	1		It snowed
+ad03	1		Aphrodite said he would free the animals and free the animals he will
+ad03	1		That the golden thread would show Jason his path through the labyrinth was
+ad03	1		Julie and Jenny arrived first
+ad03	1		What have you eaten ?
+ad03	0	*	Peter is owners .
+ad03	1		Anson thought that he had bought the paint stripper
+ad03	0	*	I said this he left
+ad03	1		Who has drunk my whiskey ?
+ad03	0	*	You said she liked yourself
+ad03	0	*	She tried to left
+ad03	1		I 'd planned to have finished , and finished I have
+ad03	1		Ron expected the sack .
+ad03	1		That I am here proves that I care .
+ad03	0	*	She tried to may leave
+ad03	1		Gilgamesh misses Aphrodite
+ad03	0	*	Who seemed had poisoned Jason ?
+ad03	1		That Plato loved Aster seemed to be known by everyone .
+ad03	1		When dining with evil crocodiles , it is advisable to wear armour .
+ad03	0	*	Benjamin said he would give the cloak to Lee and give the cloak he did to Lee .
+ad03	1		Did the magic work ?
+ad03	1		Who has drunk the poison ?
+ad03	1		Benjamin said he would give the cloak to Lee and give the cloak to Lee he did .
+ad03	1		Jason became invisible , so that he could escape
+ad03	1		Aphrodite may quickly free the animals .
+ad03	1		The horse galloped
+ad03	1		How quickly did the Greeks take Troy ?
+ad03	1		Some happy pigs which can fly love truffles
+ad03	1		Julie felt a twinge in her arm
+ad03	1		The wizard turned the beetle into beer with a wave of his wand
+ad03	0	*	Who seemed that had poisoned Jason ?
+ad03	1		Julie quickly answered the question .
+ad03	1		Kick me !
+ad03	1		We wanted to eat cake
+ad03	1		Gomez 's photograph of Pugsley belonging to Lucy .
+ad03	1		All the boys should could go
+ad03	1		Julie maintained her own ideas over the course of the argument .
+ad03	1		The intrepid pirate and the fearful captain 's mate sunk the galleon .
+ad03	1		Gilgamesh might not have been reading the cuneiform tablets .
+ad03	1		It was obvious that Plato loved Aster obvious .
+ad03	1		He loves him
+ad03	1		We all thought he was unhappy
+ad03	0	*	Emily showed himself Benjamin in the mirror .
+ad03	1		Anson believed the report .
+ad03	1		They kicked them
+ad03	1		They are going home for to see their parents .
+ad03	1		I looked the number up .
+ad03	0	*	Anson is incredibly difficult to be pleased .
+ad03	1		No vampire slept .
+ad03	1		After the executioner left , Poseidon wept .
+ad03	1		Peter was at the party
+ad03	0	*	Whales have I seen .
+ad03	0	*	The monkey is ate the banana
+ad03	0	*	For to do that would be a mistake .
+ad03	0	*	I thought she is pregnant
+ad03	0	*	Himself saw him
+ad03	1		That he is coming is clear .
+ad03	0	*	There seem three men to be in the garden .
+ad03	0	*	He analysis her was flawed
+ad03	1		Where all did they go for their holidays ?
+ad03	1		Gilgamesh decided not to kill Ishtar
+ad03	1		Bill reading Shakespeare satisfied me
+ad03	1		Perseus saw the Gorgon in his shield .
+ad03	1		Poseidon would run away , if the executioner murdered Hera .
+ad03	0	*	Who did a statue of surprise Medea ?
+ad03	1		What did you say ( that ) the poet had written ?
+ad03	1		I saw people playing there on the beach .
+ad03	0	*	Who was that Plato loved obvious ?
+ad03	1		I did n't want any cake .
+ad03	1		That I should kiss pigs is my fondest dream
+ad03	0	*	Gilgamesh flew not the broomstick .
+ad03	1		Ron failed biology , unfortunately
+ad03	1		Jenny has n't eaten all her Clinique make-up again , has she ?
+ad03	1		The men chuckle
+ad03	1		I expected there to be a problem .
+ad03	1		Gilgamesh wanted to seduce Ishtar , and seduce Ishtar he did .
+ad03	1		Harry collapsed .
+ad03	1		I asked who saw what .
+ad03	0	*	The doctor arrived a new actor .
+ad03	1		I would like to could swim
+ad03	0	*	Him loves him
+ad03	0	*	Who had Poseidon run away , because the executioner murdered ?
+ad03	1		He has been happy
+ad03	1		Poseidon had run away , before the executioner murdered Hera .
+ad03	0	*	Which the poem did Homer recite ?
+ad03	0	*	Not reading of Shakespeare satisfied me
+ad03	0	*	Who did Athena introduce who to ?
+ad03	1		Merlin is a dangerous sorcerer .
+ad03	1		Anson saw Anson .
+ad03	1		I am to eat macaroni .
+ad03	1		Poseidon had escaped , before the executioner arrived .
+ad03	0	*	house the old collapsed .
+ad03	1		Owners love truffles
+ad03	0	*	The dragons were slain all .
+ad03	0	*	I saw him ever .
+ad03	1		Humans love to eat owners of pigs .
+ad03	0	*	I have sent 0 letter to Environmental Heath
+ad03	0	*	What Jason asked whether was the potion was ready
+ad03	1		Those pigs love truffles
+ad03	0	*	We all thought he to be unhappy
+ad03	1		I 'd planned to have finished by now .
+ad03	1		Has the potion not worked ?
+ad03	1		What I love is toast and sun dried tomatoes
+ad03	1		I kicked myself
+ad03	1		Mary ran .
+ad03	0	*	The man I saw shaved myself .
+ad03	0	*	Readings Shakespeare satisfied me
+ad03	0	*	The picture of no one hung upon any wall .
+ad03	1		He replied that he was happy .
+ad03	1		No one could remove the blood from the wall
+ad03	1		Julie maintained that the barman was sober .
+ad03	0	*	I kicked me
+ad03	1		Benjamin gave Lee the cloak .
+ad03	1		Aphrodite wanted Hera to persuade Athena to leave .
+ad03	1		Gilgamesh is fighting the dragon .
+ad03	1		I claimed she was pregnant
+ad03	1		For Jenny , I intended to be present .
+ad03	1		Gilgamesh missed Aphrodite
+ad03	1		She might be pregnant .
+ad03	0	*	The pig grunt
+ad03	1		Anson demonized David at the club .
+ad03	1		Jason asked whether the potion was ready
+ad03	1		Frieda closed the door
+ad03	0	*	Peter is the old pigs .
+ad03	1		Medea might have given Jason a poisoned robe ( just treat a poisoned robe as an NP
+ad03	1		Quickly kiss Anson !
+ad03	0	*	Anson believed Jenny to have hurt himself .
+ad03	1		Julie felt hot
+ad03	1		Agamemnon expected Esther to seem to be happy .
+ad03	0	*	Him book
+ad03	1		That the answer is obvious upset Hermes .
+ad03	0	*	The consul 's gift of himself to the gladiator .
+ad03	1		Homer recited the poem about Achilles ?
+ad03	1		No vampire can survive sunrise .
+ad03	1		Under the bed is the best place to hide
+ad03	1		There were people eating fire at the fair , were n't there ?
+ad03	1		Anson appeared
+ad03	1		There seems to be a problem .
+ad03	0	*	Anson became that he was happy
+ad03	1		I intoned that she was happy
+ad03	0	*	We all thought him was unhappy
+ad03	1		Medea saw who ?
+ad03	1		No one expected that Agamemnon would win .
+ad03	1		Believing that the world is flat gives one some solace .
+ad03	1		Kick them !
+ad03	0	*	The bears sniffs
+ad03	0	*	Where did you disappear before you hid the gold ?
+ad03	0	*	She tried to do go .
+ad03	1		Medea wondered if the potion was ready
+ad03	1		Who all did you meet when you were in Derry ?
+ad03	1		Who did you hear an oration about ?
+ad03	1		Alison ran
+ad03	1		Romeo sent letters to Juliet .
+ad03	1		Richard 's gift of the helicopter to the hospital and of the bus to the school .
+ad03	1		Nathan caused Benjamin to see himself in the mirror .
+ad03	0	*	The bookcase ran
+ad03	1		a. Madeleine planned to catch the sardines and she did .
+ad03	0	*	Medea tried Medea to poison her children .
+ad03	0	*	Which temple did Athena contemplate the reason that her devotees had built ?
+ad03	1		I did not understand .
+ad03	1		Gilgamesh loved Ishtar and Aphrodite did too
+ad03	1		We believed him to be omnipotent
+ad03	0	*	Ron captured quickly a phoenix
+ad03	1		David ate mangoes and Raffi should too .
+ad03	1		Julie and Fraser ate those delicious pies in Julie 's back garden .
+ad03	1		The old pigs love truffles
+ad03	1		The boys all should could go
+ad03	1		Aphrodite quickly freed the animals
+ad03	1		Paul had two affairs
+ad03	1		What Alison and David did was soak their feet in a bucket
+ad03	1		Anson demonized David almost constantly .
+ad03	0	*	Agamemnon seemed that left .
+ad03	1		Anson 's hen nibbled his ear .
+ad03	0	*	What a kind of actor is he ?
+ad03	0	*	The constantly reading Shakespeare satisfied me
+ad03	1		Jason would prefer to have cursed Agamemnon .
+ad03	1		Before the executioner arrived , Poseidon had escaped
+ad03	1		Gilgamesh did n't leave .
+ad03	1		Genie intoned that she was tired
+ad03	1		Look at all these books . Which book would you like ?
+ad03	0	*	There were killed three men by the assassin .
+ad03	0	*	Peter is those pigs .
+ad03	1		I shaved myself .
+ad03	1		I do n't remember what I said all ?
+ad03	1		The pig grunts
+ad03	0	*	The poison was neutralised was claimed that by everyone
+ad03	1		People are stupid
+ad03	1		Anson joked
+ad03	1		What I arranged was for Jenny to be present .
+ad03	1		I compared Ginger to Fred
+ad03	0	*	Peter is pigs
+ad03	1		Which poet wrote which ode ?
+ad03	1		How did Julie ask if Jenny left ?
+ad03	1		Dracula thought him to be the Prince of Darkness .
+ad03	0	*	He ca n't possibly do that , possibly he ?
+ad03	1		I must eat macaroni .
+ad03	1		I asked who John would introduce to who .
+ad03	1		Gilgamesh may quickly have cast the spell
+ad03	0	*	The owl hated the and loved the bat .
+ad03	1		Reading Shakespeare satisfied me
+ad03	1		Humans love to eat owners .
+ad03	1		Which book about himself did Anson write ?
+ad03	1		Gilgamesh fears death and Achilles does as well
+ad03	0	*	The pigs grunts
+ad03	0	*	Constant reading Shakespeare satisfied me
+ad03	0	*	Anson believed to be happy .
+ad03	1		How did Julie say that Jenny left ?
+ad03	1		Show me letters !
+ad03	1		The readings of Shakespeare satisfied me
+ad03	1		Anson demonized David every day .
+ad03	1		The students demonstrated this morning
+ad03	1		We believed Aphrodite to be omnipotent .
+ad03	1		Anson became a muscle bound .
+ad03	1		Emily caused Benjamin to see himself in the mirror .
+ad03	0	*	Anson left before Jenny saw himself .
+ad03	1		Nothing like that would I ever eat again .
+ad03	1		Where has he put the cake ?
+ad03	1		Jason persuaded Medea to desert her family
+ad03	1		Gilgamesh perhaps should be leaving .
+ad03	1		Gilgamesh has n't kissed Ishtar .
+ad03	0	*	Anson thought that himself was going to the club .
+ad03	0	*	Poseidon appears to own a dragon
+ad03	0	*	<unk> is my happiest memory
+ad03	1		It is easy to slay the Gorgon .
+ad03	1		I had the strangest feeling that I knew you .
+ad03	1		What all did you get for Christmas ?

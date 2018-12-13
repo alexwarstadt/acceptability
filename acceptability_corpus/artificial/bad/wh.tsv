@@ -1,0 +1,552 @@
+	0		who does the boy love some woman ?
+	1		who does the boy love ?
+	0		who did the boy meet the guest of honor ?
+	1		who did the boy meet ?
+	0		who did the boy talk to some woman ?
+	1		who did the boy talk to ?
+	0		who did the boy attack the doctor ?
+	1		who did the boy attack ?
+	0		who does the boy know the doctor ?
+	1		who does the boy know ?
+	0		who will the boy help the guest of honor ?
+	1		who will the boy help ?
+	0		who does the boy like John ?
+	1		who does the boy like ?
+	0		who did the boy give a book to everyone ?
+	1		who did the boy give a book to ?
+	0		who should the boy introduce the dancer to Sue ?
+	1		who should the boy introduce to Sue ?
+	0		who did the boy describe some woman to Sue ?
+	1		who did the boy describe to Sue ?
+	0		who did the boy spend the day with my friend yesterday ?
+	1		who did the boy spend the day with yesterday ?
+	0		who can the boy visit John tomorrow ?
+	1		who can the boy visit tomorrow ?
+	0		who does the boy like to spend time with my friend on the weekends ?
+	1		who does the boy like to spend time with on the weekends ?
+	0		who does my friend love the doctor ?
+	1		who does my friend love ?
+	0		who did my friend meet Mr. Smith ?
+	1		who did my friend meet ?
+	0		who did my friend talk to the boy ?
+	1		who did my friend talk to ?
+	0		who did my friend attack the doctor ?
+	1		who did my friend attack ?
+	0		who does my friend know Mr. Smith ?
+	1		who does my friend know ?
+	0		who will my friend help the guest of honor ?
+	1		who will my friend help ?
+	0		who does my friend like that guy ?
+	1		who does my friend like ?
+	0		who did my friend give a book to that guy ?
+	1		who did my friend give a book to ?
+	0		who should my friend introduce that guy to Sue ?
+	1		who should my friend introduce to Sue ?
+	0		who did my friend describe everyone to Sue ?
+	1		who did my friend describe to Sue ?
+	0		who did my friend spend the day with the boy yesterday ?
+	1		who did my friend spend the day with yesterday ?
+	0		who can my friend visit the boy tomorrow ?
+	1		who can my friend visit tomorrow ?
+	0		who does my friend like to spend time with the boy on the weekends ?
+	1		who does my friend like to spend time with on the weekends ?
+	0		who does that guy love John ?
+	1		who does that guy love ?
+	0		who did that guy meet some woman ?
+	1		who did that guy meet ?
+	0		who did that guy talk to Mr. Smith ?
+	1		who did that guy talk to ?
+	0		who did that guy attack Mary ?
+	1		who did that guy attack ?
+	0		who does that guy know the dancer ?
+	1		who does that guy know ?
+	0		who will that guy help John ?
+	1		who will that guy help ?
+	0		who does that guy like John ?
+	1		who does that guy like ?
+	0		who did that guy give a book to John ?
+	1		who did that guy give a book to ?
+	0		who should that guy introduce the boy to Sue ?
+	1		who should that guy introduce to Sue ?
+	0		who did that guy describe the boy to Sue ?
+	1		who did that guy describe to Sue ?
+	0		who did that guy spend the day with John yesterday ?
+	1		who did that guy spend the day with yesterday ?
+	0		who can that guy visit John tomorrow ?
+	1		who can that guy visit tomorrow ?
+	0		who does that guy like to spend time with my friend on the weekends ?
+	1		who does that guy like to spend time with on the weekends ?
+	0		who does the dancer love Mary ?
+	1		who does the dancer love ?
+	0		who did the dancer meet Elizabeth ?
+	1		who did the dancer meet ?
+	0		who did the dancer talk to Elizabeth ?
+	1		who did the dancer talk to ?
+	0		who did the dancer attack everyone ?
+	1		who did the dancer attack ?
+	0		who does the dancer know Mary ?
+	1		who does the dancer know ?
+	0		who will the dancer help the doctor ?
+	1		who will the dancer help ?
+	0		who does the dancer like the doctor ?
+	1		who does the dancer like ?
+	0		who did the dancer give a book to Mary ?
+	1		who did the dancer give a book to ?
+	0		who should the dancer introduce some woman to Sue ?
+	1		who should the dancer introduce to Sue ?
+	0		who did the dancer describe Elizabeth to Sue ?
+	1		who did the dancer describe to Sue ?
+	0		who did the dancer spend the day with the doctor yesterday ?
+	1		who did the dancer spend the day with yesterday ?
+	0		who can the dancer visit my friend tomorrow ?
+	1		who can the dancer visit tomorrow ?
+	0		who does the dancer like to spend time with the guest of honor on the weekends ?
+	1		who does the dancer like to spend time with on the weekends ?
+	0		who does everyone love the guest of honor ?
+	1		who does everyone love ?
+	0		who did everyone meet John ?
+	1		who did everyone meet ?
+	0		who did everyone talk to John ?
+	1		who did everyone talk to ?
+	0		who did everyone attack some woman ?
+	1		who did everyone attack ?
+	0		who does everyone know the dancer ?
+	1		who does everyone know ?
+	0		who will everyone help some woman ?
+	1		who will everyone help ?
+	0		who does everyone like my friend ?
+	1		who does everyone like ?
+	0		who did everyone give a book to that guy ?
+	1		who did everyone give a book to ?
+	0		who should everyone introduce the dancer to Sue ?
+	1		who should everyone introduce to Sue ?
+	0		who did everyone describe John to Sue ?
+	1		who did everyone describe to Sue ?
+	0		who did everyone spend the day with Mary yesterday ?
+	1		who did everyone spend the day with yesterday ?
+	0		who can everyone visit John tomorrow ?
+	1		who can everyone visit tomorrow ?
+	0		who does everyone like to spend time with John on the weekends ?
+	1		who does everyone like to spend time with on the weekends ?
+	0		who does Mary love John ?
+	1		who does Mary love ?
+	0		who did Mary meet the dancer ?
+	1		who did Mary meet ?
+	0		who did Mary talk to Mr. Smith ?
+	1		who did Mary talk to ?
+	0		who did Mary attack everyone ?
+	1		who did Mary attack ?
+	0		who does Mary know Mr. Smith ?
+	1		who does Mary know ?
+	0		who will Mary help some woman ?
+	1		who will Mary help ?
+	0		who does Mary like Elizabeth ?
+	1		who does Mary like ?
+	0		who did Mary give a book to the dancer ?
+	1		who did Mary give a book to ?
+	0		who should Mary introduce that guy to Sue ?
+	1		who should Mary introduce to Sue ?
+	0		who did Mary describe the doctor to Sue ?
+	1		who did Mary describe to Sue ?
+	0		who did Mary spend the day with John yesterday ?
+	1		who did Mary spend the day with yesterday ?
+	0		who can Mary visit the dancer tomorrow ?
+	1		who can Mary visit tomorrow ?
+	0		who does Mary like to spend time with John on the weekends ?
+	1		who does Mary like to spend time with on the weekends ?
+	0		who does the doctor love my friend ?
+	1		who does the doctor love ?
+	0		who did the doctor meet everyone ?
+	1		who did the doctor meet ?
+	0		who did the doctor talk to the boy ?
+	1		who did the doctor talk to ?
+	0		who did the doctor attack my friend ?
+	1		who did the doctor attack ?
+	0		who does the doctor know the boy ?
+	1		who does the doctor know ?
+	0		who will the doctor help John ?
+	1		who will the doctor help ?
+	0		who does the doctor like my friend ?
+	1		who does the doctor like ?
+	0		who did the doctor give a book to the boy ?
+	1		who did the doctor give a book to ?
+	0		who should the doctor introduce everyone to Sue ?
+	1		who should the doctor introduce to Sue ?
+	0		who did the doctor describe the boy to Sue ?
+	1		who did the doctor describe to Sue ?
+	0		who did the doctor spend the day with the guest of honor yesterday ?
+	1		who did the doctor spend the day with yesterday ?
+	0		who can the doctor visit the boy tomorrow ?
+	1		who can the doctor visit tomorrow ?
+	0		who does the doctor like to spend time with the dancer on the weekends ?
+	1		who does the doctor like to spend time with on the weekends ?
+	0		who does some woman love the guest of honor ?
+	1		who does some woman love ?
+	0		who did some woman meet Mary ?
+	1		who did some woman meet ?
+	0		who did some woman talk to everyone ?
+	1		who did some woman talk to ?
+	0		who did some woman attack the dancer ?
+	1		who did some woman attack ?
+	0		who does some woman know the doctor ?
+	1		who does some woman know ?
+	0		who will some woman help Elizabeth ?
+	1		who will some woman help ?
+	0		who does some woman like Mr. Smith ?
+	1		who does some woman like ?
+	0		who did some woman give a book to Elizabeth ?
+	1		who did some woman give a book to ?
+	0		who should some woman introduce my friend to Sue ?
+	1		who should some woman introduce to Sue ?
+	0		who did some woman describe the doctor to Sue ?
+	1		who did some woman describe to Sue ?
+	0		who did some woman spend the day with Mr. Smith yesterday ?
+	1		who did some woman spend the day with yesterday ?
+	0		who can some woman visit Mary tomorrow ?
+	1		who can some woman visit tomorrow ?
+	0		who does some woman like to spend time with Mary on the weekends ?
+	1		who does some woman like to spend time with on the weekends ?
+	0		who does John love my friend ?
+	1		who does John love ?
+	0		who did John meet some woman ?
+	1		who did John meet ?
+	0		who did John talk to Mary ?
+	1		who did John talk to ?
+	0		who did John attack Mary ?
+	1		who did John attack ?
+	0		who does John know Mr. Smith ?
+	1		who does John know ?
+	0		who will John help the boy ?
+	1		who will John help ?
+	0		who does John like the dancer ?
+	1		who does John like ?
+	0		who did John give a book to some woman ?
+	1		who did John give a book to ?
+	0		who should John introduce the boy to Sue ?
+	1		who should John introduce to Sue ?
+	0		who did John describe my friend to Sue ?
+	1		who did John describe to Sue ?
+	0		who did John spend the day with Mary yesterday ?
+	1		who did John spend the day with yesterday ?
+	0		who can John visit the dancer tomorrow ?
+	1		who can John visit tomorrow ?
+	0		who does John like to spend time with everyone on the weekends ?
+	1		who does John like to spend time with on the weekends ?
+	0		who does Mr. Smith love Elizabeth ?
+	1		who does Mr. Smith love ?
+	0		who did Mr. Smith meet some woman ?
+	1		who did Mr. Smith meet ?
+	0		who did Mr. Smith talk to my friend ?
+	1		who did Mr. Smith talk to ?
+	0		who did Mr. Smith attack Mary ?
+	1		who did Mr. Smith attack ?
+	0		who does Mr. Smith know the doctor ?
+	1		who does Mr. Smith know ?
+	0		who will Mr. Smith help some woman ?
+	1		who will Mr. Smith help ?
+	0		who does Mr. Smith like that guy ?
+	1		who does Mr. Smith like ?
+	0		who did Mr. Smith give a book to some woman ?
+	1		who did Mr. Smith give a book to ?
+	0		who should Mr. Smith introduce Elizabeth to Sue ?
+	1		who should Mr. Smith introduce to Sue ?
+	0		who did Mr. Smith describe Mary to Sue ?
+	1		who did Mr. Smith describe to Sue ?
+	0		who did Mr. Smith spend the day with Elizabeth yesterday ?
+	1		who did Mr. Smith spend the day with yesterday ?
+	0		who can Mr. Smith visit the dancer tomorrow ?
+	1		who can Mr. Smith visit tomorrow ?
+	0		who does Mr. Smith like to spend time with the guest of honor on the weekends ?
+	1		who does Mr. Smith like to spend time with on the weekends ?
+	0		who does the guest of honor love Mr. Smith ?
+	1		who does the guest of honor love ?
+	0		who did the guest of honor meet Mr. Smith ?
+	1		who did the guest of honor meet ?
+	0		who did the guest of honor talk to the boy ?
+	1		who did the guest of honor talk to ?
+	0		who did the guest of honor attack the dancer ?
+	1		who did the guest of honor attack ?
+	0		who does the guest of honor know Elizabeth ?
+	1		who does the guest of honor know ?
+	0		who will the guest of honor help the boy ?
+	1		who will the guest of honor help ?
+	0		who does the guest of honor like my friend ?
+	1		who does the guest of honor like ?
+	0		who did the guest of honor give a book to that guy ?
+	1		who did the guest of honor give a book to ?
+	0		who should the guest of honor introduce the dancer to Sue ?
+	1		who should the guest of honor introduce to Sue ?
+	0		who did the guest of honor describe Elizabeth to Sue ?
+	1		who did the guest of honor describe to Sue ?
+	0		who did the guest of honor spend the day with the boy yesterday ?
+	1		who did the guest of honor spend the day with yesterday ?
+	0		who can the guest of honor visit Mr. Smith tomorrow ?
+	1		who can the guest of honor visit tomorrow ?
+	0		who does the guest of honor like to spend time with some woman on the weekends ?
+	1		who does the guest of honor like to spend time with on the weekends ?
+	0		who does Elizabeth love my friend ?
+	1		who does Elizabeth love ?
+	0		who did Elizabeth meet everyone ?
+	1		who did Elizabeth meet ?
+	0		who did Elizabeth talk to Mr. Smith ?
+	1		who did Elizabeth talk to ?
+	0		who did Elizabeth attack my friend ?
+	1		who did Elizabeth attack ?
+	0		who does Elizabeth know some woman ?
+	1		who does Elizabeth know ?
+	0		who will Elizabeth help the doctor ?
+	1		who will Elizabeth help ?
+	0		who does Elizabeth like the doctor ?
+	1		who does Elizabeth like ?
+	0		who did Elizabeth give a book to some woman ?
+	1		who did Elizabeth give a book to ?
+	0		who should Elizabeth introduce the doctor to Sue ?
+	1		who should Elizabeth introduce to Sue ?
+	0		who did Elizabeth describe my friend to Sue ?
+	1		who did Elizabeth describe to Sue ?
+	0		who did Elizabeth spend the day with some woman yesterday ?
+	1		who did Elizabeth spend the day with yesterday ?
+	0		who can Elizabeth visit the boy tomorrow ?
+	1		who can Elizabeth visit tomorrow ?
+	0		who does Elizabeth like to spend time with that guy on the weekends ?
+	1		who does Elizabeth like to spend time with on the weekends ?
+	0		what does the boy own a car ?
+	1		what does the boy own ?
+	0		what did the boy buy the book ?
+	1		what did the boy buy ?
+	0		what did the boy move the bicycle ?
+	1		what did the boy move ?
+	0		what does the boy like the book ?
+	1		what does the boy like ?
+	0		what did the boy destroy a house ?
+	1		what did the boy destroy ?
+	0		what can the boy see the computer ?
+	1		what can the boy see ?
+	0		what will the boy sell this table to Sue ?
+	1		what will the boy sell to Sue ?
+	0		what did the boy give a house to Sue ?
+	1		what did the boy give to Sue ?
+	0		what should the boy hide a car from Sue ?
+	1		what should the boy hide from Sue ?
+	0		what did the boy get the pen for Andrew ?
+	1		what did the boy get for Andrew ?
+	0		what does my friend own the bicycle ?
+	1		what does my friend own ?
+	0		what did my friend buy the pen ?
+	1		what did my friend buy ?
+	0		what did my friend move the pen ?
+	1		what did my friend move ?
+	0		what does my friend like the box of records ?
+	1		what does my friend like ?
+	0		what did my friend destroy the computer ?
+	1		what did my friend destroy ?
+	0		what can my friend see the bicycle ?
+	1		what can my friend see ?
+	0		what will my friend sell the box of records to Sue ?
+	1		what will my friend sell to Sue ?
+	0		what did my friend give the wine to Sue ?
+	1		what did my friend give to Sue ?
+	0		what should my friend hide the book from Sue ?
+	1		what should my friend hide from Sue ?
+	0		what did my friend get the book for Andrew ?
+	1		what did my friend get for Andrew ?
+	0		what does that guy own the book ?
+	1		what does that guy own ?
+	0		what did that guy buy the computer ?
+	1		what did that guy buy ?
+	0		what did that guy move a house ?
+	1		what did that guy move ?
+	0		what does that guy like a car ?
+	1		what does that guy like ?
+	0		what did that guy destroy the book ?
+	1		what did that guy destroy ?
+	0		what can that guy see the book ?
+	1		what can that guy see ?
+	0		what will that guy sell the bicycle to Sue ?
+	1		what will that guy sell to Sue ?
+	0		what did that guy give the wine to Sue ?
+	1		what did that guy give to Sue ?
+	0		what should that guy hide the computer from Sue ?
+	1		what should that guy hide from Sue ?
+	0		what did that guy get this table for Andrew ?
+	1		what did that guy get for Andrew ?
+	0		what does the dancer own the computer ?
+	1		what does the dancer own ?
+	0		what did the dancer buy the box of records ?
+	1		what did the dancer buy ?
+	0		what did the dancer move the pen ?
+	1		what did the dancer move ?
+	0		what does the dancer like the bicycle ?
+	1		what does the dancer like ?
+	0		what did the dancer destroy the computer ?
+	1		what did the dancer destroy ?
+	0		what can the dancer see a house ?
+	1		what can the dancer see ?
+	0		what will the dancer sell the pen to Sue ?
+	1		what will the dancer sell to Sue ?
+	0		what did the dancer give the book to Sue ?
+	1		what did the dancer give to Sue ?
+	0		what should the dancer hide the bicycle from Sue ?
+	1		what should the dancer hide from Sue ?
+	0		what did the dancer get a car for Andrew ?
+	1		what did the dancer get for Andrew ?
+	0		what does everyone own the book ?
+	1		what does everyone own ?
+	0		what did everyone buy the box of records ?
+	1		what did everyone buy ?
+	0		what did everyone move the bicycle ?
+	1		what did everyone move ?
+	0		what does everyone like the bicycle ?
+	1		what does everyone like ?
+	0		what did everyone destroy the box of records ?
+	1		what did everyone destroy ?
+	0		what can everyone see the wine ?
+	1		what can everyone see ?
+	0		what will everyone sell a house to Sue ?
+	1		what will everyone sell to Sue ?
+	0		what did everyone give this table to Sue ?
+	1		what did everyone give to Sue ?
+	0		what should everyone hide the computer from Sue ?
+	1		what should everyone hide from Sue ?
+	0		what did everyone get the wine for Andrew ?
+	1		what did everyone get for Andrew ?
+	0		what does Mary own the book ?
+	1		what does Mary own ?
+	0		what did Mary buy the box of records ?
+	1		what did Mary buy ?
+	0		what did Mary move the wine ?
+	1		what did Mary move ?
+	0		what does Mary like the pen ?
+	1		what does Mary like ?
+	0		what did Mary destroy the bicycle ?
+	1		what did Mary destroy ?
+	0		what can Mary see the wine ?
+	1		what can Mary see ?
+	0		what will Mary sell the bicycle to Sue ?
+	1		what will Mary sell to Sue ?
+	0		what did Mary give the book to Sue ?
+	1		what did Mary give to Sue ?
+	0		what should Mary hide the wine from Sue ?
+	1		what should Mary hide from Sue ?
+	0		what did Mary get the wine for Andrew ?
+	1		what did Mary get for Andrew ?
+	0		what does the doctor own this table ?
+	1		what does the doctor own ?
+	0		what did the doctor buy this table ?
+	1		what did the doctor buy ?
+	0		what did the doctor move a car ?
+	1		what did the doctor move ?
+	0		what does the doctor like the bicycle ?
+	1		what does the doctor like ?
+	0		what did the doctor destroy the wine ?
+	1		what did the doctor destroy ?
+	0		what can the doctor see the bicycle ?
+	1		what can the doctor see ?
+	0		what will the doctor sell the box of records to Sue ?
+	1		what will the doctor sell to Sue ?
+	0		what did the doctor give the computer to Sue ?
+	1		what did the doctor give to Sue ?
+	0		what should the doctor hide this table from Sue ?
+	1		what should the doctor hide from Sue ?
+	0		what did the doctor get a house for Andrew ?
+	1		what did the doctor get for Andrew ?
+	0		what does some woman own the bicycle ?
+	1		what does some woman own ?
+	0		what did some woman buy a house ?
+	1		what did some woman buy ?
+	0		what did some woman move a house ?
+	1		what did some woman move ?
+	0		what does some woman like the book ?
+	1		what does some woman like ?
+	0		what did some woman destroy a car ?
+	1		what did some woman destroy ?
+	0		what can some woman see the box of records ?
+	1		what can some woman see ?
+	0		what will some woman sell the wine to Sue ?
+	1		what will some woman sell to Sue ?
+	0		what did some woman give the box of records to Sue ?
+	1		what did some woman give to Sue ?
+	0		what should some woman hide the pen from Sue ?
+	1		what should some woman hide from Sue ?
+	0		what did some woman get the bicycle for Andrew ?
+	1		what did some woman get for Andrew ?
+	0		what does John own the bicycle ?
+	1		what does John own ?
+	0		what did John buy a house ?
+	1		what did John buy ?
+	0		what did John move the pen ?
+	1		what did John move ?
+	0		what does John like a house ?
+	1		what does John like ?
+	0		what did John destroy the bicycle ?
+	1		what did John destroy ?
+	0		what can John see the computer ?
+	1		what can John see ?
+	0		what will John sell the computer to Sue ?
+	1		what will John sell to Sue ?
+	0		what did John give the pen to Sue ?
+	1		what did John give to Sue ?
+	0		what should John hide the book from Sue ?
+	1		what should John hide from Sue ?
+	0		what did John get a house for Andrew ?
+	1		what did John get for Andrew ?
+	0		what does Mr. Smith own the box of records ?
+	1		what does Mr. Smith own ?
+	0		what did Mr. Smith buy a car ?
+	1		what did Mr. Smith buy ?
+	0		what did Mr. Smith move a house ?
+	1		what did Mr. Smith move ?
+	0		what does Mr. Smith like a car ?
+	1		what does Mr. Smith like ?
+	0		what did Mr. Smith destroy a car ?
+	1		what did Mr. Smith destroy ?
+	0		what can Mr. Smith see the pen ?
+	1		what can Mr. Smith see ?
+	0		what will Mr. Smith sell the book to Sue ?
+	1		what will Mr. Smith sell to Sue ?
+	0		what did Mr. Smith give the book to Sue ?
+	1		what did Mr. Smith give to Sue ?
+	0		what should Mr. Smith hide a car from Sue ?
+	1		what should Mr. Smith hide from Sue ?
+	0		what did Mr. Smith get the box of records for Andrew ?
+	1		what did Mr. Smith get for Andrew ?
+	0		what does the guest of honor own the computer ?
+	1		what does the guest of honor own ?
+	0		what did the guest of honor buy the box of records ?
+	1		what did the guest of honor buy ?
+	0		what did the guest of honor move this table ?
+	1		what did the guest of honor move ?
+	0		what does the guest of honor like the wine ?
+	1		what does the guest of honor like ?
+	0		what did the guest of honor destroy the bicycle ?
+	1		what did the guest of honor destroy ?
+	0		what can the guest of honor see the wine ?
+	1		what can the guest of honor see ?
+	0		what will the guest of honor sell a house to Sue ?
+	1		what will the guest of honor sell to Sue ?
+	0		what did the guest of honor give the box of records to Sue ?
+	1		what did the guest of honor give to Sue ?
+	0		what should the guest of honor hide the wine from Sue ?
+	1		what should the guest of honor hide from Sue ?
+	0		what did the guest of honor get the pen for Andrew ?
+	1		what did the guest of honor get for Andrew ?
+	0		what does Elizabeth own a house ?
+	1		what does Elizabeth own ?
+	0		what did Elizabeth buy this table ?
+	1		what did Elizabeth buy ?
+	0		what did Elizabeth move the bicycle ?
+	1		what did Elizabeth move ?
+	0		what does Elizabeth like the wine ?
+	1		what does Elizabeth like ?
+	0		what did Elizabeth destroy the bicycle ?
+	1		what did Elizabeth destroy ?
+	0		what can Elizabeth see the pen ?
+	1		what can Elizabeth see ?
+	0		what will Elizabeth sell the computer to Sue ?
+	1		what will Elizabeth sell to Sue ?
+	0		what did Elizabeth give the wine to Sue ?
+	1		what did Elizabeth give to Sue ?
+	0		what should Elizabeth hide the pen from Sue ?
+	1		what should Elizabeth hide from Sue ?
+	0		what did Elizabeth get the book for Andrew ?
+	1		what did Elizabeth get for Andrew ?
